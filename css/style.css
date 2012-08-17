@@ -1,0 +1,31 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+/* season colors */
+tr.sharpen, .label-sharpen {
+  background-color: #E2DF91;
+}
+
+tr.racing, .label-racing {
+  background-color: #ACE2A7;
+}
+
+tr.peak, .label-peak {
+  background-color: #E2B3AF;
+}
+
+tr.base, .label-base {
+  background-color: #CBDFE8;
+}
+
+tr.offseason, .label-offseason {
+  background-color: #DAE2E2;
+}
