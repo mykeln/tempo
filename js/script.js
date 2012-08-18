@@ -29,13 +29,27 @@ jQuery(function($) {
       var scheduleNameRaw        = item.name;
       var scheduleName           = scheduleNameRaw.split('-')[0];
       var scheduleType           = scheduleNameRaw.split('-')[2];
+
       var scheduleMon            = item.mon.workoutname;
+      var durationMon            = item.mon.duration;
+
       var scheduleTue            = item.tue.workoutname;
+      var durationTue            = item.tue.duration;
+
       var scheduleWed            = item.wed.workoutname;
+      var durationWed            = item.wed.duration;
+
       var scheduleThu            = item.thu.workoutname;
+      var durationThu            = item.thu.duration;
+
       var scheduleFri            = item.fri.workoutname;
+      var durationFri            = item.fri.duration;
+
       var scheduleSat            = item.sat.workoutname;
+      var durationSat            = item.sat.duration;
+
       var scheduleSun            = item.sun.workoutname;
+      var durationSun            = item.sun.duration;
 
       // defining the type of workouts being done on a particular week
       if (scheduleName <= 10 ) {
@@ -53,38 +67,40 @@ jQuery(function($) {
         rowClass = "offseason";
       }
 
-      // defining the activity to display for this week
-      if (scheduleName == thisWeek) {
-        if (thisDayRaw == 'Mon') {
-          thisActivity += scheduleMon + "AND";
-        } else
-        if (thisDayRaw == 'Tue') {
-          thisActivity += scheduleTue + "AND";
-        } else
-        if (thisDayRaw == 'Wed') {
-          thisActivity += scheduleWed + "AND";
-        } else
-        if (thisDayRaw == 'Thu') {
-          thisActivity += scheduleThu + "AND";
-        } else
-        if (thisDayRaw == 'Fri') {
-          thisActivity += scheduleFri + "AND";
-        } else
-        if (thisDayRaw == 'Sat') {
-          thisActivity += scheduleSat + "AND";
-        } else
-        if (thisDayRaw == 'Sun') {
-          thisActivity += scheduleSun + "AND";
-        } else {
-          thisActivity = 'No DataAND';
-        }
-      }
-
       // defining the template to list the schedule
       var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td id='" + scheduleName + "_mon'>" + scheduleMon + "</td><td id='" + scheduleName + "_tue'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'>" + scheduleSun + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
+
+
+
+      // defining the activity to display for this week (in the next function)
+      if (scheduleName == thisWeek) {
+        if (thisDayRaw == 'Mon') {
+          thisActivity += scheduleMon + "DUR" + durationMon + "AND";
+        } else
+        if (thisDayRaw == 'Tue') {
+          thisActivity += scheduleTue + "DUR" + durationTue + "AND";
+        } else
+        if (thisDayRaw == 'Wed') {
+          thisActivity += scheduleWed + "DUR" + durationWed + "AND";
+        } else
+        if (thisDayRaw == 'Thu') {
+          thisActivity += scheduleThu + "DUR" + durationThu + "AND";
+        } else
+        if (thisDayRaw == 'Fri') {
+          thisActivity += scheduleFri + "DUR" + durationFri + "AND";
+        } else
+        if (thisDayRaw == 'Sat') {
+          thisActivity += scheduleSat + "DUR" + durationSat + "AND";
+        } else
+        if (thisDayRaw == 'Sun') {
+          thisActivity += scheduleSun + "DUR" + durationSun + "AND";
+        } else {
+          thisActivity = 'No Data-0mAND';
+        }
+      }
 
     }); // end schedules each
 
@@ -112,10 +128,16 @@ jQuery(function($) {
       var thisActivitySplit = thisActivity.split('AND');
 
       $.each(thisActivitySplit,function(){
-        if(this == activityShortName){
+
+        var parsedActivity = this.split('DUR')[0];
+        var parsedDuration = this.split('DUR')[1];
+
+        if(parsedActivity == activityShortName){
+
+                  console.log(this);
 
           // defining the template to list the workout
-          var activityTemplate = "<h2>" + activityName + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>";
+          var activityTemplate = "<h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>";
 
           $('#workout').append(activityTemplate);
         }

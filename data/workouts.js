@@ -1196,7 +1196,7 @@
             },
             "fri": {
                 "workoutname": "raceprep",
-                "duration": "150m"
+                "duration": "60m"
             },
             "sat": {
                 "workoutname": "test-day2shortpower",
@@ -5168,7 +5168,7 @@
             },
             "sat": {
                 "workoutname": "raceprep",
-                "duration": "150m"
+                "duration": "60m"
             }
         }
     ],

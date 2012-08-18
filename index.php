@@ -1,11 +1,11 @@
 <?php include '_header.php'; ?>
 
 
-<!-- Main hero unit for a primary marketing message or call to action -->
+<!-- Main hero unit for a primary marketing message or call to action
 <div class="alert alert-info">
   <b>Tempo</b> looks at historical workout data and extrapolates to determine future workouts. The goal is to achieve 90% of what a coach does. The inherent flaw: dynamically changing plans based on results.
 </div>
-
+-->
 
 
 <!-- today's workout -->
@@ -39,7 +39,7 @@
   <span class="label label-peak">Peak Week(s)</span>
   <span class="label label-base">Base</span>
 
-  <div class="span12">
+
 
     <table class="table" data-table="google-analytics">
       <thead>
@@ -57,7 +57,6 @@
 
       </tbody>
     </table>
-  </div>
 
 </div>
 
@@ -70,7 +69,6 @@
 
   <h3>Power Profile <a href="#" rel="tooltip" title="based on 145lbs (65.77kg)">?</a></h3>
 
-  <div class="span12">
 
     <table class="table table-striped" data-table="google-analytics">
       <thead>
@@ -121,7 +119,6 @@
       </tr>
       </tbody>
     </table>
-  </div>
 
 </div>
 
