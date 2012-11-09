@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"run",
+				"run-easy"
+			],
+			[
+				"basic",
+				"endurance-basic"
+			],
+			[
+				"easy",
+				"easy-off"
+			],
+			[
+				"test",
+				"test-day1longpower"
+			],
+			[
+				"eay",
+				"easy-off"
+			],
+			[
+				"tempo-2",
+				"tempo-2x10minutes"
+			],
+			[
+				"eas",
+				"off-easy"
+			],
+			[
+				"endurance",
+				"endurance-basic"
+			],
+			[
+				"enr",
+				"endurance-basic"
+			],
+			[
+				"race",
+				"racepreptt"
+			],
+			[
+				"tet",
+				"test-day1longpower"
+			],
+			[
+				"tempo-",
+				"tempo-1x30minutes"
+			],
+			[
+				"burst",
+				"bursts-basicbursts"
+			],
+			[
+				"tempo",
+				"tempo-1x45minutes"
+			],
+			[
+				"stren",
+				"strength1"
+			],
+			[
 				"bursts",
 				"bursts-microbursts"
 			],
@@ -240,11 +300,11 @@
 	},
 	"file_history":
 	[
-		"/Users/Mykel/Sites/tempo/css/style.css",
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/event/view.html.erb",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/notifications_mailer/event_verified.text.erb",
@@ -375,9 +435,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 115.0,
 		"where_history":
 		[
+			"",
 			"/Users/Mykel/Localist/app/platforms/dclinktank/views/notifications_mailer",
 			"",
 			"/Users/Mykel/Localist/app/platforms/dclinktank",
@@ -397,6 +458,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"off-easy",
 			"comparenum",
 			"3x10",
 			"Race",
@@ -523,8 +585,7 @@
 			"person",
 			"per_my",
 			"welcome_wrapper",
-			"slides",
-			"Localist screenshots"
+			"slides"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -532,6 +593,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"easy-off",
 			"in the ",
 			"666",
 			"444",
