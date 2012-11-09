@@ -11,23 +11,23 @@ body {
 
 /* season colors */
 tr.sharpen, .label-sharpen {
-  background-color: #81B47B;
+  background-color: #E2DF91;
 }
 
 tr.racing, .label-racing {
-  background-color: #5C8158;
+  background-color: #ACE2A7;
 }
 
 tr.peak, .label-peak {
-  background-color: #3E573C;
+  background-color: #E2B3AF;
 }
 
 tr.base, .label-base {
-  background-color: #444;
+  background-color: #CBDFE8;
 }
 
 tr.offseason, .label-offseason {
-  background-color: #222;
+  background-color: #DAE2E2;
 }
 
 #schedules {
