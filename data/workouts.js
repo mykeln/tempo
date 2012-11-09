@@ -1,6 +1,15 @@
 {
     "activities": [
         {
+            "name": "Run - Easy Run",
+            "shortname": "run-easy",
+            "type": "run",
+            "wu": "",
+            "desc": "Easy run, just to keep the legs loose.",
+            "info": "Running",
+            "cd": ""
+        },
+        {
             "name": "AC - 1K Time Trial",
             "shortname": "ac-1ktimetrial",
             "type": "bike",
@@ -59,7 +68,7 @@
             "shortname": "ac-powerwindups",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Include 10 - 15 Power wind ups. -Start at 20 mph-increase power and speed steadily for 10-20 seconds or until you stop accelerating. -hold speed for 30 - 60 seconds. Recover completely between efforts.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 10 - 15 Power wind ups. -Start at 20 mph-increase power and speed steadily for 10-20 seconds or until you stop accelerating. -hold speed for 30 - 60 seconds. Recover completely between efforts.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -68,7 +77,7 @@
             "shortname": "ac-racewinners",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Include 5 - 7 Race Winners where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish each effort with a 10 second all out sprint. Recover completely between efforts.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 5 - 7 Race Winners where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish each effort with a 10 second all out sprint. Recover completely between efforts.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -77,7 +86,7 @@
             "shortname": "endurance-basic",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range.",
             "info": "Spin no harder than 200 watts.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -86,7 +95,7 @@
             "shortname": "endurance-basicgroup",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. If the group wants to go harder, then sit in and try to keep your power at an endurance pace.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. If the group wants to go harder, then sit in and try to keep your power at an endurance pace.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -122,7 +131,7 @@
             "shortname": "bursts-basicbursts",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Every 10 minutes, include an 8 second all out burst. Jump hard with high cadence. Only 8 seconds.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Every 10 minutes, include an 8 second all out burst. Jump hard with high cadence. Only 8 seconds.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -131,7 +140,7 @@
             "shortname": "bursts-microbursts",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Include 3 x 10 minutes of MicroburstsEach burst is 15 seconds and should average 150% of FTPStart each burst hard aiming for 300% of FTP. Rest for 15 seconds between bursts at 50% of FTP. Ride in your endurance zone for 5 minutes between sets.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 3 x 10 minutes of MicroburstsEach burst is 15 seconds and should average 150% of FTPStart each burst hard aiming for 300% of FTP. Rest for 15 seconds between bursts at 50% of FTP. Ride in your endurance zone for 5 minutes between sets.",
             "info": "Start each burst with a 700 watt pop and then keep the power up around 375 for the remaining 10 - 12 seconds. On and off for 10 minutes at a time.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -140,7 +149,7 @@
             "shortname": "endurance-basic+attacks",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Include 5 - 7 attacks where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish the attack with a big 10 second sprint. Recover completely between efforts.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 5 - 7 attacks where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish the attack with a big 10 second sprint. Recover completely between efforts.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -209,7 +218,7 @@
         },
         {
             "name": "Easy or Off",
-            "shortname": "off-easy",
+            "shortname": "easy-off",
             "type": "bike",
             "wu": "None.",
             "desc": "Chill out, dude.",
@@ -244,6 +253,15 @@
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
+            "name": "Race",
+            "shortname": "race",
+            "type": "bike",
+            "wu": "Spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring 18-17-16. Then easy for 5. Then a few 1-2 min step ups to vo2 and over. Big ring 16-15-14. 1 easy out of the saddle jump.",
+            "desc": "Race.",
+            "info": "",
+            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+        },
+        {
             "name": "Sprints - 6",
             "shortname": "sprints-6",
             "type": "bike",
@@ -266,7 +284,7 @@
             "shortname": "sprints-sprintstarts",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Complete 5 sets of 5 Sprint StartsEach set is 5 minutes long. Ride steady with your cadence around 100 with your power in your endurance zone for. At the start of each minute and without shifting gears, complete a short super hard, super smooth, out of the saddle jump that is only 6 - 8 strokes. You are going for max power on each effort. Spin at 100 rpm in your endurance zone for the remainder of the minute. Complete 5 starts in each set. Spin easy for 5 minutes between sets.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Complete 5 sets of 5 Sprint StartsEach set is 5 minutes long. Ride steady with your cadence around 100 with your power in your endurance zone for. At the start of each minute and without shifting gears, complete a short super hard, super smooth, out of the saddle jump that is only 6 - 8 strokes. You are going for max power on each effort. Spin at 100 rpm in your endurance zone for the remainder of the minute. Complete 5 starts in each set. Spin easy for 5 minutes between sets.",
             "info": "Works best on the road. You can do these on the trainer if have to. If on the trainer, do the first 3 sets seated.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -275,7 +293,7 @@
             "shortname": "sprints-stompsprintsseated",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. During the ride, include 6 - 10 stomps where you let the speed drop to near nothing while on your 53x11. While still seated, accelerate hard for 12 - 15 secondsRide for 5 - 10 minutes between intervals at a cadence of 105+.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. During the ride, include 6 - 10 stomps where you let the speed drop to near nothing while on your 53x11. While still seated, accelerate hard for 12 - 15 secondsRide for 5 - 10 minutes between intervals at a cadence of 105+.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -392,7 +410,7 @@
             "shortname": "tempo-overgearedclimbs",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Keep the power in your tempo zone on any climbs, but use a gear that is one click bigger than you are comfortable riding in. Your cadence will drop 10 - 15 rpm, and that is OK.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Keep the power in your tempo zone on any climbs, but use a gear that is one click bigger than you are comfortable riding in. Your cadence will drop 10 - 15 rpm, and that is OK.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -401,7 +419,7 @@
             "shortname": "tempo-endurancewithtempo",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Keep the effort steady through the whole ride.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Keep the effort steady through the whole ride.",
             "info": "Start steady but finish with 20-30 minutes of sweet spot (230 - 245 watts).",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -410,7 +428,7 @@
             "shortname": "tempo-climbs",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in th 90 - 110 range. Keep the power in your tempo zone on any climbs. Use the gears to flatten out the course.",
+            "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Keep the power in your tempo zone on any climbs. Use the gears to flatten out the course.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -594,7 +612,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -606,7 +624,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -625,7 +643,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -637,7 +655,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -656,7 +674,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -668,7 +686,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -683,7 +701,7 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -695,7 +713,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -718,7 +736,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -749,7 +767,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -761,7 +779,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -780,7 +798,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -792,7 +810,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -807,7 +825,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -819,7 +837,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -842,7 +860,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -854,7 +872,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -873,7 +891,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -885,7 +903,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -904,7 +922,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -916,7 +934,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -931,7 +949,7 @@
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -943,7 +961,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -966,7 +984,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -978,7 +996,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -997,7 +1015,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -1009,7 +1027,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1028,7 +1046,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -1040,7 +1058,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1055,7 +1073,7 @@
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -1067,7 +1085,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1102,7 +1120,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1133,7 +1151,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1164,7 +1182,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1191,7 +1209,7 @@
                 "duration": "0m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1226,7 +1244,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1257,7 +1275,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1288,7 +1306,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1319,7 +1337,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1334,7 +1352,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -1346,7 +1364,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1354,7 +1372,7 @@
                 "duration": "90m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1381,7 +1399,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1408,7 +1426,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1416,7 +1434,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1439,7 +1457,7 @@
                 "duration": "150m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1447,7 +1465,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1462,15 +1480,15 @@
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1478,7 +1496,7 @@
                 "duration": "0m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1505,11 +1523,11 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1536,7 +1554,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1563,7 +1581,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1571,7 +1589,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1590,7 +1608,7 @@
                 "duration": "90m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -1598,7 +1616,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1629,7 +1647,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1656,7 +1674,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1664,7 +1682,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1691,7 +1709,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1714,7 +1732,7 @@
                 "duration": "90m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -1722,7 +1740,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1757,7 +1775,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1768,7 +1786,7 @@
                 "duration": "60m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -1780,7 +1798,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1788,7 +1806,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1811,7 +1829,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1819,7 +1837,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -1838,7 +1856,7 @@
                 "duration": "90m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -1846,7 +1864,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1877,7 +1895,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1886,7 +1904,7 @@
             }
         },
         {
-            "name": "33-10",
+            "name": "33-10-maint24",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "180m"
@@ -1904,7 +1922,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -1912,12 +1930,12 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "34-10",
+            "name": "34-10-maint25",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -1939,7 +1957,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1948,7 +1966,7 @@
             }
         },
         {
-            "name": "35-10",
+            "name": "35-10-endurance26",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -1962,7 +1980,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -1970,7 +1988,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -1979,122 +1997,122 @@
             }
         },
         {
-            "name": "36-10",
+            "name": "36-10-off27",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "37-10",
+            "name": "37-10-off28",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "38-10",
+            "name": "38-10-off29",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "39-10",
+            "name": "39-10-off30",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2103,7 +2121,7 @@
             }
         },
         {
-            "name": "40-10",
+            "name": "40-10-tempoblock1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -2113,7 +2131,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2125,7 +2143,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2134,7 +2152,7 @@
             }
         },
         {
-            "name": "41-10",
+            "name": "41-10-tempoblock2",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -2144,7 +2162,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2156,7 +2174,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2165,7 +2183,7 @@
             }
         },
         {
-            "name": "42-10",
+            "name": "42-10-tempoblock3",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -2175,7 +2193,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2187,7 +2205,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2196,13 +2214,13 @@
             }
         },
         {
-            "name": "43-10",
+            "name": "43-10-test1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2214,7 +2232,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2227,7 +2245,7 @@
             }
         },
         {
-            "name": "44-10",
+            "name": "44-10-ftp1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "120m"
@@ -2237,7 +2255,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2249,7 +2267,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2258,7 +2276,7 @@
             }
         },
         {
-            "name": "45-10",
+            "name": "45-10-ftp2",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -2268,7 +2286,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2280,7 +2298,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2289,7 +2307,7 @@
             }
         },
         {
-            "name": "46-10",
+            "name": "46-10-ftp3",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "180m"
@@ -2299,7 +2317,7 @@
                 "duration": "90m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2311,7 +2329,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2320,13 +2338,13 @@
             }
         },
         {
-            "name": "47-10",
+            "name": "47-10-test1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2338,7 +2356,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2351,7 +2369,7 @@
             }
         },
         {
-            "name": "48-10",
+            "name": "48-10-ftp1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "120m"
@@ -2373,7 +2391,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2382,7 +2400,7 @@
             }
         },
         {
-            "name": "49-10",
+            "name": "49-10-ftp2",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "180m"
@@ -2404,7 +2422,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2413,7 +2431,7 @@
             }
         },
         {
-            "name": "50-10",
+            "name": "50-10-ftp3",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "180m"
@@ -2435,7 +2453,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2444,13 +2462,13 @@
             }
         },
         {
-            "name": "51-10",
+            "name": "51-10-test1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2462,7 +2480,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2475,87 +2493,87 @@
             }
         },
         {
-            "name": "52-10",
+            "name": "52-10-off1",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "01-11",
+            "name": "01-11-off2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "02-11",
+            "name": "02-11-endurance1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2568,7 +2586,7 @@
             }
         },
         {
-            "name": "03-11",
+            "name": "03-11-ftp1",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
@@ -2586,7 +2604,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2599,7 +2617,7 @@
             }
         },
         {
-            "name": "04-11",
+            "name": "04-11-test1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -2617,7 +2635,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2630,7 +2648,7 @@
             }
         },
         {
-            "name": "05-11",
+            "name": "05-11-test2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -2648,7 +2666,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2661,13 +2679,13 @@
             }
         },
         {
-            "name": "06-11",
+            "name": "06-11-endurance1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2683,7 +2701,7 @@
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2692,13 +2710,13 @@
             }
         },
         {
-            "name": "07-11",
+            "name": "07-11-ac1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2714,7 +2732,7 @@
                 "duration": "105m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2723,13 +2741,13 @@
             }
         },
         {
-            "name": "08-11",
+            "name": "08-11-ac2",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2745,7 +2763,7 @@
                 "duration": "105m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2754,13 +2772,13 @@
             }
         },
         {
-            "name": "09-11",
+            "name": "09-11-ac3",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2776,7 +2794,7 @@
                 "duration": "105m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2785,7 +2803,7 @@
             }
         },
         {
-            "name": "10-11",
+            "name": "10-11-test2",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "210m"
@@ -2803,7 +2821,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -2816,7 +2834,7 @@
             }
         },
         {
-            "name": "11-11",
+            "name": "11-11-ac1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -2838,7 +2856,7 @@
                 "duration": "105m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2847,7 +2865,7 @@
             }
         },
         {
-            "name": "12-11",
+            "name": "12-11-ac2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -2857,7 +2875,7 @@
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -2873,12 +2891,12 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
         {
-            "name": "13-11",
+            "name": "13-11-ac3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -2900,7 +2918,7 @@
                 "duration": "105m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2909,13 +2927,13 @@
             }
         },
         {
-            "name": "14-11",
+            "name": "14-11-sprints1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -2931,7 +2949,7 @@
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2940,7 +2958,7 @@
             }
         },
         {
-            "name": "15-11",
+            "name": "15-11-sprints2",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
@@ -2962,7 +2980,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -2971,7 +2989,7 @@
             }
         },
         {
-            "name": "16-11",
+            "name": "16-11-sprints3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -2997,7 +3015,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3028,7 +3046,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3055,7 +3073,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3090,7 +3108,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3113,7 +3131,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -3121,7 +3139,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3148,7 +3166,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3179,7 +3197,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3214,7 +3232,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3225,7 +3243,7 @@
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3233,7 +3251,7 @@
                 "duration": "90m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -3241,7 +3259,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3260,7 +3278,7 @@
                 "duration": "120m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -3268,7 +3286,7 @@
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -3276,7 +3294,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3287,7 +3305,7 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3303,7 +3321,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3318,7 +3336,7 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3334,7 +3352,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3349,7 +3367,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3357,7 +3375,7 @@
                 "duration": "90m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -3365,7 +3383,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3380,7 +3398,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3392,7 +3410,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -3411,7 +3429,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3423,7 +3441,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -3431,7 +3449,7 @@
                 "duration": "90m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3442,11 +3460,11 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
@@ -3458,7 +3476,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3473,7 +3491,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3481,7 +3499,7 @@
                 "duration": "240m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -3489,7 +3507,7 @@
                 "duration": "240m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3504,7 +3522,7 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3520,7 +3538,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3535,7 +3553,7 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -3551,7 +3569,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -3566,27 +3584,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3597,27 +3615,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3628,27 +3646,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3659,27 +3677,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3690,27 +3708,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3721,27 +3739,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -3752,27 +3770,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -4031,7 +4049,7 @@
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4113,7 +4131,7 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -4155,7 +4173,7 @@
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4198,7 +4216,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -4229,7 +4247,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -4260,7 +4278,7 @@
                 "duration": "120m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -4279,7 +4297,7 @@
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4403,7 +4421,7 @@
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4527,7 +4545,7 @@
                 "duration": "210m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4760,11 +4778,11 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -4775,27 +4793,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -4806,27 +4824,27 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             }
         },
@@ -4837,7 +4855,7 @@
                 "duration": "150m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4853,7 +4871,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -4868,7 +4886,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4876,7 +4894,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -4884,7 +4902,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -4899,7 +4917,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4907,7 +4925,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -4915,7 +4933,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -4930,7 +4948,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4938,7 +4956,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -4946,7 +4964,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -4961,7 +4979,7 @@
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -4969,7 +4987,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -4977,7 +4995,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -5000,11 +5018,11 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "fri": {
@@ -5023,7 +5041,7 @@
                 "duration": "120m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -5031,7 +5049,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -5039,7 +5057,7 @@
                 "duration": "120m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "sat": {
@@ -5054,7 +5072,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -5062,7 +5080,7 @@
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "thu": {
@@ -5085,7 +5103,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -5101,7 +5119,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "90m"
             },
             "sat": {
@@ -5116,7 +5134,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -5132,7 +5150,7 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "90m"
             },
             "sat": {
@@ -5147,7 +5165,7 @@
                 "duration": "180m"
             },
             "mon": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "60m"
             },
             "tue": {
@@ -5163,12 +5181,416 @@
                 "duration": "90m"
             },
             "fri": {
-                "workoutname": "off-easy",
+                "workoutname": "easy-off",
                 "duration": "90m"
             },
             "sat": {
                 "workoutname": "raceprep",
                 "duration": "60m"
+            }
+        },
+        {
+            "name": "34-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "sprints-9",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "race",
+                "duration": "60m"
+            },
+            "thu": {
+                "workoutname": "bursts-microbursts",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "sweetspot-2x30minutes",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "34-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "sprints-9",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "race",
+                "duration": "60m"
+            },
+            "thu": {
+                "workoutname": "bursts-microbursts",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "sweetspot-2x30minutes",
+                "duration": "150m"
+            }
+        },
+         {
+            "name": "35-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "run-easy",
+                "duration": "15m"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            }
+        },
+         {
+            "name": "36-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "run-easy",
+                "duration": "15m"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            }
+        },
+         {
+            "name": "37-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "run-easy",
+                "duration": "10m"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            }
+        },
+         {
+            "name": "38-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "run-easy",
+                "duration": "10m"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            }
+        },
+         {
+            "name": "39-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-2x10minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "tempo-2x10minutes",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "racepreptt",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "test-day1longpower",
+                "duration": "120m"
+            }
+        },
+         {
+            "name": "40-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-2x10minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "tempo-2x10minutes",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "tempo-2x10minutes",
+                "duration": "120m"
+            }
+        },
+         {
+            "name": "41-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-2x15minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "tempo-2x15minutes",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "tempo-2x15minutes",
+                "duration": "120m"
+            }
+        },
+        {
+            "name": "42-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            }
+        },
+        {
+            "name": "43-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "racepreptt",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "test-day1longpower",
+                "duration": "120m"
+            }
+        },
+
+        {
+            "name": "44-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            }
+        },
+        {
+            "name": "45-12",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-1x45minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "strength1",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "tempo-1x45minutes",
+                "duration": "120m"
             }
         }
     ],

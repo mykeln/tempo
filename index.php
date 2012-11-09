@@ -11,7 +11,7 @@
 <!-- today's workout -->
 <div id="workout" class="row">
   <h1>Today's Workout <small id="week_num"></small></h1>
-
+<a id="thisyearonly" class="btn btn-mini" href="">this year only</a>
 </div>
 
 
@@ -31,8 +31,9 @@
 <!-- calendar -->
 <div id="calendar" class="row">
   <h1>Calendar <small>rundown of workout history at-a-glance</small></h1>
+  <a id="thisweekonly" class="btn btn-mini" href="">this week only</a>
+  <h3>Weekly Breakdown</h3>
 
-  <h3>Weekly Breakdown <small><a href="#" id="thisweekonly">show this week only</a></h3>
   <span class="label label-offseason">Chill</span>
   <span class="label label-sharpen">Sharpening</span>
   <span class="label label-racing">Racing Season</span>
@@ -41,10 +42,11 @@
 
 
 
-    <table class="table" data-table="google-analytics">
+    <table class="table table-condensed">
       <thead>
-        <th>Week</th>
         <th>Type</th>
+        <th>Week</th>
+        <th>Year</th>
         <th>Mon</th>
         <th>Tue</th>
         <th>Wed</th>
@@ -80,42 +82,52 @@
       <tr id="s1">
         <td>1s</td>
         <td>1502</td>
-        <td>22.83</td>
+        <td class="wkg">22.83</td>
       </tr>
       <tr id="s5">
         <td>5s</td>
         <td>1390</td>
-        <td>21.13</td>
+        <td class="wkg">21.13</td>
       </tr>
       <tr id="s30">
         <td>30s</td>
         <td>908</td>
-        <td>13.80</td>
+        <td class="wkg">13.80</td>
       </tr>
       <tr id="m1">
         <td>1m</td>
         <td>550</td>
-        <td>8.36</td>
+        <td class="wkg">8.36</td>
+      </tr>
+      <tr id="m3">
+        <td>3m</td>
+        <td>400</td>
+        <td class="wkg">6.08</td>
+      </tr>
+      <tr id="m5">
+        <td>5m</td>
+        <td>380</td>
+        <td class="wkg">5.77</td>
       </tr>
       <tr id="m10">
         <td>10m</td>
-        <td>300</td>
-        <td>4.56</td>
+        <td>303</td>
+        <td class="wkg">4.60</td>
       </tr>
       <tr id="m20">
         <td>20m</td>
         <td>290</td>
-        <td>4.40</td>
+        <td class="wkg">4.40</td>
       </tr>
       <tr id="m60">
         <td>FTP</td>
         <td>280</td>
-        <td>4.25</td>
+        <td class="wkg">4.25</td>
       <tr>
       <tr id="bp">
         <td>Balance Point</td>
         <td>245</td>
-        <td>3.72</td>
+        <td class="wkg">3.72</td>
       </tr>
       </tbody>
     </table>

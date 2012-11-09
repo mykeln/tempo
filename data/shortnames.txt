@@ -21,7 +21,7 @@ ftp-3x10minutes
 ftp-3x15minutes
 ftp-3x20minutes
 ftp-5x3minutes
-off-easy
+easy-off
 peak-vo2acstepups
 raceprep
 racepreptt

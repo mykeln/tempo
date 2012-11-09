@@ -5,45 +5,33 @@
    ========================================================================== */
 
 body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 
 /* season colors */
 tr.sharpen, .label-sharpen {
-  background-color: #E2DF91;
+  background-color: #81B47B;
 }
 
 tr.racing, .label-racing {
-  background-color: #ACE2A7;
+  background-color: #5C8158;
 }
 
 tr.peak, .label-peak {
-  background-color: #E2B3AF;
+  background-color: #3E573C;
 }
 
 tr.base, .label-base {
-  background-color: #CBDFE8;
+  background-color: #444;
 }
 
 tr.offseason, .label-offseason {
-  background-color: #DAE2E2;
+  background-color: #222;
 }
 
-/* Tweak navbar brand link to be super sleek
--------------------------------------------------- */
-.navbar-fixed-top .brand {
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 20px;
-  float: right;
-  font-weight: bold;
-  color: #000;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-          transition: all .2s linear;
-}
-.navbar-fixed-top .brand:hover {
-  text-decoration: none;
+#schedules {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
 }
