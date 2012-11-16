@@ -207,7 +207,7 @@ for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
     $("table:eq(2) tr td:nth-child(" + (2+i) + ")").each( function() {
         var cell = parseFloat( $(this).html() );
         if( do_info[r] >= cell ) {
-            $(this).css( { 'background-color': 'limegreen' } );
+            $(this).css( { 'background-color': '#ACE2A7' } );
         }
     });
 })(do_these[i], i);
