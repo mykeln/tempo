@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"schedue",
+				"scheduleName"
+			],
+			[
+				"test",
+				"test-day2shortpower"
+			],
+			[
 				"run",
 				"run-easy"
 			],
@@ -14,10 +22,6 @@
 			[
 				"easy",
 				"easy-off"
-			],
-			[
-				"test",
-				"test-day1longpower"
 			],
 			[
 				"eay",
@@ -302,9 +306,9 @@
 	[
 		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/event/view.html.erb",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/notifications_mailer/event_verified.text.erb",
@@ -435,7 +439,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 115.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",
@@ -458,6 +462,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"46-",
+			"core",
+			"easy-off",
+			"console",
+			"tempoblock",
 			"off-easy",
 			"comparenum",
 			"3x10",
@@ -580,12 +589,7 @@
 			"the change",
 			"explanation",
 			"staff",
-			"h3>",
-			"h2>",
-			"person",
-			"per_my",
-			"welcome_wrapper",
-			"slides"
+			"h3>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -593,6 +597,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"tempo",
 			"easy-off",
 			"in the ",
 			"666",

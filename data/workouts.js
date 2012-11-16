@@ -5561,7 +5561,7 @@
                 "workoutname": "tempo-1x45minutes",
                 "duration": "120m"
             }
-        }
+        },
         {
             "name": "46-12-tempo3",
             "sun": {
