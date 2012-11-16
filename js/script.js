@@ -2,11 +2,13 @@
 
 */
 
+//// CONFIGURATION
+
+
 // utility functions
 function compareNum(a,b){
-    return (a < b ? this >= a && this <= b : this >= b && this <= a);
+  return (a < b ? this >= a && this <= b : this >= b && this <= a);
 }
-
 
 jQuery(function($) {
 
@@ -20,11 +22,7 @@ jQuery(function($) {
   // setting activity variable outside so it can be referenced
   var thisActivity = "";
 
-  // TODAY'S WORKOUT
-  $('#week_num').html('WEEK ' + thisWeek);
-
-
-  // CALENDAR
+//// CALENDAR
   // getting json data
   $.getJSON('data/workouts.js', function(data) {
 
@@ -91,8 +89,6 @@ jQuery(function($) {
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
 
-
-
       // defining the activity to display for this week (in the next function)
       if (scheduleName == thisWeek) {
         if (thisDayRaw == 'Mon') {
@@ -123,8 +119,10 @@ jQuery(function($) {
     }); // end schedules each
 
 
+////// TODAY'S WORKOUT
+    $('#week_num').html('WEEK ' + thisWeek);
 
-    // pull the activities associated with this week's block and display them
+    // pull all the activities in the json file
     $.each(data.activities, function(i,item){
       var activityName          = item.name;
       var activityShortName     = item.shortname
@@ -134,7 +132,8 @@ jQuery(function($) {
       var activityInfo          = item.info;
       var activityCooldown      = item.cd;
 
-      // assigning placeholder values for clearer readability
+      //FIXME: I dont think these are being applied on every activity, just the first
+      // assigning placeholder values for clearer readability if there is no data
       if(activityWarmup == ""){
         activityWarmup = "None."
       }
@@ -143,6 +142,7 @@ jQuery(function($) {
         activityCooldown = "None."
       }
 
+      // split the activity assignments from the previous calculation
       var thisActivitySplit = thisActivity.split('AND');
 
       $.each(thisActivitySplit,function(){
@@ -159,6 +159,7 @@ jQuery(function($) {
       });
 
 
+      // FIXME this needs to be put inside for each activity display
       // if there aren't any coach comments, hide the element for this specific activity
       if(activityInfo == ""){
         $('#' + activityShortName + ' h6.activity_info').hide();
@@ -166,38 +167,62 @@ jQuery(function($) {
 
     }); // end activities each
 
+    // showing data that is this season/week
+    $('#workout .activity:last').show();
+    $('#schedules tr[id^=' + thisWeek + ']').show();
 
 
-  // showing data that is this season/week
-  $('#workout .activity:last').show();
-  $('#schedules tr[id^=' + thisWeek + ']').show();
+////FITNESS
+    var weightKg;
 
+    $.each(data.fitness[0], function(i,item){
+
+      var fitnessTime  = i;
+      var fitnessPower = item;
+
+      if(i == "weight") {
+        weightKg = item/2.2;
+      }
+
+      var wKg = item/weightKg;
+
+      console.log(weightKg);
+
+      var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg + "</td></tr>";
+
+      if(i != "weight") {
+        $('#profile').append(fitnessTemplate);
+      }
+
+    //FIXME: Determine category for each power zone to determine weakest item
+
+    });
 
   }); // end get json call
 
+/////GENERATING FUTURE
+/*
+var myObject = new Object();
+myObject.name = "John";
+myObject.age = 12;
+myObject.pets = ["cat", "dog"];
+Afterwards stringify it via:
 
-  // calculating power profile category
-  $.each("#fitness table tr", function(){
-
-  //FIXME: not calling proper thing
-
-    var beep = $(this + 'td.wkg').html();
-
-    console.log(beep);
-  });
+var myString = JSON.stringify(myObject);
+*/
 
 
-
-  $("#thisweekonly").click(function() {
-    // showing all schedules
-    $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
+////RENDERING UTILITIES
+  // showing all workouts
+  $("#thisyearonly").click(function() {
+    $('#workout .activity:last').css('background', '#ACE2A7');
+    $('#workout .activity').not(':last').toggle(200);
     return false;
   });
 
-  $("#thisyearonly").click(function() {
-    // showing all workouts
-    $('#workout .activity:last').css('background', '#ACE2A7');
-    $('#workout .activity').not(':last').toggle(200);
+  // showing all schedules
+  $("#thisweekonly").click(function() {
+    $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
     return false;
   });
 

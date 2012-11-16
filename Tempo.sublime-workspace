@@ -305,8 +305,8 @@
 	"file_history":
 	[
 		"/Users/Mykel/Sites/tempo/index.php",
-		"/Users/Mykel/Sites/tempo/js/script.js",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
+		"/Users/Mykel/Sites/tempo/js/script.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
@@ -462,6 +462,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\n",
+			"\"duration\": \".*\"",
+			"\"workoutname\": \".*\"",
+			"\"name\": \".*\"",
+			"\\\"name\\\": \\\"*.\\\"",
+			"ftp-",
+			"ftp",
+			"bigblock",
+			"ck",
+			"\"name\": ",
 			"46-",
 			"core",
 			"easy-off",
@@ -579,24 +589,18 @@
 			"sales",
 			"sales p",
 			"person",
-			"no-repeat",
-			"0 0 ",
-			"staff_h3",
-			"flip-counter",
-			"paper",
-			"staff_h4",
-			"our story",
-			"the change",
-			"explanation",
-			"staff",
-			"h3>"
+			"no-repeat"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"",
+			"\"duration\": \"\"",
+			"\"workoutname\": \"\"",
+			"\"name\": \"\"",
 			"tempo",
 			"easy-off",
 			"in the ",
