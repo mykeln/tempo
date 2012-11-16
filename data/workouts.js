@@ -5562,6 +5562,37 @@
                 "duration": "120m"
             }
         }
+        {
+            "name": "46-12-tempo3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "tempo-2x30minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "strength1",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "tempo-1x60minutes",
+                "duration": "120m"
+            }
+        }
     ],
     "fitness": [
         {
