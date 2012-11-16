@@ -11,6 +11,7 @@ function compareNum(a,b){
 jQuery(function($) {
 
   // setting date information for reference
+  var thisYear = Date.today().getYear();
   var thisMonth = Date.today().getMonth();
   var thisWeek = Date.today().getWeek();
   var thisDayRaw = Date.today().toString('ddd');
@@ -19,8 +20,11 @@ jQuery(function($) {
   // setting activity variable outside so it can be referenced
   var thisActivity = "";
 
+  // TODAY'S WORKOUT
   $('#week_num').html('WEEK ' + thisWeek);
 
+
+  // CALENDAR
   // getting json data
   $.getJSON('data/workouts.js', function(data) {
 
@@ -164,7 +168,9 @@ jQuery(function($) {
 
 
 
-
+  // showing data that is this season/week
+  $('#workout .activity:last').show();
+  $('#schedules tr[id^=' + thisWeek + ']').show();
 
 
   }); // end get json call
@@ -183,27 +189,20 @@ jQuery(function($) {
 
 
   $("#thisweekonly").click(function() {
-    // re-showing data for this week
+    // showing all schedules
     $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
     return false;
   });
 
   $("#thisyearonly").click(function() {
-    // showing only the latest workout
-    $('#workout .activity').not(':last').toggle();
+    // showing all workouts
+    $('#workout .activity:last').css('background', '#ACE2A7');
+    $('#workout .activity').not(':last').toggle(200);
     return false;
   });
 
-
-  // hiding data that isn't this season/week
-  $('#workout .activity').not(':last').hide();
-  $('#schedules tr').not('[id^=' + thisWeek + ']').hide();
-
-
   // rendering page-wide tooltips
   $('a[rel=tooltip]').tooltip();
-
-
 
 
 }); // end jquery function

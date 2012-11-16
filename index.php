@@ -11,7 +11,7 @@
 <!-- today's workout -->
 <div id="workout" class="row">
   <h1>Today's Workout <small id="week_num"></small></h1>
-<a id="thisyearonly" class="btn btn-mini" href="">this year only</a>
+<a id="thisyearonly" class="btn btn-mini" href="">previous years</a>
 </div>
 
 
@@ -31,7 +31,7 @@
 <!-- calendar -->
 <div id="calendar" class="row">
   <h1>Calendar <small>rundown of workout history at-a-glance</small></h1>
-  <a id="thisweekonly" class="btn btn-mini" href="">this week only</a>
+  <a id="thisweekonly" class="btn btn-mini" href="">workout history</a>
   <h3>Weekly Breakdown</h3>
 
   <span class="label label-offseason">Chill</span>

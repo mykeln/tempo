@@ -594,15 +594,15 @@
         },
         {
             "name": "dec",
-            "week1": "tempoblock1",
-            "week2": "tempoblock2",
-            "week3": "tempoblock3",
-            "week4": "tempoblock4"
+            "week1": "",
+            "week2": "",
+            "week3": "",
+            "week4": ""
         }
     ],
     "schedules": [
         {
-            "name": "43-09-tempoblock1",
+            "name": "43-09-tempo1",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "150m"
@@ -633,7 +633,7 @@
             }
         },
         {
-            "name": "44-09-tempoblock2",
+            "name": "44-09-tempo2",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "150m"
@@ -664,7 +664,7 @@
             }
         },
         {
-            "name": "45-09-tempoblock3",
+            "name": "45-09-tempo3",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "150m"
@@ -757,7 +757,7 @@
             }
         },
         {
-            "name": "48-09-tempoblock4",
+            "name": "48-09-tempo4",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "180m"
@@ -2121,7 +2121,7 @@
             }
         },
         {
-            "name": "40-10-tempoblock1",
+            "name": "40-10-tempo1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -2152,7 +2152,7 @@
             }
         },
         {
-            "name": "41-10-tempoblock2",
+            "name": "41-10-tempo2",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -2183,7 +2183,7 @@
             }
         },
         {
-            "name": "42-10-tempoblock3",
+            "name": "42-10-tempo3",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "150m"
@@ -3020,7 +3020,7 @@
             }
         },
         {
-            "name": "17-11",
+            "name": "17-11-test2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3046,12 +3046,12 @@
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "easy-off",
-                "duration": "60m"
+                "workoutname": "test-day2shortpower",
+                "duration": "120m"
             }
         },
         {
-            "name": "18-11",
+            "name": "18-11-endurance1",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "180m"
@@ -3082,7 +3082,7 @@
             }
         },
         {
-            "name": "19-11",
+            "name": "19-11-vo21",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3113,7 +3113,7 @@
             }
         },
         {
-            "name": "20-11",
+            "name": "20-11-vo22",
             "sun": {
                 "workoutname": "tempo-endurancewithtempo",
                 "duration": "180m"
@@ -3144,7 +3144,7 @@
             }
         },
         {
-            "name": "21-11",
+            "name": "21-11-vo23",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3175,7 +3175,7 @@
             }
         },
         {
-            "name": "22-11",
+            "name": "22-11-endurance1",
             "sun": {
                 "workoutname": "tempo-climbs",
                 "duration": "180m"
@@ -3206,7 +3206,7 @@
             }
         },
         {
-            "name": "23-11",
+            "name": "23-11-vo21",
             "sun": {
                 "workoutname": "tempo-climbs",
                 "duration": "180m"
@@ -3237,7 +3237,7 @@
             }
         },
         {
-            "name": "24-11",
+            "name": "24-11-vo22",
             "sun": {
                 "workoutname": "bigblock-vo2",
                 "duration": "210m"
@@ -3268,7 +3268,7 @@
             }
         },
         {
-            "name": "25-11",
+            "name": "25-11-vo23",
             "sun": {
                 "workoutname": "tempo-endurancewithtempo",
                 "duration": "90m"
@@ -3299,7 +3299,7 @@
             }
         },
         {
-            "name": "26-11",
+            "name": "26-11-maint4",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3330,7 +3330,7 @@
             }
         },
         {
-            "name": "27-11",
+            "name": "27-11-maint5",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3361,7 +3361,7 @@
             }
         },
         {
-            "name": "28-11",
+            "name": "28-11-endurance1",
             "sun": {
                 "workoutname": "endurance-basicgroup",
                 "duration": "180m"
@@ -3392,7 +3392,7 @@
             }
         },
         {
-            "name": "29-11",
+            "name": "29-11-maint1",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "180m"
@@ -3423,7 +3423,7 @@
             }
         },
         {
-            "name": "30-11",
+            "name": "30-11-maint2",
             "sun": {
                 "workoutname": "bigblock-sprints",
                 "duration": "180m"
@@ -3454,7 +3454,7 @@
             }
         },
         {
-            "name": "31-11",
+            "name": "31-11-maint3",
             "sun": {
                 "workoutname": "tempo-endurancewithtempo",
                 "duration": "180m"
@@ -3485,7 +3485,7 @@
             }
         },
         {
-            "name": "32-11",
+            "name": "32-11-maint4",
             "sun": {
                 "workoutname": "bigblock-vo2",
                 "duration": "180m"
@@ -3516,7 +3516,7 @@
             }
         },
         {
-            "name": "33-11",
+            "name": "33-11-maint5",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3547,7 +3547,7 @@
             }
         },
         {
-            "name": "34-11",
+            "name": "34-11-maint6",
             "sun": {
                 "workoutname": "endurance-basic+attacks",
                 "duration": "150m"
@@ -3578,7 +3578,7 @@
             }
         },
         {
-            "name": "35-11",
+            "name": "35-11-off1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3609,7 +3609,7 @@
             }
         },
         {
-            "name": "36-11",
+            "name": "36-11-off2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3640,7 +3640,7 @@
             }
         },
         {
-            "name": "37-11",
+            "name": "37-11-off3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3671,7 +3671,7 @@
             }
         },
         {
-            "name": "38-11",
+            "name": "38-11-off4",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3702,7 +3702,7 @@
             }
         },
         {
-            "name": "39-11",
+            "name": "39-11-off5",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3733,7 +3733,7 @@
             }
         },
         {
-            "name": "40-11",
+            "name": "40-11-off6",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3764,7 +3764,7 @@
             }
         },
         {
-            "name": "41-11",
+            "name": "41-11-off7",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -3795,7 +3795,7 @@
             }
         },
         {
-            "name": "42-11",
+            "name": "42-11-tempo1",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
@@ -3826,7 +3826,7 @@
             }
         },
         {
-            "name": "43-11",
+            "name": "43-11-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -3857,7 +3857,7 @@
             }
         },
         {
-            "name": "44-11",
+            "name": "44-11-tempo3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -3888,7 +3888,7 @@
             }
         },
         {
-            "name": "45-11",
+            "name": "45-11-tempo4",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -3919,7 +3919,7 @@
             }
         },
         {
-            "name": "46-11",
+            "name": "46-11-endurance1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -3950,7 +3950,7 @@
             }
         },
         {
-            "name": "47-11",
+            "name": "47-11-test1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -3981,7 +3981,7 @@
             }
         },
         {
-            "name": "48-11",
+            "name": "48-11-tempo1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -4012,7 +4012,7 @@
             }
         },
         {
-            "name": "49-11",
+            "name": "49-11-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -4043,7 +4043,7 @@
             }
         },
         {
-            "name": "50-11",
+            "name": "50-11-endurance1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -4074,7 +4074,7 @@
             }
         },
         {
-            "name": "51-11",
+            "name": "51-11-tempo1",
             "sun": {
                 "workoutname": "test-day1longpower",
                 "duration": "120m"
@@ -4105,7 +4105,7 @@
             }
         },
         {
-            "name": "52-11",
+            "name": "52-11-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -4136,7 +4136,7 @@
             }
         },
         {
-            "name": "53-11",
+            "name": "53-11-tempo3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4167,7 +4167,7 @@
             }
         },
         {
-            "name": "01-12",
+            "name": "01-12-endurance1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -4198,7 +4198,7 @@
             }
         },
         {
-            "name": "02-12",
+            "name": "02-12-test2",
             "sun": {
                 "workoutname": "test-day1longpower",
                 "duration": "120m"
@@ -4229,7 +4229,7 @@
             }
         },
         {
-            "name": "03-12",
+            "name": "03-12-vo21",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -4260,7 +4260,7 @@
             }
         },
         {
-            "name": "04-12",
+            "name": "04-12-vo22",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -4291,7 +4291,7 @@
             }
         },
         {
-            "name": "05-12",
+            "name": "05-12-endurance3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4322,7 +4322,7 @@
             }
         },
         {
-            "name": "06-12",
+            "name": "06-12-vo24",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4353,38 +4353,7 @@
             }
         },
         {
-            "name": "07-12",
-            "sun": {
-                "workoutname": "endurance-groupride",
-                "duration": "210m"
-            },
-            "mon": {
-                "workoutname": "strengthcore",
-                "duration": "60m"
-            },
-            "tue": {
-                "workoutname": "vo2-30secondsx30seconds",
-                "duration": "120m"
-            },
-            "wed": {
-                "workoutname": "strength3",
-                "duration": "60m"
-            },
-            "thu": {
-                "workoutname": "sprints-sprintstarts",
-                "duration": "120m"
-            },
-            "fri": {
-                "workoutname": "strengthcore",
-                "duration": "60m"
-            },
-            "sat": {
-                "workoutname": "vo2-3minuteshills",
-                "duration": "150m"
-            }
-        },
-        {
-            "name": "08-12",
+            "name": "07-12-vo25",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4415,7 +4384,38 @@
             }
         },
         {
-            "name": "09-12",
+            "name": "08-12-vo26",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength3",
+                "duration": "60m"
+            },
+            "thu": {
+                "workoutname": "sprints-sprintstarts",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "09-12-test2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4446,7 +4446,7 @@
             }
         },
         {
-            "name": "10-12",
+            "name": "10-12-ac1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4477,38 +4477,7 @@
             }
         },
         {
-            "name": "11-12",
-            "sun": {
-                "workoutname": "endurance-groupride",
-                "duration": "210m"
-            },
-            "mon": {
-                "workoutname": "strengthcore",
-                "duration": "60m"
-            },
-            "tue": {
-                "workoutname": "ac-30seconds",
-                "duration": "90m"
-            },
-            "wed": {
-                "workoutname": "endurance-basic",
-                "duration": "90m"
-            },
-            "thu": {
-                "workoutname": "sprints-stompsprintsstanding",
-                "duration": "90m"
-            },
-            "fri": {
-                "workoutname": "strengthcore",
-                "duration": "60m"
-            },
-            "sat": {
-                "workoutname": "ac-30seconds",
-                "duration": "150m"
-            }
-        },
-        {
-            "name": "12-12",
+            "name": "11-12-ac2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4539,7 +4508,38 @@
             }
         },
         {
-            "name": "13-12",
+            "name": "12-12-ac3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "13-12-test2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4570,7 +4570,7 @@
             }
         },
         {
-            "name": "14-12",
+            "name": "14-12-tempo1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4601,7 +4601,7 @@
             }
         },
         {
-            "name": "15-12",
+            "name": "15-12-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4632,7 +4632,7 @@
             }
         },
         {
-            "name": "16-12",
+            "name": "16-12-tempo3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4663,7 +4663,7 @@
             }
         },
         {
-            "name": "17-12",
+            "name": "17-12-test1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4694,7 +4694,7 @@
             }
         },
         {
-            "name": "18-12",
+            "name": "18-12-vo21",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4725,7 +4725,7 @@
             }
         },
         {
-            "name": "19-12",
+            "name": "19-12-vo22",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4756,7 +4756,7 @@
             }
         },
         {
-            "name": "20-12",
+            "name": "20-12-maint1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -4787,7 +4787,7 @@
             }
         },
         {
-            "name": "21-12",
+            "name": "21-12-maint2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4818,7 +4818,7 @@
             }
         },
         {
-            "name": "22-12",
+            "name": "22-12-maint3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4849,7 +4849,7 @@
             }
         },
         {
-            "name": "23-12",
+            "name": "23-12-maint4",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -4880,7 +4880,7 @@
             }
         },
         {
-            "name": "24-12",
+            "name": "24-12-maint5",
             "sun": {
                 "workoutname": "bursts-basicbursts",
                 "duration": "180m"
@@ -4911,7 +4911,7 @@
             }
         },
         {
-            "name": "25-12",
+            "name": "25-12-maint6",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -4942,7 +4942,7 @@
             }
         },
         {
-            "name": "26-12",
+            "name": "26-12-maint7",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -4973,7 +4973,7 @@
             }
         },
         {
-            "name": "27-12",
+            "name": "27-12-maint8",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "120m"
@@ -5004,7 +5004,7 @@
             }
         },
         {
-            "name": "28-12",
+            "name": "28-12-maint9",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -5035,7 +5035,7 @@
             }
         },
         {
-            "name": "29-12",
+            "name": "29-12-maint10",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "120m"
@@ -5066,7 +5066,7 @@
             }
         },
         {
-            "name": "30-12",
+            "name": "30-12-test2",
             "sun": {
                 "workoutname": "endurance-basic",
                 "duration": "180m"
@@ -5097,7 +5097,7 @@
             }
         },
         {
-            "name": "31-12",
+            "name": "31-12-maint1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5128,7 +5128,7 @@
             }
         },
         {
-            "name": "32-12",
+            "name": "32-12-maint2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5159,7 +5159,7 @@
             }
         },
         {
-            "name": "33-12",
+            "name": "33-12-maint3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5190,38 +5190,7 @@
             }
         },
         {
-            "name": "34-12",
-            "sun": {
-                "workoutname": "endurance-groupride",
-                "duration": "180m"
-            },
-            "mon": {
-                "workoutname": "easy-off",
-                "duration": "60m"
-            },
-            "tue": {
-                "workoutname": "sprints-9",
-                "duration": "120m"
-            },
-            "wed": {
-                "workoutname": "race",
-                "duration": "60m"
-            },
-            "thu": {
-                "workoutname": "bursts-microbursts",
-                "duration": "90m"
-            },
-            "fri": {
-                "workoutname": "easy-off",
-                "duration": "90m"
-            },
-            "sat": {
-                "workoutname": "sweetspot-2x30minutes",
-                "duration": "150m"
-            }
-        },
-        {
-            "name": "34-12",
+            "name": "34-12-maint4",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5252,7 +5221,7 @@
             }
         },
          {
-            "name": "35-12",
+            "name": "35-12-maint5",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5283,7 +5252,7 @@
             }
         },
          {
-            "name": "36-12",
+            "name": "36-12-endurance1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5314,7 +5283,7 @@
             }
         },
          {
-            "name": "37-12",
+            "name": "37-12-endurance2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5345,7 +5314,7 @@
             }
         },
          {
-            "name": "38-12",
+            "name": "38-12-endurance3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5376,7 +5345,7 @@
             }
         },
          {
-            "name": "39-12",
+            "name": "39-12-tempo1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5407,7 +5376,7 @@
             }
         },
          {
-            "name": "40-12",
+            "name": "40-12-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5438,7 +5407,7 @@
             }
         },
          {
-            "name": "41-12",
+            "name": "41-12-tempo3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5469,7 +5438,7 @@
             }
         },
         {
-            "name": "42-12",
+            "name": "42-12-tempo4",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5500,7 +5469,7 @@
             }
         },
         {
-            "name": "43-12",
+            "name": "43-12-test1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5532,7 +5501,7 @@
         },
 
         {
-            "name": "44-12",
+            "name": "44-12-tempo1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5563,7 +5532,7 @@
             }
         },
         {
-            "name": "45-12",
+            "name": "45-12-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
