@@ -94,7 +94,7 @@
         <th>5m</th>
         <th>20m</th>
       </thead>
-      <tbody id="profile">
+      <tbody id="powerclass">
 <tr><td>World Class</td><td>23.50</td><td>11.50</td><td>7.80</td><td>6.66</td></tr>
 <tr><td>World Class</td><td>23.16</td><td>11.35</td><td>7.67</td><td>6.54</td></tr>
 <tr><td>World Class</td><td>22.82</td><td>11.20</td><td>7.52</td><td>6.42</td></tr>

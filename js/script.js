@@ -194,23 +194,24 @@ jQuery(function($) {
         $('#profile').append(fitnessTemplate);
       }
 
-    //FIXME: Determine category for each power zone to determine weakest item
-// collect info
-var do_these = ["5s", "1m", "5m", "20m" ];
-var do_info = { };
-for( i = 0; i < do_these.length; i++ ) ( function(r) {
-    do_info[r] = parseFloat($("tr#" + r + " td:eq(2)").html());
-})(do_these[i]);
+    // determine class for each power zone and color
+    // grab data from first table
+    var do_these = ["5s", "1m", "5m", "20m" ];
+    var do_info = { };
 
-// apply info
-for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
-    $("table:eq(2) tr td:nth-child(" + (2+i) + ")").each( function() {
+    for( i = 0; i < do_these.length; i++ ) ( function(r) {
+      do_info[r] = parseFloat($("#profile tr#" + r + " td:eq(2)").html());
+    }) (do_these[i]);
+
+    // apply colors to second table
+    for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
+      $("#powerclass tr td:nth-child(" + (2+i) + ")").each( function() {
         var cell = parseFloat( $(this).html() );
         if( do_info[r] >= cell ) {
-            $(this).css( { 'background-color': '#ACE2A7' } );
+          $(this).css( { 'background-color': '#ACE2A7' } );
         }
-    });
-})(do_these[i], i);
+      });
+    }) (do_these[i], i);
 
     });
 

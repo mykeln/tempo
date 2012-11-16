@@ -167,6 +167,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/script.js",
+			"settings":
+			{
+				"buffer_size": 8320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 5640,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -304,8 +320,8 @@
 	},
 	"file_history":
 	[
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
@@ -439,7 +455,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 115.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",
@@ -723,8 +739,65 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/script.js",
+					"settings":
+					{
+						"buffer_size": 8320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7599,
+								7599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4771.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 5640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2296,
+								2296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 3.0,
+						"translation.y": 1581.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
