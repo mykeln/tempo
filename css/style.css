@@ -16,7 +16,7 @@ h1 {
   h1 small {
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 14px;
   }
 
 h3 {
@@ -24,7 +24,7 @@ h3 {
 }
 
 /* season colors */
-tr.sharpen, .label-sharpen {
+tr.sharpen td, .label-sharpen {
   background-color: #E2DF91;
 }
 
@@ -64,4 +64,12 @@ tr.offseason, .label-offseason {
     text-transform: uppercase;
     font-weight: 200;
     margin-bottom: 0;
+  }
+
+#powerclass {
+  font-size: 10px;
+}
+
+  #powerclass td {
+    line-height: 0px;
   }

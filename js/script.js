@@ -2,8 +2,10 @@
 
 */
 
-//// CONFIGURATION
-
+//// INIT
+  var weightKg;
+  var athleteName;
+  var thisActivity = "";
 
 // utility functions
 function compareNum(a,b){
@@ -19,12 +21,20 @@ jQuery(function($) {
   var thisDayRaw = Date.today().toString('ddd');
   var thisDay = thisDayRaw.toLowerCase();
 
-  // setting activity variable outside so it can be referenced
-  var thisActivity = "";
-
 //// CALENDAR
   // getting json data
   $.getJSON('data/workouts.js', function(data) {
+
+//// CONFIGURATION
+    $.each(data.config, function(i,item){
+      weightKg    = item.weight/2.2;
+      athleteName = item.name;
+
+      // plopping in athlete name near bottom
+      $('#fitness h1 small b').append(athleteName);
+
+    }); // end config each
+
 
     // get a list of all the historical schedules and append to list
     $.each(data.schedules, function(i,item){
@@ -89,7 +99,13 @@ jQuery(function($) {
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
 
+      // making today bold
+      $("[id*="+thisDay+"]").css('font-weight', 'bold');
+
       // defining the activity to display for this week (in the next function)
+      // FIXME: rewrite so it only calls workouts from this week/day and display vs. every day
+      console.log(thisWeek);
+
       if (scheduleName == thisWeek) {
         if (thisDayRaw == 'Mon') {
           thisActivity += scheduleMon + "DUR" + durationMon + "AND";
@@ -132,6 +148,9 @@ jQuery(function($) {
       var activityInfo          = item.info;
       var activityCooldown      = item.cd;
 
+      console.log(thisActivity);
+
+
       //FIXME: I dont think these are being applied on every activity, just the first
       // assigning placeholder values for clearer readability if there is no data
       if(activityWarmup == ""){
@@ -173,26 +192,16 @@ jQuery(function($) {
 
 
 ////FITNESS
-    var weightKg;
 
     $.each(data.fitness[0], function(i,item){
 
       var fitnessTime  = i;
       var fitnessPower = item;
-
-      if(i == "weight") {
-        weightKg = item/2.2;
-      }
-
       var wKg = item/weightKg;
-
-      console.log(weightKg);
 
       var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg + "</td></tr>";
 
-      if(i != "weight") {
-        $('#profile').append(fitnessTemplate);
-      }
+      $('#profile').append(fitnessTemplate);
 
     // determine class for each power zone and color
     // grab data from first table

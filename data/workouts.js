@@ -1,4 +1,11 @@
 {
+    "config": [
+        {
+            "name": "Mykel Nahorniak",
+            "weight": "145"
+        }
+
+    ],
     "activities": [
         {
             "name": "Run - Easy Run",
@@ -7211,7 +7218,6 @@
 
     "fitness": [
         {
-            "weight"  : "145",
             "1s": "1502",
             "5s": "1390",
             "30s": "908",
