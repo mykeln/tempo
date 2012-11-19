@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"tes",
+				"test-day1longpower"
+			],
+			[
 				"schedue",
 				"scheduleName"
 			],
@@ -167,38 +171,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 8635,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 5984,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 1126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "data/workouts.js",
-			"settings":
-			{
-				"buffer_size": 222085,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -336,10 +308,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Mykel/Sites/tempo/css/style.css",
+		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/js/script.js",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
-		"/Users/Mykel/Sites/tempo/index.php",
-		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/event/view.html.erb",
@@ -755,121 +727,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/script.js",
-					"settings":
-					{
-						"buffer_size": 8635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3655,
-								3655
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2149.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.php",
-					"settings":
-					{
-						"buffer_size": 5984,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1626,
-								1626
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1534.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/style.css",
-					"settings":
-					{
-						"buffer_size": 1126,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								431,
-								441
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 456.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "data/workouts.js",
-					"settings":
-					{
-						"buffer_size": 222085,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								66,
-								66
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 136374.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
