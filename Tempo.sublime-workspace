@@ -171,7 +171,7 @@
 			"file": "js/script.js",
 			"settings":
 			{
-				"buffer_size": 8320,
+				"buffer_size": 8635,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,8 +179,24 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 5640,
+				"buffer_size": 5984,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 1126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/workouts.js",
+			"settings":
+			{
+				"buffer_size": 222085,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -608,7 +624,7 @@
 			"person"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": true,
 		"replace_history":
@@ -747,15 +763,15 @@
 					"file": "js/script.js",
 					"settings":
 					{
-						"buffer_size": 8320,
+						"buffer_size": 8635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7599,
-								7599
+								3655,
+								3655
 							]
 						],
 						"settings":
@@ -765,7 +781,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4771.0,
+						"translation.y": 2149.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -775,15 +791,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 5640,
+						"buffer_size": 5984,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2296,
-								2296
+								1626,
+								1626
 							]
 						],
 						"settings":
@@ -792,8 +808,64 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 3.0,
-						"translation.y": 1581.0,
+						"translation.x": 0.0,
+						"translation.y": 1534.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 1126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data/workouts.js",
+					"settings":
+					{
+						"buffer_size": 222085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 136374.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
