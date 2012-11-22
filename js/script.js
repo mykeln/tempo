@@ -5,66 +5,96 @@
 //// INIT
   var weightKg;
   var athleteName;
-  var thisActivity = "";
 
-// utility functions
-function compareNum(a,b){
-  return (a < b ? this >= a && this <= b : this >= b && this <= a);
-}
-
-jQuery(function($) {
-
-  // setting date information for reference
-  var thisYear = Date.today().getYear();
+  var thisYear = Date.today().getYear().toString().slice(1);
   var thisMonth = Date.today().getMonth();
   var thisWeek = Date.today().getWeek();
   var thisDayRaw = Date.today().toString('ddd');
   var thisDay = thisDayRaw.toLowerCase();
 
+//// UTILITY FUNCTIONS
+function compareNum(a,b){
+  return (a < b ? this >= a && this <= b : this >= b && this <= a);
+}
+
+
+
+jQuery(function($) {
 //// CALENDAR
   // getting json data
   $.getJSON('data/workouts.js', function(data) {
 
+
 //// CONFIGURATION
     $.each(data.config, function(i,item){
+      // getting athlete weight in lbs and converting to kg
       weightKg    = item.weight/2.2;
+
+      // getting athlete name
       athleteName = item.name;
-
-      // plopping in athlete name near bottom
-      $('#fitness h1 small b').append(athleteName);
-
     }); // end config each
 
 
+//// SCHEDULES
     // get a list of all the historical schedules and append to list
     $.each(data.schedules, function(i,item){
+      // getting raw workout name from schedules data
       var scheduleNameRaw        = item.name;
+
+      // splitting out week number
       var scheduleName           = scheduleNameRaw.split('-')[0];
+
+      // splitting out year number
       var scheduleYear           = scheduleNameRaw.split('-')[1];
+
+      // splitting out workout shortname
       var scheduleType           = scheduleNameRaw.split('-')[2];
 
-      var scheduleMon            = item.mon.workoutname;
-      var durationMon            = item.mon.duration;
+      if((scheduleName == thisWeek) && (scheduleYear == thisYear)) {
+        // getting all today's workouts
+        // 'thisDay' would be something like 'mon' 'tue' etc.
+        var schedule            = item.thisDay.workoutname;
+        var duration            = item.thisDay.duration;
 
-      var scheduleTue            = item.tue.workoutname;
-      var durationTue            = item.tue.duration;
+        if(parsedActivity == activityShortName){
+          // pull all of this week's activities in the json file
+          $.each(data.activities, function(i,item){
+            var activityName          = item.name;
+            var activityShortName     = item.shortname
+            var activityType          = item.type;
+            var activityWarmup        = item.wu;
+            var activityDesc          = item.desc;
+            var activityInfo          = item.info;
+            var activityCooldown      = item.cd;
 
-      var scheduleWed            = item.wed.workoutname;
-      var durationWed            = item.wed.duration;
+            // setting this activity to blank
+            var thisActivity = "";
 
-      var scheduleThu            = item.thu.workoutname;
-      var durationThu            = item.thu.duration;
+            // setting values for data if there isn't any
+            if(activityWarmup == ""){
+              activityWarmup = "None."
+            }
 
-      var scheduleFri            = item.fri.workoutname;
-      var durationFri            = item.fri.duration;
+            if(activityCooldown == ""){
+              activityCooldown = "None."
+            }
 
-      var scheduleSat            = item.sat.workoutname;
-      var durationSat            = item.sat.duration;
+            if(activityInfo == ""){
+              $('#' + activityShortName + ' h6.activity_info').hide();
+            }
 
-      var scheduleSun            = item.sun.workoutname;
-      var durationSun            = item.sun.duration;
+            // defining the template to list the activity
+            var activityTemplate = "<div class='activity'><h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
 
-      // defining the type of workouts being done on a particular week
+            $('#workout').append(activityTemplate);
+          }); // end activities each
+        }
+      }
+
+
+
+
+      // defining the color-coded of workouts being done on a particular week
       // l/e week 10
       if (scheduleName <= 10 ) {
         rowClass = "sharpen";
@@ -102,97 +132,10 @@ jQuery(function($) {
       // making today bold
       $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
-      // defining the activity to display for this week (in the next function)
-      // FIXME: rewrite so it only calls workouts from this week/day and display vs. every day
-      console.log(thisWeek);
-
-      if (scheduleName == thisWeek) {
-        if (thisDayRaw == 'Mon') {
-          thisActivity += scheduleMon + "DUR" + durationMon + "AND";
-        } else
-        if (thisDayRaw == 'Tue') {
-          thisActivity += scheduleTue + "DUR" + durationTue + "AND";
-        } else
-        if (thisDayRaw == 'Wed') {
-          thisActivity += scheduleWed + "DUR" + durationWed + "AND";
-        } else
-        if (thisDayRaw == 'Thu') {
-          thisActivity += scheduleThu + "DUR" + durationThu + "AND";
-        } else
-        if (thisDayRaw == 'Fri') {
-          thisActivity += scheduleFri + "DUR" + durationFri + "AND";
-        } else
-        if (thisDayRaw == 'Sat') {
-          thisActivity += scheduleSat + "DUR" + durationSat + "AND";
-        } else
-        if (thisDayRaw == 'Sun') {
-          thisActivity += scheduleSun + "DUR" + durationSun + "AND";
-        } else {
-          thisActivity = 'No Data-0mAND';
-        }
-      }
-
     }); // end schedules each
 
 
-////// TODAY'S WORKOUT
-    $('#week_num').html('WEEK ' + thisWeek);
-
-    // pull all the activities in the json file
-    $.each(data.activities, function(i,item){
-      var activityName          = item.name;
-      var activityShortName     = item.shortname
-      var activityType          = item.type;
-      var activityWarmup        = item.wu;
-      var activityDesc          = item.desc;
-      var activityInfo          = item.info;
-      var activityCooldown      = item.cd;
-
-      console.log(thisActivity);
-
-
-      //FIXME: I dont think these are being applied on every activity, just the first
-      // assigning placeholder values for clearer readability if there is no data
-      if(activityWarmup == ""){
-        activityWarmup = "None."
-      }
-
-      if(activityCooldown == ""){
-        activityCooldown = "None."
-      }
-
-      // split the activity assignments from the previous calculation
-      var thisActivitySplit = thisActivity.split('AND');
-
-      $.each(thisActivitySplit,function(){
-
-        var parsedActivity = this.split('DUR')[0];
-        var parsedDuration = this.split('DUR')[1];
-
-        if(parsedActivity == activityShortName){
-          // defining the template to list the workout
-          var activityTemplate = "<div class='activity'><h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
-
-          $('#workout').append(activityTemplate);
-        }
-      });
-
-
-      // FIXME this needs to be put inside for each activity display
-      // if there aren't any coach comments, hide the element for this specific activity
-      if(activityInfo == ""){
-        $('#' + activityShortName + ' h6.activity_info').hide();
-      }
-
-    }); // end activities each
-
-    // showing data that is this season/week
-    $('#workout .activity:last').show();
-    $('#schedules tr[id^=' + thisWeek + ']').show();
-
-
 ////FITNESS
-
     $.each(data.fitness[0], function(i,item){
 
       var fitnessTime  = i;
@@ -203,26 +146,26 @@ jQuery(function($) {
 
       $('#profile').append(fitnessTemplate);
 
-    // determine class for each power zone and color
-    // grab data from first table
-    var do_these = ["5s", "1m", "5m", "20m" ];
-    var do_info = { };
+      // determine class for each power zone and color
+      // grab data from first table
+      var do_these = ["5s", "1m", "5m", "20m" ];
+      var do_info = { };
 
-    for( i = 0; i < do_these.length; i++ ) ( function(r) {
-      do_info[r] = parseFloat($("#profile tr#" + r + " td:eq(2)").html());
-    }) (do_these[i]);
+      for( i = 0; i < do_these.length; i++ ) ( function(r) {
+        do_info[r] = parseFloat($("#profile tr#" + r + " td:eq(2)").html());
+      }) (do_these[i]);
 
-    // apply colors to second table
-    for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
-      $("#powerclass tr td:nth-child(" + (2+i) + ")").each( function() {
-        var cell = parseFloat( $(this).html() );
-        if( do_info[r] >= cell ) {
-          $(this).css( { 'background-color': '#ACE2A7' } );
-        }
-      });
-    }) (do_these[i], i);
-
+      // apply colors to second table
+      for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
+        $("#powerclass tr td:nth-child(" + (2+i) + ")").each( function() {
+          var cell = parseFloat( $(this).html() );
+          if( do_info[r] >= cell ) {
+            $(this).css( { 'background-color': '#ACE2A7' } );
+          }
+        });
+      }) (do_these[i], i);
     });
+
 
   }); // end get json call
 
@@ -238,8 +181,18 @@ var myString = JSON.stringify(myObject);
 */
 
 
-////RENDERING UTILITIES
-  // showing all workouts
+////RENDERING
+  // plopping in athlete name near bottom
+  $('#fitness h1 small b').append(athleteName);
+
+  // updating "today's workout" header to show this week
+  $('#week_num').html('WEEK ' + thisWeek);
+
+  // showing data that is this season/week
+  $('#workout .activity:last').show();
+  $('#schedules tr[id^=' + thisWeek + ']').show();
+
+  // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
     $('#workout .activity:last').css('background', '#ACE2A7');
     $('#workout .activity').not(':last').toggle(200);
