@@ -136,8 +136,6 @@ jQuery(function($) {
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
 
-      console.log('actually finished rendering data')
-
     }); // end schedules each
 
 
@@ -173,6 +171,17 @@ jQuery(function($) {
     });
 
 
+////RENDERING
+    // showing just this week/year
+    // FIXME: kinda sloppy, testing to see if the element exists, then showing
+    if ($('#schedules tr[id^=' + thisWeek + ']').length > 0){
+      $('#schedules tr[id^=' + thisWeek + ']').show();
+    }
+
+    if ($('#workout .activity:last').length > 0){
+      $('#workout .activity:last').show();
+    }
+
   }); // end get json call
 
 
@@ -202,9 +211,7 @@ var myString = JSON.stringify(myObject);
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
-  // showing just this week/year
-  // FIXME: rendering too early, before page is completely loaded
-    $('#schedules tr[id^=' + thisWeek + '], #workout .activity:last').toggle();
+
 
     $('#workout .activity:last').css('background', '#ACE2A7');
     $('#workout .activity').not(':last').toggle(200);
