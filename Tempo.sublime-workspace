@@ -309,9 +309,10 @@
 	"file_history":
 	[
 		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/README.md",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/index.php",
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/event/view.html.erb",
@@ -434,8 +435,7 @@
 		"/Users/Mykel/Localist/app/views/admin/welcome/index.html.erb",
 		"/Users/Mykel/Localist/app/views/facebook/welcome.html.erb",
 		"/Users/Mykel/Localist/app/views/about/landing1.html.erb",
-		"/Users/Mykel/Localist/app/views/about/landing2.html.erb",
-		"/Users/Mykel/Localist/app/views/form_mailer/sales.erb"
+		"/Users/Mykel/Localist/app/views/about/landing2.html.erb"
 	],
 	"find":
 	{
@@ -466,6 +466,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" <span>{</span>",
+			"thisDayRaw",
 			"thisAct",
 			"span6",
 			"\\n",
@@ -591,16 +593,16 @@
 			"subscr",
 			"API Key",
 			"linkedin",
-			"staff_h4",
-			"sales",
-			"sales p"
+			"staff_h4"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"",
+			"thisDay",
 			"",
 			"\"duration\": \"\"",
 			"\"workoutname\": \"\"",

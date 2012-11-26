@@ -37,6 +37,7 @@ jQuery(function($) {
 
 //// SCHEDULES
     // get a list of all the historical schedules and append to list
+    // FIXME: issue here is we need the item.[name].[day].workoutname to later reference in the activities each
     $.each(data.schedules, function(i,item){
       // getting raw workout name from schedules data
       var scheduleNameRaw        = item.name;
@@ -50,22 +51,29 @@ jQuery(function($) {
       // splitting out workout shortname
       var scheduleType           = scheduleNameRaw.split('-')[2];
 
-      if((scheduleName == thisWeek) && (scheduleYear == thisYear)) {
-        // getting all today's workouts
-        // 'thisDay' would be something like 'mon' 'tue' etc.
-        var schedule            = item.thisDay.workoutname;
-        var duration            = item.thisDay.duration;
 
-        if(parsedActivity == activityShortName){
-          // pull all of this week's activities in the json file
-          $.each(data.activities, function(i,item){
-            var activityName          = item.name;
-            var activityShortName     = item.shortname
-            var activityType          = item.type;
-            var activityWarmup        = item.wu;
-            var activityDesc          = item.desc;
-            var activityInfo          = item.info;
-            var activityCooldown      = item.cd;
+      //FIXME: debug hardcoded vars
+      var tmpName = item.sun.workoutname;
+      var parsedDuration = item.sun.duration;
+
+      // if the data pulled is for this week, move forward
+      if((scheduleName == thisWeek)) {
+
+        // pull all of this week's activities in the json file
+        $.each(data.activities, function(i,item){
+          var activityName          = item.name;
+          var activityShortName     = item.shortname
+          var activityType          = item.type;
+          var activityWarmup        = item.wu;
+          var activityDesc          = item.desc;
+          var activityInfo          = item.info;
+          var activityCooldown      = item.cd;
+
+          // if the pulled shortname matches the shortname of the schedule
+          if((activityShortName == tmpName)) {
+
+            console.log("made it");
+            console.log(activityShortName + scheduleYear);
 
             // setting this activity to blank
             var thisActivity = "";
@@ -80,15 +88,21 @@ jQuery(function($) {
             }
 
             if(activityInfo == ""){
-              $('#' + activityShortName + ' h6.activity_info').hide();
+              activityInfo = "None."
             }
 
+
+
             // defining the template to list the activity
-            var activityTemplate = "<div class='activity'><h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+            var activityTemplate = "<div class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+
+            console.log(activityTemplate);
 
             $('#workout').append(activityTemplate);
-          }); // end activities each
-        }
+          }
+        }); // end activities each
+
+
       }
 
 
@@ -124,13 +138,14 @@ jQuery(function($) {
       }
 
       // defining the template to list the schedule
-      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'>" + scheduleMon + "</td><td id='" + scheduleName + "_tue'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'>" + scheduleSun + "</td></tr>";
+      // var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'>" + scheduleMon + "</td><td id='" + scheduleName + "_tue'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'>" + scheduleSun + "</td></tr>";
+
+      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
 
-      // making today bold
-      $("[id*="+thisDay+"]").css('font-weight', 'bold');
+
 
     }); // end schedules each
 
@@ -191,6 +206,9 @@ var myString = JSON.stringify(myObject);
   // showing data that is this season/week
   $('#workout .activity:last').show();
   $('#schedules tr[id^=' + thisWeek + ']').show();
+
+  // making today bold
+  $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
