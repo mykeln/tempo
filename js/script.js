@@ -51,17 +51,20 @@ jQuery(function($) {
       // splitting out workout shortname
       var scheduleType           = scheduleNameRaw.split('-')[2];
 
-
-      // FIXME: make this dynamic for each day
-      var tmpName = item[thisWeek].workoutname;
-      var parsedDuration = item[thisWeek].duration;
-
-      console.log(item[thisWeek])
+      var scheduleSun = item.sun.workoutname
+      var scheduleMon = item.mon.workoutname
+      var scheduleTue = item.tue.workoutname
+      var scheduleWed = item.wed.workoutname
+      var scheduleThu = item.thu.workoutname
+      var scheduleFri = item.fri.workoutname
+      var scheduleSat = item.sat.workoutname
 
       // if the data pulled is for this week, move forward
       if((scheduleName == thisWeek)) {
 
-        calendarShortName = tmpName;
+        // dynamically pulling data depending on what today's date is
+        var calendarShortName = item[thisDay].workoutname;
+        var parsedDuration = item[thisDay].duration;
 
         // pull all of this week's activities in the json file
         $.each(data.activities, function(i,item){
@@ -129,19 +132,13 @@ jQuery(function($) {
       }
 
       // defining the template to list the schedule
-      // var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'>" + scheduleMon + "</td><td id='" + scheduleName + "_tue'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'>" + scheduleSun + "</td></tr>";
-
-      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td></tr>";
+      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'>" + scheduleMon + "</td><td id='" + scheduleName + "_tue'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'>" + scheduleSun + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
-    })
 
-    // NOTE: it's important to keep this here, as it executes after the data is retrieved and rendered
-    // unhiding data that is this ONLY season/week
-    ($('#workout .activity:last, #schedules tr[id^=' + thisWeek + ']').show()
-
-    ); // end schedules each
+      $('#workout .activity:last, #schedules tr[id^=' + thisWeek + ']').show();
+    }); // end schedules each
 
 
 ////FITNESS
