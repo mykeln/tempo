@@ -5352,7 +5352,7 @@
             }
         },
          {
-            "name": "39-12-tempo1",
+            "name": "39-12-test1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5383,7 +5383,7 @@
             }
         },
          {
-            "name": "40-12-tempo2",
+            "name": "40-12-tempo1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5414,7 +5414,7 @@
             }
         },
          {
-            "name": "41-12-tempo3",
+            "name": "41-12-tempo2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5445,7 +5445,7 @@
             }
         },
         {
-            "name": "42-12-tempo4",
+            "name": "42-12-tempo3",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"

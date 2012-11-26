@@ -308,11 +308,13 @@
 	},
 	"file_history":
 	[
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
-		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/README.md",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/index.php",
+		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/_footer.php",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/event/view.html.erb",
@@ -433,9 +435,7 @@
 		"/Users/Mykel/Localist/app/views/newsletter_mailer/checking_in.erb",
 		"/Users/Mykel/Localist/app/platforms/biopark/views/layouts/_base_layout.html.erb",
 		"/Users/Mykel/Localist/app/views/admin/welcome/index.html.erb",
-		"/Users/Mykel/Localist/app/views/facebook/welcome.html.erb",
-		"/Users/Mykel/Localist/app/views/about/landing1.html.erb",
-		"/Users/Mykel/Localist/app/views/about/landing2.html.erb"
+		"/Users/Mykel/Localist/app/views/facebook/welcome.html.erb"
 	],
 	"find":
 	{
@@ -466,6 +466,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fixme",
 			"green",
 			"47-",
 			"fixme",
@@ -592,8 +593,7 @@
 			"App store",
 			"Popular Places",
 			"subscribe",
-			"space",
-			" space\""
+			"space"
 		],
 		"highlight": true,
 		"in_selection": false,

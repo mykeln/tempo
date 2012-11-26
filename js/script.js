@@ -191,16 +191,22 @@ jQuery(function($) {
 logic
 =====
 
-ask user to enter the following most recent power test results:
-
-5s
-1m
-5m
-20m
-
 in each month, figure out what the weakest zone is on the power profile by counting distance from the top (and/or the amount of green cells)
 
 then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
+
+//FIXME: use stored values to populate placeholders in setup form
+
+
+if ((thisWeek == 47) || (thisWeek == 43) || (thisWeek == 39)) {
+  if (thisDay == 'sun') {
+    // display the 20 min power form element, asking them to enter their most recent 20 min test result
+    $('#setup').show();
+    $('#setup .control-group').not('id[m20]').hide();
+  }
+
+}
+
 
 weeks
 01-04 - VO2 OR AC OR FTP
