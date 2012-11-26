@@ -5630,6 +5630,37 @@
                 "workoutname": "test-day1longpower",
                 "duration": "150m"
             }
+        },
+       {
+            "name": "48-12-ftp1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "60m"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "endurance-basic",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "test-day1longpower",
+                "duration": "150m"
+            }
         }
     ],
     "blocks": [
