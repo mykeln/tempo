@@ -95,7 +95,7 @@ jQuery(function($) {
             }
 
             // defining the template to list the activity
-            var activityTemplate = "<div class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
 
             $('#workout').append(activityTemplate);
           }
@@ -137,7 +137,8 @@ jQuery(function($) {
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
 
-      $('#workout .activity:last, #schedules tr[id^=' + thisWeek + ']').show();
+      console.log('actually finished rendering data')
+
     }); // end schedules each
 
 
@@ -175,6 +176,7 @@ jQuery(function($) {
 
   }); // end get json call
 
+
 /////GENERATING FUTURE
 /*
 var myObject = new Object();
@@ -197,6 +199,13 @@ var myString = JSON.stringify(myObject);
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
+        // showing just this week/year
+  // FIXME: rendering too early, before page is completely loaded
+  $('#workout .activity:last, #schedules tr[id^=' + thisWeek + ']').show();
+      console.log('TRYING TO SHOW JUST THIS WEEK');
+
+
+////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
     $('#workout .activity:last').css('background', '#ACE2A7');

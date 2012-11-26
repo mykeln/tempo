@@ -14,6 +14,9 @@ challenges
 - if it's two-and-two, show both? Show one with the alternate, favoring the more recent years?
 - storing the extrapolation, so i can continue to record not just the rides i did, but what i was prescribed
 
+current bugs
+=====
+- js/script.js:202 - rendering too early, before page is completely loaded. not showing today/this week
 
 
 logic
@@ -31,15 +34,11 @@ in each month, figure out what the weakest zone is on the power profile by count
 then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
 
 weeks
-01-04 - VO2 OR AC OR THRESHOLD
-O5-10 - VO2 OR AC
-11-20 - VO2 OR AC OR THRESHOLD
+01-04 - VO2 OR AC OR FTP
+O5-10 - VO2 OR AC OR FTP
+11-20 - VO2 OR AC
 21-35 - MAINTENANCE (no logic)
 36-39 - OFF (no logic)
 40-41 - day 1 and day 2 testing
-42-52 - TRESHOLD
-
-
-
-
-it's not really a huge amount of data, so you could build the prefix of the key to look for (var key = "WW-YY-", obviously with to make it the current date) and then check each item (like if(name.substr(0, 5) == key))
+42-47 - TEMPO
+48-52 - FTP
