@@ -52,12 +52,16 @@ jQuery(function($) {
       var scheduleType           = scheduleNameRaw.split('-')[2];
 
 
-      //FIXME: debug hardcoded vars
-      var tmpName = item.sun.workoutname;
-      var parsedDuration = item.sun.duration;
+      // FIXME: make this dynamic for each day
+      var tmpName = item[thisWeek].workoutname;
+      var parsedDuration = item[thisWeek].duration;
+
+      console.log(item[thisWeek])
 
       // if the data pulled is for this week, move forward
       if((scheduleName == thisWeek)) {
+
+        calendarShortName = tmpName;
 
         // pull all of this week's activities in the json file
         $.each(data.activities, function(i,item){
@@ -70,7 +74,7 @@ jQuery(function($) {
           var activityCooldown      = item.cd;
 
           // if the pulled shortname matches the shortname of the schedule
-          if((activityShortName == tmpName)) {
+          if((activityShortName == calendarShortName)) {
             // setting this activity to blank
             var thisActivity = "";
 
