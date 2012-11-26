@@ -73,3 +73,7 @@ tr.offseason, .label-offseason {
   #powerclass td {
     line-height: 0px;
   }
+
+#powerbests {
+  display: none;
+}

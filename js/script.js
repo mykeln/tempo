@@ -238,8 +238,6 @@ O5-10 - VO2 OR AC OR FTP
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
-
-
     $('#workout .activity:last').css('background', '#ACE2A7');
     $('#workout .activity').not(':last').toggle(200);
     return false;
@@ -249,6 +247,11 @@ O5-10 - VO2 OR AC OR FTP
   $("#thisweekonly").click(function() {
     $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
     return false;
+  });
+
+  $("#havepowermeter").click(function() {
+    $('#powerbests').toggle();
+
   });
 
   // rendering page-wide tooltips
