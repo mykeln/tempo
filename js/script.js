@@ -71,10 +71,6 @@ jQuery(function($) {
 
           // if the pulled shortname matches the shortname of the schedule
           if((activityShortName == tmpName)) {
-
-            console.log("made it");
-            console.log(activityShortName + scheduleYear);
-
             // setting this activity to blank
             var thisActivity = "";
 
@@ -91,22 +87,13 @@ jQuery(function($) {
               activityInfo = "None."
             }
 
-
-
             // defining the template to list the activity
             var activityTemplate = "<div class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
-
-            console.log(activityTemplate);
 
             $('#workout').append(activityTemplate);
           }
         }); // end activities each
-
-
       }
-
-
-
 
       // defining the color-coded of workouts being done on a particular week
       // l/e week 10
@@ -144,10 +131,13 @@ jQuery(function($) {
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
+    })
 
+    // NOTE: it's important to keep this here, as it executes after the data is retrieved and rendered
+    // unhiding data that is this ONLY season/week
+    ($('#workout .activity:last, #schedules tr[id^=' + thisWeek + ']').show()
 
-
-    }); // end schedules each
+    ); // end schedules each
 
 
 ////FITNESS
@@ -202,10 +192,6 @@ var myString = JSON.stringify(myObject);
 
   // updating "today's workout" header to show this week
   $('#week_num').html('WEEK ' + thisWeek);
-
-  // showing data that is this season/week
-  $('#workout .activity:last').show();
-  $('#schedules tr[id^=' + thisWeek + ']').show();
 
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');

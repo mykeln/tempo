@@ -308,10 +308,10 @@
 	},
 	"file_history":
 	[
-		"/Users/Mykel/Sites/tempo/js/script.js",
-		"/Users/Mykel/Sites/tempo/README.md",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
+		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/README.md",
 		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
@@ -466,6 +466,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"green",
+			"47-",
+			"fixme",
+			"scheduleMon",
+			"parsedActivity",
 			" <span>{</span>",
 			"thisDayRaw",
 			"thisAct",
@@ -588,12 +593,7 @@
 			"Popular Places",
 			"subscribe",
 			"space",
-			" space\"",
-			"h2 class=\"dark_colorfive\"",
-			"subscr",
-			"API Key",
-			"linkedin",
-			"staff_h4"
+			" space\""
 		],
 		"highlight": true,
 		"in_selection": false,
