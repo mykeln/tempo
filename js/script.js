@@ -187,13 +187,34 @@ jQuery(function($) {
 
 /////GENERATING FUTURE
 /*
-var myObject = new Object();
-myObject.name = "John";
-myObject.age = 12;
-myObject.pets = ["cat", "dog"];
-Afterwards stringify it via:
 
-var myString = JSON.stringify(myObject);
+logic
+=====
+
+ask user to enter the following most recent power test results:
+
+5s
+1m
+5m
+20m
+
+in each month, figure out what the weakest zone is on the power profile by counting distance from the top (and/or the amount of green cells)
+
+then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
+
+weeks
+01-04 - VO2 OR AC OR FTP
+O5-10 - VO2 OR AC OR FTP
+11-20 - VO2 OR AC
+21-35 - MAINTENANCE (no logic)
+36-39 - OFF (no logic)
+40-41 - day 1 and day 2 testing
+42-47 - TEMPO
+48-52 - FTP
+
+
+
+
 */
 
 

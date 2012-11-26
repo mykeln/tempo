@@ -14,31 +14,6 @@ challenges
 - if it's two-and-two, show both? Show one with the alternate, favoring the more recent years?
 - storing the extrapolation, so i can continue to record not just the rides i did, but what i was prescribed
 
-current bugs
+known issues
 =====
-- js/script.js:202 - rendering too early, before page is completely loaded. not showing today/this week
-
-
-logic
-=====
-
-ask user to enter the following most recent power test results:
-
-5s
-1m
-5m
-20m
-
-in each month, figure out what the weakest zone is on the power profile by counting distance from the top (and/or the amount of green cells)
-
-then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
-
-weeks
-01-04 - VO2 OR AC OR FTP
-O5-10 - VO2 OR AC OR FTP
-11-20 - VO2 OR AC
-21-35 - MAINTENANCE (no logic)
-36-39 - OFF (no logic)
-40-41 - day 1 and day 2 testing
-42-47 - TEMPO
-48-52 - FTP
+- today's workout stuck with green background when "previous years" is toggled again

@@ -1,11 +1,27 @@
 <?php include '_header.php'; ?>
 
 
-<!-- Main hero unit for a primary marketing message or call to action
+<!-- Main hero unit for a primary marketing message or call to action -->
 <div class="alert alert-info">
-  <b>Tempo</b> looks at historical workout data and extrapolates to determine future workouts. The goal is to achieve 90% of what a coach does. The inherent flaw: dynamically changing plans based on results.
+  <b>Tempo</b> is made for cyclists who use power meters. It's designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak.
 </div>
--->
+
+<!-- user setup -->
+<div id="setup" class="row">
+  <h1>Set Up Your Profile <small>help Tempo create an ideal training plan for you</small></h1>
+<form>
+  <fieldset>
+    <legend>Legend</legend>
+    <label>Label name</label>
+    <input type="text" placeholder="Type something…">
+    <span class="help-block">Example block-level help text here.</span>
+    <label class="checkbox">
+      <input type="checkbox"> Check me out
+    </label>
+    <button type="submit" class="btn">Submit</button>
+  </fieldset>
+</form>
+</div>
 
 
 <!-- today's workout -->
