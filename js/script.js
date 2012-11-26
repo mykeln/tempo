@@ -37,7 +37,6 @@ jQuery(function($) {
 
 //// SCHEDULES
     // get a list of all the historical schedules and append to list
-    // FIXME: issue here is we need the item.[name].[day].workoutname to later reference in the activities each
     $.each(data.schedules, function(i,item){
       // getting raw workout name from schedules data
       var scheduleNameRaw        = item.name;
@@ -199,15 +198,14 @@ var myString = JSON.stringify(myObject);
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
-        // showing just this week/year
-  // FIXME: rendering too early, before page is completely loaded
-  $('#workout .activity:last, #schedules tr[id^=' + thisWeek + ']').show();
-      console.log('TRYING TO SHOW JUST THIS WEEK');
-
 
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
+  // showing just this week/year
+  // FIXME: rendering too early, before page is completely loaded
+    $('#schedules tr[id^=' + thisWeek + '], #workout .activity:last').toggle();
+
     $('#workout .activity:last').css('background', '#ACE2A7');
     $('#workout .activity').not(':last').toggle(200);
     return false;
