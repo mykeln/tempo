@@ -28,20 +28,40 @@ tr.sharpen td, .label-sharpen {
   background-color: #E2DF91;
 }
 
+tr.sharpen td {
+  border-top: 1px solid #B2AC6E;
+}
+
 tr.racing, .label-racing {
   background-color: #ACE2A7;
+}
+
+tr.racing td {
+  border-top: 1px solid #81AE85;
 }
 
 tr.peak, .label-peak {
   background-color: #E2B3AF;
 }
 
+tr.peak td {
+  border-top: 1px solid #AE8C8C;
+}
+
 tr.base, .label-base {
   background-color: #CBDFE8;
 }
 
+tr.base td {
+  border-top: 1px solid #9BAAB1;
+}
+
 tr.offseason, .label-offseason {
   background-color: #DAE2E2;
+}
+
+tr.offseason td {
+  border-top: 1px solid #9BAAB1;
 }
 
 #schedules {

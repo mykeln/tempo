@@ -449,6 +449,15 @@
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
+            "name": "Test - Day 1 TRAINER (long power)",
+            "shortname": "test-day1trainerlongpower",
+            "type": "test",
+            "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
+            "desc": "This is a ramp test to failure. Start with 3 minutes ~120 watts below your estimated threshold power. Increase the power by 20 watts every 3 minutes. When you get to within 30 watts of your estimated threshold power, increase the power by 10 watts every 3 minutes. Continue increasing power by 10 watts every 3 minutes until you cannot complete 3 minutes at a level.",
+            "info": "Start at 160 watts and increase by 20 until you hit 250 watts. Then increase in 10 watt increments.",
+            "cd": "Easy spinning for 30 minutes. 100+ cadence"
+        },
+        {
             "name": "Test - Day 2 (short power)",
             "shortname": "test-day2shortpower",
             "type": "test",
@@ -5642,11 +5651,104 @@
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "endurance-basic",
-                "duration": "60m"
+                "workoutname": "test-day1trainerlongpower",
+                "duration": "120m"
             },
             "wed": {
-                "workoutname": "strength1",
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "strength2",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "150m"
+            }
+        },
+       {
+            "name": "49-12-ftp2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ftp-2x20minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "strength2",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "150m"
+            }
+        },
+       {
+            "name": "50-12-ftp3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ftp-2x20minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "strength2",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "150m"
+            }
+        },
+       {
+            "name": "51-12-test1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "strength2",
                 "duration": "90m"
             },
             "thu": {

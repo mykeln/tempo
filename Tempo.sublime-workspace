@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"ftp",
+				"ftp-3x20minutes"
+			],
+			[
+				"test",
+				"test-day1trainerlongpower"
+			],
+			[
 				"tes",
 				"test-day1longpower"
 			],
 			[
 				"schedue",
 				"scheduleName"
-			],
-			[
-				"test",
-				"test-day2shortpower"
 			],
 			[
 				"run",
@@ -171,6 +175,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "data/workouts.js",
+			"settings":
+			{
+				"buffer_size": 224819,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -309,11 +321,11 @@
 	"file_history":
 	[
 		"/Users/Mykel/Sites/tempo/css/style.css",
-		"/Users/Mykel/Sites/tempo/_header.php",
-		"/Users/Mykel/Sites/tempo/README.md",
+		"/Users/Mykel/Sites/tempo/js/script.js",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/index.php",
-		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/_header.php",
+		"/Users/Mykel/Sites/tempo/README.md",
 		"/Users/Mykel/Sites/tempo/_footer.php",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
@@ -729,8 +741,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "data/workouts.js",
+					"settings":
+					{
+						"buffer_size": 224819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184901,
+								184901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 146475.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
