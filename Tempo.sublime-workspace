@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"ftp",
-				"ftp-3x20minutes"
+				"test",
+				"test-day1longpower"
 			],
 			[
-				"test",
-				"test-day1trainerlongpower"
+				"stre",
+				"strength2"
+			],
+			[
+				"ftp",
+				"ftp-2x10minutes"
 			],
 			[
 				"tes",
@@ -175,14 +179,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "data/workouts.js",
-			"settings":
-			{
-				"buffer_size": 224819,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -320,10 +316,12 @@
 	},
 	"file_history":
 	[
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
+		"/Users/Mykel/Sites/tempo/data/2013.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/js/script.js",
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/index.php",
+		"/Users/Mykel/Sites/tempo/workouts.numbers",
 		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/README.md",
 		"/Users/Mykel/Sites/tempo/_footer.php",
@@ -445,9 +443,7 @@
 		"/Users/Mykel/Dropbox/Localist - Marketing/main_contacts.csv",
 		"/Users/Mykel/Desktop/main_contacts.csv",
 		"/Users/Mykel/Localist/app/views/newsletter_mailer/checking_in.erb",
-		"/Users/Mykel/Localist/app/platforms/biopark/views/layouts/_base_layout.html.erb",
-		"/Users/Mykel/Localist/app/views/admin/welcome/index.html.erb",
-		"/Users/Mykel/Localist/app/views/facebook/welcome.html.erb"
+		"/Users/Mykel/Localist/app/platforms/biopark/views/layouts/_base_layout.html.erb"
 	],
 	"find":
 	{
@@ -478,6 +474,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-vo2",
+			"12-vo21",
+			"11-vo21",
+			"-12-vo2",
+			"vo21",
+			"vo2-1",
+			"vo2",
+			"Linked Account",
 			"fixme",
 			"green",
 			"47-",
@@ -597,15 +601,7 @@
 			"quote_block",
 			"noscript",
 			"optimizer",
-			"utmx_section",
-			"currency",
-			"Currency",
-			"forma",
-			"formatcurrency",
-			"App store",
-			"Popular Places",
-			"subscribe",
-			"space"
+			"utmx_section"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -741,37 +737,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "data/workouts.js",
-					"settings":
-					{
-						"buffer_size": 224819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								184901,
-								184901
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 146475.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -816,6 +783,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"2013",
+				"data/2013.js"
+			],
 			[
 				"towson.sc",
 				"stylesheets/sass/towson.scss"
@@ -1323,10 +1294,6 @@
 			[
 				"georgetown.scs",
 				"stylesheets/sass/georgetown.scss"
-			],
-			[
-				"_ingest",
-				"views/layouts/_ingest_layout.html.erb"
 			]
 		],
 		"width": 0.0

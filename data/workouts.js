@@ -183,7 +183,7 @@
             "shortname": "ftp-2x20minutes",
             "type": "bike",
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
-            "desc": "Complete 2 x 20 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
+            "desc": "Complete 2 x 20 minutes in the lower half of your threhold power zone. In each interval, alternate 2 minutes in the lower half of your threshold zone with 2 minutes in the upper half of your threshold zone. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -210,7 +210,7 @@
             "shortname": "ftp-3x20minutes",
             "type": "bike",
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
-            "desc": "Complete 3 x 20 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 20 minutes at 50% of the power of the preceding effort.",
+            "desc": "Complete 3 x 20 minutes in the lower half of your threhold power zone. During the first interval, increase the level of effort by 50% for 10 seconds every 2 minutes. Recover between intervals by riding for 20 minutes at 50% of the power of the preceding effort.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -467,6 +467,15 @@
             "cd": "Easy spinning for 30 minutes. 100+ cadence"
         },
         {
+            "name": "Test - Day 2 (peak power)",
+            "shortname": "test-day2peakpower",
+            "type": "test",
+            "wu": "Get in a good warm-up by riding for 20 - 30 mintues working your way up to your endurance zone over the first 15 minutes and then including a 5 minutes ramp up to FTP increasing the watts 10 - 20 every minute. Cruise in your endurance zone for 5 minutes before starting the test.",
+            "desc": "Start by riding for 3 minutes at 100 watts. After the first 3 minutes, increase the power by 20 watts every 1 minute. Increase the power by 10 watts after you have reached your FTP. Keep going until you cannot successfully finish 3 minutes at a particular wattage.",
+            "info": "",
+            "cd": "Easy spinning for 30 minutes. 100+ cadence"
+        },
+        {
             "name": "VO2 - 3 minutes",
             "shortname": "vo2-3minutes",
             "type": "bike",
@@ -525,7 +534,7 @@
             "shortname": "vo2-ladder1-4minutes",
             "type": "bike",
             "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
-            "desc": "Cruise for 5 minutes before starting these intervalsComplete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 mintues off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
+            "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 mintues off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         }
@@ -5763,1621 +5772,226 @@
                 "workoutname": "test-day1longpower",
                 "duration": "150m"
             }
-        }
-    ],
-    "blocks": [
-        {
-            "name": "",
+        },
+       {
+            "name": "52-12-test2",
             "sun": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "endurance-basic",
+                "duration": "150m"
             },
             "mon": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "strength1",
+                "duration": "90m"
             },
             "tue": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "easy-off",
+                "duration": "60m"
             },
             "wed": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "peak-vo2acstepups",
+                "duration": "90m"
             },
             "thu": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "strength1",
+                "duration": "90m"
             },
             "fri": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "raceprep",
+                "duration": "60m"
             },
             "sat": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "test-day2shortpower",
+                "duration": "120m"
+            }
+        },
+       {
+            "name": "01-13-ftp1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150m"
+            }
+        },
+       {
+            "name": "02-13-ftp2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150m"
+            }
+        },
+       {
+            "name": "03-13-ftp3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ftp-2x20minutes",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "ftp-2x20minutes",
+                "duration": "75m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150m"
             }
         },
         {
-            "name": "",
+            "name": "04-13-test1",
             "sun": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
             },
             "mon": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "easy-off",
+                "duration": "60m"
             },
             "tue": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "endurance-basic",
+                "duration": "90m"
             },
             "wed": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "strength1",
+                "duration": "75m"
             },
             "thu": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "easy-off",
+                "duration": "60m"
             },
             "fri": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "racepreptt",
+                "duration": "90m"
             },
             "sat": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "test-day1longpower",
+                "duration": "150m"
             }
         },
         {
-            "name": "",
+            "name": "05-13-testpeak",
             "sun": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
             },
             "mon": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "easy-off",
+                "duration": "60m"
             },
             "tue": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "raceprep",
+                "duration": "90m"
             },
             "wed": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "test-day2peakpower",
+                "duration": "75m"
             },
             "thu": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "endurance-basic",
+                "duration": "60m"
             },
             "fri": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "easy-off",
+                "duration": "90m"
             },
             "sat": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "ac-racewinners",
+                "duration": "150m"
             }
         },
         {
-            "name": "",
+            "name": "06-13-vo21",
             "sun": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "endurance-groupride",
+                "duration": "120m"
             },
             "mon": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "strength2",
+                "duration": "120m"
             },
             "tue": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "vo2-3minutes",
+                "duration": "105m"
             },
             "wed": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "vo2-ladder1-4minutes",
+                "duration": "120m"
             },
             "thu": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "easy-off",
+                "duration": "60m"
             },
             "fri": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "strengthcore",
+                "duration": "60m"
             },
             "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
-            }
-        },
-        {
-            "name": "",
-            "sun": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "mon": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "tue": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "wed": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "thu": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "fri": {
-                "workoutname": "",
-                "duration": ""
-            },
-            "sat": {
-                "workoutname": "",
-                "duration": ""
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180m"
             }
         }
+
+
     ],
 
     "fitness": [
