@@ -6,7 +6,7 @@
   <b>Tempo</b> is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.
 </div>
 
-<!-- user setup -->
+<!-- user setup
 <div id="setup" class="row">
   <h1>Set Up Your Profile <small>help Tempo create an ideal training plan for you</small></h1>
 
@@ -42,9 +42,9 @@
         </label>
       </div>
     </div>
-
+-->
   <!-- power test results -->
-  <!-- make it so these can dynamically pop up when needed -->
+  <!-- make it so these can dynamically pop up when needed
   <div id="powerbests">
     <div class="control-group" id="s5">
       <label class="control-label" for="input5s">5-Second Power</label>
@@ -76,25 +76,8 @@
 
   </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
+-->
 
 <!-- today's workout -->
 <div id="workout" class="row">
@@ -158,7 +141,7 @@
 
 <!-- fitness -->
 <div id="fitness" class="row">
-  <h1>Fitness <small>current fitness level for <b></b></small></h1>
+  <h1>Fitness <small>current fitness level for <b id="athlete_name"></b></small></h1>
 
   <div class="span6">
     <h3>Power Profile <a href="#" rel="tooltip" title="based on your entered weight">?</a></h3>

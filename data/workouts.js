@@ -4,7 +4,18 @@
             "name": "Mykel Nahorniak",
             "weight": "145"
         }
-
+    ],
+    "fitness": [
+        {
+            "1s": "1502",
+            "5s": "1390",
+            "30s": "908",
+            "1m": "550",
+            "5m": "380",
+            "10m": "303",
+            "20m": "290",
+            "FTP": "280"
+        }
     ],
     "activities": [
         {
@@ -537,92 +548,6 @@
             "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 mintues off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
-        }
-    ],
-    "schedule": [
-        {
-            "name": "jan",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "feb",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "mar",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "apr",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "may",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "jun",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "jul",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "aug",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "sep",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "oct",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "nov",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
-        },
-        {
-            "name": "dec",
-            "week1": "",
-            "week2": "",
-            "week3": "",
-            "week4": ""
         }
     ],
     "schedules": [
@@ -5989,21 +5914,6 @@
                 "workoutname": "vo2-3minuteshills",
                 "duration": "180m"
             }
-        }
-
-
-    ],
-
-    "fitness": [
-        {
-            "1s": "1502",
-            "5s": "1390",
-            "30s": "908",
-            "1m": "550",
-            "5m": "380",
-            "10m": "303",
-            "20m": "290",
-            "FTP": "280"
         }
     ]
 }

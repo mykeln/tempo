@@ -8,7 +8,7 @@
 
   var thisYear = Date.today().getYear().toString().slice(1);
   var thisMonth = Date.today().getMonth();
-  var thisWeek = Date.today().getWeek();
+  var thisWeek = Date.today().getISOWeek();
   var thisDayRaw = Date.today().toString('ddd');
   var thisDay = thisDayRaw.toLowerCase();
 
@@ -16,8 +16,6 @@
 function compareNum(a,b){
   return (a < b ? this >= a && this <= b : this >= b && this <= a);
 }
-
-
 
 jQuery(function($) {
 //// CALENDAR
@@ -32,6 +30,8 @@ jQuery(function($) {
 
       // getting athlete name
       athleteName = item.name;
+
+      $('#athlete_name').html(athleteName);
     }); // end config each
 
 
@@ -225,9 +225,6 @@ O5-10 - VO2 OR AC OR FTP
 
 
 ////RENDERING
-  // plopping in athlete name near bottom
-  $('#fitness h1 small b').append(athleteName);
-
   // updating "today's workout" header to show this week
   $('#week_num').html('WEEK ' + thisWeek);
 
