@@ -163,6 +163,15 @@
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
+            "name": "Bursts - FTP 2x20 Minutes with Bursts",
+            "shortname": "bursts-2x20minutes",
+            "type": "bike",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "desc": "Complete 2 x 20 minutes in the lower half of your threshold power zone. Every 10 minutes, include an 8 second all out burst. Jump hard with high cadence. Only 8 seconds. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
+            "info": "",
+            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+        },
+        {
             "name": "Endurance - Basic + Attacks",
             "shortname": "endurance-basic+attacks",
             "type": "bike",
@@ -5802,15 +5811,15 @@
                 "duration": "60m"
             },
             "tue": {
-                "workoutname": "ftp-2x20minutes",
+                "workoutname": "bursts-2x20minutes",
                 "duration": "120m"
             },
             "wed": {
-                "workoutname": "bursts-basicbursts",
+                "workoutname": "bursts-2x20minutes",
                 "duration": "90m"
             },
             "thu": {
-                "workoutname": "ftp-2x20minutes",
+                "workoutname": "bursts-2x20minutes",
                 "duration": "75m"
             },
             "fri": {
@@ -5885,34 +5894,282 @@
             }
         },
         {
-            "name": "06-13-vo21",
+            "name": "07-13-vo21",
             "sun": {
                 "workoutname": "endurance-groupride",
-                "duration": "120m"
+                "duration": "180m"
             },
             "mon": {
-                "workoutname": "strength2",
-                "duration": "120m"
+                "workoutname": "strength3",
+                "duration": "60m"
             },
             "tue": {
                 "workoutname": "vo2-3minutes",
-                "duration": "105m"
+                "duration": "90m"
             },
             "wed": {
-                "workoutname": "vo2-ladder1-4minutes",
-                "duration": "120m"
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90m"
             },
             "thu": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90m"
+            },
+            "fri": {
                 "workoutname": "easy-off",
                 "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180m"
+            }
+        },
+        {
+            "name": "08-13-vo22",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180m"
+            }
+        },
+        {
+            "name": "09-13-vo23",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180m"
+            }
+        },
+        {
+            "name": "10-13-vo24",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180m"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "vo2-ladder1-4minutes",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180m"
+            }
+        },
+        {
+            "name": "11-13-endurance",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150m"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "wed": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "thu": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120m"
+            }
+        },
+        {
+            "name": "12-13-ac1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150m"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90m"
             },
             "fri": {
                 "workoutname": "strengthcore",
                 "duration": "60m"
             },
             "sat": {
-                "workoutname": "vo2-3minuteshills",
-                "duration": "180m"
+                "workoutname": "ac-30seconds",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "13-13-ac2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "14-13-ac3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "15-13-test2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "75m"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "75m"
+            },
+            "thu": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "fri": {
+                "workoutname": "raceprep",
+                "duration": "90m"
+            },
+            "sat": {
+                "workoutname": "test-day2shortpower",
+                "duration": "120m"
             }
         }
     ]

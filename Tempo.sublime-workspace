@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ath",
+				"athleteName"
+			],
+			[
 				"test",
 				"test-day1longpower"
 			],
@@ -316,11 +320,11 @@
 	},
 	"file_history":
 	[
+		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/data/2013.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
-		"/Users/Mykel/Sites/tempo/js/script.js",
-		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/workouts.numbers",
 		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/README.md",
@@ -451,7 +455,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 115.0,
 		"where_history":
 		[
 			"",
@@ -474,6 +478,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Set up",
+			"athleteName",
+			"current fitness level for",
+			"color",
+			"schedule",
 			"-vo2",
 			"12-vo21",
 			"11-vo21",
@@ -596,12 +605,7 @@
 			"Leading ",
 			"next_steps",
 			"text_field_tag 'organization'",
-			"FUll Name",
-			"Organization",
-			"quote_block",
-			"noscript",
-			"optimizer",
-			"utmx_section"
+			"FUll Name"
 		],
 		"highlight": true,
 		"in_selection": false,
