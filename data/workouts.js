@@ -5894,7 +5894,7 @@
             }
         },
         {
-            "name": "07-13-vo21",
+            "name": "06-13-vo21",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5925,7 +5925,7 @@
             }
         },
         {
-            "name": "08-13-vo22",
+            "name": "07-13-vo22",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5956,7 +5956,7 @@
             }
         },
         {
-            "name": "09-13-vo23",
+            "name": "08-13-vo23",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -5987,7 +5987,7 @@
             }
         },
         {
-            "name": "10-13-vo24",
+            "name": "09-13-vo24",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "180m"
@@ -6018,7 +6018,7 @@
             }
         },
         {
-            "name": "11-13-endurance",
+            "name": "10-13-endurance",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -6049,7 +6049,7 @@
             }
         },
         {
-            "name": "12-13-ac1",
+            "name": "11-13-ac1",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "150m"
@@ -6080,38 +6080,7 @@
             }
         },
         {
-            "name": "13-13-ac2",
-            "sun": {
-                "workoutname": "endurance-groupride",
-                "duration": "210m"
-            },
-            "mon": {
-                "workoutname": "strengthcore",
-                "duration": "60m"
-            },
-            "tue": {
-                "workoutname": "ac-30seconds",
-                "duration": "90m"
-            },
-            "wed": {
-                "workoutname": "endurance-basic",
-                "duration": "90m"
-            },
-            "thu": {
-                "workoutname": "sprints-stompsprintsstanding",
-                "duration": "90m"
-            },
-            "fri": {
-                "workoutname": "strengthcore",
-                "duration": "60m"
-            },
-            "sat": {
-                "workoutname": "ac-30seconds",
-                "duration": "150m"
-            }
-        },
-        {
-            "name": "14-13-ac3",
+            "name": "12-13-ac2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"
@@ -6142,7 +6111,38 @@
             }
         },
         {
-            "name": "15-13-test2",
+            "name": "13-13-ac3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210m"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90m"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90m"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90m"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60m"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150m"
+            }
+        },
+        {
+            "name": "14-13-test2",
             "sun": {
                 "workoutname": "endurance-groupride",
                 "duration": "210m"

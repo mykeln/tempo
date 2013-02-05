@@ -321,8 +321,8 @@
 	"file_history":
 	[
 		"/Users/Mykel/Sites/tempo/js/script.js",
-		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
+		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/data/2013.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/workouts.numbers",
@@ -455,7 +455,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 115.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",
@@ -478,6 +478,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-endurance",
+			"30x30",
+			"endurance-bas",
 			"Set up",
 			"athleteName",
 			"current fitness level for",
@@ -602,10 +605,7 @@
 			"blob_recr",
 			"blob_newsletter",
 			"blob_iphone",
-			"Leading ",
-			"next_steps",
-			"text_field_tag 'organization'",
-			"FUll Name"
+			"Leading "
 		],
 		"highlight": true,
 		"in_selection": false,
