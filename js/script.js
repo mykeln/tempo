@@ -75,6 +75,11 @@ jQuery(function($) {
           var activityInfo          = item.info;
           var activityCooldown      = item.cd;
 
+          // rendering library information
+          var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
+
+          $('#library').append(libraryTemplate);
+
           // if the pulled shortname matches the shortname of the schedule
           if((activityShortName == calendarShortName)) {
             // setting this activity to blank
@@ -131,7 +136,7 @@ jQuery(function($) {
       }
 
       // defining the template to list the schedule
-      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'>" + scheduleMon + "</td><td id='" + scheduleName + "_tue'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'>" + scheduleSun + "</td></tr>";
+      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td id='" + thisWeek + "'>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
@@ -181,6 +186,10 @@ jQuery(function($) {
     if ($('#workout .activity:last').length > 0){
       $('#workout .activity:last').show();
     }
+
+
+
+
 
   }); // end get json call
 

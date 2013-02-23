@@ -1,11 +1,5 @@
 <?php include '_header.php'; ?>
 
-
-<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="alert alert-info">
-  <b>Tempo</b> is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.
-</div>
-
 <!-- user setup
 <div id="setup" class="row">
   <h1>Set Up Your Profile <small>help Tempo create an ideal training plan for you</small></h1>
@@ -106,7 +100,7 @@
 
 <!-- calendar -->
 <div id="calendar" class="row">
-  <h1>Calendar <small>rundown of workout history at-a-glance</small></h1>
+  <h1>Calendar <small>workout history</small></h1>
   <span class="label label-offseason">Chill</span>
   <span class="label label-sharpen">Sharpening</span>
   <span class="label label-racing">Racing Season</span>
@@ -133,16 +127,28 @@
 
   <a id="thisweekonly" class="btn btn-mini" href="">workout history</a>
 
+</div>
+
+<hr class="soften">
+
+
+<!-- workout library -->
+<div class="row">
+  <h1>Workout Library</h1>
+</div>
+
+<div id="library" class="span12">
+
 
 </div>
+
 
 <hr class="soften">
 
 
 <!-- fitness -->
 <div id="fitness" class="row">
-  <h1>Fitness <small>current fitness level for <b id="athlete_name"></b></small></h1>
-
+  <h1>Fitness <small id="athlete_name"></small></h1>
   <div class="span6">
     <h3>Power Profile <a href="#" rel="tooltip" title="based on your entered weight">?</a></h3>
     <table class="table table-striped">

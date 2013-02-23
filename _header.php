@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -29,22 +29,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Tempo</a>
-          <ul class="nav">
-            <li><a href="#workout">Today</a></li>
-            <li><a href="#calendar">Calendar</a></li>
-            <li><a href="#fitness">Power Profile</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
+  <h1 id="logo">Tempo</h1>
+
+  <div class="container">
