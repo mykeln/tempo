@@ -131,21 +131,6 @@
 
 <hr class="soften">
 
-
-<!-- workout library -->
-<div class="row">
-  <h1>Workout Library</h1>
-</div>
-
-<div id="library" class="span12">
-
-
-</div>
-
-
-<hr class="soften">
-
-
 <!-- fitness -->
 <div id="fitness" class="row">
   <h1>Fitness <small id="athlete_name"></small></h1>
@@ -216,6 +201,16 @@
     </table>
 
   </div>
+
+</div>
+
+<hr class="soften">
+
+<!-- workout library -->
+<div id="library" class="row">
+  <h1>Workout Library</h1>
+
+
 </div>
 
 <? include '_footer.php'; ?>
