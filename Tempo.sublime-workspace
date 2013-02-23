@@ -320,15 +320,15 @@
 	},
 	"file_history":
 	[
-		"/Users/Mykel/Sites/tempo/_header.php",
+		"/Users/Mykel/Sites/tempo/_footer.php",
 		"/Users/Mykel/Sites/tempo/css/style.css",
-		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/js/script.js",
 		"/Users/Mykel/Sites/tempo/index.php",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
+		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/data/2013.js",
 		"/Users/Mykel/Sites/tempo/workouts.numbers",
 		"/Users/Mykel/Sites/tempo/README.md",
-		"/Users/Mykel/Sites/tempo/_footer.php",
 		"/Users/Mykel/Sites/tempo/data/shortnames.txt",
 		"/Users/Mykel/Sites/tempo/css/bootstrap.min.css",
 		"/Users/Mykel/Localist/app/platforms/dclinktank/views/event/view.html.erb",
@@ -478,6 +478,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"test",
+			"warm up",
 			"-endurance",
 			"30x30",
 			"endurance-bas",
@@ -603,14 +605,12 @@
 			"have.png",
 			"chalkboard",
 			"blob_recr",
-			"blob_newsletter",
-			"blob_iphone",
-			"Leading "
+			"blob_newsletter"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			"",

@@ -140,7 +140,7 @@
             "shortname": "bigblock-vo2",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
-            "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes find a hill or hills that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain a hard pace for at least 2. 30 then it is time to head home.",
+            "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes find a hill or hills that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval.\nComplete 7 - 10 intervals.\nOnce you are unable to maintain a hard pace for at least 2. 30 then it is time to head home.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -464,7 +464,7 @@
             "shortname": "test-day1longpower",
             "type": "test",
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
-            "desc": "We are going for average power during each intervalRide easy for 5 minutesGo as hard as you can for 20 minutes. Recover for 20 - 30 minutesDo it again and see if you can get a better result",
+            "desc": "We are going for average power during each interval.\n\n- Ride easy for 5 minutes.\n\n- Go as hard as you can for 20 minutes.\n\n\- Recover for 20 - 30 minutes.\n\n- Do it again and see if you can get a better result",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -482,7 +482,7 @@
             "shortname": "test-day2shortpower",
             "type": "test",
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
-            "desc": "For each of the efforts below, you are going for average power for the entire interval. 1) Ride easy for 5 minutes2) 5 minutes all out. Really hammer and give it a last gun in the last 45 seconds. 3) 10 minutes easy spinning4) 2 minutes all out. Really nail it for the entire 2 minutes like you are going for the gold. 5) 5 minutes easy spinning6) 2 minutes all out. 7) 5 minutes easy spinning8) 1 minute all out. Really hit these hard for the whole minute. 9) 5 minutes easy spinning10) 1 minute all out. 11) 5 minutes easy spinning12) 30 seconds Super intense13) 5 minutes easy spinning14) 30 seconds as hard as you can go. 15) 2 minutes easy spinning16) 12-second super strong sprint. Raise the max watts. 17) 2 minutes easy spinning18) One last 12-second sprint. Give it all you got.",
+            "desc": "For each of the efforts below, you are going for average power for the entire interval.\n\n1) Ride easy for 5 minutes\n\n2) 5 minutes all out. Really hammer and give it a last gun in the last 45 seconds.\n\n3) 10 minutes easy spinning\n\n4) 2 minutes all out. Really nail it for the entire 2 minutes like you are going for the gold.\n\n5) 5 minutes easy spinning\n\n6) 2 minutes all out.\n\n7) 5 minutes easy spinning\n\n8) 1 minute all out. Really hit these hard for the whole minute.\n\n9) 5 minutes easy spinning\n\n10) 1 minute all out.\n\n11) 5 minutes easy spinning\n\n12) 30 seconds super intense\n\n13) 5 minutes easy spinning\n\n14) 30 seconds as hard as you can go.\n\n15) 2 minutes easy spinning\n\n16) 12-second super strong sprint. Raise the max watts.\n\n17) 2 minutes easy spinning\n\n18) One last 12-second sprint. Give it all you got.",
             "info": "",
             "cd": "Easy spinning for 30 minutes. 100+ cadence"
         },
@@ -509,7 +509,7 @@
             "shortname": "vo2-3minuteshills",
             "type": "bike",
             "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
-            "desc": "Find a hill that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain a hard pace for at least 2. 30 then it is time to head home.",
+            "desc": "Find a hill that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval.\nComplete 7 - 10 intervals.\nOnce you are unable to maintain a hard pace for at least 2 minutes then it is time to head home.",
             "info": "Really try to hit test like a workout. find a hill that you can do repeats on. It does not have to be super steep, just a steady grade. If you cant find a hill, then do them on the flats but get that power up to 300 and hold it.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },

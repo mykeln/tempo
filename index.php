@@ -1,11 +1,5 @@
 <?php include '_header.php'; ?>
 
-
-<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="alert alert-info">
-  <b>Tempo</b> is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.
-</div>
-
 <!-- user setup
 <div id="setup" class="row">
   <h1>Set Up Your Profile <small>help Tempo create an ideal training plan for you</small></h1>
@@ -81,9 +75,10 @@
 
 <!-- today's workout -->
 <div id="workout" class="row">
-  <h1>Today's Workout <small id="week_num"></small></h1>
-</div>
+  <h1>Today's Workout <small id="week_num"></small><small></h1>
 
+</div>
+<a id="thisyearonly" href="">previous years</a>
 
 <div class="span12">
   <div class="activities">
@@ -93,9 +88,6 @@
   <div class="weeks">
 
   </div>
-
-  <a id="thisyearonly" class="btn btn-mini" href="">previous years</a>
-
 </div>
 
 

@@ -94,7 +94,7 @@ jQuery(function($) {
             }
 
             // defining the template to list the activity
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><pre>" + activityWarmup + "</pre><h6>Workout</h6><pre>" + activityDesc + "</pre><h6 class='activity_info'>Coach Comments</h6><pre>" + activityInfo + "</pre><h6>Cool Down</h6><pre>" + activityCooldown + "</pre></div>";
 
             $('#workout').append(activityTemplate);
           }
