@@ -11,6 +11,16 @@
   var thisWeek = Date.today().getISOWeek();
   var thisDayRaw = Date.today().toString('ddd');
   var thisDay = thisDayRaw.toLowerCase();
+  var thisNumDayRaw = Date.today().getDay();
+  var thisNumDay = thisNumDayRaw + 3;
+
+  // because sunday is "end of week" according to tempo, but is "beginning of week" to jquery,
+  // hardcoding sunday to be the 10th column
+  if (thisNumDayRaw == 0) {
+    thisNumDay = 10;
+  }
+
+  console.log('today is ' + thisNumDay);
 
 //// UTILITY FUNCTIONS
 function compareNum(a,b){
@@ -99,7 +109,7 @@ jQuery(function($) {
             }
 
             // defining the template to list the activity
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " ('" + scheduleYear + " season)</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " <span>(20" + scheduleYear + " season)</span></h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
 
             $('#workout').append(activityTemplate);
           }
@@ -187,8 +197,10 @@ jQuery(function($) {
       $('#workout .activity:last').show();
     }
 
-
-
+  // hiding schedule columns that don't apply
+  $('#full_schedule').columnManager();
+  $('#full_schedule').hideColumns([0,1,2,4,5,6,7,8,9,10]);
+  $('#full_schedule').showColumns([thisNumDay, (thisNumDay + 1)]);
 
 
   }); // end get json call
@@ -252,6 +264,10 @@ O5-10 - VO2 OR AC OR FTP
   // showing all schedules
   $("#thisweekonly").click(function() {
     $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
+
+    $('#full_schedule').showColumns([0,1,2,4,5,6,7,8,9,10]);
+
+
     return false;
   });
 

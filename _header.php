@@ -12,7 +12,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-  <link rel="apple-touch-startup-image" href="startup.png" />
+  <link rel="apple-touch-startup-image" href="startup.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image"/>
+  <link rel="apple-touch-startup-image" href="startup-iphone4.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/>
 
   <link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-ipad.png" />
@@ -31,6 +32,7 @@
   <script src="js/libs/bootstrap/popover.js"></script>
   <script src="js/libs/bootstrap/tooltip.js"></script>
   <script src="js/libs/mustache.js"></script>
+  <script src="js/libs/jquery.columnmanager.min.js"></script>
 
   <!-- custom javascript -->
   <script src="js/script.js"></script>

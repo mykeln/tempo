@@ -10,6 +10,7 @@ body {
 
 h1 {
   font-size: 24px;
+  margin-top: 0;
 }
 
   h1 small {
@@ -19,11 +20,21 @@ h1 {
   }
 
   h1#logo {
-    background: url(../img/logo.png) 40px 20px;
+    background: #222 url(../img/logo.png) no-repeat 0px 0px;
     text-indent: -9999px;
     margin-top: 0;
     line-height: 60px;
+    -webkit-border-radius: 2px;
+  }
 
+h2 {
+  line-height: 17px;
+}
+
+  h2 span {
+    font-size: 10px;
+    display: block;
+    font-weight: normal;
   }
 
 h3 {
@@ -89,4 +100,19 @@ tr.offseason, .label-offseason {
 
 #powerbests {
   display: none;
+}
+
+
+/* responsive code */
+@media only screen and (max-width: 767px) {
+
+.label {
+  font-size: 6px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+}
+
+
+
 }

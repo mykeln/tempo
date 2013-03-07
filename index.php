@@ -104,10 +104,10 @@
   <span class="label label-offseason">Chill</span>
   <span class="label label-sharpen">Sharpening</span>
   <span class="label label-racing">Racing Season</span>
-  <span class="label label-peak">Peak Week(s)</span>
+  <span class="label label-peak">Peak Week</span>
   <span class="label label-base">Base</span>
 
-  <table class="table table-condensed">
+  <table id="full_schedule" class="table table-condensed">
     <thead>
       <th>Type</th>
       <th>Week</th>
@@ -125,7 +125,7 @@
     </tbody>
   </table>
 
-  <a id="thisweekonly" class="btn btn-mini" href="">workout history</a>
+  <a id="thisweekonly" class="btn btn-mini" href="">toggle full calendar</a>
 
 </div>
 
