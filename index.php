@@ -134,20 +134,6 @@
 <!-- fitness -->
 <div id="fitness" class="row">
   <h1>Fitness <small id="athlete_name"></small></h1>
-  <div class="span6">
-    <h3>Power Profile <a href="#" rel="tooltip" title="based on your entered weight">?</a></h3>
-    <table class="table table-striped">
-      <thead>
-        <th>Interval</th>
-        <th>Power</th>
-        <th>w/Kg</th>
-      </thead>
-      <tbody id="profile">
-
-      </tbody>
-    </table>
-
-  </div>
 
   <div class="span6">
     <h3>Power Class <a href="#" rel="tooltip" title="based on standard power profile chart by Coggan">?</a></h3>
@@ -197,6 +183,21 @@
         <tr><td>CAT5</td><td>11.94</td><td>6.40</td><td>3.02</td><td>2.58</td></tr>
         <tr><td>CAT5</td><td>11.60</td><td>6.25</td><td>2.88</td><td>2.46</td></tr>
         <tr><td><b>CAT5</b></td><td>11.26</td><td>6.10</td><td>2.74</td><td>2.34</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+
+    <div class="span6">
+    <h3>Power Profile <a href="#" rel="tooltip" title="based on your entered weight">?</a></h3>
+    <table class="table table-striped">
+      <thead>
+        <th>Interval</th>
+        <th>Power</th>
+        <th>w/Kg</th>
+      </thead>
+      <tbody id="profile">
+
       </tbody>
     </table>
 
