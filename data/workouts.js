@@ -49,7 +49,7 @@
             "name": "AC - 30 - 60 seconds",
             "shortname": "ac-30-60seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 30 seconds with 5 minutes between intervals. Spin easy for 5 minutes. Complete 3 x 45 seconds with 5 mintues between intervalsSpin easy for 5 minutes. Complete 3 x 60 seconds with 5 minutes between intervals.",
             "info": "Target power is your best 45 seconds. 535 watts. You can do these on the trainer. Just wind into them. Really need to stay with the target power for all of these. We want to stretch the capacity which not only doing lots hard but doing them longer. Aim for 575 for all of them. Don't do the 30s too hard otherwise you will not be able to do the 60s.",
             "cd": "Cool down with easy spinning in your endurance and active recovery zones."
@@ -58,7 +58,7 @@
             "name": "AC - 30 seconds",
             "shortname": "ac-30seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 30 seconds with 5 minutes between intervals stepping your way up to the target power. Complete up to 10 more intervals of 30 seconds each at the target power with 5 minutes of recovery between effort. Stop when you cannot hold the target power for 20 seconds.",
             "info": "Target for these is based on your best 45 second power. Step in to this hitting the first 3 at 450, 500 and 540. Then try to keep it above 550 for the rest of the efforts. Stop if you cannot stay over 550 for at least 20 seconds. Recovery should be pretty complete between efforts.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -67,7 +67,7 @@
             "name": "AC - 3x30 seconds",
             "shortname": "ac-3x30seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 30 seconds with 5 minutes between intervals stepping your way up to the target power. Complete 15 - 20 repeats of 30 seconds at target power and then 30 seconds of easy spinning. Stop when you cannot hold the target power for at least 20 seconds.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -76,7 +76,7 @@
             "name": "AC - 45 seconds",
             "shortname": "ac-45seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 45 seconds with 5 minutes between intervals stepping your way up to the target power. Complete up to 10 more intervals of 45 seconds each at the target power with 5 minutes of recovery between effort. Stop when you cannot hold the target power for 20 seconds.",
             "info": "Power target is 500 - 535 watts. Step up over the first 3 at 400, 450, 475 and then see if you can do the rest at 500 or better.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -166,7 +166,7 @@
             "name": "Bursts - FTP 2x20 Minutes with Bursts",
             "shortname": "bursts-2x20minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 20 minutes in the lower half of your threshold power zone. Every 10 minutes, include an 8 second all out burst. Jump hard with high cadence. Only 8 seconds. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -193,7 +193,7 @@
             "name": "FTP - 2x10 minutes",
             "shortname": "ftp-2x10minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 10 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at or just below your balance point wattage.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -202,7 +202,7 @@
             "name": "FTP - 2x20 minutes",
             "shortname": "ftp-2x20minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 20 minutes in the lower half of your threhold power zone. In each interval, alternate 2 minutes in the lower half of your threshold zone with 2 minutes in the upper half of your threshold zone. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -211,7 +211,7 @@
             "name": "FTP - 3x10 minutes",
             "shortname": "ftp-3x10minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 10 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at 50% of the power of the preceding effort.",
             "info": "Maintain 260 - 270 watt range.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -220,7 +220,7 @@
             "name": "FTP - 3x15 minutes",
             "shortname": "ftp-3x15minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 15 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at 50% of the power of the preceding effort.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -229,7 +229,7 @@
             "name": "FTP - 3x20 minutes",
             "shortname": "ftp-3x20minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 20 minutes in the lower half of your threhold power zone. During the first interval, increase the level of effort by 50% for 10 seconds every 2 minutes. Recover between intervals by riding for 20 minutes at 50% of the power of the preceding effort.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -238,7 +238,7 @@
             "name": "FTP - 5x3 minutes",
             "shortname": "ftp-5x3minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 Sets of 5 x 3 minutes your tempolower threhold power zones. Between each interval, ride for 2 minutes at in the middle of your endurance zoneBetween sets, ride for 5 minutes in your endurance zone.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -256,7 +256,7 @@
             "name": "Peak - VO2 + AC Step-Ups",
             "shortname": "peak-vo2acstepups",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Cruise for 5 minutes before starting these intervalsComplete the following sequence aiming to average in your VO2max or higher zones for each. 3 x 3 minutes in upper threshold with 1 minute between intervals in your endurance zone. 5 minutes endurance4 x 2 minutes in your upper thresholdVO2max zone with 1 minute between intervals in your endurance zone. 5 minutes endurance. 5 x 1 minute in your AC zone with 1 minute between intervals in your endurance zone. 5 minutes endurance10 x 4030. Do what you can. 40 seconds at Vo2max 30 seconds at 70%.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -266,7 +266,7 @@
             "shortname": "raceprep",
             "type": "bike",
             "wu": "None.",
-            "desc": "Ride 60 - 90 minutes mostly in your endurance zone. Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minutes each with at least 2 minutes of recovery between efforts. Complete 5 big gear intervals that last no more than 1 minutes each. In each interval your goal is to go fast, but back down before you start really killing yourself. Reover for at least 2 minutes between efforts. Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.",
+            "desc": "Ride 60 - 90 minutes mostly in your endurance zone. Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts. Complete 5 big gear intervals that last no more than 1 minute each. In each interval your goal is to go fast, but back down before you start really killing yourself. Recover for at least 2 minutes between efforts. Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.",
             "info": "None of these should be all-out efforts.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -292,7 +292,7 @@
             "name": "Sprints - 6",
             "shortname": "sprints-6",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 6 sprints. All out of the saddle the whole way. First 2: Small ring, cog 16 to 15. Start from 17mph. 100m. Second 2: Big ring, cog 17 to 16 to 15. Start from 23mph. 150-200m. Third 2: Big ring, cog 15 to 14. Start from 25mph. 150-200m.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -301,7 +301,7 @@
             "name": "Sprints - 9",
             "shortname": "sprints-9",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 9 sprints. All out of the saddle the whole way. First 3: Small ring, cog 16 to 15. Start from 17mph. 100m. Second 3: Big ring, cog 17 to 16 to 15. Start from 23mph. 150-200m. Third 3: Big ring, cog 15 to 14. Start from 25mph. 150-200m.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -328,7 +328,7 @@
             "name": "Sprints - Stomp Sprints (standing)",
             "shortname": "sprints-stompsprintsstanding",
             "type": "bike",
-            "wu": "5 x 1 minutes of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
+            "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence. 53 x17 - seated53 x 16 - seated53 x 15 - seated53 x 14 - seated53 x 13 - seated53 x 12 - stand53 x 13 - stand53 x 14 - stand53 x 15 - stand53 x 16 - stand53 x 17 - standEach sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -382,7 +382,7 @@
             "name": "Sweet Spot - 3x20 minutes",
             "shortname": "sweetspot-3x20minutes",
             "type": "bike",
-            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minutes of high cadence.",
+            "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 20 minutes in 10-15% below FTP. Recover between intervals by riding for 10 minutes in your endurance zone.",
             "info": "Get in at least 2 x 20 with power between 235 and 250 watts. Stay aero and smooth like you are riding a break.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -499,7 +499,7 @@
             "name": "VO2 - 3 minutes",
             "shortname": "vo2-3minutes",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Complete 7 x 3 minutes in your VO2max zone with 3 minutes of recovery in between each effort. These are hard. Go as hard as you can and still finish the 3 minutes each time.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -508,7 +508,7 @@
             "name": "VO2 - 3 minutes (hills)",
             "shortname": "vo2-3minuteshills",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Find a hill that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain a hard pace for at least 2. 30 then it is time to head home.",
             "info": "Really try to hit test like a workout. find a hill that you can do repeats on. It does not have to be super steep, just a steady grade. If you cant find a hill, then do them on the flats but get that power up to 300 and hold it.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -517,7 +517,7 @@
             "name": "VO2 - 3 minutes (speed)",
             "shortname": "vo2-3minutesspeed",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Find an open section of road that is mostly flat where you can go hard and fast without interuptions from lights or intersections or trafific. Each interval is 3 - 5 minutesRecovery between intervals is for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain the target power for at least 2. 30 then it is time to head home.",
             "info": "Aiming for 300-330 for each 3 minute effort.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -526,7 +526,7 @@
             "name": "VO2 - 30 seconds/30 seconds",
             "shortname": "vo2-30secondsx30seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Start with 3 x 3 minutes on, 3 minutes off working from high threshold to your VO2max zone during the on intervals and mid endurance during the off intervals. Ride 5 minutes in your endurance zone before starting the next bit. This workout is basically 30 seconds at Vo2max followed by 30 seconds at 70% of Vo2max. Use your best 5 minute mean maximal power as your VO2max target. Do 3 sets sets of 10 x 30 seconds on30 seconds off. 5 minutes in your endurance zone between sets.",
             "info": "Same power target as with the 3 minute efforts. Treat the initial 3 x 3 as part of your warmup. Hit them at 270-280 and 290 then start the first set of 3030s at 290 and step up to 300 after the first 5. Then in the second set hold 300 as the target the whole way and the same fo the last set kicking to 310 in the last 5 if you think you can and still finish.",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -535,7 +535,7 @@
             "name": "VO2 - 40 seconds/20 seconds",
             "shortname": "vo2-40secondsx20seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Start with 3 x 3 minutes on, 3 minutes off working from high threshold to your VO2max zone during the on intervals and mid endurance during the off intervals. Ride 5 minutes in your endurance zone before starting the next bit. This workout is basically 40 seconds at Vo2max followed by 20 seconds at 70% of Vo2max. Use your best 5 minute mean maximal power as your VO2max target. Do 3 sets sets of 10 x 40 seconds on20 seconds off. 5 minutes in your endurance zone between sets.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -544,7 +544,7 @@
             "name": "VO2 - 40 seconds/30 seconds",
             "shortname": "vo2-40secondsx30seconds",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Start with 3 x 3 minutes on, 3 minutes off working from high threshold to your VO2max zone during the on intervals and mid endurance during the off intervals. Ride 5 minutes in your endurance zone before starting the next bit. This workout is basically 40 seconds at Vo2max followed by 30 seconds at 70% of Vo2max. Use your best 5 minute mean maximal power as your VO2max target. Do 3 sets sets of 10 x 40 seconds on30 seconds off. 5 minutes in your endurance zone between sets.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
@@ -553,7 +553,7 @@
             "name": "VO2 - Ladder 1-4 minutes",
             "shortname": "vo2-ladder1-4minutes",
             "type": "bike",
-            "wu": "5 x 1 minutes of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
+            "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 mintues off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"

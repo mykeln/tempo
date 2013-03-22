@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"thisNum",
+				"thisNumDayRaw"
+			],
+			[
 				"ath",
 				"athleteName"
 			],
@@ -320,13 +324,13 @@
 	},
 	"file_history":
 	[
+		"/Users/Mykel/Sites/tempo/_header.php",
+		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/js/script.js",
+		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/_footer.php",
-		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/watts/index.php",
-		"/Users/Mykel/Sites/tempo/index.php",
-		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/data/2013.js",
 		"/Users/Mykel/Sites/tempo/workouts.numbers",
 		"/Users/Mykel/Sites/tempo/README.md",
@@ -478,6 +482,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"thisNumday",
+			"#thisweek",
+			"thisweek",
+			"week(s)",
+			"table",
 			"\\n",
 			"test",
 			"warm up",
@@ -600,12 +609,7 @@
 			"\\n",
 			"\\n\\n",
 			"facebook",
-			"surveygiz",
-			"promo_cale",
-			"play_button",
-			"have.png",
-			"chalkboard",
-			"blob_recr"
+			"surveygiz"
 		],
 		"highlight": true,
 		"in_selection": false,
