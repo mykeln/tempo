@@ -109,7 +109,18 @@ jQuery(function($) {
             }
 
             // defining the template to list the activity
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " <span>(20" + scheduleYear + " season)</span></h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+            var racingTemplate;
+
+            if (((scheduleName >= 11) && (scheduleName <= 24)) ||
+               ((scheduleName >= 25) && (scheduleName <= 27)) ||
+               ((scheduleName >= 28) && (scheduleName <= 35))) {
+
+              racingTemplate = "<h6 class='activity_info'>IF RACING THIS WEEKEND</h6><p>No hard workouts two days before race day.</p>"
+
+            }
+
+
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " <span>(20" + scheduleYear + " season)</span></h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p>" + racingTemplate + "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
 
             $('#workout').append(activityTemplate);
           }
