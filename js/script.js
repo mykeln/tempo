@@ -115,11 +115,11 @@ jQuery(function($) {
             // show this on thursday and friday only
             if ((thisNumDay == 7) || (thisNumDay == 8)) {
               racingTemplateText = "No hard workouts today if racing this weekend.";
-            } else
+            }
             // show this on friday and saturday only
             if ((thisNumDay == 8) || (thisNumDay <= 9)) {
-              racingTemplateText += " If racing tomorrow, do the following race prep: Ride 60 - 90 minutes mostly in your endurance zone. Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts. Complete 5 big gear intervals that last no more than 1 minute each. In each interval your goal is to go fast, but back down before you start really killing yourself. Recover for at least 2 minutes between efforts. Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.";
-            } else
+              racingTemplateText += "<br/>If racing tomorrow, do the following race prep:<br/>Ride 60 - 90 minutes mostly in your endurance zone.<br/>Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts.<br/>Complete 5 big gear intervals that last no more than 1 minute each.<br/>In each interval your goal is to go fast, but back down before you start really killing yourself.<br/>Recover for at least 2 minutes between efforts.<br/>Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.";
+            }
             // show this on saturday and sunday only
             if ((thisNumDay == 9) || (thisNumDay == 3)) {
               racingTemplateText += " If racing today, do the following warm up: spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring 18-17-16. Then easy for 5. Then a few 1-2 min step ups to vo2 and over. Big ring 16-15-14. 1 easy out of the saddle jump.";
