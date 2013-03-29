@@ -88,7 +88,7 @@ jQuery(function($) {
           // rendering library information
           var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
 
-          $('#library').append(libraryTemplate);
+          $('#workout_library').append(libraryTemplate);
 
           // if the pulled shortname matches the shortname of the schedule
           if((activityShortName == calendarShortName)) {
@@ -275,10 +275,14 @@ O5-10 - VO2 OR AC OR FTP
   // showing all schedules
   $("#thisweekonly").click(function() {
     $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
-
     $('#full_schedule').showColumns([0,1,2,4,5,6,7,8,9,10]);
+    return false;
+  });
 
-
+  // showing full library
+  $("#full_library").click(function() {
+    $('#library_explanation').toggle();
+    $('#workout_library').toggle();
     return false;
   });
 

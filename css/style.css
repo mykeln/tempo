@@ -72,7 +72,7 @@ tr.offseason, .label-offseason {
   color: #000;
 }
 
-  #schedules tr, #workout .activity {
+  #schedules tr, #workout .activity, #workout_library {
     display: none;
   }
 

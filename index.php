@@ -88,7 +88,7 @@
 
   </div>
 
-  <a id="thisyearonly" class="btn btn-mini" href="">previous years</a>
+  <a id="thisyearonly" class="btn btn-mini" href="">toggle previous years</a>
 
 </div>
 
@@ -211,6 +211,13 @@
 <div id="library" class="row">
   <h1>Workout Library</h1>
 
+  <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
+
+  <div id="workout_library">
+
+  </div>
+
+  <a id="full_library" class="btn btn-mini" href="">toggle full library</a>
 
 </div>
 
