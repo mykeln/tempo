@@ -112,12 +112,14 @@ jQuery(function($) {
             var racingTemplate;
             var racingTemplateText = "No hard workouts two days prior to race day.";
 
+            var maintenanceTemplate = "<h6 class='activity_info'>WHAT TO FOCUS ON THIS WEEK</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end, VO2 and tempo.</p>";
+
             // show this on thursday and friday only
             if ((thisNumDay == 7) || (thisNumDay == 8)) {
-              racingTemplateText = "No hard workouts today if racing this weekend.";
+              racingTemplateText = "No hard workouts today if racing Sunday.";
             }
             // show this on friday and saturday only
-            if ((thisNumDay == 8) || (thisNumDay <= 9)) {
+            if ((thisNumDay == 8) || (thisNumDay == 9)) {
               racingTemplateText += "<br/>If racing tomorrow, do the following race prep:<br/>Ride 60 - 90 minutes mostly in your endurance zone.<br/>Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts.<br/>Complete 5 big gear intervals that last no more than 1 minute each.<br/>In each interval your goal is to go fast, but back down before you start really killing yourself.<br/>Recover for at least 2 minutes between efforts.<br/>Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.";
             }
             // show this on saturday and sunday only
@@ -132,7 +134,7 @@ jQuery(function($) {
             }
 
 
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " <span>(20" + scheduleYear + " season)</span></h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p>" + racingTemplate + "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " <span>(20" + scheduleYear + " season)</span></h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
 
             $('#workout').append(activityTemplate);
           }

@@ -50,7 +50,7 @@
             "shortname": "ac-30-60seconds",
             "type": "bike",
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
-            "desc": "Start with 3 x 30 seconds with 5 minutes between intervals. Spin easy for 5 minutes. Complete 3 x 45 seconds with 5 mintues between intervalsSpin easy for 5 minutes. Complete 3 x 60 seconds with 5 minutes between intervals.",
+            "desc": "Start with 3 x 30 seconds with 5 minutes between intervals. Spin easy for 5 minutes. Complete 3 x 45 seconds with 5 minutes between intervals. Spin easy for 5 minutes. Complete 3 x 60 seconds with 5 minutes between intervals.",
             "info": "Target power is your best 45 seconds. 535 watts. You can do these on the trainer. Just wind into them. Really need to stay with the target power for all of these. We want to stretch the capacity which not only doing lots hard but doing them longer. Aim for 575 for all of them. Don't do the 30s too hard otherwise you will not be able to do the 60s.",
             "cd": "Cool down with easy spinning in your endurance and active recovery zones."
         },
@@ -490,7 +490,7 @@
             "name": "Test - Day 2 (peak power)",
             "shortname": "test-day2peakpower",
             "type": "test",
-            "wu": "Get in a good warm-up by riding for 20 - 30 mintues working your way up to your endurance zone over the first 15 minutes and then including a 5 minutes ramp up to FTP increasing the watts 10 - 20 every minute. Cruise in your endurance zone for 5 minutes before starting the test.",
+            "wu": "Get in a good warm-up by riding for 20 - 30 minutes working your way up to your endurance zone over the first 15 minutes and then including a 5 minutes ramp up to FTP increasing the watts 10 - 20 every minute. Cruise in your endurance zone for 5 minutes before starting the test.",
             "desc": "Start by riding for 3 minutes at 100 watts. After the first 3 minutes, increase the power by 20 watts every 1 minute. Increase the power by 10 watts after you have reached your FTP. Keep going until you cannot successfully finish 3 minutes at a particular wattage.",
             "info": "",
             "cd": "Easy spinning for 30 minutes. 100+ cadence"
@@ -554,7 +554,7 @@
             "shortname": "vo2-ladder1-4minutes",
             "type": "bike",
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
-            "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 mintues off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
+            "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 minutes off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         }
