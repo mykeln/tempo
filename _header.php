@@ -8,8 +8,18 @@
   <meta name="description" content="Tempo is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
   <meta name="author" content="Mykel Nahorniak">
 
-  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
-  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+<!-- standard viewport tag to set the viewport to the device's width
+  , Android 2.3 devices need this so 100% width works properly and
+  doesn't allow children to blow up the viewport width-->
+<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+<!-- width=device-width causes the iPhone 5 to letterbox the app, so
+  we want to exclude it for iPhone 5 to allow full screen apps -->
+<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+<!-- provide the splash screens for iPhone 5 and previous -->
+<link href="assets/splashs/splash_1096.png" rel="apple-touch-startup-image" media="(device-height: 568px)">
+<link href="assets/splashs/splash_iphone_2x.png" rel="apple-touch-startup-image" sizes="640x960" media="(device-height: 480px)">
+
+
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
