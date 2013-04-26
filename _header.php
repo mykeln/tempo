@@ -8,7 +8,9 @@
   <meta name="description" content="Tempo is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
   <meta name="author" content="Mykel Nahorniak">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -21,27 +23,29 @@
 
   <link rel="shortcut icon" href="touch-icon-iphone.png">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
   <!-- libraries -->
   <script src="js/libs/date.js"></script>
-  <script src="js/libs/bootstrap/bootstrap.min.js"></script>
-  <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
-  <script src="js/libs/bootstrap/popover.js"></script>
-  <script src="js/libs/bootstrap/tooltip.js"></script>
-  <script src="js/libs/mustache.js"></script>
   <script src="js/libs/jquery.columnmanager.min.js"></script>
+  <script src="js/libs/fastclick.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
 
   <!-- custom javascript -->
   <script src="js/script.js"></script>
 
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+
+  <script type="text/javascript">
+    window.addEventListener('load', function() {
+      new FastClick(document.body);
+    }, false);
+
+
+  </script>
 </head>
 <body>
-
-  <h1 id="logo">Tempo</h1>
-
   <div class="container">

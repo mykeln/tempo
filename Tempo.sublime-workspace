@@ -332,10 +332,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/js/script.js",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
 		"/Users/Mykel/Sites/tempo/css/style.css",
-		"/Users/Mykel/Sites/tempo/_header.php",
 		"/Users/Mykel/Sites/tempo/_footer.php",
 		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/watts/index.php",
@@ -467,7 +467,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 145.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",

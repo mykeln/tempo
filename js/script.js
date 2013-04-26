@@ -186,7 +186,7 @@ jQuery(function($) {
       var fitnessPower = item;
       var wKg = item/weightKg;
 
-      var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg + "</td></tr>";
+      var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
 
       $('#profile').append(fitnessTemplate);
 
@@ -205,6 +205,7 @@ jQuery(function($) {
           var cell = parseFloat( $(this).html() );
           if( do_info[r] >= cell ) {
             $(this).css( { 'background-color': '#ACE2A7' } );
+            $('#workout h1').css( { 'background-color': '#ACE2A7' } );
           }
         });
       }) (do_these[i], i);
@@ -304,9 +305,6 @@ O5-10 - VO2 OR AC OR FTP
     $('#powerbests').toggle();
 
   });
-
-  // rendering page-wide tooltips
-  $('a[rel=tooltip]').tooltip();
 
 
 }); // end jquery function

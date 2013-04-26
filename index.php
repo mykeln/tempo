@@ -93,20 +93,16 @@
 </div>
 
 
-
-
-<hr class="soften">
-
-
 <!-- calendar -->
 <div id="calendar" class="row">
   <h1>Calendar <small>workout history</small></h1>
-  <span class="label label-offseason">Chill</span>
-  <span class="label label-sharpen">Sharpening</span>
-  <span class="label label-racing">Racing Season</span>
-  <span class="label label-peak">Peak Week</span>
-  <span class="label label-base">Base</span>
-
+  <div id="cal_type">
+    <span class="label label-offseason">Chill</span>
+    <span class="label label-sharpen">Sharpening</span>
+    <span class="label label-racing">Racing Season</span>
+    <span class="label label-peak">Peak Week</span>
+    <span class="label label-base">Base</span>
+  </div>
   <table id="full_schedule" class="table table-condensed">
     <thead>
       <th>Type</th>
@@ -129,14 +125,13 @@
 
 </div>
 
-<hr class="soften">
 
 <!-- fitness -->
 <div id="fitness" class="row">
   <h1>Fitness <small id="athlete_name"></small></h1>
 
   <div class="span6">
-    <h3>Power Class <a href="#" rel="tooltip" title="based on standard power profile chart by Coggan">?</a></h3>
+    <h6>Power Class</h6>
     <table class="table">
       <thead>
         <th>Class</th>
@@ -189,7 +184,7 @@
   </div>
 
     <div class="span6">
-    <h3>Power Profile <a href="#" rel="tooltip" title="based on your entered weight">?</a></h3>
+    <h6>Power Profile</h6>
     <table class="table table-striped">
       <thead>
         <th>Interval</th>
@@ -204,8 +199,6 @@
   </div>
 
 </div>
-
-<hr class="soften">
 
 <!-- workout library -->
 <div id="library" class="row">

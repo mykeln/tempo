@@ -1,34 +1,31 @@
-
-
-/* ===== Primary Styles ========================================================
-   Author:
-   ========================================================================== */
-
-body {
-  padding-bottom: 40px;
+html,body {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  font-size: 24px;
+body {
+  font-family: "Open Sans";
+}
+
+h1,h2,h6 {
+  font: normal 24px/40px "Open Sans";
   margin-top: 0;
 }
 
-  h1 small {
+  h1 small, h6 {
     text-transform: uppercase;
     font-weight: 200;
     font-size: 14px;
   }
 
-  h1#logo {
-    background: #222 url(../img/logo.png) 0px 0px;
-    text-indent: -9999px;
-    margin-top: 0;
-    line-height: 60px;
-    -webkit-border-radius: 2px;
+  h1 {
+    margin-bottom: 0px;
   }
 
 h2 {
+  font-size: 14px;
   line-height: 17px;
+  background-color: #ccc;
 }
 
   h2 span {
@@ -37,8 +34,29 @@ h2 {
     font-weight: normal;
   }
 
+#workout h2 {
+  margin-bottom: 0px;
+}
+
 h3 {
   font-size: 18px;
+}
+
+h6 {
+  margin-bottom: 0;
+  background-color: #efefef;
+}
+
+p,table {
+  font: normal 12px/15px "Helvetica Neue";
+}
+
+h1,h2,h3,h4,h5,h6,p,#cal_type,table,footer p {
+  padding: 0px 10px
+}
+
+table {
+  width: 100%;
 }
 
 /* season colors */
@@ -66,15 +84,22 @@ tr.offseason, .label-offseason {
   border-left: 10px solid #DAE2E2;
 }
 
+#workout {
+
+}
+
+#calendar,
+#library {
+  background-color: #fafafa;
+  padding: 40px 0px;
+  margin: 40px 0px;
+}
+
 #schedules {
   text-transform: uppercase;
   font-size: 11px;
   color: #000;
 }
-
-  #schedules tr, #workout .activity, #workout_library {
-    display: none;
-  }
 
   #workout .activity h2,
   #library .book h2 {
@@ -82,26 +107,46 @@ tr.offseason, .label-offseason {
     text-transform: uppercase;
   }
 
-  #workout .activity h6,
-  #library .book h6 {
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 200;
-    margin-bottom: 0;
-  }
-
 #powerclass {
   font-size: 10px;
 }
 
   #powerclass td {
-    line-height: 0px;
+    line-height: 12px;
   }
 
-#powerbests {
+#powerbests,
+#schedules tr,
+#workout .activity,
+#workout_library {
   display: none;
 }
 
+a#thisyearonly,
+a#thisweekonly,
+a#full_library {
+  background-color: #3ea6e0;
+  padding: 5px;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin: 20px 40px 0px 40px;
+  border-bottom: 1px solid #068ad2;
+  border-right: 1px solid #068ad2;
+  border-top: 0px;
+  border-left: 0px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font: bold 12px/15px "Helvetica Neue";
+}
+
+footer p {
+  color: #ccc;
+  text-align: center;
+}
 
 /* responsive code */
 @media only screen and (max-width: 767px) {
