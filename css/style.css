@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans";
 }
 
-#container {
+.container {
   -webkit-overflow-scrolling: touch;
 }
 
