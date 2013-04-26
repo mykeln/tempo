@@ -7,6 +7,10 @@ body {
   font-family: "Open Sans";
 }
 
+#container {
+  -webkit-overflow-scrolling: touch;
+}
+
 h1,h2,h6 {
   font: normal 24px/40px "Open Sans";
   margin-top: 0;
