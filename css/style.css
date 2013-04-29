@@ -38,8 +38,11 @@ h2 {
     font-weight: normal;
   }
 
-#workout h2 {
+#workout h2,
+#library h2 {
   margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h3 {
@@ -62,6 +65,11 @@ h1,h2,h3,h4,h5,h6,p,#cal_type,table,footer p {
 table {
   width: 100%;
 }
+
+  table a {
+    color: #3EA6E0;
+    text-decoration: none;
+  }
 
 /* season colors */
 tr td {
@@ -88,9 +96,15 @@ tr.offseason, .label-offseason {
   border-left: 10px solid #DAE2E2;
 }
 
-#workout {
-
+#workout h1{
+  background-color: #222;
+  color: #3CBBAF;
+  border-top: 5px solid #EA7FC8;
 }
+
+  #workout h1 small {
+    color: #fff;
+  }
 
 #calendar,
 #library {
@@ -129,17 +143,13 @@ tr.offseason, .label-offseason {
 a#thisyearonly,
 a#thisweekonly,
 a#full_library {
-  background-color: #3ea6e0;
+  background-color: #3CBBAF;
   padding: 5px;
   color: #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   margin: 20px 40px 0px 40px;
-  border-bottom: 1px solid #068ad2;
-  border-right: 1px solid #068ad2;
-  border-top: 0px;
-  border-left: 0px;
   display: block;
   cursor: pointer;
   text-decoration: none;

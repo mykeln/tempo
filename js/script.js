@@ -204,8 +204,7 @@ jQuery(function($) {
         $("#powerclass tr td:nth-child(" + (2+i) + ")").each( function() {
           var cell = parseFloat( $(this).html() );
           if( do_info[r] >= cell ) {
-            $(this).css( { 'background-color': '#ACE2A7' } );
-            $('#workout h1').css( { 'background-color': '#ACE2A7' } );
+            $(this).css( { 'background-color': '#3CBBAF' } );
           }
         });
       }) (do_these[i], i);
@@ -299,6 +298,12 @@ O5-10 - VO2 OR AC OR FTP
     $('#library_explanation').toggle();
     $('#workout_library').toggle();
     return false;
+  });
+
+  // when a workout is clicked, unhide the library, then jump there
+  $("#full_schedule").click(function() {
+    $('#library_explanation').toggle();
+    $('#workout_library').toggle();
   });
 
   $("#havepowermeter").click(function() {
