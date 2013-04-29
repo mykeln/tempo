@@ -136,9 +136,31 @@ tr.offseason, .label-offseason {
 #powerbests,
 #schedules tr,
 #workout .activity,
-#workout_library {
+#workout_library,
+#homescreen_note {
   display: none;
 }
+
+#homescreen_note h2 {
+  padding: 20px 10px;
+}
+
+#homescreen_bottom {
+  bottom: 0px;
+  text-align: center;
+  padding-top: 130px;
+
+}
+
+  #homescreen_bottom h3 {
+    font: normal 20px/25px "Open Sans";
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  #homescreen_bottom p {
+    font-size: 40px;
+  }
 
 a#thisyearonly,
 a#thisweekonly,
