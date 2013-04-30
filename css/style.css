@@ -62,6 +62,12 @@ h1,h2,h3,h4,h5,h6,p,#cal_type,table,footer p {
   padding: 0px 10px
 }
 
+#cal_type span {
+  margin-left: 5px;
+  padding-left: 2px;
+  text-transform: uppercase;
+}
+
 table {
   width: 100%;
 }
@@ -72,27 +78,32 @@ table {
   }
 
 /* season colors */
-tr td {
-  border-top: 1px solid #ccc;
+#calendar tr td,
+#workout hr {
+  border-top: 1px solid #E3D9CD;
 }
 
-tr.sharpen, .label-sharpen {
+tr.sharpen a, .label-sharpen {
   border-left: 10px solid #E2DF91;
 }
 
-tr.racing, .label-racing {
+.label-racing {
   border-left: 10px solid #ACE2A7;
 }
 
-tr.peak, .label-peak {
+tr.racing a {
+  color: #ACE2A7;
+}
+
+tr.peak a, .label-peak {
   border-left: 10px solid #E2B3AF;
 }
 
-tr.base, .label-base {
+tr.base a, .label-base {
   border-left: 10px solid #CBDFE8;
 }
 
-tr.offseason, .label-offseason {
+tr.offseason a, .label-offseason {
   border-left: 10px solid #DAE2E2;
 }
 
@@ -108,7 +119,7 @@ tr.offseason, .label-offseason {
 
 #calendar,
 #library {
-  background-color: #fafafa;
+  background-color: #FFF6EB;
   padding: 40px 0px;
   margin: 40px 0px;
 }
@@ -176,7 +187,7 @@ a#full_library {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  font: bold 12px/15px "Helvetica Neue";
+  font: bold 12px/30px "Helvetica Neue";
 }
 
 footer p {
@@ -187,9 +198,13 @@ footer p {
 /* responsive code */
 @media only screen and (max-width: 767px) {
   .label {
-    font-size: 6px;
+    font-size: 8px;
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 0.2px;
+  }
+
+  #schedules {
+    font-size: 8px;
   }
 }
