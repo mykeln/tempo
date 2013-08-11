@@ -4,6 +4,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"thisNum",
 				"thisNumDay"
 			],
@@ -16,6 +17,12 @@
 				"racingTemplateText"
 			],
 			[
+=======
+                                "thisNum",
+                                "thisNumDayRaw"
+                        ],
+                        [
+>>>>>>> - updated 1 min power
 				"ath",
 				"athleteName"
 			],
@@ -332,7 +339,10 @@
 	},
 	"file_history":
 	[
+                "/Users/Mykel/Sites/tempo/_header.php",
+                "/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/js/script.js",
+<<<<<<< HEAD
 		"/Users/Mykel/Sites/tempo/css/style.css",
 		"/Users/Mykel/Sites/tempo/index.php",
 		"/Users/Mykel/Sites/tempo/_header.php",
@@ -340,6 +350,11 @@
 		"/Users/Mykel/Sites/tempo/css/bootstrap.css",
 		"/Users/Mykel/Sites/tempo/touch-icon-ipad.png",
 		"/Users/Mykel/Sites/tempo/data/workouts.js",
+=======
+                "/Users/Mykel/Sites/tempo/index.php",
+		"/Users/Mykel/Sites/tempo/data/workouts.js",
+		"/Users/Mykel/Sites/tempo/_footer.php",
+>>>>>>> - updated 1 min power
 		"/Users/Mykel/Sites/watts/index.php",
 		"/Users/Mykel/Sites/tempo/data/2013.js",
 		"/Users/Mykel/Sites/tempo/workouts.numbers",
@@ -490,6 +505,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"tr",
 			"table tr",
 			"font-size",
@@ -534,6 +550,13 @@
 			"thisweek",
 			"week(s)",
 			"table",
+=======
+                        "thisNumday",
+                        "#thisweek",
+                        "thisweek",
+                        "week(s)",
+                        "table",
+>>>>>>> - updated 1 min power
 			"\\n",
 			"test",
 			"warm up",
@@ -617,7 +640,50 @@
 			"box_blob h3",
 			"  ",
 			">",
+<<<<<<< HEAD
 			" <"
+=======
+			" <",
+			">",
+			" <",
+			"<",
+			">",
+			"<",
+			"ebook",
+			"Resources",
+			"some of the reasons",
+			"thought leader",
+			"doGoal",
+			"Testimonials",
+			"resource",
+			"resources",
+			"action_button",
+			"download the ebook",
+			"tumblr",
+			"our blog",
+			"reading_materials",
+			"Do more research",
+			"Clemson University",
+			"vimeo",
+			"video",
+			"linkedin",
+			"get it now",
+			"action_button",
+			"learn more",
+			"resources",
+			"ebook",
+			"doGoal",
+			"Quora",
+			"trim",
+			"space",
+			"spaces",
+			" ",
+			"uri",
+			"\\n",
+			"\\n\\n",
+			"facebook",
+                        "surveygiz"
+>>>>>>> - updated 1 min power
 		],
 		"highlight": true,
 		"in_selection": false,
