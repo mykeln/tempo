@@ -277,13 +277,15 @@
 
 <div id="homescreen_note">
   <div id="workout" class="row">
-    <h1>Tempo <small>for competitive cyclists</small></h1>
+    <h1>Tempo</h1>
   </div>
 
-  <h2><span><b>Tempo</b> is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.</span></h2>
+  <p>You want to get faster on the bike, but don't have the time to build a training plan every week, and coaches are too expensive.</p>
+  <p><b>Tempo</b> is made for you. It's an automated coach that uses your power data as a guide to create training blocks on the fly.</p>
+  <p>Seasonality, personal strengths, weaknesses and other factors are taken into account.</p>
 
   <div id="homescreen_bottom">
-    <h3>Add Tempo to your home screen</h3>
+    <p>Add Tempo to your home screen</p>
     <p>&darr;</p>
   </div>
 </div>
