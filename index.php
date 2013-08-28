@@ -144,7 +144,7 @@
 
   <!-- today's workout -->
   <div id="workout" class="row">
-    <h1>TEMPO <badge>WEEK 23</badge></h1>
+    <h1>TEMPO <badge></badge></h1>
   </div>
 
   <div class="row">

@@ -14,7 +14,7 @@ h6 {
 }
 
 /* header style */
-#workout,
+.activity,
 #calendar,
 #library {
   border-bottom: 5px solid #efefef;

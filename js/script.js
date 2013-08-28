@@ -87,7 +87,7 @@ jQuery(function($) {
           var activityCooldown      = item.cd;
 
           // rendering library information
-          var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + "</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
+          var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
 
           $('#workout_library').append(libraryTemplate);
 
@@ -139,7 +139,7 @@ jQuery(function($) {
             racingTemplate = "";
             maintenanceTemplate = "";
 
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h4>" + activityName + " / " + parsedDuration + " <label class='label label-default'>20" + scheduleYear + " season</label></h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season</span><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
 
             $('#workout').append(activityTemplate);
           }
@@ -230,13 +230,11 @@ jQuery(function($) {
     // hiding schedule columns that don't apply
     $('#full_schedule').columnManager();
     $('#full_schedule').hideColumns([1,3,4,5,6,7,8,9]);
-    $('#full_schedule').showColumns([thisNumDay, (thisNumDay - 1)]);
+    $('#full_schedule').showColumns([thisNumDay, (thisNumDay - 1), (thisNumDay - 2)]);
 
     // counting the amount of workouts and displaying
     var bookCount = $('#workout_library .book').length;
     $('#library h2 small').html(bookCount + ' books')
-    console.log(bookCount);
-
 
   }); // end get json call
 
@@ -291,7 +289,6 @@ O5-10 - VO2 OR AC OR FTP
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
-    $('#workout .activity:last').css('background', '#ACE2A7');
     $('#workout .activity').not(':last').toggle(200);
     return false;
   });
@@ -311,9 +308,9 @@ O5-10 - VO2 OR AC OR FTP
   });
 
   // when a workout is clicked, unhide the library, then jump there
-  $("#full_schedule").click(function() {
-    $('#library_explanation').toggle();
-    $('#workout_library').toggle();
+  $("#full_schedule").click(function(scheduleName) {
+    $('#library_explanation').hide();
+    $('#workout_library').show();
   });
 
   $("#havepowermeter").click(function() {
