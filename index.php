@@ -154,8 +154,8 @@
   <!-- calendar -->
   <div id="calendar" class="row">
     <h2>Calendar <small>workout history</small></h2>
-
-    <span class="label label-default">Chill</span>
+    <span class="label label-off">Time Off</span>
+    <span class="label label-default">Base Training</span>
     <span class="label label-warning">Sharpening</span>
     <span class="label label-success">Racing Season</span>
     <span class="label label-danger">Peak Week</span>
@@ -188,7 +188,7 @@
 
   <!-- workout library -->
   <div id="library" class="row">
-    <h2>Workout Library</h2>
+    <h2>Workout Library <small></small></h2>
 
     <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
 
@@ -205,7 +205,7 @@
 
   <!-- fitness -->
   <div id="fitness" class="row">
-    <h2>Fitness <small id="athlete_name"></small></h2>
+    <h2>Fitness <small></small></h2>
 
     <div class="span6 table-responsive">
       <h3>Power Profile</h3>

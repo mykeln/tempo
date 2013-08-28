@@ -42,7 +42,7 @@ jQuery(function($) {
       athleteName = item.name;
 
 
-      $('#athlete_name').html(athleteName + " - " + item.weight + "lbs");
+      $('#fitness h2 small').html(athleteName + " - " + item.weight + "lbs");
     }); // end config each
 
 
@@ -232,7 +232,11 @@ jQuery(function($) {
     $('#full_schedule').hideColumns([1,3,4,5,6,7,8,9]);
     $('#full_schedule').showColumns([thisNumDay, (thisNumDay - 1)]);
 
-    console.log(thisNumDay)
+    // counting the amount of workouts and displaying
+    var bookCount = $('#workout_library .book').length;
+    $('#library h2 small').html(bookCount + ' books')
+    console.log(bookCount);
+
 
   }); // end get json call
 

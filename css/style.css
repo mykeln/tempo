@@ -26,6 +26,12 @@ h6 {
   border-top: 10px solid #EA7FC8;
 }
 
+.label.label-off {
+  color: #444;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
 #powerbests,
 #schedules tr,
 #workout .activity,
