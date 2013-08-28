@@ -229,8 +229,8 @@ jQuery(function($) {
 
     // hiding schedule columns that don't apply
     $('#full_schedule').columnManager();
-    $('#full_schedule').hideColumns([0,1,2,4,5,6,7,8,9]);
-    $('#full_schedule').showColumns([thisNumDay, (thisNumDay + 1)]);
+    $('#full_schedule').hideColumns([1,3,4,5,6,7,8,9]);
+    $('#full_schedule').showColumns([thisNumDay, (thisNumDay - 1)]);
 
     console.log(thisNumDay)
 
@@ -295,7 +295,7 @@ O5-10 - VO2 OR AC OR FTP
   // showing all schedules
   $("#thisweekonly").click(function() {
     $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
-    $('#full_schedule').showColumns([0,1,2,4,5,6,7,8,9,10]);
+    $('#full_schedule').showColumns([1,3,4,5,6,7,8,9]);
     return false;
   });
 
