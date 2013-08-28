@@ -236,6 +236,9 @@ jQuery(function($) {
     var bookCount = $('#workout_library .book').length;
     $('#library h2 small').html(bookCount + ' books')
 
+    $('#loading').hide();
+    $('.container').show();
+
   }); // end get json call
 
 
