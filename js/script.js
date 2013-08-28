@@ -86,7 +86,7 @@ jQuery(function($) {
           var activityCooldown      = item.cd;
 
           // rendering library information
-          var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h2>" + activityName + " / " + parsedDuration + "</h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
+          var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + "</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
 
           $('#workout_library').append(libraryTemplate);
 
@@ -109,10 +109,11 @@ jQuery(function($) {
             }
 
             // defining the template to list the activity
+            /*
             var racingTemplate;
             var racingTemplateText = "No hard workouts two days prior to race day.";
 
-            var maintenanceTemplate = "<h6 class='activity_info'>WHAT TO FOCUS ON THIS WEEK</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end, VO2 and tempo.</p>";
+            var maintenanceTemplate = "<h6 class='activity_info'>What to Focus on This Week</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end, VO2 and tempo.</p>";
 
             // show this on thursday and friday only
             if ((thisNumDay == 7) || (thisNumDay == 8)) {
@@ -130,11 +131,14 @@ jQuery(function($) {
             if (((scheduleName >= 11) && (scheduleName <= 24)) ||
                ((scheduleName >= 25) && (scheduleName <= 27)) ||
                ((scheduleName >= 28) && (scheduleName <= 35))) {
-              racingTemplate = "<h6 class='activity_info'>IF RACING THIS WEEKEND</h6><p>" + racingTemplateText + "</p>"
+              racingTemplate = "<h6 class='activity_info'>If Racing This Weekend</h6><p>" + racingTemplateText + "</p>"
             }
+            */
 
+            racingTemplate = "";
+            maintenanceTemplate = "";
 
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h2>" + activityName + " / " + parsedDuration + " <span>(20" + scheduleYear + " season)</span></h2><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><h4>" + activityName + " / " + parsedDuration + " <label class='label label-default'>20" + scheduleYear + " season</label></h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
 
             $('#workout').append(activityTemplate);
           }
@@ -144,19 +148,19 @@ jQuery(function($) {
       // defining the color-coded of workouts being done on a particular week
       // l/e week 10
       if (scheduleName <= 10 ) {
-        rowClass = "sharpen";
+        rowClass = "warning";
       } else
       // g/e 11, l/e 24
       if ((scheduleName >= 11) && (scheduleName <= 24)) {
-        rowClass = "racing";
+        rowClass = "success";
       // g/e 25, l/e 27
       } else
       if ((scheduleName >= 25) && (scheduleName <= 27)) {
-        rowClass = "peak";
+        rowClass = "danger";
       // g/e 28, l/e 35
       } else
       if ((scheduleName >= 28) && (scheduleName <= 35)) {
-        rowClass = "racing"
+        rowClass = "success"
       // g/e 36, l/e 39
       } else
       if ((scheduleName >= 36) && (scheduleName <= 39)) {
@@ -164,7 +168,7 @@ jQuery(function($) {
       // g/e 40, l/e 53
       } else
       if ((scheduleName >= 40) && (scheduleName <= 53)) {
-        rowClass = "base"
+        rowClass = "active"
       // if doesn't fit, say off season
       } else {
         rowClass = "offseason";
@@ -272,7 +276,7 @@ O5-10 - VO2 OR AC OR FTP
 
 ////RENDERING
   // updating "today's workout" header to show this week
-  $('#week_num').html('WEEK ' + thisWeek);
+  $('h1 badge').html('WEEK ' + thisWeek);
 
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');

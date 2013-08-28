@@ -1,155 +1,25 @@
-html,body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans";
-}
-
-.container {
-  -webkit-overflow-scrolling: touch;
-}
-
-h1,h2,h6 {
-  font: normal 24px/40px "Open Sans";
-  margin-top: 0;
-}
-
-  h1 small, h6 {
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 14px;
-  }
-
-  h1 {
-    margin-bottom: 0px;
-  }
-
-h2 {
-  font-size: 14px;
-  line-height: 17px;
-  background-color: #ccc;
-}
-
-  h2 span {
-    font-size: 10px;
-    display: block;
-    font-weight: normal;
-  }
-
-#workout h2,
-#library h2 {
-  margin-bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-h3 {
-  font-size: 18px;
-}
-
 h6 {
-  margin-bottom: 0;
-  background-color: #efefef;
-}
-
-p,table {
-  font: normal 12px/15px "Helvetica Neue";
-}
-
-h1,h2,h3,h4,h5,h6,p,#cal_type,table,footer p {
-  padding: 0px 10px
-}
-
-#cal_type span {
-  margin-left: 5px;
-  padding-left: 2px;
+  margin-top: 30px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-weight: 200;
 }
 
-table {
-  width: 100%;
+p {
+  white-space: pre;
 }
 
-  table a {
-    color: #3EA6E0;
-    text-decoration: none;
-  }
-
-/* season colors */
-
-table tr td {
-  border-bottom: 1px solid #ccc;
-}
-
-#calendar table tr td,
-#workout hr {
-  border-bottom: 1px solid #E3D9CD;
-}
-
-
-tr.sharpen a, .label-sharpen {
-  border-left: 10px solid #E2DF91;
-}
-
-.label-racing {
-  border-left: 10px solid #ACE2A7;
-}
-
-tr.racing a {
-  color: #ACE2A7;
-}
-
-tr.peak a, .label-peak {
-  border-left: 10px solid #E2B3AF;
-}
-
-tr.base a, .label-base {
-  border-left: 10px solid #CBDFE8;
-}
-
-tr.offseason a, .label-offseason {
-  border-left: 10px solid #DAE2E2;
+/* header style */
+#workout,
+#calendar,
+#library {
+  border-bottom: 5px solid #ccc;
+  margin-bottom: 10px;
 }
 
 #workout h1{
-  background-color: #222;
   color: #3CBBAF;
-  border-top: 5px solid #EA7FC8;
+  border-top: 10px solid #EA7FC8;
 }
-
-  #workout h1 small {
-    color: #fff;
-  }
-
-#calendar,
-#library {
-  background-color: #FFF6EB;
-  padding: 40px 0px;
-  margin: 40px 0px;
-}
-
-#schedules {
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #000;
-}
-
-  #workout .activity h2,
-  #library .book h2 {
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-#powerclass {
-  font-size: 10px;
-}
-
-  #powerclass td {
-    line-height: 12px;
-  }
 
 #powerbests,
 #schedules tr,
@@ -157,6 +27,11 @@ tr.offseason a, .label-offseason {
 #workout_library,
 #homescreen_note {
   display: none;
+}
+
+/* this appears when the app hasn't been loaded in straight safari */
+#homescreen_note {
+  height: 100%;
 }
 
 #homescreen_note h2 {
@@ -167,7 +42,7 @@ tr.offseason a, .label-offseason {
   bottom: 0px;
   text-align: center;
   padding-top: 130px;
-
+  color: #444;
 }
 
   #homescreen_bottom h3 {
@@ -180,38 +55,7 @@ tr.offseason a, .label-offseason {
     font-size: 40px;
   }
 
-a#thisyearonly,
-a#thisweekonly,
-a#full_library {
-  background-color: #3CBBAF;
-  padding: 5px;
-  color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  margin: 20px 40px 0px 40px;
-  display: block;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  font: bold 12px/30px "Helvetica Neue";
-}
-
 footer p {
   color: #ccc;
   text-align: center;
-}
-
-/* responsive code */
-@media only screen and (max-width: 767px) {
-  .label {
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 0.2px;
-    font-size: 8px;
-  }
-
-  #schedules {
-    font-size: 8px;
-  }
 }
