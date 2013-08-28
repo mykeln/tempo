@@ -329,7 +329,7 @@
             "shortname": "sprints-stompsprintsstanding",
             "type": "bike",
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
-            "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence. 53 x17 - seated53 x 16 - seated53 x 15 - seated53 x 14 - seated53 x 13 - seated53 x 12 - stand53 x 13 - stand53 x 14 - stand53 x 15 - stand53 x 16 - stand53 x 17 - standEach sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
+            "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence. 53x17 - seated<br/>53x16 - seated<br/>53x15 - seated<br/>53x14 - seated<br/>53x13 - seated<br/>53x12 - stand<br/>53x13 - stand<br/>53x14 - stand<br/>53x15 - stand53x16 - stand<br/>53x17 - stand<br/><br/>Each sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
             "info": "",
             "cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
@@ -343,30 +343,30 @@
             "cd": "None."
         },
         {
-            "name": "Strength1",
+            "name": "Weights: Strength Phase I",
             "shortname": "strength1",
             "type": "strength",
             "wu": "15 minutes cardio.",
-            "desc": "Weight routine: high rep, low weight. Goal: muscle endurance.",
-            "info": "",
-            "cd": "None."
+            "desc": "Weight routine. The goal of this workout is to increase muscle endurance. Low-weight, high-rep.<ul><li>back extension</li><li>calf raises</li><li>pullups</li><li>goblet squats</li><li>seated rows</li><li>lunge</li><li>flat db flys</li><li>incline db press</li><li>seated military db press</li><li>db curls</li><li>rope tricep pulldown</li><li>situps</li></ul>",
+            "info": "This phase begins at the very beginning of base training, after the post-season break. Most exercises should be 3 sets of 30 reps, otherwise, 2 sets of maximum reps.",
+            "cd": "Stretching."
         },
         {
-            "name": "Strength2",
+            "name": "Weights: Strength Phase II",
             "shortname": "strength2",
             "type": "strength",
             "wu": "15 minutes cardio.",
-            "desc": "Weight routine: low rep, high weight. Goal: muscle strength.",
-            "info": "It is important to spin the legs out after this kind of workout.",
-            "cd": "None."
+            "desc": "Weight routine: The goal of this workout is to increase muscle strength. Low-rep, high-weight.<ul><li>weighted back extension</li><li>calf raises</li><li>weighted pullups</li><li>squats</li><li>seated rows</li><li>leg press</li><li>flat db flys</li><li>incline db press</li><li>seated military db press</li><li>lateral shoulder raise</li><li>db curls</li><li>rope tricep pulldown</li><li>decline weighted situps</li></ul>",
+            "info": "This phase begins in the middle of base training, just before you start working on shorter intervals. Most exercises should be 3 sets of 5 reps, otherwise, 3 sets of maximum reps.",
+            "cd": "It is important to spin the legs out after this kind of workout."
         },
         {
-            "name": "Strength3",
+            "name": "Weights: Strength Phase III",
             "shortname": "strength3",
             "type": "strength",
             "wu": "15 minutes cardio.",
             "desc": "Weight routine: mid rep, mid weight. Goal: muscle power.",
-            "info": "",
+            "info": "This phase begins a couple months before racing season begins, to give you that final pop.",
             "cd": "None."
         },
         {
