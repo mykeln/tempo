@@ -234,10 +234,7 @@ jQuery(function($) {
 
     // counting the amount of workouts and displaying
     var bookCount = $('#workout_library .book').length;
-    $('#library h2 small').html(bookCount + ' books')
-
-    $('#loading').hide();
-    $('.container').show();
+    $('#library h2 small').html(bookCount + ' books');
 
   }); // end get json call
 

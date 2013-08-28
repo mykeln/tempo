@@ -277,7 +277,7 @@
 
 <div id="homescreen_note">
   <div id="workout" class="row">
-    <h1>Tempo</h1>
+    <h1>TEMPO</h1>
   </div>
 
   <p>You want to get faster on the bike, but don't have the time to build a training plan every week, and coaches are too expensive.</p>

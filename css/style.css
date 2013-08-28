@@ -21,9 +21,7 @@ h6 {
   margin-bottom: 10px;
 }
 
-#workout h1,
-#homescreen_header h1,
-#loadingscreen_header h1 {
+#workout h1{
   color: #3CBBAF;
   border-top: 10px solid #EA7FC8;
 }
@@ -38,8 +36,7 @@ h6 {
 #schedules tr,
 #workout .activity,
 #workout_library,
-#homescreen_note,
-.container {
+#homescreen_note {
   display: none;
 }
 
