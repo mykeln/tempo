@@ -44,7 +44,6 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- scripts -->
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="js/libs/jquery-1.7.2.min.js"></script>
   <script src="js/libs/date.js"></script>
   <script src="js/libs/jquery.columnmanager.min.js"></script>
@@ -164,7 +163,7 @@
     <div class="table-responsive">
     <table id="full_schedule" class="table">
       <thead>
-        <th>Type</th>
+        <!--<th>Type</th>-->
         <th>Week</th>
         <th>Year</th>
         <th>Mon</th>

@@ -4,15 +4,11 @@ h6 {
   font-weight: 200;
 }
 
-p {
-  white-space: pre;
-}
-
 /* header style */
 #workout,
 #calendar,
 #library {
-  border-bottom: 5px solid #ccc;
+  border-bottom: 5px solid #efefef;
   margin-bottom: 10px;
 }
 
@@ -54,8 +50,3 @@ p {
   #homescreen_bottom p {
     font-size: 40px;
   }
-
-footer p {
-  color: #ccc;
-  text-align: center;
-}

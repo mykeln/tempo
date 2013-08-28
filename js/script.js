@@ -41,7 +41,8 @@ jQuery(function($) {
       // getting athlete name
       athleteName = item.name;
 
-      $('#athlete_name').html(athleteName);
+
+      $('#athlete_name').html(athleteName + " - " + item.weight + "lbs");
     }); // end config each
 
 
@@ -175,7 +176,7 @@ jQuery(function($) {
       }
 
       // defining the template to list the schedule
-      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleType + "</td><td id='" + thisWeek + "'>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
+      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><!--<td>" + scheduleType + "</td>--><td id='" + thisWeek + "'>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
@@ -226,11 +227,12 @@ jQuery(function($) {
       $('#workout .activity:last').show();
     }
 
-  // hiding schedule columns that don't apply
-  $('#full_schedule').columnManager();
-  $('#full_schedule').hideColumns([0,1,2,4,5,6,7,8,9,10]);
-  $('#full_schedule').showColumns([thisNumDay, (thisNumDay + 1)]);
+    // hiding schedule columns that don't apply
+    $('#full_schedule').columnManager();
+    $('#full_schedule').hideColumns([0,1,2,4,5,6,7,8,9]);
+    $('#full_schedule').showColumns([thisNumDay, (thisNumDay + 1)]);
 
+    console.log(thisNumDay)
 
   }); // end get json call
 
