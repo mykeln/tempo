@@ -139,7 +139,7 @@ jQuery(function($) {
             racingTemplate = "";
             maintenanceTemplate = "";
 
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season</span><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
+            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
 
             $('#workout').append(activityTemplate);
           }
@@ -279,9 +279,6 @@ O5-10 - VO2 OR AC OR FTP
 
 
 ////RENDERING
-  // updating "today's workout" header to show this week
-  $('h1 badge').html('WEEK ' + thisWeek);
-
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
