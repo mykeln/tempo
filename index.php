@@ -144,7 +144,7 @@
 
   <!-- today's workout -->
   <div id="workout" class="row">
-    <h1>TEMPO</h1>
+    <h1>TEMPO <small>virtual coach</small></h1>
   </div>
 
   <div class="row">
