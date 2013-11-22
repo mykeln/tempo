@@ -89,7 +89,9 @@ jQuery(function($) {
           // rendering library information
           var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
 
-          $('#workout_library').append(libraryTemplate);
+          if( $("#" + activityShortName).length == 0 )
+            $('#workout_library').append(libraryTemplate);
+          }
 
           // if the pulled shortname matches the shortname of the schedule
           if((activityShortName == calendarShortName)) {
