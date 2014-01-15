@@ -25,7 +25,8 @@
             "wu": "",
             "desc": "Easy run, just to keep the legs loose.",
             "info": "Running",
-            "cd": ""
+            "target": "",
+			"cd": ""
         },
         {
             "name": "AC - 1K Time Trial",
@@ -34,7 +35,8 @@
             "wu": "5 - 8 hard efforts at and above threshold lasting 1 - 5 minutes each",
             "desc": "These are full gas 1k efforts. Time will depend on speed. Stay aero and keep the cadence high (115+). Recover with some easy spinning between efforts. Complete 5 - 10 intervals. Power is anaerobic capacity for each.",
             "info": "Test",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "AC - 1 - 2 minutes (hills)",
@@ -43,7 +45,8 @@
             "wu": "3 - 5 hard efforts at and above threshold lasting 1 - 5 minutes each.",
             "desc": "This is a basic hill intervals ride. Find a hill that you can do over and over again or choose a course with a bunch of hills that are 3 - 5 minutes apart. Each hill should take 1 - 2 minutes each going as hard as you can. EXPLODE at the top of each hill. Recover with some easy spinning between efforts. Complete 8 - 10 intervals.",
             "info": "Aim for power around 500 watts. The goal is to carry the power for as long as possible on each climb. Stand for the last 10 - 15 seconds if you need to.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "AC - 30 - 60 seconds",
@@ -52,7 +55,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 30 seconds with 5 minutes between intervals. Spin easy for 5 minutes. Complete 3 x 45 seconds with 5 minutes between intervals. Spin easy for 5 minutes. Complete 3 x 60 seconds with 5 minutes between intervals.",
             "info": "Target power is your best 45 seconds. 535 watts. You can do these on the trainer. Just wind into them. Really need to stay with the target power for all of these. We want to stretch the capacity which not only doing lots hard but doing them longer. Aim for 575 for all of them. Don't do the 30s too hard otherwise you will not be able to do the 60s.",
-            "cd": "Cool down with easy spinning in your endurance and active recovery zones."
+            "target": "",
+			"cd": "Cool down with easy spinning in your endurance and active recovery zones."
         },
         {
             "name": "AC - 30 seconds",
@@ -61,7 +65,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 30 seconds with 5 minutes between intervals stepping your way up to the target power. Complete up to 10 more intervals of 30 seconds each at the target power with 5 minutes of recovery between effort. Stop when you cannot hold the target power for 20 seconds.",
             "info": "Target for these is based on your best 45 second power. Step in to this hitting the first 3 at 450, 500 and 540. Then try to keep it above 550 for the rest of the efforts. Stop if you cannot stay over 550 for at least 20 seconds. Recovery should be pretty complete between efforts.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "AC - 3x30 seconds",
@@ -70,7 +75,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 30 seconds with 5 minutes between intervals stepping your way up to the target power. Complete 15 - 20 repeats of 30 seconds at target power and then 30 seconds of easy spinning. Stop when you cannot hold the target power for at least 20 seconds.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "AC - 45 seconds",
@@ -79,7 +85,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Start with 3 x 45 seconds with 5 minutes between intervals stepping your way up to the target power. Complete up to 10 more intervals of 45 seconds each at the target power with 5 minutes of recovery between effort. Stop when you cannot hold the target power for 20 seconds.",
             "info": "Power target is 500 - 535 watts. Step up over the first 3 at 400, 450, 475 and then see if you can do the rest at 500 or better.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "AC - Power Wind Ups",
@@ -88,7 +95,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 10 - 15 Power wind ups. -Start at 20 mph-increase power and speed steadily for 10-20 seconds or until you stop accelerating. -hold speed for 30 - 60 seconds. Recover completely between efforts.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "AC - Race Winners",
@@ -97,7 +105,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 5 - 7 Race Winners where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish each effort with a 10 second all out sprint. Recover completely between efforts.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Endurance - Basic",
@@ -106,7 +115,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range.",
             "info": "Spin no harder than 200 watts.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Endurance - Basic Group",
@@ -115,7 +125,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. If the group wants to go harder, then sit in and try to keep your power at an endurance pace.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Big Block - Attacks",
@@ -124,7 +135,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes include 5 - 7 attacks where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish the attack with a big 10 second sprint. Recover completely between efforts.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Big Block - Sprints",
@@ -133,7 +145,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes include 5 - 10 sprints that are 10 - 30 seconds long each. Sprints should be from race speed and full gas.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Big Block - VO2",
@@ -142,7 +155,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes find a hill or hills that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain a hard pace for at least 2. 30 then it is time to head home.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Bursts - Basic Bursts",
@@ -151,7 +165,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Every 10 minutes, include an 8 second all out burst. Jump hard with high cadence. Only 8 seconds.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Bursts - Microbursts",
@@ -160,7 +175,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 3 x 10 minutes of MicroburstsEach burst is 15 seconds and should average 150% of FTPStart each burst hard aiming for 300% of FTP. Rest for 15 seconds between bursts at 50% of FTP. Ride in your endurance zone for 5 minutes between sets.",
             "info": "Start each burst with a 700 watt pop and then keep the power up around 375 for the remaining 10 - 12 seconds. On and off for 10 minutes at a time.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Bursts - FTP 2x20 Minutes with Bursts",
@@ -169,7 +185,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 20 minutes in the lower half of your threshold power zone. Every 10 minutes, include an 8 second all out burst. Jump hard with high cadence. Only 8 seconds. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "Between (fitness.ftp * 95%) and (fitness.ftp)",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Endurance - Basic + Attacks",
@@ -178,7 +195,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Include 5 - 7 attacks where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all out riding as if you were attacking for the finish line. Finish the attack with a big 10 second sprint. Recover completely between efforts.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Endurance - Group Ride",
@@ -187,7 +205,8 @@
             "wu": "None.",
             "desc": "Solid ride time including some hammering at the front. Also try for 8 sprints today at least 200m long. Let's see what you got with some kjs in your legs. Rest plenty between each. Let the group determine the hammer part. Try to finish with a solid 20minutes of tempo in at the end of the ride.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "FTP - 2x10 minutes",
@@ -196,7 +215,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 10 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at or just below your balance point wattage.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "FTP - 2x20 minutes",
@@ -205,7 +225,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 20 minutes in the lower half of your threhold power zone. In each interval, alternate 2 minutes in the lower half of your threshold zone with 2 minutes in the upper half of your threshold zone. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "FTP - 3x10 minutes",
@@ -214,7 +235,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 10 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at 50% of the power of the preceding effort.",
             "info": "Maintain 260 - 270 watt range.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "FTP - 3x15 minutes",
@@ -223,7 +245,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 15 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at 50% of the power of the preceding effort.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "FTP - 3x20 minutes",
@@ -232,7 +255,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 20 minutes in the lower half of your threhold power zone. During the first interval, increase the level of effort by 50% for 10 seconds every 2 minutes. Recover between intervals by riding for 20 minutes at 50% of the power of the preceding effort.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "FTP - 5x3 minutes",
@@ -241,7 +265,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 Sets of 5 x 3 minutes your tempolower threhold power zones. Between each interval, ride for 2 minutes at in the middle of your endurance zoneBetween sets, ride for 5 minutes in your endurance zone.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Easy or Off",
@@ -250,7 +275,8 @@
             "wu": "None.",
             "desc": "Chill out, dude.",
             "info": "",
-            "cd": "None."
+            "target": "",
+			"cd": "None."
         },
         {
             "name": "Peak - VO2 + AC Step-Ups",
@@ -259,7 +285,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Cruise for 5 minutes before starting these intervalsComplete the following sequence aiming to average in your VO2max or higher zones for each. 3 x 3 minutes in upper threshold with 1 minute between intervals in your endurance zone. 5 minutes endurance4 x 2 minutes in your upper thresholdVO2max zone with 1 minute between intervals in your endurance zone. 5 minutes endurance. 5 x 1 minute in your AC zone with 1 minute between intervals in your endurance zone. 5 minutes endurance10 x 4030. Do what you can. 40 seconds at Vo2max 30 seconds at 70%.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Race Prep",
@@ -268,7 +295,8 @@
             "wu": "None.",
             "desc": "Ride 60 - 90 minutes mostly in your endurance zone. Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts. Complete 5 big gear intervals that last no more than 1 minute each. In each interval your goal is to go fast, but back down before you start really killing yourself. Recover for at least 2 minutes between efforts. Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.",
             "info": "None of these should be all-out efforts.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Race Prep TT",
@@ -277,7 +305,8 @@
             "wu": "None.",
             "desc": "During a 60 - 90 minute ride, do 5 x 2 minutes on your TT bike. Each effort should include a steady acceleration from a slow speedGet the bike up to TT speed and hold for 60 - 90 seconds. Spin easy at a high cadence between efforts and during the rest fo the ride. Stay on the TT bars as much as possible during the ride and alway during the efforts.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Race",
@@ -286,7 +315,8 @@
             "wu": "Spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring 18-17-16. Then easy for 5. Then a few 1-2 min step ups to vo2 and over. Big ring 16-15-14. 1 easy out of the saddle jump.",
             "desc": "Race.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Sprints - 6",
@@ -295,7 +325,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 6 sprints. All out of the saddle the whole way. First 2: Small ring, cog 16 to 15. Start from 17mph. 100m. Second 2: Big ring, cog 17 to 16 to 15. Start from 23mph. 150-200m. Third 2: Big ring, cog 15 to 14. Start from 25mph. 150-200m.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Sprints - 9",
@@ -304,7 +335,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 9 sprints. All out of the saddle the whole way. First 3: Small ring, cog 16 to 15. Start from 17mph. 100m. Second 3: Big ring, cog 17 to 16 to 15. Start from 23mph. 150-200m. Third 3: Big ring, cog 15 to 14. Start from 25mph. 150-200m.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Sprints - Sprint Starts",
@@ -313,7 +345,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Complete 5 sets of 5 Sprint StartsEach set is 5 minutes long. Ride steady with your cadence around 100 with your power in your endurance zone for. At the start of each minute and without shifting gears, complete a short super hard, super smooth, out of the saddle jump that is only 6 - 8 strokes. You are going for max power on each effort. Spin at 100 rpm in your endurance zone for the remainder of the minute. Complete 5 starts in each set. Spin easy for 5 minutes between sets.",
             "info": "Works best on the road. You can do these on the trainer if have to. If on the trainer, do the first 3 sets seated.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Sprints - Stomp Sprints (seated)",
@@ -322,7 +355,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. During the ride, include 6 - 10 stomps where you let the speed drop to near nothing while on your 53x11. While still seated, accelerate hard for 12 - 15 secondsRide for 5 - 10 minutes between intervals at a cadence of 105+.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Sprints - Stomp Sprints (standing)",
@@ -331,7 +365,8 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence. 53x17 - seated<br/>53x16 - seated<br/>53x15 - seated<br/>53x14 - seated<br/>53x13 - seated<br/>53x12 - stand<br/>53x13 - stand<br/>53x14 - stand<br/>53x15 - stand53x16 - stand<br/>53x17 - stand<br/><br/>Each sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Strength Core",
@@ -340,7 +375,8 @@
             "wu": "15 minutes cardio.",
             "desc": "Weight routine: Yoga, Pilates, back extensions, etc. Goal: strengthen core.",
             "info": "Rest day for the legs.",
-            "cd": "None."
+            "target": "",
+			"cd": "None."
         },
         {
             "name": "Weights: Strength Phase I",
@@ -349,7 +385,8 @@
             "wu": "15 minutes cardio.",
             "desc": "Weight routine. The goal of this workout is to increase muscle endurance. Low-weight, high-rep.<ul><li>back extension</li><li>calf raises</li><li>pullups</li><li>goblet squats</li><li>seated rows</li><li>lunge</li><li>flat db flys</li><li>incline db press</li><li>seated military db press</li><li>db curls</li><li>rope tricep pulldown</li><li>situps</li></ul>",
             "info": "This phase begins at the very beginning of base training, after the post-season break. Most exercises should be 3 sets of 30 reps, otherwise, 2 sets of maximum reps.",
-            "cd": "Stretching."
+            "target": "",
+			"cd": "Stretching."
         },
         {
             "name": "Weights: Strength Phase II",
@@ -358,7 +395,8 @@
             "wu": "15 minutes cardio.",
             "desc": "Weight routine: The goal of this workout is to increase muscle strength. Low-rep, high-weight.<ul><li>weighted back extension</li><li>calf raises</li><li>weighted pullups</li><li>squats</li><li>seated rows</li><li>leg press</li><li>flat db flys</li><li>incline db press</li><li>seated military db press</li><li>lateral shoulder raise</li><li>db curls</li><li>rope tricep pulldown</li><li>decline weighted situps</li></ul>",
             "info": "This phase begins in the middle of base training, just before you start working on shorter intervals. Most exercises should be 3 sets of 5 reps, otherwise, 3 sets of maximum reps.",
-            "cd": "It is important to spin the legs out after this kind of workout."
+            "target": "",
+			"cd": "It is important to spin the legs out after this kind of workout."
         },
         {
             "name": "Weights: Strength Phase III",
@@ -367,7 +405,8 @@
             "wu": "15 minutes cardio.",
             "desc": "Weight routine: mid rep, mid weight. Goal: muscle power.",
             "info": "This phase begins a couple months before racing season begins, to give you that final pop.",
-            "cd": "None."
+            "target": "",
+			"cd": "None."
         },
         {
             "name": "Sweet Spot - 2x30 minutes",
@@ -376,7 +415,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Start the ride with 30 minutes at 10%-15% below FTP. Ride in your endurance zone for the majority of the ride. Finish with 30 minutes at 10% - 15% below FTP.",
             "info": "Maintain 235+ watts. Aim for high cadence (95+).",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Sweet Spot - 3x20 minutes",
@@ -385,7 +425,8 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 20 minutes in 10-15% below FTP. Recover between intervals by riding for 10 minutes in your endurance zone.",
             "info": "Get in at least 2 x 20 with power between 235 and 250 watts. Stay aero and smooth like you are riding a break.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - 1x45 minutes",
@@ -394,7 +435,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Complete 1 x 45 minutes of riding in your Tempo power zone. During the interval, altenate riding 5 minutes with your cadence below 75 and riding 5 minutes with your candence above 105. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - 1x60 minutes",
@@ -403,7 +445,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Complete a 60 minute interval aiming to keep your average and normalized power in the middle of your tempo power zone. Alternate pedaling for 10 minutes with your cadence between 70 - 75 rpm and 10 minutes with your cadence between 95 and 105. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - 2x10 minutes",
@@ -412,7 +455,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Complete 2 x 10 minutes of riding in your Tempo power zone. Do the first interval with your cadence between 70 - 75 rpm. Ride for 5 minutes in your endurance zone. Do the second interval with your cadence between 95 and 105 rpm. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "Aim to hold 210 - 260 watts during the tempo bits with your power around 150 for the endurance parts. If you are stuck inside, warmup on the trainer for 30 minutes and then do the intervals and then cool down for 15 minutes.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - 2x15 minutes",
@@ -421,7 +465,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Complete 2 x 15 minutes of riding in your Tempo power zone. Do the first interval with your cadence between 70 - 75 rpm. Ride for 10 minutes in your endurance zone. Do the second interval with your cadence above 105 rpm. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - 2x30 minutes",
@@ -430,7 +475,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Complete 2 x 30 minutes of riding in your Tempo power zone. During each interval, altenate riding 5 minutes with your cadence below 75 and riding 5 minutes with your candence above 105. Ride for 15 minutes in your endurance zone between intervals. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - Overgeared Climbs",
@@ -439,7 +485,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Keep the power in your tempo zone on any climbs, but use a gear that is one click bigger than you are comfortable riding in. Your cadence will drop 10 - 15 rpm, and that is OK.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - Endurance with Tempo",
@@ -448,7 +495,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Keep the effort steady through the whole ride.",
             "info": "Start steady but finish with 20-30 minutes of sweet spot (230 - 245 watts).",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Tempo - Climbs",
@@ -457,7 +505,8 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range. Keep the power in your tempo zone on any climbs. Use the gears to flatten out the course.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Test - Day 1 (long power)",
@@ -466,7 +515,8 @@
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
             "desc": "We are going for average power during each intervalRide easy for 5 minutesGo as hard as you can for 20 minutes. Recover for 20 - 30 minutesDo it again and see if you can get a better result",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "Test - Day 1 TRAINER (long power)",
@@ -475,7 +525,8 @@
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
             "desc": "This is a ramp test to failure. Start with 3 minutes ~120 watts below your estimated threshold power. Increase the power by 20 watts every 3 minutes. When you get to within 30 watts of your estimated threshold power, increase the power by 10 watts every 3 minutes. Continue increasing power by 10 watts every 3 minutes until you cannot complete 3 minutes at a level.",
             "info": "Start at 160 watts and increase by 20 until you hit 250 watts. Then increase in 10 watt increments.",
-            "cd": "Easy spinning for 30 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 30 minutes. 100+ cadence"
         },
         {
             "name": "Test - Day 2 (short power)",
@@ -484,7 +535,8 @@
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
             "desc": "For each of the efforts below, you are going for average power for the entire interval. 1) Ride easy for 5 minutes2) 5 minutes all out. Really hammer and give it a last gun in the last 45 seconds. 3) 10 minutes easy spinning4) 2 minutes all out. Really nail it for the entire 2 minutes like you are going for the gold. 5) 5 minutes easy spinning6) 2 minutes all out. 7) 5 minutes easy spinning8) 1 minute all out. Really hit these hard for the whole minute. 9) 5 minutes easy spinning10) 1 minute all out. 11) 5 minutes easy spinning12) 30 seconds Super intense13) 5 minutes easy spinning14) 30 seconds as hard as you can go. 15) 2 minutes easy spinning16) 12-second super strong sprint. Raise the max watts. 17) 2 minutes easy spinning18) One last 12-second sprint. Give it all you got.",
             "info": "",
-            "cd": "Easy spinning for 30 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 30 minutes. 100+ cadence"
         },
         {
             "name": "Test - Day 2 (peak power)",
@@ -493,7 +545,8 @@
             "wu": "Get in a good warm-up by riding for 20 - 30 minutes working your way up to your endurance zone over the first 15 minutes and then including a 5 minutes ramp up to FTP increasing the watts 10 - 20 every minute. Cruise in your endurance zone for 5 minutes before starting the test.",
             "desc": "Start by riding for 3 minutes at 100 watts. After the first 3 minutes, increase the power by 20 watts every 1 minute. Increase the power by 10 watts after you have reached your FTP. Keep going until you cannot successfully finish 3 minutes at a particular wattage.",
             "info": "",
-            "cd": "Easy spinning for 30 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 30 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - 3 minutes",
@@ -502,7 +555,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Complete 7 x 3 minutes in your VO2max zone with 3 minutes of recovery in between each effort. These are hard. Go as hard as you can and still finish the 3 minutes each time.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - 3 minutes (hills)",
@@ -511,7 +565,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Find a hill that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain a hard pace for at least 2. 30 then it is time to head home.",
             "info": "Really try to hit test like a workout. find a hill that you can do repeats on. It does not have to be super steep, just a steady grade. If you cant find a hill, then do them on the flats but get that power up to 300 and hold it.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - 3 minutes (speed)",
@@ -520,7 +575,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Find an open section of road that is mostly flat where you can go hard and fast without interuptions from lights or intersections or trafific. Each interval is 3 - 5 minutesRecovery between intervals is for the same amount of time as the preceding interval. Complete 7 - 10 intervalsOnce you are unable to maintain the target power for at least 2. 30 then it is time to head home.",
             "info": "Aiming for 300-330 for each 3 minute effort.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - 30 seconds/30 seconds",
@@ -529,7 +585,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Start with 3 x 3 minutes on, 3 minutes off working from high threshold to your VO2max zone during the on intervals and mid endurance during the off intervals. Ride 5 minutes in your endurance zone before starting the next bit. This workout is basically 30 seconds at Vo2max followed by 30 seconds at 70% of Vo2max. Use your best 5 minute mean maximal power as your VO2max target. Do 3 sets sets of 10 x 30 seconds on30 seconds off. 5 minutes in your endurance zone between sets.",
             "info": "Same power target as with the 3 minute efforts. Treat the initial 3 x 3 as part of your warmup. Hit them at 270-280 and 290 then start the first set of 3030s at 290 and step up to 300 after the first 5. Then in the second set hold 300 as the target the whole way and the same fo the last set kicking to 310 in the last 5 if you think you can and still finish.",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - 40 seconds/20 seconds",
@@ -538,7 +595,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Start with 3 x 3 minutes on, 3 minutes off working from high threshold to your VO2max zone during the on intervals and mid endurance during the off intervals. Ride 5 minutes in your endurance zone before starting the next bit. This workout is basically 40 seconds at Vo2max followed by 20 seconds at 70% of Vo2max. Use your best 5 minute mean maximal power as your VO2max target. Do 3 sets sets of 10 x 40 seconds on20 seconds off. 5 minutes in your endurance zone between sets.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - 40 seconds/30 seconds",
@@ -547,7 +605,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Start with 3 x 3 minutes on, 3 minutes off working from high threshold to your VO2max zone during the on intervals and mid endurance during the off intervals. Ride 5 minutes in your endurance zone before starting the next bit. This workout is basically 40 seconds at Vo2max followed by 30 seconds at 70% of Vo2max. Use your best 5 minute mean maximal power as your VO2max target. Do 3 sets sets of 10 x 40 seconds on30 seconds off. 5 minutes in your endurance zone between sets.",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
         {
             "name": "VO2 - Ladder 1-4 minutes",
@@ -556,7 +615,8 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence aiming to average in your VO2max or higher zones for each. 1 minute on, 1 minute off2 minutes on, 2 minutes off3 minutes on, 3 minutes off4 minutes on, 4 minutes off4 minutes on, 4 minutes off3 minutes on, 3 minutes off2 minutes on, 2 minutes off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off1 minute on, 1 minute off",
             "info": "",
-            "cd": "Easy spinning for 15 minutes. 100+ cadence"
+            "target": "",
+			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         }
     ],
     "schedules": [
@@ -7349,6 +7409,750 @@
             "sat": {
                 "workoutname": "test-day2shortpower",
                 "duration": "120"
+            }
+        },
+        {
+            "name": "01-14-ftp1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "75"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150"
+            }
+        },
+       {
+            "name": "02-14-ftp2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "ftp-3x20minutes",
+                "duration": "75"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150"
+            }
+        },
+       {
+            "name": "03-14-ftp3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength2",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "bursts-2x20minutes",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "bursts-2x20minutes",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "bursts-2x20minutes",
+                "duration": "75"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150"
+            }
+        },
+        {
+            "name": "04-14-testpeak",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "raceprep",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "test-day2peakpower",
+                "duration": "75"
+            },
+            "thu": {
+                "workoutname": "endurance-basic",
+                "duration": "60"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "90"
+            },
+            "sat": {
+                "workoutname": "ac-racewinners",
+                "duration": "150"
+            }
+        },
+        {
+            "name": "05-14-vo21",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "06-14-vo22",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "07-14-vo23",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "08-14-vo24",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-ladder1-4minutes",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "09-14-endurance",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "thu": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            }
+        },
+        {
+            "name": "10-14-ac1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150"
+            }
+        },
+        {
+            "name": "11-14-ac2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150"
+            }
+        },
+        {
+            "name": "12-14-ac3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ac-30seconds",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "ac-30seconds",
+                "duration": "150"
+            }
+        },
+        {
+            "name": "13-14-sprints1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "wed": {
+                "workoutname": "sprints-sprintstarts",
+                "duration": "105"
+            },
+            "thu": {
+                "workoutname": "endurance-basic",
+                "duration": "60"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            }
+        },
+        {
+            "name": "14-14-sprints2",
+            "sun": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ac-30-60seconds",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "sweetspot-2x30minutes",
+                "duration": "120"
+            },
+            "thu": {
+                "workoutname": "sprints-9",
+                "duration": "120"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "sprints-stompsprintsstanding",
+                "duration": "150"
+            }
+        },
+        {
+            "name": "15-14-sprints3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ac-3x30seconds",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "sweetspot-2x30minutes",
+                "duration": "150"
+            },
+            "thu": {
+                "workoutname": "sprints-6",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "raceprep",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            }
+        },
+        {
+            "name": "16-14-endurance1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength1",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "strength1",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "120"
+            },
+            "fri": {
+                "workoutname": "run-easy",
+                "duration": "15"
+            },
+            "sat": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            }
+        },
+        {
+            "name": "17-14-vo21",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "18-14-vo22",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "19-14-vo23",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "strength3",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "wed": {
+                "workoutname": "vo2-30secondsx30seconds",
+                "duration": "90"
+            },
+            "thu": {
+                "workoutname": "vo2-3minutes",
+                "duration": "90"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "vo2-3minuteshills",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "20-14-maint1",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "210"
+            },
+            "mon": {
+                "workoutname": "strengthcore",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "vo2-40secondsx20seconds",
+                "duration": "0"
+            },
+            "wed": {
+                "workoutname": "endurance-basic",
+                "duration": "120"
+            },
+            "thu": {
+                "workoutname": "sprints-stompsprintsseated",
+                "duration": "120"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            }
+        },
+        {
+            "name": "21-14-maint2",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "wed": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            }
+        },
+        {
+            "name": "22-14-maint3",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "wed": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "thu": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            }
+        },
+        {
+            "name": "23-14-maint4",
+            "sun": {
+                "workoutname": "endurance-groupride",
+                "duration": "150"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "ftp-3x10minutes",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "sprints-sprintstarts",
+                "duration": "120"
+            },
+            "thu": {
+                "workoutname": "endurance-groupride",
+                "duration": "120"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "180"
+            }
+        },
+        {
+            "name": "24-14-maint5",
+            "sun": {
+                "workoutname": "bursts-basicbursts",
+                "duration": "180"
+            },
+            "mon": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "tue": {
+                "workoutname": "sweetspot-3x20minutes",
+                "duration": "120"
+            },
+            "wed": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "thu": {
+                "workoutname": "bursts-microbursts",
+                "duration": "120"
+            },
+            "fri": {
+                "workoutname": "easy-off",
+                "duration": "60"
+            },
+            "sat": {
+                "workoutname": "sweetspot-2x30minutes",
+                "duration": "150"
             }
         }
     ]
