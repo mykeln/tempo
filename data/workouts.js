@@ -22,7 +22,7 @@
             "name": "Run - Easy Run",
             "shortname": "run-easy",
             "type": "run",
-            "wu": "",
+            "wu": "1 minute of light jogging",
             "desc": "Easy run, just to keep the legs loose.",
             "info": "Running",
             "target": "",
