@@ -190,19 +190,28 @@ jQuery(function($) {
 
       var fitnessTime  = i;
       var fitnessPower = item;
-      var wKg = item/weightKg;
+      var wKg = (item/weightKg).toFixed(2);
 
-      var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
+      //var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
 
-      $('#profile').append(fitnessTemplate);
+
+
+    var fitnessTemplate = "<div id='" + fitnessTime + "' class='int'> \
+      <h3>" + fitnessTime + "</h3> \
+      <h4>" + wKg + "</h4> \
+      <h6>" + fitnessPower + " watts</h6> \
+      </div>"
+
+      $('#score').append(fitnessTemplate);
 
       // determine class for each power zone and color
       // grab data from first table
+
       var do_these = ["5s", "1m", "5m", "20m" ];
       var do_info = { };
 
       for( i = 0; i < do_these.length; i++ ) ( function(r) {
-        do_info[r] = parseFloat($("#profile tr#" + r + " td:eq(2)").html());
+        do_info[r] = parseFloat($("#score div#" + r + " h4").html());
       }) (do_these[i]);
 
       // apply colors to second table
@@ -211,6 +220,7 @@ jQuery(function($) {
           var cell = parseFloat( $(this).html() );
           if( do_info[r] >= cell ) {
             $(this).css( { 'background-color': '#3CBBAF' } );
+            console.log($(this));
           }
         });
       }) (do_these[i], i);
@@ -302,6 +312,12 @@ O5-10 - VO2 OR AC OR FTP
   $("#full_library").click(function() {
     $('#library_explanation').toggle();
     $('#workout_library').toggle();
+    return false;
+  });
+
+  // showing power profile
+  $("#power_profile").click(function() {
+    $('#profile').toggle();
     return false;
   });
 

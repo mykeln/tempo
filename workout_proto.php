@@ -127,10 +127,10 @@
 <div class="workout">
   <div class="row hard">
     <div class="int on">
-      <h3>20</h3>
-      <h4>secs</h4>
-      <h5>on</h5>
-      <h6>1200w</h6>
+      <h3>1</h3>
+      <h4>sec</h4>
+      <h5>World Class / Div I/II Pro / Div III Pro</h5>
+      <h6>1502</h6>
     </div>
     <div class="math">
       +

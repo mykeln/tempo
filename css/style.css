@@ -16,7 +16,8 @@ h6 {
 /* header style */
 .activity,
 #calendar,
-#library {
+#library,
+#fitness {
   border-bottom: 5px solid #efefef;
   margin-bottom: 10px;
 }
@@ -36,7 +37,8 @@ h6 {
 #schedules tr,
 #workout .activity,
 #workout_library,
-#homescreen_note {
+#homescreen_note,
+#profile {
   display: none;
 }
 
@@ -56,4 +58,56 @@ h6 {
   #homescreen_bottom p {
     font-size: 18px;
     text-align: center;
+  }
+
+#fitness {
+  padding-bottom: 10px;
+}
+
+.int h3,
+.int h4,
+.int h5,
+.int h6 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  color: #efefef;
+}
+
+.int h3 {
+  font: 200 30px/33px sans-serif;
+}
+
+.int h4,
+.int h5 {
+  font: 100 10px/13px sans-serif;
+}
+
+.int h6 {
+  font: 200 10px/13px sans-serif;
+}
+
+.int {
+  width: 12.3%;
+  height: 12.3%;
+  background: #222;
+  float: left;
+  padding: 20px;
+  margin: 0px 0.1% 0px 0px;
+}
+
+  .int.on h5 {
+    color: #A7FF92;
+  }
+
+  .int.off h5 {
+    color: #FF7F7F;
+  }
+
+  .int.rest h5 {
+    color: #3ea6e0;
+  }
+
+  .int h6 {
+    color: #fffcab;
   }

@@ -205,24 +205,18 @@
 
   <!-- fitness -->
   <div id="fitness" class="row">
-    <h2>Fitness <small></small></h2>
+    <h2>Fitness Score <small></small></h2>
 
+    <div id="score"></div>
+  </div>
+
+  <div class="row">
+    <a id="power_profile" class="btn btn-default btn-xs" href="">toggle power profile</a>
+  </div>
+
+  <div id="profile">
+    <h2>Power Profile</h2>
     <div class="span6 table-responsive">
-      <h3>Power Profile</h3>
-      <table class="table table-striped">
-        <thead>
-          <th>Interval</th>
-          <th>Power</th>
-          <th>w/Kg</th>
-        </thead>
-        <tbody id="profile">
-
-        </tbody>
-      </table>
-    </div>
-
-    <div class="span6 table-responsive">
-      <h3>Power Class</h3>
       <table class="table table-condensed">
         <thead>
           <th>Class</th>
