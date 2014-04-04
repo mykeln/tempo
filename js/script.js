@@ -87,64 +87,64 @@ jQuery(function($) {
           var activityInfo          = item.info;
           var activityCooldown      = item.cd;
 
-          // rendering library information
-          var libraryTemplate = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_target'>Target Efffort</h6><p>" + activityTarget + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p></div><hr class='soften'>";
+          // rendering LIBRARY and WORKOUT information
+          var activityTemplate = "";
 
-          if($('#' + activityShortName).length == 0 ){
-            $('#workout_library').append(libraryTemplate);
+          var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + " minutes</h4>";
+          var libraryEnd = "</div><hr class='soften'>";
+
+          if(activityWarmup != "") {
+            activityTemplate += "<h6>Warm Up</h6><p>" + activityWarmup + "</p>";
           }
 
-          // if the pulled shortname matches the shortname of the schedule
+          if(activityDesc != "") {
+            activityTemplate += "<h6>Workout</h6><p>" + activityDesc + "</p>";
+          }
+
+          if(activityTarget != "") {
+            activityTemplate += "<h6 class='activity_target'>Target Effort</h6><p>" + activityTarget + "</p>";
+          }
+
+          // appending things to coach comments
+          // show this on thursday and friday only
+          if ((thisNumDay == 7) || (thisNumDay == 8)) {
+            activityInfo += "No hard workouts today if racing Sunday.";
+          }
+          // show this on friday and saturday only
+          if ((thisNumDay == 8) || (thisNumDay == 9)) {
+            activityInfo += "If racing tomorrow, do the following race prep:<br/>Ride 60 - 90 minutes mostly in your endurance zone.<br/>Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts.<br/>Complete 5 big gear intervals that last no more than 1 minute each.<br/>In each interval your goal is to go fast, but back down before you start really killing yourself.<br/>Recover for at least 2 minutes between efforts.<br/>Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.";
+          }
+          // show this on saturday and sunday only
+          if ((thisNumDay == 9) || (thisNumDay == 3)) {
+            activityInfo += "If racing today, do the following warm up: spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring 18-17-16. Then easy for 5. Then a few 1-2 min step ups to vo2 and over. Big ring 16-15-14. 1 easy out of the saddle jump.";
+          }
+
+          if(activityInfo != "") {
+            activityTemplate += "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p>";
+          }
+
+          if (((scheduleName >= 11) && (scheduleName <= 24)) ||
+             ((scheduleName >= 25) && (scheduleName <= 27)) ||
+             ((scheduleName >= 28) && (scheduleName <= 35))) {
+            activityTemplate += "<h6 class='activity_info'>If Racing This Weekend</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end, VO2 and tempo.</p>"
+          }
+
+          if(activityCooldown != "") {
+            activityTemplate += "<h6>Cool Down</h6><p>" + activityCooldown + "</p>";
+          }
+
+
+          // if the activity hasn't already been added to the library, add it to the LIBRARY template
+          if($('#' + activityShortName).length == 0 ){
+            $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
+          }
+
+          // if this activity is either today, or occurred on this day in the past, add it to the WORKOUT template
           if(activityShortName == calendarShortName) {
-            // setting this activity to blank
-            var thisActivity = "";
+            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h4>" + activityName + " / " + parsedDuration + " minutes</h4>";
+            var workoutEnd = "</div>";
 
-            // setting values for data if there isn't any
-            if(activityWarmup == ""){
-              activityWarmup = "None."
-            }
-
-            if(activityCooldown == ""){
-              activityCooldown = "None."
-            }
-
-            if(activityInfo == ""){
-              activityInfo = "None."
-            }
-
-            // defining the template to list the activity
-            /*
-            var racingTemplate;
-            var racingTemplateText = "No hard workouts two days prior to race day.";
-
-            var maintenanceTemplate = "<h6 class='activity_info'>What to Focus on This Week</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end, VO2 and tempo.</p>";
-
-            // show this on thursday and friday only
-            if ((thisNumDay == 7) || (thisNumDay == 8)) {
-              racingTemplateText = "No hard workouts today if racing Sunday.";
-            }
-            // show this on friday and saturday only
-            if ((thisNumDay == 8) || (thisNumDay == 9)) {
-              racingTemplateText += "<br/>If racing tomorrow, do the following race prep:<br/>Ride 60 - 90 minutes mostly in your endurance zone.<br/>Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts.<br/>Complete 5 big gear intervals that last no more than 1 minute each.<br/>In each interval your goal is to go fast, but back down before you start really killing yourself.<br/>Recover for at least 2 minutes between efforts.<br/>Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these are part of the low gear accelerations or big gear intervals.";
-            }
-            // show this on saturday and sunday only
-            if ((thisNumDay == 9) || (thisNumDay == 3)) {
-              racingTemplateText += " If racing today, do the following warm up: spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring 18-17-16. Then easy for 5. Then a few 1-2 min step ups to vo2 and over. Big ring 16-15-14. 1 easy out of the saddle jump.";
-            }
-
-            if (((scheduleName >= 11) && (scheduleName <= 24)) ||
-               ((scheduleName >= 25) && (scheduleName <= 27)) ||
-               ((scheduleName >= 28) && (scheduleName <= 35))) {
-              racingTemplate = "<h6 class='activity_info'>If Racing This Weekend</h6><p>" + racingTemplateText + "</p>"
-            }
-            */
-
-            racingTemplate = "";
-            maintenanceTemplate = "";
-
-            var activityTemplate = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h4>" + activityName + " / " + parsedDuration + " minutes</h4><h6>Warm Up</h6><p>" + activityWarmup + "</p><h6>Workout</h6><p>" + activityDesc + "</p><h6 class='activity_target'>Target Efffort</h6><p>" + activityTarget + "</p><h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p><h6>Cool Down</h6><p>" + activityCooldown + "</p>"  + racingTemplate + maintenanceTemplate + "</div>";
-
-            $('#workout').append(activityTemplate);
+            $('#workout').append(workoutBegin + activityTemplate + workoutEnd);
           }
         }); // end activities each
       }

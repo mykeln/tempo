@@ -23,8 +23,8 @@
             "shortname": "run-easy",
             "type": "run",
             "wu": "1 minute of light jogging",
-            "desc": "Easy run, just to keep the legs loose.",
-            "info": "Running",
+            "desc": "Run at a steady pace for around 20 minutes.",
+            "info": "Just to keep the legs loose. No hard efforts.",
             "target": "",
 			"cd": ""
         },
@@ -33,8 +33,8 @@
             "shortname": "ac-1ktimetrial",
             "type": "bike",
             "wu": "5 - 8 hard efforts at and above threshold lasting 1 - 5 minutes each",
-            "desc": "These are full gas 1k efforts. Time will depend on speed. Stay aero and keep the cadence high (115+). Recover with some easy spinning between efforts. Complete 5 - 10 intervals. Power is anaerobic capacity for each.",
-            "info": "Test",
+            "desc": "These are <i>full gas</i> 1K efforts. Time will depend on speed. Stay aero and keep the cadence high (105+). Recover with some easy spinning between efforts. Complete 5 - 10 intervals. Power is anaerobic capacity for each.",
+            "info": "",
             "target": "",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence"
         },
