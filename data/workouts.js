@@ -19,6 +19,16 @@
     ],
     "activities": [
         {
+            "name": "Stretching",
+            "shortname": "stretch",
+            "type": "stretch",
+            "wu": "",
+            "desc": "",
+            "info": "",
+            "target": "",
+            "cd": ""
+        },
+        {
             "name": "Run - Easy Run",
             "shortname": "run-easy",
             "type": "run",

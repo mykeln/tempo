@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Tempo</title>
-  <meta name="description" content="Tempo is made for cyclists who use power meters. It's an automated coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
+  <title>Get faster, quicker</title>
+  <meta name="description" content="Welluride is an automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
   <meta name="author" content="Mykel Nahorniak">
 
   <!-- display defaults -->
@@ -49,7 +49,7 @@
   <script src="js/libs/jquery.columnmanager.min.js"></script>
   <script src="js/libs/fastclick.js"></script>
 
-  <!-- tempo logic -->
+  <!-- welluride logic -->
   <script src="js/script.js"></script>
 
   <!-- hacks for faster responsiveness on mobile -->
@@ -71,7 +71,7 @@
 
   <!-- user setup
   <div id="setup" class="row">
-    <h1>Set Up Your Profile <small>help Tempo create an ideal training plan for you</small></h1>
+    <h1>Set Up Your Profile <small>help Welluride create an ideal training plan for you</small></h1>
 
     <form class="form-horizontal">
       <div class="control-group">
@@ -83,7 +83,7 @@
       <div class="control-group">
         <label class="control-label" for="inputEmail">Email</label>
         <div class="controls">
-          <input type="text" id="inputEmail" placeholder="myname@tempoemail.com">
+          <input type="text" id="inputEmail" placeholder="myname@welluride.com">
         </div>
       </div>
       <div class="control-group">
@@ -144,7 +144,7 @@
 
   <!-- today's workout -->
   <div id="workout" class="row">
-    <h1>TEMPO <small>virtual coach</small></h1>
+    <h1>welluride <small>virtual coach</small></h1>
   </div>
 
   <div class="row">
@@ -271,15 +271,15 @@
 
 <div id="homescreen_note">
   <div id="workout" class="row">
-    <h1>TEMPO</h1>
+    <h1>Welluride</h1>
   </div>
 
   <p>You want to get faster on the bike, but don't have the time to build a training plan every week, and coaches are too expensive.</p>
-  <p><b>Tempo</b> is made for you. It's an automated coach that uses your power data as a guide to create training blocks on the fly.</p>
+  <p><b>Welluride</b> is made for you. It's an automated coach that uses your power data as a guide to create training blocks on the fly.</p>
   <p>Seasonality, personal strengths, weaknesses and other factors are taken into account.</p>
 
   <div id="homescreen_bottom">
-    <p>Add Tempo to your home screen</p>
+    <p>Add Welluride to your home screen</p>
     <p>&darr;</p>
   </div>
 </div>
