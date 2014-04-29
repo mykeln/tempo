@@ -1,0 +1,39 @@
+.navbar-default {
+  background-color: #3CBBAF;
+  border-color: pink;
+}
+
+.navbar-static-top {
+  border-width: 0 0 10px;
+}
+
+.navbar-default .navbar-brand {
+  background: url(../images/logo.png) left center no-repeat;
+  text-indent: -9999px;
+  width: 130px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: none;
+  font-weight: bold;
+}
+
+
+
+.upload_button {
+  padding-top: 10px;
+}
+
+  .upload_button button {
+    background-color: pink;
+    border-color: pink;
+  }
+
+    .upload_button button:hover {
+      background-color: #D998A6;
+      border-color: #D998A6;
+    }
