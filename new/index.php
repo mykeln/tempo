@@ -12,6 +12,11 @@
     <!-- Override -->
     <link href="css/base.css" rel="stylesheet">
 
+    <!-- form stuff -->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -64,8 +69,36 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8">
-
-
+        <h1>Join Welluride</h1>
+        <form id="theForm" class="simform" autocomplete="off">
+          <div class="simform-inner">
+            <ol class="questions">
+              <li>
+                <span><label for="q1">What's your full name?</label></span>
+                <input id="q1" name="q1" type="text"/>
+              </li>
+              <li>
+                <span><label for="q2">What's your weight?</label></span>
+                <input id="q2" name="q2" type="text"/>
+              </li>
+              <li>
+                <span><label for="q3">What's your email address?</label></span>
+                <input id="q3" name="q3" type="email"/>
+              </li>
+            </ol><!-- /questions -->
+            <button class="submit" type="submit">Send answers</button>
+            <div class="controls">
+              <button class="next"></button>
+              <div class="progress"></div>
+              <span class="number">
+                <span class="number-current"></span>
+                <span class="number-total"></span>
+              </span>
+              <span class="error-message"></span>
+            </div><!-- / controls -->
+          </div><!-- /simform-inner -->
+          <span class="final-message"></span>
+        </form><!-- /simform -->
 
 
 
@@ -112,5 +145,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/classie.js"></script>
+    <script src="js/stepsForm.js"></script>
+    <script>
+      var theForm = document.getElementById( 'theForm' );
+
+      new stepsForm( theForm, {
+        onSubmit : function( form ) {
+          // hide form
+          classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+          /*
+          form.submit()
+          or
+          AJAX request (maybe show loading indicator while we don't have an answer..)
+          */
+
+          // let's just simulate something...
+          var messageEl = theForm.querySelector( '.final-message' );
+          messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+          classie.addClass( messageEl, 'show' );
+        }
+      } );
+    </script>
   </body>
 </html>
