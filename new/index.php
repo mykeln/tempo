@@ -67,9 +67,73 @@
 
 
     <div class="container">
+      <div class="col-sm-8">
+
       <div class="row">
-        <div class="col-sm-8">
-        <h1>Join Welluride</h1>
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Dashboard</li>
+        </ol>
+      </div>
+      <div class="row">
+        <!-- goal -->
+        <h3>This Week's Goal</h3>
+        <div class="progress progress-striped">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80% Complete</span></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- today's workout -->
+        <h3>Today's Workout</h3>
+        <span class="label label-info">2014 season, week 18</span><h4>VO2 - 3 minutes / 90 minutes</h4>
+        <div id="14" class="activity" style="display: block;"><h6>Warm Up</h6><p>5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.</p><h6>Workout</h6><p>Complete 7 x 3 minutes in your VO2max zone with 3 minutes of recovery in between each effort. These are hard. Go as hard as you can and still finish the 3 minutes each time.</p><h6 class="activity_info">Racing Season Maintenance</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end do VO2 and tempo. This choice will be automated in the future.</p><h6>Cool Down</h6><p>Easy spinning for 15 minutes. 100+ cadence</p></div>
+      </div>
+
+
+
+
+
+        </div>
+
+        <div class="col-sm-4">
+
+        <!-- help box -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Help</h3>
+            </div>
+            <div class="panel-body">
+              Help One
+            </div>
+          </div>
+
+          <!-- ride feed -->
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-success" title="Completed">
+              <p class="list-group-item-status">COMPLETED</p>
+              <h4 class="list-group-item-heading">AC - 10x30s</h4>
+              <p class="list-group-item-text">NORM: 254w. ACC: 85%</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-success" title="Completed">
+              <p>COMPLETED</p>
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-warning" title="Not Complete">
+              <h4 class="list-group-item-heading">List group item heading</h4>
+              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+<!--
         <form id="theForm" class="simform" autocomplete="off">
           <div class="simform-inner">
             <ol class="questions">
@@ -85,7 +149,7 @@
                 <span><label for="q3">What's your email address?</label></span>
                 <input id="q3" name="q3" type="email"/>
               </li>
-            </ol><!-- /questions -->
+            </ol>
             <button class="submit" type="submit">Send answers</button>
             <div class="controls">
               <button class="next"></button>
@@ -95,48 +159,18 @@
                 <span class="number-total"></span>
               </span>
               <span class="error-message"></span>
-            </div><!-- / controls -->
-          </div><!-- /simform-inner -->
+            </div>
+          </div>
           <span class="final-message"></span>
-        </form><!-- /simform -->
+        </form>
+-->
 
 
 
-        </div>
 
-        <div class="col-sm-4">
 
-        <h4>This Week's Goal</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
-        </div>
 
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Help</h3>
-            </div>
-            <div class="panel-body">
-              Help One
-            </div>
-          </div>
 
-          <div class="list-group">
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">AC - 10x30s</h4>
-              <p class="list-group-item-text">NORM: 254w. ACC: 85%</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-          </div>
-
-        </div>
-      </div>
 
     </div> <!-- /container -->
 
