@@ -383,7 +383,6 @@ O5-10 - VO2 OR AC OR FTP
 
   $("#havepowermeter").click(function() {
     $('#powerbests').toggle();
-
   });
 
 
