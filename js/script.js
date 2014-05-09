@@ -5,6 +5,7 @@
 //// INIT
   var weightKg;
   var athleteName;
+  var powerProfile = {};
 
   var thisYear = Date.today().getYear().toString().slice(1);
   var thisMonth = Date.today().getMonth();
@@ -21,10 +22,55 @@
   }
 
 //// UTILITY FUNCTIONS
-function compareNum(a,b){
+function compareNum(a, b){
   return (a < b ? this >= a && this <= b : this >= b && this <= a);
 }
 
+function roundNum(num, nearest) {
+  return (Math.round(num / nearest) * nearest);
+}
+
+function eval_fragment(formula_text, lookup_table) {
+  var formula = formula_text.match(/\(\[(.*?)\]\*([0-9|.]+)\)/i);
+  var coefficient_key = formula[1];
+  var number = parseFloat(formula[2]);
+
+
+  var coefficient = lookup_table[coefficient_key];
+  //console.log(coefficient * number);
+
+  var exactTarget = (coefficient * number);
+  var roundedTarget = roundNum(exactTarget,5);
+
+  return(roundedTarget);
+}
+
+function eval_target(input_string) {
+    // first match formulas ([?]*?)
+    var formulas = input_string.match(/\(\[(.*?)\]\*([0-9|.]+)\)/ig);
+
+    // evaluate individual fragments
+    var replace = [];
+    for( i = 0; i < formulas.length; i++ ) {
+        replace.push({
+            "from": formulas[i],
+            "to": eval_fragment(formulas[i], powerProfile)
+        });
+    }
+
+    // do search-replace on the text
+    for( i = 0; i < replace.length; i++ ) {
+        input_string = input_string.replace(
+            replace[i].from,
+            Math.round(replace[i].to)
+        );
+    }
+
+    return( input_string );
+}
+
+
+//// APP LOGIC
 jQuery(function($) {
 //// CALENDAR
   // getting json data
@@ -43,6 +89,45 @@ jQuery(function($) {
       $('#fitness h2 small').html(athleteName + " - " + item.weight + "lbs");
     }); // end config each
 
+////FITNESS
+    $.each(data.fitness[0], function(i,item){
+
+      fitnessTime  = i;
+      fitnessPower = item;
+      var wKg = (item/weightKg).toFixed(2);
+
+      powerProfile[fitnessTime] = fitnessPower;
+
+      //var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
+
+    var fitnessTemplate = "<div id='" + fitnessTime + "' class='int'> \
+      <h3>" + fitnessTime + "</h3> \
+      <h4>" + wKg + "</h4> \
+      <h6>" + fitnessPower + " watts</h6> \
+      </div>"
+
+      $('#score').append(fitnessTemplate);
+
+      // determine class for each power zone and color
+      // grab data from first table
+
+      var do_these = ["5s", "1m", "5m", "20m" ];
+      var do_info = { };
+
+      for( i = 0; i < do_these.length; i++ ) ( function(r) {
+        do_info[r] = parseFloat($("#score div#" + r + " h4").html());
+      }) (do_these[i]);
+
+      // apply colors to second table
+      for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
+        $("#powerclass tr td:nth-child(" + (2+i) + ")").each( function() {
+          var cell = parseFloat( $(this).html() );
+          if( do_info[r] >= cell ) {
+            $(this).css( { 'background-color': '#3CBBAF' } );
+          }
+        });
+      }) (do_these[i], i);
+    });
 
 //// SCHEDULES
     // get a list of all the historical schedules and append to list
@@ -72,7 +157,6 @@ jQuery(function($) {
 
         // dynamically pulling data depending on what today's date is
         var calendarShortName = item[thisDay].workoutname;
-        var parsedDuration = item[thisDay].duration;
 
         // pull all of this week's activities in the json file
         $.each(data.activities, function(i,item){
@@ -81,14 +165,22 @@ jQuery(function($) {
           var activityType          = item.type;
           var activityWarmup        = item.wu;
           var activityDesc          = item.desc;
-          var activityTarget        = item.target;
+          var activityTargetRaw     = item.target;
           var activityInfo          = item.info;
+          var activityDuration      = item.duration;
           var activityCooldown      = item.cd;
+
+          // calculations for generating target efforts
+          // round up/down to the nearest 5 watts
+          //var activityTarget        = activityTargetRaw.split('[]');
+          if (activityTargetRaw != "") {
+            var activityTarget = eval_target(activityTargetRaw);
+          }
 
           // rendering LIBRARY and WORKOUT information
           var activityTemplate = "";
 
-          var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + parsedDuration + " minutes</h4>";
+          var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
           var libraryEnd = "</div><hr class='soften'>";
 
           if(activityWarmup != "") {
@@ -99,7 +191,7 @@ jQuery(function($) {
             activityTemplate += "<h6>Workout</h6><p>" + activityDesc + "</p>";
           }
 
-          if(activityTarget != "") {
+          if(activityTargetRaw != "") {
             activityTemplate += "<h6 class='activity_target'>Target Effort</h6><p>" + activityTarget + "</p>";
           }
 
@@ -139,7 +231,7 @@ jQuery(function($) {
 
           // if this activity is either today, or occurred on this day in the past, add it to the WORKOUT template
           if(activityShortName == calendarShortName) {
-            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h4>" + activityName + " / " + parsedDuration + " minutes</h4>";
+            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
             var workoutEnd = "</div>";
 
             $('#workout').append(workoutBegin + activityTemplate + workoutEnd);
@@ -183,48 +275,6 @@ jQuery(function($) {
       $('#schedules').append(scheduleTemplate);
 
     }); // end schedules each
-
-
-////FITNESS
-    $.each(data.fitness[0], function(i,item){
-
-      var fitnessTime  = i;
-      var fitnessPower = item;
-      var wKg = (item/weightKg).toFixed(2);
-
-      //var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
-
-
-
-    var fitnessTemplate = "<div id='" + fitnessTime + "' class='int'> \
-      <h3>" + fitnessTime + "</h3> \
-      <h4>" + wKg + "</h4> \
-      <h6>" + fitnessPower + " watts</h6> \
-      </div>"
-
-      $('#score').append(fitnessTemplate);
-
-      // determine class for each power zone and color
-      // grab data from first table
-
-      var do_these = ["5s", "1m", "5m", "20m" ];
-      var do_info = { };
-
-      for( i = 0; i < do_these.length; i++ ) ( function(r) {
-        do_info[r] = parseFloat($("#score div#" + r + " h4").html());
-      }) (do_these[i]);
-
-      // apply colors to second table
-      for( i = 0; i < do_these.length; i++ ) ( function(r,i) {
-        $("#powerclass tr td:nth-child(" + (2+i) + ")").each( function() {
-          var cell = parseFloat( $(this).html() );
-          if( do_info[r] >= cell ) {
-            $(this).css( { 'background-color': '#3CBBAF' } );
-            console.log($(this));
-          }
-        });
-      }) (do_these[i], i);
-    });
 
 
 ////RENDERING
