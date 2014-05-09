@@ -131,7 +131,7 @@ $('mydate').glDatePicker();
   </div>
 
   <div class="container">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
       <div class="row">
         <ol class="breadcrumb">
           <li><a href="#">Home</a></li>
@@ -263,8 +263,8 @@ $('mydate').glDatePicker();
       </div>
     </div> <!-- end 8 column -->
 
+<!--
     <div class="col-sm-4">
-      <!-- help box -->
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Help</h3>
@@ -274,7 +274,6 @@ $('mydate').glDatePicker();
         </div>
       </div>
 
-      <!-- ride feed -->
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-success" title="Completed">
           <p class="list-group-item-status">COMPLETED</p>
@@ -294,7 +293,7 @@ $('mydate').glDatePicker();
 
     </div>
   </div>
-
+-->
 
   <!-- user setup
   <div id="setup" class="row">
