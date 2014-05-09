@@ -1,17 +1,41 @@
-h1 {
-  margin-top: 0;
+.navbar-default {
+  background-color: #3CBBAF;
+  border-color: pink;
 }
 
-h6 {
-  margin-top: 30px;
-  text-transform: uppercase;
-  font-weight: 200;
+.navbar-static-top {
+  border-width: 0 0 10px;
 }
 
-.container {
-  padding: 0px 20px;
-  box-sizing: border-box;
+.navbar-default .navbar-brand {
+  background: url(../images/logo.png) left center no-repeat;
+  text-indent: -9999px;
+  width: 130px;
 }
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: none;
+  font-weight: bold;
+}
+
+.upload_button {
+  padding-top: 10px;
+}
+
+  .upload_button button {
+    background-color: pink;
+    border-color: pink;
+  }
+
+    .upload_button button:hover {
+      background-color: #D998A6;
+      border-color: #D998A6;
+    }
+
 
 /* header style */
 .activity,
@@ -44,28 +68,9 @@ h6 {
 #schedules tr,
 #workout .activity,
 #workout_library,
-#homescreen_note,
 #profile {
   display: none;
 }
-
-/* this appears when the app hasn't been loaded in straight safari */
-#homescreen_note {
-  height: 100%;
-  padding: 20px;
-  font: normal 14px/17px "Open Sans", sans-serif;
-}
-
-#homescreen_bottom {
-  position: absolute;
-  bottom: 10px;
-  color: #444;
-}
-
-  #homescreen_bottom p {
-    font-size: 18px;
-    text-align: center;
-  }
 
 #fitness {
   padding-bottom: 10px;
