@@ -57,13 +57,6 @@
     window.addEventListener('load', function() {
       new FastClick(document.body);
     }, false);
-
-    $(function(){
-      if ( ("standalone" in window.navigator) && !window.navigator.standalone ) {
-        $(".container").toggle();
-        $("#homescreen_note").toggle();
-      }
-    });
   </script>
 </head>
 <body>
@@ -268,21 +261,6 @@
     </div>
   </div>
 </div> <!-- /container -->
-
-<div id="homescreen_note">
-  <div id="workout" class="row">
-    <h1>Welluride</h1>
-  </div>
-
-  <p>You want to get faster on the bike, but don't have the time to build a training plan every week, and coaches are too expensive.</p>
-  <p><b>Welluride</b> is made for you. It's an automated coach that uses your power data as a guide to create training blocks on the fly.</p>
-  <p>Seasonality, personal strengths, weaknesses and other factors are taken into account.</p>
-
-  <div id="homescreen_bottom">
-    <p>Add Welluride to your home screen</p>
-    <p>&darr;</p>
-  </div>
-</div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

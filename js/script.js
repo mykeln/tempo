@@ -174,7 +174,11 @@ jQuery(function($) {
           // round up/down to the nearest 5 watts
           //var activityTarget        = activityTargetRaw.split('[]');
           if (activityTargetRaw != "") {
-            var activityTarget = eval_target(activityTargetRaw);
+            if (activityTargetRaw.indexOf('(') === -1) {
+              var activityTarget = activityTargetRaw;
+            } else {
+              var activityTarget = eval_target(activityTargetRaw);
+            }
           }
 
           // rendering LIBRARY and WORKOUT information
@@ -196,27 +200,27 @@ jQuery(function($) {
           }
 
           // appending things to coach comments
-          // show this on thursday and friday only
-          if ((thisNumDayRaw == 4) || (thisNumDayRaw == 5)) {
-            activityInfo += "No hard workouts today if you're racing on Sunday.<br/><br/>";
+          // show this on thursday only -you're usually off on fridays-
+          if(activityInfo != "") {
+            activityTemplate += "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p>";
+          }
+
+          if (thisNumDayRaw == 4) {
+            activityInfo += "<p><span class='activity_info_warning'>No hard workouts today if you're racing on Sunday.</span></p>";
           }
           // show this on friday and saturday only
           if ((thisNumDayRaw == 5) || (thisNumDayRaw == 6)) {
-            activityInfo += "If racing tomorrow, do the following race prep:<br/>Ride 60 - 90 minutes mostly in your endurance zone.<br/>Complete 5 low gear accelerations with smooth cadence above 120 rpm lasting about 1 minute each with at least 2 minutes of recovery between efforts.<br/>Complete 5 big gear intervals that last no more than 1 minute each.<br/>In each interval your goal is to go fast, but back down before you start really killing yourself.<br/>Recover for at least 2 minutes between efforts.<br/>Include at least 5 out of the saddle jumps that last no longer than 12 seconds each. You can do these jumps as part of the low gear accelerations or big gear intervals.";
+            activityInfo += "<p><span class='activity_info_raceprep'>If racing tomorrow, do a <a href='#raceprep'>race prep</a>.</span></p>";
           }
           // show this on saturday and sunday only
           if ((thisNumDayRaw == 6) || (thisNumDayRaw == 0)) {
-            activityInfo += "If racing today, do the following warm up:<br/>Spin into endurance for 10-15 mins.<br/>Big ring front, 18 rear. 5-min step up to FTP, then shift to your 17-16-15 over 3 minutes. Then easy for 5.<br/>Then a few step ups to VO2 and over, shifting 16-15-14 over 2 minutes. 1 easy out of the saddle jump.";
-          }
-
-          if(activityInfo != "") {
-            activityTemplate += "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p>";
+            activityInfo += "<p><span class='activity_info_racewarmup'>If racing today, do a <a href='#racewarmup'>race warm up</a>.</span></p>";
           }
 
           if (((thisWeek >= 11) && (thisWeek <= 24)) ||
              ((thisWeek >= 25) && (thisWeek <= 27)) ||
              ((thisWeek >= 28) && (thisWeek <= 35))) {
-            activityTemplate += "<h6 class='activity_info'>Racing Season Maintenance</h6><p>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end do VO2 and tempo. This choice will be automated in the future.</p>"
+            activityTemplate += "<h6 class='activity_info_maintenance'>Racing Season Maintenance</h6><p class='activity_info_maintenance'>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end do VO2 and tempo. This choice will be automated in the future.</p>"
           }
 
           if(activityCooldown != "") {
