@@ -325,6 +325,12 @@ $('mydate').glDatePicker();
         </div>
       </div>
       <div class="control-group">
+        <label class="control-label" for="inputTime">Hours per week available <a href="#" rel="tooltip" title="How many hours per week do you think you can dedicate to training?">?</a></label>
+        <div class="controls">
+          <input type="text" id="inputTime" placeholder="8">
+        </div>
+      </div>
+      <div class="control-group">
         <div class="controls">
           <label class="checkbox">
             <input type="checkbox" id="havepowermeter"> I have a power meter <a href="#" rel="tooltip" title="PowerTap, Quarq, etc.">?</a>
