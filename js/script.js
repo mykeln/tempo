@@ -113,28 +113,58 @@ $('.datepicker').datepicker({
     }); // end config each
 
 ////FITNESS
+    // setting here so it retains the value as it goes through the loop
+    var totalFitness = 0;
+
     $.each(data.fitness[0], function(i,item){
-
+      // time interval (1s, 1m, 5m, etc.)
       fitnessTime  = i;
-      fitnessPower = item;
-      var wKg = (item/weightKg).toFixed(2);
 
-      powerProfile[fitnessTime] = fitnessPower;
+      // only recording power profile times
+      if (fitnessTime == "5s" || fitnessTime == "1m" || fitnessTime == "5m" || fitnessTime == "20m") {
+        // wattage at a time interval (150, 200, 250, etc.)
+        fitnessPower = item;
 
-      //var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
+        // watts per kilo (power-to-weight ratio)
+        var wKg = (item/weightKg).toFixed(2);
 
-    var fitnessTemplate = "<div class='col-sm-2'><div id='" + fitnessTime + "' class='well'> \
-      <h3>" + fitnessTime + "</h3> \
-      <h4>" + wKg + "</h4> \
-      <h6>" + fitnessPower + " watts</h6> \
-      </div>"
+        powerProfile[fitnessTime] = fitnessPower;
 
-      $('#score').append(fitnessTemplate);
+        // adding the current power value to the global power number (to determine progress bar percentages later)
+        totalFitness += Number(fitnessPower);
+
+        //set style on progress-bar-success
+        var progressClass;
+
+        switch(fitnessTime) {
+          case '5s':
+            progressClass = "danger";
+            break;
+          case '1m':
+            progressClass = "warning";
+            break;
+          case '5m':
+            progressClass = "info";
+            break;
+          case '20m':
+            progressClass = "success";
+            break;
+          default:
+            progressClass = "info";
+        }
+
+        var fitnessTemplate = "\
+          <div id='p" + fitnessTime + "' class='progress-bar progress-bar-" + progressClass + "'> \
+            <span>" + fitnessTime + " - " + fitnessPower + " watts - " +  wKg + " w/Kg</span> \
+          </div>"
+
+        $('#score').append(fitnessTemplate);
+      }
 
       // determine class for each power zone and color
       // grab data from first table
 
-      var do_these = ["5s", "1m", "5m", "20m" ];
+      var do_these = ["5s", "1m", "5m", "20m"];
       var do_info = { };
 
       for( i = 0; i < do_these.length; i++ ) ( function(r) {
@@ -150,6 +180,23 @@ $('.datepicker').datepicker({
           }
         });
       }) (do_these[i], i);
+    });
+
+    // after all the calculations have been performed above for user's fitness, calculate the progress bar percentages
+    $.each(data.fitness[0], function(i,item){
+      // time interval (1s, 1m, 5m, etc.)
+      fitnessTime  = i;
+
+      if (fitnessTime == "5s" || fitnessTime == "1m" || fitnessTime == "5m" || fitnessTime == "20m") {
+
+        // wattage at a time interval (150, 200, 250, etc.)
+        fitnessPower = item;
+
+        fitnessPercentage = ((parseInt(fitnessPower) / parseInt(totalFitness)) * 100).toFixed(0);
+
+        // setting the width of the progress bar for a particular power zone
+        $("#score #p" + fitnessTime).css('width', fitnessPercentage + "%");
+      }
     });
 
 //// SCHEDULES
@@ -258,7 +305,7 @@ $('.datepicker').datepicker({
 
           // if this activity is either today, or occurred on this day in the past, add it to the WORKOUT template
           if(activityShortName == calendarShortName) {
-            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
+            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h3>" + activityName + " / " + activityDuration + " minutes</h3>";
             var workoutEnd = "</div>";
 
             $('#workout').append(workoutBegin + activityTemplate + workoutEnd);
@@ -373,6 +420,7 @@ O5-10 - VO2 OR AC OR FTP
   // setting the width of the progress bar
   var progressBar = thisNumDay*10;
   $("#week_progress").css('width', progressBar + '%');
+
 
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week

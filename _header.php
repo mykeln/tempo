@@ -128,7 +128,7 @@
       </div><!--/.nav-collapse -->
     </div>
   </div>
-    <div class="container">
+  <div class="container">
     <div class="col-sm-12">
       <div class="row">
         <ol class="breadcrumb">

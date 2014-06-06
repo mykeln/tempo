@@ -6,45 +6,50 @@
       <!-- this week's progress -->
       <div class="row" id="progress">
         <h3>This Week's Progress</h3>
-        <div class="progress progress-striped">
-          <div id="week_progress" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">80% Complete</span></div>
-        </div>
+      <div class="progress progress-striped">
+        <div id="week_progress" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">80% Complete</span></div>
       </div>
+    </div>
 
-      <!-- recent activities -->
-      <div class="row" id="recent_activities">
-        <h3>Recent Activities</h3>
-        <div class="list-group">
-          <a href="#" class="list-group-item">
-            <span class="glyphicon glyphicon-star-empty"></span>
-            Easy or Off
-            <span class="badge">Friday</span>
-          </a>
-          <a href="#" class="list-group-item">
-            <span class="glyphicon glyphicon-star"></span>
-            AC - 1 Minute Intervals
-            <span class="badge">Thursday</span>
-          </a>
-          <a href="#" class="list-group-item">
-            <span class="glyphicon glyphicon-star"></span>
-            VO2 - 3 Minute Intervals
-            <span class="badge">Wednesday</span>
-          </a>
-        </div>
+    <!-- recent activities -->
+    <div class="row" id="recent_activities">
+      <h3>Recent Activities</h3>
+      <div class="list-group">
+        <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-star-empty"></span>
+        Easy or Off
+        <span class="badge">Friday</span>
+        </a>
+
+        <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-star"></span>
+        AC - 1 Minute Intervals
+        <span class="badge">Thursday</span>
+        </a>
+
+        <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-star"></span>
+        VO2 - 3 Minute Intervals
+        <span class="badge">Wednesday</span>
+        </a>
       </div>
+    </div>
 
-      <!-- fitness -->
-      <div class="row" id="fitness">
-        <h3>Fitness Profile</h3>
-        <div id="score"></div>
+    <!-- fitness -->
+    <div class="row" id="fitness">
+      <h3>Fitness Profile</h3>
+      <div id="score" class="progress">
+
       </div>
+    </div>
 
-      <div class="row">
-        <a id="power_profile" class="btn btn-default btn-xs" href="">toggle power profile</a>
-      </div>
 
-      <div class="row" id="profile">
-        <h2>Power Profile</h2>
+    <div class="row">
+      <a id="power_profile" class="btn btn-default btn-xs" href="">toggle power profile</a>
+    </div>
+
+    <div class="row" id="profile">
+      <h2>Power Profile</h2>
         <div class="span6 table-responsive">
           <table class="table table-condensed">
             <thead>
@@ -97,87 +102,86 @@
         </div>
       </div>
     </div>
+  <? } else if ($page == "today") { ?>
 
-    <? } else if ($page == "today") { ?>
+    <div class="col-sm-8">
+      <!-- today's workout -->
+      <div class="row" id="workout">
+        <h3></h3>
+      </div>
+      <div class="row">
+        <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
+      </div>
+    </div> <!-- end 8 column -->
 
-      <div class="col-sm-8">
-        <!-- today's workout -->
-        <div class="row" id="workout">
-          <h3>Today's Workout</h3>
-        </div>
-        <div class="row">
-          <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
+  <? } else if ($page == "calendar") { ?>
+
+    <div class="col-sm-12">
+      <!-- calendar -->
+      <div class="row" id="calendar">
+        <h3>Calendar of Activities</h3>
+        <span class="label label-off">Time Off</span>
+        <span class="label label-default">Base Training</span>
+        <span class="label label-warning">Sharpening</span>
+        <span class="label label-success">Racing Season</span>
+        <span class="label label-danger">Peak Week</span>
+
+        <div class="table-responsive">
+        <table id="full_schedule" class="table">
+          <thead>
+            <!--<th>Type</th>-->
+            <th>Week</th>
+            <th>Year</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </thead>
+          <tbody id="schedules">
+
+          </tbody>
+        </table>
         </div>
       </div>
+      <div class="row">
+        <a id="thisweekonly" class="btn btn-default btn-xs" href="">toggle full calendar</a>
+      </div>
+    </div> <!-- end 12 column -->
 
-    <? } else if ($page == "calendar") { ?>
+  <? } else if ($page == "library") { ?>
 
-      <div class="col-sm-12">
-        <!-- calendar -->
-        <div class="row" id="calendar">
-          <h3>Calendar of Activities</h3>
-          <span class="label label-off">Time Off</span>
-          <span class="label label-default">Base Training</span>
-          <span class="label label-warning">Sharpening</span>
-          <span class="label label-success">Racing Season</span>
-          <span class="label label-danger">Peak Week</span>
+    <div class="col-sm-12">
+      <!-- workout library -->
+      <div class="row" id="library">
+        <h3>Workout Library <small></small></h3>
+        <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
+        <div id="workout_library"></div>
+      </div>
+      <div class="row">
+        <a id="full_library" class="btn btn-default btn-xs" href="">toggle full library</a>
+      </div>
+    </div> <!-- end 12 column -->
 
-          <div class="table-responsive">
-          <table id="full_schedule" class="table">
-            <thead>
-              <!--<th>Type</th>-->
-              <th>Week</th>
-              <th>Year</th>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Wed</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-              <th>Sun</th>
-            </thead>
-            <tbody id="schedules">
+  <? } ?>
 
-            </tbody>
-          </table>
+  <? if (($page == "dash") || ($page == "today")){ ?>
+    <div class="col-sm-4">
+      <div class="datepicker"></div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Feedback</h3>
           </div>
-        </div>
-        <div class="row">
-          <a id="thisweekonly" class="btn btn-default btn-xs" href="">toggle full calendar</a>
-        </div>
-      </div>
-
-    <? } else if ($page == "library") { ?>
-
-      <div class="col-sm-12">
-        <!-- workout library -->
-        <div class="row" id="library">
-          <h3>Workout Library <small></small></h3>
-          <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
-          <div id="workout_library"></div>
-        </div>
-        <div class="row">
-          <a id="full_library" class="btn btn-default btn-xs" href="">toggle full library</a>
-        </div>
-      </div> <!-- end 8 column -->
-
-    <? } ?>
-
-
-    <? if ($page == "dash") { ?>
-      <div class="col-sm-4">
-        <div class="datepicker"></div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Help</h3>
-            </div>
-            <div class="panel-body">
-              Help One
-            </div>
+          <div class="panel-body">
+            This is alpha software. Please send feedback <a href="https://docs.google.com/a/localist.com/forms/d/1xoRyeMs1LusEplGp7-Dtnr_3sxblo1vsLwW43gmjdHw/viewform">here</a>.</p>
           </div>
         </div>
       </div>
-    <? } ?>
+    </div>
+  <? } ?>
+</div>
 
 <!-- user setup
 <div id="setup" class="row">

@@ -1,3 +1,18 @@
+h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  margin-top: 30px;
+}
+
+.breadcrumb.footer {
+  margin-top: 100px;
+}
+
+.breadcrumb.footer li {
+  color: #ccc;
+}
+
 .col-sm-2 {
   padding-left: 0;
   padding-right: 0;
@@ -157,4 +172,8 @@
 
 .datepicker table, .datepicker-inline {
   width: 100%;
+}
+
+#score #5s {
+
 }
