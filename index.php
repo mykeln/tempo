@@ -1,209 +1,44 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<? include '_header.php'; ?>
 
-  <title>Get faster, quicker</title>
-
-  <meta name="description" content="Welluride is an automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
-  <meta name="author" content="Mykel Nahorniak">
-
-  <!-- display defaults -->
-  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
-  <!-- icons -->
-  <link rel="shortcut icon" href="touch-icon-iphone.png">
-
-  <!-- splashes -->
-  <!-- iPhone -->
-  <link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
-  <link href="Default.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-
-  <!-- iPhone (Retina) -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icon-iphone4.png" />
-  <link href="Default@2x.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-
-  <!-- iPhone 5 -->
-  <link href="Default5@2x.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-
-  <!-- iPad -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-ipad.png" />
-  <link href="DefaultiPadPortrait.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-  <link href="DefaultiPadLandscape.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-
-  <!-- iPad (Retina) -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="touch-icon-iphone4.png" />-->
-  <link href="DefaultiPadPortrait@2x.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-  <link href="DefaultiPadLandscape@2x.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- date picker -->
-  <link href="css/glDatePicker.flatwhite.css" rel="stylesheet" type="text/css">
-
-  <!-- Override -->
-  <link href="css/base.css" rel="stylesheet">
-
-  <!-- form stuff -->
-  <link rel="stylesheet" type="text/css" href="css/component.css" />
-
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-  <!-- scripts -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/libs/date.js"></script>
-  <script src="js/libs/jquery.columnmanager.min.js"></script>
-  <script src="js/libs/fastclick.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/glDatePicker.min.js"></script>
-
-  <!-- welluride logic -->
-  <script src="js/script.js"></script>
-
-  <!-- hacks for faster responsiveness on mobile -->
-  <script type="text/javascript">
-    window.addEventListener('load', function() {
-      new FastClick(document.body);
-    }, false);
-  </script>
-
-      <script type="text/javascript">
-        $(window).load(function()
-        {
-
-$('mydate').glDatePicker();
-        });
-    </script>
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-
-
-  <!-- Static navbar -->
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Welluride</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Dashboard</a></li>
-          <li><a href="#about">Today</a></li>
-          <li><a href="#about">Calendar</a></li>
-          <li><a href="#contact">Library</a></li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-          <li class="upload_button"><button type="button" class="btn btn-sm btn-success">Upload Ride</button></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="col-sm-12">
-      <div class="row">
-        <ol class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li class="active">Dashboard</li>
-        </ol>
-      </div>
-
+<div class="container">
+  <? if ($page == "dash") { ?>
+    <div class="col-sm-8">
       <!-- this week's progress -->
       <div class="row" id="progress">
         <h3>This Week's Progress</h3>
         <div class="progress progress-striped">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80% Complete</span></div>
+          <div id="week_progress" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">80% Complete</span></div>
         </div>
       </div>
 
-      <!-- today's workout -->
-      <div class="row" id="workout">
-        <!-- today's workout -->
-        <h3>Today's Workout</h3>
-      </div>
-      <div class="row">
-        <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
-      </div>
-
-      <!-- calendar -->
-      <div class="row" id="calendar">
-        <h2>Calendar <small>workout history</small></h2>
-        <span class="label label-off">Time Off</span>
-        <span class="label label-default">Base Training</span>
-        <span class="label label-warning">Sharpening</span>
-        <span class="label label-success">Racing Season</span>
-        <span class="label label-danger">Peak Week</span>
-
-        <div class="table-responsive">
-        <table id="full_schedule" class="table">
-          <thead>
-            <!--<th>Type</th>-->
-            <th>Week</th>
-            <th>Year</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </thead>
-          <tbody id="schedules">
-
-          </tbody>
-        </table>
+      <!-- recent activities -->
+      <div class="row" id="recent_activities">
+        <h3>Recent Activities</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+            <span class="glyphicon glyphicon-star-empty"></span>
+            Easy or Off
+            <span class="badge">Friday</span>
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="glyphicon glyphicon-star"></span>
+            AC - 1 Minute Intervals
+            <span class="badge">Thursday</span>
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="glyphicon glyphicon-star"></span>
+            VO2 - 3 Minute Intervals
+            <span class="badge">Wednesday</span>
+          </a>
         </div>
-      </div>
-      <div class="row">
-        <a id="thisweekonly" class="btn btn-default btn-xs" href="">toggle full calendar</a>
-      </div>
-
-      <!-- workout library -->
-      <div class="row" id="library">
-        <h2>Workout Library <small></small></h2>
-        <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
-        <div id="workout_library"></div>
-      </div>
-      <div class="row">
-        <a id="full_library" class="btn btn-default btn-xs" href="">toggle full library</a>
       </div>
 
       <!-- fitness -->
       <div class="row" id="fitness">
-        <h2>Fitness Score <small></small></h2>
+        <h3>Fitness Profile</h3>
         <div id="score"></div>
       </div>
+
       <div class="row">
         <a id="power_profile" class="btn btn-default btn-xs" href="">toggle power profile</a>
       </div>
@@ -261,133 +96,167 @@ $('mydate').glDatePicker();
           </table>
         </div>
       </div>
-    </div> <!-- end 8 column -->
+    </div>
 
-<!--
-    <div class="col-sm-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">Help</h3>
+    <? } else if ($page == "today") { ?>
+
+      <div class="col-sm-8">
+        <!-- today's workout -->
+        <div class="row" id="workout">
+          <h3>Today's Workout</h3>
         </div>
-        <div class="panel-body">
-          Help One
+        <div class="row">
+          <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
         </div>
       </div>
 
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-success" title="Completed">
-          <p class="list-group-item-status">COMPLETED</p>
-          <h4 class="list-group-item-heading">AC - 10x30s</h4>
-          <p class="list-group-item-text">NORM: 254w. ACC: 85%</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-success" title="Completed">
-          <p>COMPLETED</p>
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-warning" title="Not Complete">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-        </a>
+    <? } else if ($page == "calendar") { ?>
+
+      <div class="col-sm-12">
+        <!-- calendar -->
+        <div class="row" id="calendar">
+          <h3>Calendar of Activities</h3>
+          <span class="label label-off">Time Off</span>
+          <span class="label label-default">Base Training</span>
+          <span class="label label-warning">Sharpening</span>
+          <span class="label label-success">Racing Season</span>
+          <span class="label label-danger">Peak Week</span>
+
+          <div class="table-responsive">
+          <table id="full_schedule" class="table">
+            <thead>
+              <!--<th>Type</th>-->
+              <th>Week</th>
+              <th>Year</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </thead>
+            <tbody id="schedules">
+
+            </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="row">
+          <a id="thisweekonly" class="btn btn-default btn-xs" href="">toggle full calendar</a>
+        </div>
       </div>
 
+    <? } else if ($page == "library") { ?>
+
+      <div class="col-sm-12">
+        <!-- workout library -->
+        <div class="row" id="library">
+          <h3>Workout Library <small></small></h3>
+          <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
+          <div id="workout_library"></div>
+        </div>
+        <div class="row">
+          <a id="full_library" class="btn btn-default btn-xs" href="">toggle full library</a>
+        </div>
+      </div> <!-- end 8 column -->
+
+    <? } ?>
+
+
+    <? if ($page == "dash") { ?>
+      <div class="col-sm-4">
+        <div class="datepicker"></div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Help</h3>
+            </div>
+            <div class="panel-body">
+              Help One
+            </div>
+          </div>
+        </div>
+      </div>
+    <? } ?>
+
+<!-- user setup
+<div id="setup" class="row">
+  <h1>Set Up Your Profile <small>help Welluride create an ideal training plan for you</small></h1>
+
+  <form class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label" for="inputName">Full Name</label>
+      <div class="controls">
+        <input type="text" id="inputName" placeholder="Mykel Nahorniak">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputEmail">Email</label>
+      <div class="controls">
+        <input type="text" id="inputEmail" placeholder="myname@welluride.com">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputWeight">Weight (lbs)</label>
+      <div class="controls">
+        <input type="text" id="inputWeight" placeholder="145">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputPeak">Peak Week <a href="#" rel="tooltip" title="During the year, what week is your 'A' race, or when would you like to peak? Weeks run from 1-53">?</a></label>
+      <div class="controls">
+        <input type="text" id="inputPeak" placeholder="26">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputTime">Hours per week available <a href="#" rel="tooltip" title="How many hours per week do you think you can dedicate to training?">?</a></label>
+      <div class="controls">
+        <input type="text" id="inputTime" placeholder="8">
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <label class="checkbox">
+          <input type="checkbox" id="havepowermeter"> I have a power meter <a href="#" rel="tooltip" title="PowerTap, Quarq, etc.">?</a>
+        </label>
+      </div>
+    </div>
+-->
+  <!-- power test results -->
+  <!-- make it so these can dynamically pop up when needed
+  <div id="powerbests">
+    <div class="control-group" id="s5">
+      <label class="control-label" for="input5s">5-Second Power</label>
+      <div class="controls">
+        <input type="text" id="input5s" placeholder="1390">
+      </div>
+    </div>
+    <div class="control-group" id="m1">
+      <label class="control-label" for="input1m">1-Minute Power</label>
+      <div class="controls">
+        <input type="text" id="input1m" placeholder="550">
+      </div>
+    </div>
+    <div class="control-group" id="m5">
+      <label class="control-label" for="input5m">5-Minute Power</label>
+      <div class="controls">
+        <input type="text" id="input5m" placeholder="380">
+      </div>
+    </div>
+    <div class="control-group" id="m20">
+      <label class="control-label" for="input20m">20-Minute Power</label>
+      <div class="controls">
+        <input type="text" id="input20m" placeholder="290">
+      </div>
     </div>
   </div>
+
+    <button type="submit" class="btn">Create my training plan</button>
+
+  </form>
+
+</div>
 -->
 
-  <!-- user setup
-  <div id="setup" class="row">
-    <h1>Set Up Your Profile <small>help Welluride create an ideal training plan for you</small></h1>
 
-    <form class="form-horizontal">
-      <div class="control-group">
-        <label class="control-label" for="inputName">Full Name</label>
-        <div class="controls">
-          <input type="text" id="inputName" placeholder="Mykel Nahorniak">
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label" for="inputEmail">Email</label>
-        <div class="controls">
-          <input type="text" id="inputEmail" placeholder="myname@welluride.com">
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label" for="inputWeight">Weight (lbs)</label>
-        <div class="controls">
-          <input type="text" id="inputWeight" placeholder="145">
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label" for="inputPeak">Peak Week <a href="#" rel="tooltip" title="During the year, what week is your 'A' race, or when would you like to peak? Weeks run from 1-53">?</a></label>
-        <div class="controls">
-          <input type="text" id="inputPeak" placeholder="26">
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label" for="inputTime">Hours per week available <a href="#" rel="tooltip" title="How many hours per week do you think you can dedicate to training?">?</a></label>
-        <div class="controls">
-          <input type="text" id="inputTime" placeholder="8">
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="controls">
-          <label class="checkbox">
-            <input type="checkbox" id="havepowermeter"> I have a power meter <a href="#" rel="tooltip" title="PowerTap, Quarq, etc.">?</a>
-          </label>
-        </div>
-      </div>
-  -->
-    <!-- power test results -->
-    <!-- make it so these can dynamically pop up when needed
-    <div id="powerbests">
-      <div class="control-group" id="s5">
-        <label class="control-label" for="input5s">5-Second Power</label>
-        <div class="controls">
-          <input type="text" id="input5s" placeholder="1390">
-        </div>
-      </div>
-      <div class="control-group" id="m1">
-        <label class="control-label" for="input1m">1-Minute Power</label>
-        <div class="controls">
-          <input type="text" id="input1m" placeholder="550">
-        </div>
-      </div>
-      <div class="control-group" id="m5">
-        <label class="control-label" for="input5m">5-Minute Power</label>
-        <div class="controls">
-          <input type="text" id="input5m" placeholder="380">
-        </div>
-      </div>
-      <div class="control-group" id="m20">
-        <label class="control-label" for="input20m">20-Minute Power</label>
-        <div class="controls">
-          <input type="text" id="input20m" placeholder="290">
-        </div>
-      </div>
-    </div>
-
-      <button type="submit" class="btn">Create my training plan</button>
-
-    </form>
-
-  </div>
-  -->
-
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-39725016-1', 'herokuapp.com');
-  ga('send', 'pageview');
-
-</script>
-</body>
-</html>
+<? include '_footer.php'; ?>

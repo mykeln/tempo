@@ -1,3 +1,17 @@
+.col-sm-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #35A497;
+  color: #256E64;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #256E64;
+}
+
 .navbar-default {
   background-color: #3CBBAF;
   border-color: pink;
@@ -17,9 +31,26 @@
   color: #fff;
 }
 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-toggle {
+  border-color: #35A497;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #efefef;
+}
+
 .navbar-default .navbar-nav > .active > a {
   background-color: none;
   font-weight: bold;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: #35A497;
 }
 
 .upload_button {
@@ -123,3 +154,7 @@
   .int h6 {
     color: #fffcab;
   }
+
+.datepicker table, .datepicker-inline {
+  width: 100%;
+}

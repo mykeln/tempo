@@ -72,6 +72,29 @@ function eval_target(input_string) {
 
 //// APP LOGIC
 jQuery(function($) {
+
+//// INIT MINICAL NAV
+$('.datepicker').datepicker({
+    weekStart: 1,
+    keyboardNavigation: false,
+    calendarWeeks: true,
+    todayHighlight: true,
+    beforeShowDay: function (date) {
+      if (date.getMonth() == (new Date()).getMonth())
+        switch (date.getDate()){
+          //case 4:
+            //return {
+              //tooltip: 'Example tooltip',
+              //classes: 'active'
+            //};
+          //case 8:
+            //return false;
+          //case 12:
+            //return "green";
+        }
+    }
+});
+
 //// CALENDAR
   // getting json data
   $.getJSON('data/workouts.js', function(data) {
@@ -86,7 +109,7 @@ jQuery(function($) {
       athleteName = item.name;
 
 
-      $('#fitness h2 small').html(athleteName + " - " + item.weight + "lbs");
+      //$('#fitness h3 small').html(athleteName + " - " + item.weight + "lbs");
     }); // end config each
 
 ////FITNESS
@@ -100,7 +123,7 @@ jQuery(function($) {
 
       //var fitnessTemplate = "<tr id='" + i + "'><td>" + i + "</td><td>" + item + "</td><td class='wkg'>" + wKg.toFixed(2) + "</td></tr>";
 
-    var fitnessTemplate = "<div id='" + fitnessTime + "' class='int'> \
+    var fitnessTemplate = "<div class='col-sm-2'><div id='" + fitnessTime + "' class='well'> \
       <h3>" + fitnessTime + "</h3> \
       <h4>" + wKg + "</h4> \
       <h6>" + fitnessPower + " watts</h6> \
@@ -347,6 +370,9 @@ O5-10 - VO2 OR AC OR FTP
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
+  // setting the width of the progress bar
+  var progressBar = thisNumDay*10;
+  $("#week_progress").css('width', progressBar + '%');
 
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
