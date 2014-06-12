@@ -14,7 +14,7 @@
             "5m": "406",
             "10m": "324",
             "20m": "310",
-            "FTP": "299"
+            "60m": "299"
         }
     ],
     "activities": [
@@ -135,7 +135,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Ride steadily in your endurance power zone. Maintain a solid and steady pedal stroke, with cadence in the 90 - 110 range.",
             "info": "",
-            "target": "Don't exceed ([FTP]*0.714285714285714) watts.",
+            "target": "Don't exceed ([60m]*0.714285714285714) watts.",
 			"cd": "Easy spinning for 15 minutes.",
 			"duration": "120"
         },
@@ -146,7 +146,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "If the group wants to go harder, then sit in and try to keep your power at an endurance pace.",
             "info": "",
-            "target": "Don't exceed ([FTP]*0.714285714285714) watts.",
+            "target": "Don't exceed ([60m]*0.714285714285714) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "120"
         },
@@ -157,7 +157,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes include 5 - 7 attacks where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all-out riding as if you were attacking for the finish line. Finish the attack with a big 10 second sprint. Recover completely between efforts.",
             "info": "",
-            "target": "Target ([FTP]*0.714285714285714) watts for your endurance zone. The attacking parts should be more by feel, rather than targeting a specific power. Go as hard as you can for the duration.",
+            "target": "Target ([60m]*0.714285714285714) watts for your endurance zone. The attacking parts should be more by feel, rather than targeting a specific power. Go as hard as you can for the duration.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "210"
         },
@@ -168,7 +168,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes include 5 - 10 sprints that are 10 - 30 seconds long each. Sprints should be from race speed and full gas.",
             "info": "",
-            "target": "Target ([FTP]*0.714285714285714) watts for your endurance zone. The sprinting parts should be more by feel, rather than targeting a specific power. Go as hard as you can for the duration.",
+            "target": "Target ([60m]*0.714285714285714) watts for your endurance zone. The sprinting parts should be more by feel, rather than targeting a specific power. Go as hard as you can for the duration.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "210"
         },
@@ -179,7 +179,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes find a hill or hills that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervals. Once you are unable to maintain a hard pace for at least 2 minutes, then it is time to head home.",
             "info": "",
-            "target": "Target ([FTP]*0.714285714285714) watts for your endurance zones. The climbing parts should be more by feel, rather than targeting a specific power. Go as hard as you can.",
+            "target": "Target ([60m]*0.714285714285714) watts for your endurance zones. The climbing parts should be more by feel, rather than targeting a specific power. Go as hard as you can.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "210"
         },
@@ -201,7 +201,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Include 3 x 10 minutes of Microbursts. Each burst is 15 seconds long. Start each burst with a hard pop, then settle into a rhythm. Rest for 15 seconds between bursts. Ride in your endurance zone for 5 minutes between sets.",
             "info": "",
-            "target": "Start at ([FTP]*3) watts, then settle into a rhythm, averaging ([FTP]*1.5) watts over the 15 seconds. Rest at ([FTP]*0.5) watts between bursts.",
+            "target": "Start at ([60m]*3) watts, then settle into a rhythm, averaging ([60m]*1.5) watts over the 15 seconds. Rest at ([60m]*0.5) watts between bursts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -212,7 +212,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 20 minutes in the lower half of your threshold power zone. Every 10 minutes, include an 8 second all-out burst. Jump hard with high cadence. Only 8 seconds. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
-            "target": "Shoot for ([FTP]*.9) watts for your threshold effort. The burst should be by feel, an all-out effort. Balance point wattage: ([FTP]*.8)",
+            "target": "Shoot for ([60m]*.9) watts for your threshold effort. The burst should be by feel, an all-out effort. Balance point wattage: ([60m]*.8)",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "120"
         },
@@ -234,7 +234,7 @@
             "wu": "",
             "desc": "Solid ride time including some hammering at the front. Also try for 8 sprints today at least 200m long. Let's see what you got with some kilojoules in your legs. Rest plenty between each. Let the group determine the hammer part. Try to finish with a solid 20 minutes of tempo in at the end of the ride.",
             "info": "",
-            "target": "The finishing tempo effort should target ([FTP]*.8). Let the group determine the rest.",
+            "target": "The finishing tempo effort should target ([60m]*0.80). Let the group determine the rest.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "210"
         },
@@ -245,7 +245,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 10 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at or just below your balance point wattage.",
             "info": "",
-            "target": "Threshold effort: ([FTP]*.9) watts. Balance point wattage: ([FTP]*.8) watts.",
+            "target": "Threshold effort: ([60m]*.9) watts. Balance point wattage: ([60m]*.8) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -256,7 +256,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 2 x 20 minutes in the lower half of your threhold power zone. In each interval, alternate 2 minutes in the lower half of your threshold zone with 2 minutes in the upper half of your threshold zone. Recover between intervals by riding for 10 minutes at or just below your balance point wattage.",
             "info": "",
-            "target": "Threshold effort: alternate between ([FTP]*.9) watts and ([FTP]*.95) watts. Balance point wattage: ([FTP]*.8) watts.",
+            "target": "Threshold effort: alternate between ([60m]*.9) watts and ([60m]*.95) watts. Balance point wattage: ([60m]*.8) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -267,7 +267,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 10 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at 50% of the power of the preceding effort.",
             "info": "",
-            "target": "Threshold effort: ([FTP]*.92) watts. Recover between sets at ([FTP]*.46) watts.",
+            "target": "Threshold effort: ([60m]*.92) watts. Recover between sets at ([60m]*.46) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -278,7 +278,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 15 minutes in the lower half of your threhold power zone. Recover between intervals by riding for 5 minutes at 50% of the power of the preceding effort.",
             "info": "",
-            "target": "Threshold effort: ([FTP]*.92) watts. Recover between sets at ([FTP]*.46) watts.",
+            "target": "Threshold effort: ([60m]*.92) watts. Recover between sets at ([60m]*.46) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -289,7 +289,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 20 minutes in the lower half of your threshold power zone. During the first interval, increase the level of effort by 50% for 10 seconds every 2 minutes. Recover between intervals by riding for 20 minutes at 50% of the power of the preceding effort.",
             "info": "",
-            "target": "Threshold effort: ([FTP]*.92) watts. Recover between sets at ([FTP]*.46) watts.",
+            "target": "Threshold effort: ([60m]*.92) watts. Recover between sets at ([60m]*.46) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -300,7 +300,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 sets of 5 x 3 minutes your lower threshold power zones. Between each interval, ride for 2 minutes at in the middle of your endurance zone. Between sets, ride for 5 minutes in your endurance zone.",
             "info": "",
-            "target": "3 minute target: ([FTP]*.92) watts. 2 minute target: ([FTP]*.56). 5 minutes between sets: ([FTP]*0.714285714285714) watts.",
+            "target": "3 minute target: ([60m]*.92) watts. 2 minute target: ([60m]*.56). 5 minutes between sets: ([60m]*0.714285714285714) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -322,7 +322,7 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort, then easy spinning for 5 minutes.",
             "desc": "Complete the following sequence aiming to average in your VO2 max zone for each.<br/>Set 1: 3 x 3 minutes in upper threshold with 1 minute between intervals in your endurance zone. 5 minutes endurance.<br/>Set 2: 4 x 2 minutes in your upper threshold/VO2max zone with 1 minute between intervals in your endurance zone. 5 minutes endurance.<br/>Set 3: 5 x 1 minute in your AC zone with 1 minute between intervals in your endurance zone. 5 minutes endurance. Set 4: 10 x 40/30s. Do what you can. 40 seconds at VO2, 30 seconds at 70%.",
             "info": "",
-            "target": "Set 1: ([FTP]*.92) watts. Set 2: ([5m]*1) watts. Set 3: ([1m]*1) watts. Set 4: 40 seconds at ([5m]*1) watts, 30 seconds at ([5m]*0.70) watts.",
+            "target": "Set 1: ([60m]*.92) watts. Set 2: ([5m]*1) watts. Set 3: ([1m]*1) watts. Set 4: 40 seconds at ([5m]*1) watts, 30 seconds at ([5m]*0.70) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -355,7 +355,7 @@
             "wu": "Spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring/18-17-16 cogs. Then easy for 5. Then a 3-min step up to VO2 and over. Big ring/16-15-14 cogs. 1 easy-ish out of the saddle jump.",
             "desc": "Race.",
             "info": "",
-            "target": "For the warm up, spin up to ([FTP]*0.714285714285714) watts in the first 10-15 minutes. Then step up to ([FTP]*1) over the next 5 minutes. For the VO2, step up to ([5m]*1) over the next 3 minutes.",
+            "target": "For the warm up, spin up to ([60m]*0.714285714285714) watts in the first 10-15 minutes. Then step up to ([60m]*1) over the next 5 minutes. For the VO2, step up to ([5m]*1) over the next 3 minutes.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -388,7 +388,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride.",
             "desc": "Complete 5 sets of 5 Sprint Starts. Each set is 5 minutes long. At the start of each minute and without shifting gears, complete a short super hard, super smooth, out of the saddle jump that is only 6 - 8 strokes. You are going for max power on each effort. Spin at 100 rpm in your endurance zone for the remainder of the minute. Complete 5 starts in each set. Spin easy for 5 minutes between sets.",
             "info": "Works best on the road. You can do these on the trainer if have to. If on the trainer, do the first 3 sets seated.",
-            "target": "Endurance wattage: ([FTP]*0.7) watts.",
+            "target": "Endurance wattage: ([60m]*0.7) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -399,7 +399,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride.",
             "desc": "During the ride, include 6 - 10 stomps where you let the speed drop to near nothing while on your 53x11. While still seated, accelerate hard for 12 - 15 seconds. After the effort, ride in your endurance zone for 5 - 10 minutes between intervals at a cadence of 105+.",
             "info": "",
-            "target": "Endurance wattage: ([FTP]*0.7) watts.",
+            "target": "Endurance wattage: ([60m]*0.7) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -410,7 +410,7 @@
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
             "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence. 53x17 - seated<br/>53x16 - seated<br/>53x15 - seated<br/>53x14 - seated<br/>53x13 - seated<br/>53x12 - stand<br/>53x13 - stand<br/>53x14 - stand<br/>53x15 - stand53x16 - stand<br/>53x17 - stand<br/><br/>Each sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
             "info": "",
-            "target": "Endurance wattage: ([FTP]*0.7) watts.",
+            "target": "Endurance wattage: ([60m]*0.7) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -465,7 +465,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Start the ride with 30 minutes at 10%-15% below FTP. Ride in your endurance zone for the majority of the ride. Finish with 30 minutes at 10% - 15% below FTP.",
             "info": "Stay aero and smooth like you are riding a break.",
-            "target": "Sweet Spot wattage: ([FTP]*.85) watts. In between: ([FTP]*.7) watts",
+            "target": "Sweet Spot wattage: ([60m]*.85) watts. In between: ([60m]*.7) watts",
 			      "cd": "Easy spinning for 15 minutes. 100+ cadence",
 			      "duration": "90"
         },
@@ -476,7 +476,7 @@
             "wu": "20 - 30 minutes including 1 x 5 minutes of hard pedaling and 10 x 1 minute of high cadence.",
             "desc": "Complete 3 x 20 minutes in 10-15% below FTP. Recover between intervals by riding for 10 minutes in your endurance zone.",
             "info": "Stay aero and smooth like you are riding a break.",
-            "target": "Sweet Spot wattage: ([FTP]*.85) watts. In between: ([FTP]*.7) watts",
+            "target": "Sweet Spot wattage: ([60m]*.85) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -487,7 +487,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Complete 1 x 45 minutes of riding in your Tempo power zone. During the interval, altenate riding 5 minutes with your cadence below 75 and riding 5 minutes with your candence above 105. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -498,7 +498,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Complete a 60 minute interval aiming to keep your average and normalized power in the middle of your tempo power zone. Alternate pedaling for 10 minutes with your cadence between 70 - 75 rpm and 10 minutes with your cadence between 95 and 105. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -509,7 +509,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Complete 2 x 10 minutes of riding in your Tempo power zone. Do the first interval with your cadence between 70 - 75 rpm. Ride for 5 minutes in your endurance zone. Do the second interval with your cadence between 95 and 105 rpm. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "If you are stuck inside, warmup on the trainer for 30 minutes and then do the intervals and then cool down for 15 minutes.",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -520,7 +520,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Complete 2 x 15 minutes of riding in your Tempo power zone. Do the first interval with your cadence between 70 - 75 rpm. Ride for 10 minutes in your endurance zone. Do the second interval with your cadence above 105 rpm. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -531,7 +531,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Complete 2 x 30 minutes of riding in your Tempo power zone. During each interval, alternate riding 5 minutes with your cadence below 75 and riding 5 minutes with your candence above 105. Ride for 15 minutes in your endurance zone between intervals. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
             "info": "",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -542,7 +542,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Keep the power in your tempo zone on any climbs, but use a gear that is one click bigger than you are comfortable riding in. Your cadence will drop 10 - 15 rpm, and that is OK.",
             "info": "",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -553,7 +553,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Keep the effort steady through the whole ride.",
             "info": "",
-            "target": "Sweet Spot wattage: ([FTP]*.85) watts.",
+            "target": "Sweet Spot wattage: ([60m]*.85) watts.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -564,7 +564,7 @@
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Keep the power in your tempo zone on any climbs. Use the gears to flatten out the course.",
             "info": "",
-            "target": "Tempo wattage: ([FTP]*.80) watts. In between: ([FTP]*.7) watts",
+            "target": "Tempo wattage: ([60m]*.80) watts. In between: ([60m]*.7) watts",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -586,7 +586,7 @@
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all-out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
             "desc": "Before starting, ride easy for 5 minutes. This is a ramp test to failure. See the Target Power information to perform the test correctly.",
             "info": "",
-            "target": "Start with 3 minutes at ([FTP]*0.599245903162305). Increase the power by 20 watts every 3 minutes. When you get up to ([FTP]*0.899811475790576), increase the power by 10 watts every 3 minutes. Continue increasing power by 10 watts every 3 minutes until you cannot complete 3 minutes at a level.",
+            "target": "Start with 3 minutes at ([60m]*0.599245903162305). Increase the power by 20 watts every 3 minutes. When you get up to ([60m]*0.899811475790576), increase the power by 10 watts every 3 minutes. Continue increasing power by 10 watts every 3 minutes until you cannot complete 3 minutes at a level.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -608,7 +608,7 @@
             "wu": "Get in a good warm-up by riding for 20 - 30 minutes working your way up to your endurance zone over the first 15 minutes and then including a 5 minutes ramp up to FTP increasing the watts 10 - 20 every minute. Cruise in your endurance zone for 5 minutes before starting the test.",
             "desc": "Before starting, ride easy for 5 minutes. This is a ramp test to failure. See the Target Power information to perform the test correctly.",
             "info": "",
-            "target": "Start with 3 minutes at ([FTP]*0.599245903162305). Increase the power by 20 watts every 3 minutes. When you get up to ([FTP]*0.899811475790576), increase the power by 10 watts every 3 minutes. Continue increasing power by 10 watts every 3 minutes until you cannot complete 3 minutes at a level.",
+            "target": "Start with 3 minutes at ([60m]*0.599245903162305). Increase the power by 20 watts every 3 minutes. When you get up to ([60m]*0.899811475790576), increase the power by 10 watts every 3 minutes. Continue increasing power by 10 watts every 3 minutes until you cannot complete 3 minutes at a level.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         },
@@ -685,7 +685,7 @@
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort.",
             "desc": "Cruise for 5 minutes before starting these intervals. Complete the following sequence: 1 minute on, 1 minute off. 2 minutes on, 2 minutes off. 3 minutes on, 3 minutes off. 4 minutes on, 4 minutes off. 4 minutes on, 4 minutes off. 3 minutes on, 3 minutes off. 2 minutes on, 2 minutes off. 1 minute on, 1 minute off. 1 minute on, 1 minute off. 1 minute on, 1 minute off. 1 minute on, 1 minute off. 1 minute on, 1 minute off.",
             "info": "",
-            "target": "([5m]*1) watts for ON, ([FTP]*0.60) for OFF.",
+            "target": "([5m]*1) watts for ON, ([60m]*0.60) for OFF.",
 			"cd": "Easy spinning for 15 minutes. 100+ cadence",
 			"duration": "90"
         }
