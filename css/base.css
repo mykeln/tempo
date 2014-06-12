@@ -40,6 +40,7 @@ h6 {
   background: url(../images/logo.png) left center no-repeat;
   text-indent: -9999px;
   width: 130px;
+  background-size: 50%;
 }
 
 .navbar-default .navbar-nav>li>a {

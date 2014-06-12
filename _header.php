@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Get faster, quicker</title>
+  <title>Welluride - Get faster, quicker</title>
 
   <meta name="description" content="Welluride is an automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
   <meta name="author" content="Mykel Nahorniak">
@@ -24,30 +24,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-  <!-- icons -->
-  <link rel="shortcut icon" href="touch-icon-iphone.png">
-
-  <!-- splashes -->
-  <!-- iPhone -->
-  <link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
-  <link href="Default.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-
-  <!-- iPhone (Retina) -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icon-iphone4.png" />
-  <link href="Default@2x.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-
-  <!-- iPhone 5 -->
-  <link href="Default5@2x.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-
-  <!-- iPad -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-ipad.png" />
-  <link href="DefaultiPadPortrait.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-  <link href="DefaultiPadLandscape.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
-
-  <!-- iPad (Retina) -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="touch-icon-iphone4.png" />-->
-  <link href="DefaultiPadPortrait@2x.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-  <link href="DefaultiPadLandscape@2x.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <!-- mobile assets -->
+  <? include '_mobile_icons.php' ?>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
