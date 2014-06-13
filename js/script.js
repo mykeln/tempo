@@ -119,6 +119,7 @@ $('.datepicker').datepicker({
     $.each(data.fitness[0], function(i,item){
       // time interval (1s, 1m, 5m, etc.)
       fitnessTime  = i;
+      powerProfile[fitnessTime] = fitnessPower;
 
       // only recording power profile times
       if (fitnessTime == "5s" || fitnessTime == "1m" || fitnessTime == "5m" || fitnessTime == "20m") {
@@ -127,8 +128,6 @@ $('.datepicker').datepicker({
 
         // watts per kilo (power-to-weight ratio)
         var wKg = (item/weightKg).toFixed(2);
-
-        powerProfile[fitnessTime] = fitnessPower;
 
         // adding the current power value to the global power number (to determine progress bar percentages later)
         totalFitness += Number(fitnessPower);
