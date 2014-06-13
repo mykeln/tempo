@@ -104,7 +104,7 @@
               <li><a href="#">Settings</a></li>
             </ul>
           </li>
-          <li class="upload_button"><button type="button" class="btn btn-sm btn-success">Upload Ride</button></li>
+          <li class="upload_button"><button type="button" class="btn btn-sm btn-success">Sync Rides</button></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>

@@ -3,6 +3,7 @@
 */
 
 //// INIT
+  var user;
   var weightKg;
   var athleteName;
   var powerProfile = {};
@@ -69,9 +70,9 @@ function eval_target(input_string) {
     return( input_string );
 }
 
-
 //// APP LOGIC
 jQuery(function($) {
+
 
 //// INIT MINICAL NAV
 $('.datepicker').datepicker({
@@ -106,10 +107,10 @@ $('.datepicker').datepicker({
       weightKg    = item.weight/2.2;
 
       // getting athlete name
-      athleteName = item.name;
+      athleteName = item.name.split(' ').slice(0, -1).join(' ');
 
 
-      //$('#fitness h3 small').html(athleteName + " - " + item.weight + "lbs");
+      $('.dropdown-toggle').html(athleteName + '<b class="caret"></b>');
     }); // end config each
 
 ////FITNESS
@@ -362,6 +363,8 @@ $('.datepicker').datepicker({
       $('#workout .activity:last').show();
     }
 
+
+
     // hiding schedule columns that don't apply
     $('#full_schedule').columnManager();
     $('#full_schedule').hideColumns([1,3,4,5,6,7,8,9]);
@@ -421,7 +424,6 @@ O5-10 - VO2 OR AC OR FTP
   var progressBar = thisNumDay*10;
   $("#week_progress").css('width', progressBar + '%');
 
-
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week
   $("#thisyearonly").click(function() {
@@ -433,13 +435,6 @@ O5-10 - VO2 OR AC OR FTP
   $("#thisweekonly").click(function() {
     $('#schedules tr').not('[id^=' + thisWeek + ']').toggle();
     $('#full_schedule').showColumns([1,3,4,5,6,7,8,9]);
-    return false;
-  });
-
-  // showing full library
-  $("#full_library").click(function() {
-    $('#library_explanation').toggle();
-    $('#workout_library').toggle();
     return false;
   });
 

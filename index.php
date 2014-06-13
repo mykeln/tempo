@@ -157,11 +157,8 @@
       <!-- workout library -->
       <div class="row" id="library">
         <h3>Workout Library <small></small></h3>
-        <p id="library_explanation">Lots of workouts to show. Tap the toggle button below to read the full library.</p>
+        <p id="library_explanation">The full library of workouts your training plans are based on.</p>
         <div id="workout_library"></div>
-      </div>
-      <div class="row">
-        <a id="full_library" class="btn btn-default btn-xs" href="">toggle full library</a>
       </div>
     </div> <!-- end 12 column -->
 
