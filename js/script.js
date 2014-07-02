@@ -99,10 +99,6 @@ $('.datepicker').datepicker({
 //// CALENDAR
   // getting json data
   $.getJSON('data/user_mykel.json', function(data) {
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 
 //// CONFIGURATION
     $.each(data.config, function(i,item){
@@ -389,11 +385,7 @@ $.getJSON('data/workouts.json', function(data) {
           if($('#' + activityShortName).length == 0 ){
             var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
             var libraryEnd = "</div><hr class='soften'>";
-<<<<<<< HEAD
 
-=======
-
->>>>>>> master
             $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
           }
 
