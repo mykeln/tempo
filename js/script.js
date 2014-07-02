@@ -254,6 +254,8 @@ $('.datepicker').datepicker({
         }
 
         // adding progress bar for the zone to the display
+        console.log(fitnessPercentage);
+
         var fitnessTemplate = "\
           <div class='progress'> \
             <div style='width:" + fitnessPercentage + "%' id='p" + fitnessTime + "' class='progress-bar progress-bar-" + progressClass + "'> \
@@ -262,23 +264,6 @@ $('.datepicker').datepicker({
           </div>";
 
         $('#score').append(fitnessTemplate);
-      }
-    });
-
-    // after all the calculations have been performed above for user's fitness, calculate the progress bar percentages
-    $.each(data.fitness[0], function(i,item){
-      // time interval (1s, 1m, 5m, etc.)
-      fitnessTime  = i;
-
-      if (fitnessTime == "5s" || fitnessTime == "1m" || fitnessTime == "5m" || fitnessTime == "20m") {
-
-        // wattage at a time interval (150, 200, 250, etc.)
-        fitnessPower = item;
-
-        fitnessPercentage = ((parseInt(fitnessPower) / parseInt(totalFitness)) * 100).toFixed(0);
-
-        // setting the width of the progress bar for a particular power zone
-        $("#score #p" + fitnessTime).css('width', fitnessPercentage + "%");
       }
     });
 });
