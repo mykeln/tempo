@@ -1,22 +1,4 @@
 {
-    "config": [
-        {
-            "name": "Mykel Nahorniak",
-            "weight": "145"
-        }
-    ],
-    "fitness": [
-        {
-            "1s": "1705",
-            "5s": "1393",
-            "30s": "971",
-            "1m": "610",
-            "5m": "406",
-            "10m": "324",
-            "20m": "310",
-            "60m": "299"
-        }
-    ],
     "activities": [
         {
             "name": "Stretching",
@@ -6523,6 +6505,126 @@
             },
             "sat": {
                 "workoutname": "sweetspot-2x30minutes"
+            }
+        },
+        {
+            "name": "25-14-maint3",
+            "sun": {
+                "workoutname": "endurance-groupride"
+            },
+            "mon": {
+                "workoutname": "easy-off"
+            },
+            "tue": {
+                "workoutname": "sprints-9"
+            },
+            "wed": {
+                "workoutname": "race"
+            },
+            "thu": {
+                "workoutname": "bursts-microbursts"
+            },
+            "fri": {
+                "workoutname": "easy-off"
+            },
+            "sat": {
+                "workoutname": "sweetspot-2x30minutes"
+            }
+        },
+        {
+            "name": "26-14-maint4",
+            "sun": {
+                "workoutname": "endurance-groupride"
+            },
+            "mon": {
+                "workoutname": "easy-off"
+            },
+            "tue": {
+                "workoutname": "sprints-9"
+            },
+            "wed": {
+                "workoutname": "race"
+            },
+            "thu": {
+                "workoutname": "bursts-microbursts"
+            },
+            "fri": {
+                "workoutname": "easy-off"
+            },
+            "sat": {
+                "workoutname": "sweetspot-2x30minutes"
+            }
+        },
+        {
+            "name": "27-14-maint5",
+            "sun": {
+                "workoutname": "endurance-groupride"
+            },
+            "mon": {
+                "workoutname": "easy-off"
+            },
+            "tue": {
+                "workoutname": "sprints-6"
+            },
+            "wed": {
+                "workoutname": "race"
+            },
+            "thu": {
+                "workoutname": "sprints-sprintstarts"
+            },
+            "fri": {
+                "workoutname": "easy-off"
+            },
+            "sat": {
+                "workoutname": "raceprep"
+            }
+        },
+        {
+            "name": "28-14-maint6",
+            "sun": {
+                "workoutname": "endurance-groupride"
+            },
+            "mon": {
+                "workoutname": "easy-off"
+            },
+            "tue": {
+                "workoutname": "sprints-9"
+            },
+            "wed": {
+                "workoutname": "race"
+            },
+            "thu": {
+                "workoutname": "bursts-microbursts"
+            },
+            "fri": {
+                "workoutname": "easy-off"
+            },
+            "sat": {
+                "workoutname": "sweetspot-2x30minutes"
+            }
+        },
+         {
+            "name": "29-14-maint7",
+            "sun": {
+                "workoutname": "endurance-groupride"
+            },
+            "mon": {
+                "workoutname": "strength1"
+            },
+            "tue": {
+                "workoutname": "endurance-basic"
+            },
+            "wed": {
+                "workoutname": "strength1"
+            },
+            "thu": {
+                "workoutname": "easy-off"
+            },
+            "fri": {
+                "workoutname": "run-easy"
+            },
+            "sat": {
+                "workoutname": "endurance-basic"
             }
         }
     ]

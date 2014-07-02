@@ -175,6 +175,60 @@ h6 {
   width: 100%;
 }
 
-#score #5s {
+.bottle_top {
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.bottle_mid, .bottle_bot {
+  background-color: #efefef;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottle_top.mouth {
+  width: 50px;
+  height: 25px;
+  margin-left: auto;
+}
+
+.bottle_top.cap {
+  width: 200px;
+  height: 40px;
+}
+
+.bottle_mid.initial {
+  width: 200px;
+  height: 75px;
+}
+
+.bottle_mid.transition {
+  width: 150px;
+  height: 20px;
+}
+
+.bottle_mid {
+  width: 200px;
+  text-align: center;
+  font: 200 20px/100px "Helvetica Neue";
+}
+
+  .bottle_mid.content_one {
+    background-color: red;
+  }
+
+  .bottle_mid.content_two {
+    background-color: green;
+  }
+
+  .bottle_mid.content_three {
+    background-color: blue;
+  }
+
+
+.bottle_bot {
+  height: 5px;
+  width: 150px;
+  background-color: #444;
 }

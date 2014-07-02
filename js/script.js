@@ -67,7 +67,7 @@ function eval_target(input_string) {
         );
     }
 
-    return( input_string );
+    return(input_string );
 }
 
 //// APP LOGIC
@@ -98,7 +98,7 @@ $('.datepicker').datepicker({
 
 //// CALENDAR
   // getting json data
-  $.getJSON('data/workouts.js', function(data) {
+  $.getJSON('data/user_mykel.json', function(data) {
 
 
 //// CONFIGURATION
@@ -199,7 +199,9 @@ $('.datepicker').datepicker({
         $("#score #p" + fitnessTime).css('width', fitnessPercentage + "%");
       }
     });
+});
 
+$.getJSON('data/workouts.json', function(data) {
 //// SCHEDULES
     // get a list of all the historical schedules and append to list
     $.each(data.schedules, function(i,item){
@@ -255,9 +257,6 @@ $('.datepicker').datepicker({
           // rendering LIBRARY and WORKOUT information
           var activityTemplate = "";
 
-          var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
-          var libraryEnd = "</div><hr class='soften'>";
-
           if(activityWarmup != "") {
             activityTemplate += "<h6>Warm Up</h6><p>" + activityWarmup + "</p>";
           }
@@ -301,6 +300,9 @@ $('.datepicker').datepicker({
 
           // if the activity hasn't already been added to the library, add it to the LIBRARY template
           if($('#' + activityShortName).length == 0 ){
+            var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
+            var libraryEnd = "</div><hr class='soften'>";
+            
             $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
           }
 
