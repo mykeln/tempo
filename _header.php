@@ -16,14 +16,14 @@
 
   <title>Get faster, quicker</title>
 
-  <meta name="description" content="Welluride is an automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
+  <meta name="description" content="Chainiac is an automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
   <meta name="author" content="Mykel Nahorniak">
 
   <!-- display defaults -->
   <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <meta name="apple-mobile-web-app-title" content="Welluride">
+  <meta name="apple-mobile-web-app-title" content="Chainiac">
 
   <!-- mobile assets -->
   <? include '_mobile_icons.php' ?>
@@ -51,7 +51,7 @@
   <script src="js/libs/bootstrap-datepicker.js"></script>
   <script src="js/classie.js"></script>
 
-  <!-- welluride logic -->
+  <!-- chainiac logic -->
   <script src="js/script.js"></script>
 
   <!-- hacks for faster responsiveness on mobile -->
@@ -84,7 +84,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Welluride</a>
+        <a class="navbar-brand" href="#">Chainiac</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">

@@ -139,7 +139,7 @@
 
 <!-- user setup
 <div id="setup" class="row">
-  <h1>Set Up Your Profile <small>help Welluride create an ideal training plan for you</small></h1>
+  <h1>Set Up Your Profile <small>help Chainiac create an ideal training plan for you</small></h1>
 
   <form class="form-horizontal">
     <div class="control-group">
@@ -151,7 +151,7 @@
     <div class="control-group">
       <label class="control-label" for="inputEmail">Email</label>
       <div class="controls">
-        <input type="text" id="inputEmail" placeholder="myname@welluride.com">
+        <input type="text" id="inputEmail" placeholder="myname@chainiac.com">
       </div>
     </div>
     <div class="control-group">
