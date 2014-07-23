@@ -89,7 +89,6 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li <? if ($page == "dash") { ?>class="active"<? } ?>><a href="/">Dashboard</a></li>
-          <li <? if ($page == "today") { ?>class="active"<? } ?>><a href="?p=today">Today</a></li>
           <li <? if ($page == "calendar") { ?>class="active"<? } ?>><a href="?p=calendar">Calendar</a></li>
           <li <? if ($page == "library") { ?>class="active"<? } ?>><a href="?p=library">Library</a></li>
         </ul>
@@ -116,7 +115,6 @@
           <li><a href="/">Home</a></li>
           <li class="active">
             <? if ($page == "dash") { ?>Dashboard<? } ?>
-            <? if ($page == "today") { ?>Today<? } ?>
             <? if ($page == "calendar") { ?>Calendar<? } ?>
             <? if ($page == "library") { ?>Library<? } ?>
           </li>

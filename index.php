@@ -26,28 +26,12 @@
         </div>
       </div>
 
-      <!-- recent activities -->
-      <div class="row" id="recent_activities">
-        <h3>Recent Activities</h3>
-        <div class="list-group">
-          <a href="#" class="list-group-item">
-          <span class="glyphicon glyphicon-star-empty"></span>
-          Easy or Off
-          <span class="badge">Friday</span>
-          </a>
-
-          <a href="#" class="list-group-item">
-          <span class="glyphicon glyphicon-star"></span>
-          AC - 1 Minute Intervals
-          <span class="badge">Thursday</span>
-          </a>
-
-          <a href="#" class="list-group-item">
-          <span class="glyphicon glyphicon-star"></span>
-          VO2 - 3 Minute Intervals
-          <span class="badge">Wednesday</span>
-          </a>
-        </div>
+      <!-- today's workout -->
+      <div class="row" id="workout">
+        <h3>Today's Workout</h3>
+      </div>
+      <div class="row">
+        <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
       </div>
 
       <!-- fitness -->
@@ -56,18 +40,6 @@
         <div id="score">
 
         </div>
-      </div>
-    </div> <!-- end 8 column -->
-
-  <? } else if ($page == "today") { ?>
-
-    <div class="col-sm-8">
-      <!-- today's workout -->
-      <div class="row" id="workout">
-        <h3></h3>
-      </div>
-      <div class="row">
-        <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
       </div>
     </div> <!-- end 8 column -->
 
@@ -124,6 +96,29 @@
   <? if (($page == "dash") || ($page == "today")){ ?>
     <div class="col-sm-4">
       <div class="datepicker"></div>
+
+      <!-- recent activities -->
+      <h4>Recent Activities</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-star-empty"></span>
+        Easy or Off
+        <span class="badge">Friday</span>
+        </a>
+
+        <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-star"></span>
+        AC - 1 Minute Intervals
+        <span class="badge">Thursday</span>
+        </a>
+
+        <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-star"></span>
+        VO2 - 3 Minute Intervals
+        <span class="badge">Wednesday</span>
+        </a>
+      </div>
+
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Feedback</h3>

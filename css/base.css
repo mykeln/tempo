@@ -89,7 +89,8 @@ h6 {
 .activity,
 #calendar,
 #library,
-#fitness {
+#fitness,
+#progress {
   border-bottom: 5px solid #efefef;
   margin-bottom: 10px;
 }
