@@ -30,9 +30,10 @@
       <div class="row" id="workout">
         <h3>Today's Workout</h3>
       </div>
+      <!--
       <div class="row">
         <a id="thisyearonly" class="btn btn-default btn-xs" href="">toggle previous years</a>
-      </div>
+      </div>-->
 
       <!-- fitness -->
       <div class="row" id="fitness">

@@ -5,6 +5,12 @@ h6 {
   margin-top: 30px;
 }
 
+h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+}
+
 .breadcrumb.footer {
   margin-top: 100px;
 }
@@ -105,6 +111,14 @@ h6 {
 #workout h1{
   color: #3CBBAF;
   border-top: 10px solid #EA7FC8;
+}
+
+#workout h4 {
+  text-transform: uppercase;
+}
+
+.activity span {
+  text-transform: uppercase;
 }
 
 .label.label-off {

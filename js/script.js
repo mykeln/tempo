@@ -376,7 +376,7 @@ $.getJSON('data/workouts.json', function(data) {
 
           // if this activity is either today, or occurred on this day in the past, add it to the WORKOUT template
           if(activityShortName == calendarShortName) {
-            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><span class='label label-info'>20" + scheduleYear + " season, week " + thisWeek + "</span><h3>" + activityName + " / " + activityDuration + " minutes</h3>";
+            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><h5>20" + scheduleYear + " season, week " + thisWeek + "</h5><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
             var workoutEnd = "</div>";
 
             $('#workout').append(workoutBegin + activityTemplate + workoutEnd);
