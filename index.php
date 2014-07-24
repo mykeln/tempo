@@ -1,4 +1,19 @@
-<? include '_header.php'; ?>
+<?
+  // getting requested page
+  $page = $_GET['p'];
+  $user = $_GET['u'];
+
+  // if none is set, go to the user dashboard
+  if (!($page)) {
+    $page = "dash";
+  }
+
+  // if no user is set, show the splash screen
+  if (!($user)) {
+    include '_splash_index.php';
+  } else {
+    include '_header.php';
+?>
 
 <div class="container">
   <? if ($page == "dash") { ?>
@@ -214,3 +229,4 @@
 
 
 <? include '_footer.php'; ?>
+<? } ?>
