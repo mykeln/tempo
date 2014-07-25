@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+.container.top_image {
+  background: url(../images/mkt/top_img.jpg) top center no-repeat;
+}
+
 .navbar-default {
   background-color: transparent;
   border: 0px;
@@ -17,9 +21,17 @@ body {
   color: #fff;
 }
 
+.navbar-default .navbar-brand {
+  background-position: center center;
+}
+
+.navbar-right {
+  margin-right: 40px;
+}
+
 .intro .row {
   color: #fff;
-  padding: 100px 150px 150px 150px;
+  padding: 75px 150px 95px 150px;
 }
 
   .intro h2 {
@@ -35,30 +47,81 @@ body {
 
   .intro .btn-default {
     background-color: transparent;
-    border: 2px solid #FEC0CB;
-    color: #FEC0CB;
+    border: 3px solid #FFD6E3;
+    color: #FFD6E3;
+    font-size: 24px;
+    margin-top: 20px;
   }
 
-.explanation .row {
-    padding: 100px 150px 0px 150px;
+.container.explanation {
+    padding: 100px 150px 150px 150px;
     background-color: #4AD2C1;
 }
 
+  .explanation .col-sm-4,
+  .screens .col-sm-4 {
+    text-align: center;
+  }
+
+  .explanation h3,
+  .explanation p {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .explanation .glyphicon-calendar,
+  .explanation .glyphicon-cloud-upload,
+  .explanation .glyphicon-flash {
+    font-size: 150px;
+  }
 
   .explanation h2 {
     font-size: 60px;
     font-weight: 100;
-    text-align: center;
   }
 
-.screens .row {
-    padding: 100px 150px 0px 150px;
-    background-color: #efefef;
+.container.screens {
+  padding: 100px 150px 150px 150px;
+  background-color: #fafafa;
 }
 
   .screens h2 {
     font-size: 60px;
     font-weight: 100;
-    text-align: center;
     color: #444;
   }
+
+  .screens h4 {
+    color: #666;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+.label-default {
+  background: #FFD6E3;
+  color: #D696A3;
+}
+
+
+.container.train {
+  padding: 100px 150px 150px 150px;
+  background-color: #222;
+}
+
+  .train h2 {
+    font-size: 60px;
+    font-weight: 100;
+    color: #444;
+  }
+
+  .train h4 {
+    color: #666;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+

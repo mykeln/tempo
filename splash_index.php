@@ -7,7 +7,8 @@
   <link href="css/splash.css" rel="stylesheet">
 </head>
 <body class="splash">
-  <div class="container">
+
+  <div class="container top_image">
     <section class="header">
       <div class="col-sm-12">
         <div class="row">
@@ -24,9 +25,10 @@
             </div>
             <div class="navbar-collapse navbar-right collapse">
               <ul class="nav navbar-nav">
-                <li><a href="/">FAQ</a></li>
-                <li><a href="?p=calendar">Contact</a></li>
-                <li><a href="?p=library">Log In</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#"><b>Sign Up</b></a></li>
               </ul>
             </div>
           </div>
@@ -38,38 +40,61 @@
       <div class="col-sm-12">
         <div class="row">
           <h2>Get faster, quicker</h2>
-          <h4>The world's first automated cycling coach. Upload your data, get custom workouts that adapt, maximizing your strengths while minimizing weaknesses</h4>
+          <h4>The world's first automatic cycling coach.</h4>
+          <h4>Upload your rides, get custom workouts that adapt, maximizing your strengths while minimizing weaknesses</h4>
           <button type="button" class="btn btn-default">
-            Sign Up
+            Start Training
           </button>
         </div>
       </div>
     </section>
+  </div>
 
-    <section class="explanation">
-      <div class="col-sm-12">
-        <div class="row">
-          <h2>How it works</h2>
-          one
-          two three
-        </div>
+  <div class="container explanation">
+    <div class="col-sm-12">
+      <div class="row">
+        <h2>How it works</h2>
       </div>
+    </div>
+    <div class="col-sm-4">
+      <h3><span class="label label-default">1</span> Go for a ride</h3>
+      <span class="glyphicon glyphicon-flash"></span>
+    </div>
+    <div class="col-sm-4">
+      <h3><span class="label label-default">2</span> Upload your data</h3>
+      <span class="glyphicon glyphicon-cloud-upload"></span>
+    </div>
+    <div class="col-sm-4">
+      <h3><span class="label label-default">3</span> Get a 4-week plan</h3>
+      <span class="glyphicon glyphicon-calendar"></span>
+    </div>
+  </div>
 
-    </section>
-
-    <section class="screens">
-      <div class="col-sm-12">
-        <div class="row">
-          <h2>What it looks like</h2>
-          <img src="images/mkt/homepage_one.png" style="width: 50%;"/>
-          <img src="images/mkt/homepage_two.png" style="width: 50%;" />
-        </div>
+  <div class="container screens">
+    <div class="col-sm-12">
+      <div class="row">
+        <h2>What it looks like</h2>
+        <h4>On a computer, mobile, or in your inbox, Chainiac puts your plans wherever you need them.</h4>
       </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/mkt/homepage_one.png" style="width: 75%;"/>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/mkt/homepage_two.png" style="width: 75%;" />
+    </div>
+    <div class="col-sm-4">
+      <img src="images/mkt/homepage_three.png" style="width: 75%;" />
+    </div>
+  </div>
 
-    </section>
-
-
-
+  <div class="container train">
+    <div class="col-sm-12">
+      <div class="row">
+        <h2>Train smarter</h2>
+        <h4>Chainiac integrates with popular services like Strava, TrainingPeaks and GoldenCheetah to get you started quickly.</h4>
+      </div>
+    </div>
   </div>
 
 

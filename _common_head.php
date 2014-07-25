@@ -4,7 +4,7 @@
 
   <title>Get faster, quicker</title>
 
-  <meta name="description" content="Chainiac is an automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
+  <meta name="description" content="An automated cycling coach designed to use your power data as a guide to minimize weaknesses while keeping strengths at their peak. Workouts are created on the fly and take seasonality, your power profile, and other factors into account.">
   <meta name="author" content="Mykel Nahorniak">
 
   <!-- display defaults -->
