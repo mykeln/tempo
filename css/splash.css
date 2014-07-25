@@ -45,7 +45,8 @@ body {
     font-size: 24px;
   }
 
-  .intro .btn-default {
+  .intro .btn-default,
+  .pricing .btn-default {
     background-color: transparent;
     border: 3px solid #FFD6E3;
     color: #FFD6E3;
@@ -80,6 +81,12 @@ body {
     font-weight: 100;
   }
 
+  .explanation h4 {
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
 .container.screens {
   padding: 100px 150px 150px 150px;
   background-color: #fafafa;
@@ -104,19 +111,23 @@ body {
   color: #D696A3;
 }
 
-
-.container.train {
+.container.pricing {
   padding: 100px 150px 150px 150px;
   background-color: #222;
 }
 
-  .train h2 {
+  .pricing h2 {
     font-size: 60px;
     font-weight: 100;
     color: #444;
   }
 
-  .train h4 {
+  .pricing h3 {
+    font-weight: 200;
+    font-size: 52px;
+  }
+
+  .pricing h4 {
     color: #666;
     font-weight: 200;
     font-size: 22px;
@@ -124,4 +135,22 @@ body {
     margin-bottom: 20px;
   }
 
+  .pricing ul li {
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: 200;
+  }
 
+  .pricing .col-sm-6 {
+    background-color: #444;
+    height: 300px;
+    width: 400px;
+    margin: 0px 10px;
+  }
+
+.container.footer {
+  background-color: #000;
+  text-align: center;
+  line-height: 40px;
+  color: #444;
+}

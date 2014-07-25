@@ -41,7 +41,7 @@
         <div class="row">
           <h2>Get faster, quicker</h2>
           <h4>The world's first automatic cycling coach.</h4>
-          <h4>Upload your rides, get custom workouts that adapt, maximizing your strengths while minimizing weaknesses</h4>
+
           <button type="button" class="btn btn-default">
             Start Training
           </button>
@@ -54,6 +54,7 @@
     <div class="col-sm-12">
       <div class="row">
         <h2>How it works</h2>
+        <h4>Upload your rides, get custom workouts that adapt, maximizing your strengths while minimizing weaknesses.</h4>
       </div>
     </div>
     <div class="col-sm-4">
@@ -88,16 +89,43 @@
     </div>
   </div>
 
-  <div class="container train">
+  <div class="container pricing">
     <div class="col-sm-12">
       <div class="row">
-        <h2>Train smarter</h2>
-        <h4>Chainiac integrates with popular services like Strava, TrainingPeaks and GoldenCheetah to get you started quickly.</h4>
+        <h2>What it costs</h2>
+        <h4>CoachWatts&trade; gives you the same gains as a real coach, at a fraction of the cost.</h4>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h6>Heart</h6>
+      <h3>$20 monthly</h3>
+      <ul>
+        <li>Heart-rate-based training plans</li>
+        <li>Standard target heart rate zones</li>
+      </ul>
+      <button type="button" class="btn btn-default">
+        Choose Heart Plan
+      </button>
+    </div>
+    <div class="col-sm-6">
+      <h6>Power</h6>
+      <h3>$35 monthly</h3>
+      <ul>
+        <li>Power-based training plans</li>
+        <li>Adaptive target power zones</li>
+      </ul>
+      <button type="button" class="btn btn-default">
+        Choose Power Plan
+      </button>
+    </div>
+  </div>
+    <div class="container footer">
+    <div class="col-sm-12">
+      <div class="row">
+        <p>&copy; 2014 Waker Labs, LLC. All Rights Reserved</p>
       </div>
     </div>
   </div>
-
-
 
 </body>
 </html>
