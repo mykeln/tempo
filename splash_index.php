@@ -25,8 +25,8 @@
             </div>
             <div class="navbar-collapse navbar-right collapse">
               <ul class="nav navbar-nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#">Log In</a></li>
                 <li><a href="#"><b>Sign Up</b></a></li>
               </ul>
@@ -50,11 +50,11 @@
     </section>
   </div>
 
-  <div class="container explanation">
+  <div id="about" class="container explanation">
     <div class="col-sm-12">
       <div class="row">
         <h2>How it works</h2>
-        <h4>Upload your rides, get custom workouts that adapt, maximizing your strengths while minimizing weaknesses.</h4>
+        <h4>Upload your rides, get custom workouts that maximize your strengths while minimizing weaknesses.</h4>
       </div>
     </div>
     <div class="col-sm-4">
@@ -89,7 +89,7 @@
     </div>
   </div>
 
-  <div class="container pricing">
+  <div id="pricing" class="container pricing">
     <div class="col-sm-12">
       <div class="row">
         <h2>What it costs</h2>
