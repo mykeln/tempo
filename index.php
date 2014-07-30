@@ -10,7 +10,8 @@
 
   // if no user is set, show the splash screen
   if (!($user)) {
-    include 'splash_index.php';
+    #include 'splash_index.php';
+    include '_header.php';
   } else {
     include '_header.php';
 ?>

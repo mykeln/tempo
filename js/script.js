@@ -98,7 +98,7 @@ $('.datepicker').datepicker({
 
 //// CALENDAR
   // getting json data
-  $.getJSON('data/user_mykel.json', function(data) {
+  $.getJSON('data/user_myke.json', function(data) {
 
 //// CONFIGURATION
     $.each(data.config, function(i,item){
