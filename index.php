@@ -1,20 +1,40 @@
 <?
   // getting requested page
   $page = $_GET['p'];
-  $user = $_GET['u'];
 
   // if none is set, go to the user dashboard
   if (!($page)) {
     $page = "dash";
   }
 
+  // getting requested user
+  $user = $_GET['u'];
+
+  // if no user is defined in the parameter, set it to myke
+  if (!(isset($_COOKIE['tempoAthlete']))) {
+    if (!($user)) {
+      $user = "myke";
+    }
+
+    // setting the user cookie (for access later in JS, etc.)
+    setcookie("tempoAthlete", $user, time()+3600000);
+  }
+
+
   // if no user is set, show the splash screen
-  if (!($user)) {
-    #include 'splash_index.php';
+  if (!(isset($_COOKIE['tempoAthlete']))) {
+    # show sales/signup page
+    # include 'splash_index.php';
     include '_header.php';
   } else {
     include '_header.php';
+    # don't put curly brace here. it's at the bottom of the index. basically saying if a user exists, show the full stuff
+
+
+
 ?>
+
+<input type="hidden" name="user" value="myke">
 
 <div class="container">
   <? if ($page == "dash") { ?>
