@@ -18,7 +18,7 @@
 
     // setting the user cookie (for access later in JS, etc.)
     setcookie("tempoAthlete", $user, time()+3600000);
-    $_COOKIES["tempoAthlete"] = $user;
+    $_COOKIE["tempoAthlete"] = $user;
   }
 
 
