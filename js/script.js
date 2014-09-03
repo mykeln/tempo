@@ -91,20 +91,19 @@ $('.datepicker').datepicker({
     keyboardNavigation: false,
     calendarWeeks: true,
     todayHighlight: true,
+    /*
     beforeShowDay: function (date) {
       if (date.getMonth() == (new Date()).getMonth())
         switch (date.getDate()){
-          //case 4:
-            //return {
-              //tooltip: 'Example tooltip',
-              //classes: 'active'
-            //};
-          //case 8:
-            //return false;
-          //case 12:
-            //return "green";
+          case 4:
+            return {
+              tooltip: 'Example tooltip',
+              classes: 'active'
+            };
+
         }
     }
+    */
 });
 
 //// CALENDAR
@@ -267,7 +266,7 @@ $('.datepicker').datepicker({
         }
 
         // adding progress bar for the zone to the display
-        console.log(fitnessPercentage);
+        console.log(fitnessTime + " is at " + fitnessPercentage + " of 100%");
 
         var fitnessTemplate = "\
           <div class='progress'> \

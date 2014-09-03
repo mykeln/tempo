@@ -5,7 +5,6 @@
   <? include '_common_head.php'; ?>
 
   <!-- form stuff -->
-  <link rel="stylesheet" type="text/css" href="css/component.css" />
   <link rel="stylesheet" type="text/css" href="css/datepicker3.css" />
 
   <!-- scripts -->
@@ -37,7 +36,7 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li <? if ($page == "dash") { ?>class="active"<? } ?>><a href="/">Dashboard</a></li>
+          <li <? if ($page == "dash") { ?>class="active"<? } ?>><a href="?p=dash">Dashboard</a></li>
           <li <? if ($page == "calendar") { ?>class="active"<? } ?>><a href="?p=calendar">Calendar</a></li>
           <li <? if ($page == "library") { ?>class="active"<? } ?>><a href="?p=library">Library</a></li>
         </ul>
@@ -61,7 +60,7 @@
     <div class="col-sm-12">
       <div class="row">
         <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
+          <li><a href="?p=dash">Home</a></li>
           <li class="active">
             <? if ($page == "dash") { ?>Dashboard<? } ?>
             <? if ($page == "calendar") { ?>Calendar<? } ?>
