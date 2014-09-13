@@ -426,7 +426,7 @@ $.getJSON('data/workouts.json', function(data) {
       }
 
       // defining the template to list the schedule
-      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><!--<td>" + scheduleType + "</td>--><td id='" + thisWeek + "'>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
+      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><!--<td>" + scheduleType + "</td>--><td id='" + thisWeek + "'>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='?p=library#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='?p=library#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='?p=library#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='?p=library#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='?p=library#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='?p=library#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='?p=library#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
@@ -505,6 +505,9 @@ O5-10 - VO2 OR AC OR FTP
   // setting the width of the progress bar
   var progressBar = thisNumDay*10;
   $("#week_progress").css('width', progressBar + '%');
+
+  // displaying the week on the calendar page
+  $("#calendar h5").append(thisWeek);
 
 ////CLICK HANDLERS FOR RENDERING
   // showing all workouts historically associated with this week

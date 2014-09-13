@@ -87,6 +87,7 @@
       <!-- calendar -->
       <div class="row" id="calendar">
         <h3>Calendar of Activities</h3>
+        <h5>Current Week: </h5>
         <span class="label label-off">Time Off</span>
         <span class="label label-default">Base Training</span>
         <span class="label label-warning">Sharpening</span>
