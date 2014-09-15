@@ -87,7 +87,6 @@
       <!-- calendar -->
       <div class="row" id="calendar">
         <h3>Calendar of Activities</h3>
-        <h5>Current Week: </h5>
         <span class="label label-off">Time Off</span>
         <span class="label label-default">Base Training</span>
         <span class="label label-warning">Sharpening</span>
@@ -120,16 +119,6 @@
     </div> <!-- end 12 column -->
 
   <? } else if ($page == "library") { ?>
-
-    <script>
-      if(window.location.hash) {
-          var hash = window.location.hash.substring(1);
-          alert (hash);
-          // hash found
-      } else {
-          // No hash found
-      }
-    </script>
 
     <div class="col-sm-12">
       <!-- workout library -->

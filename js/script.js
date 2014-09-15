@@ -81,6 +81,10 @@ function readCookie(name) {
   return null;
 }
 
+function scrollToSelectedItem() {
+  $('html,body').animate({scrollTop:$(location.hash).offset().top}, 500);
+}
+
 //// APP LOGIC
 jQuery(function($) {
 
@@ -499,6 +503,12 @@ O5-10 - VO2 OR AC OR FTP
 
 
 ////RENDERING
+  // scrolling to window location if there's a hash on the page (doing this at the end when everything is rendered)
+  if(window.location.hash) {
+    setTimeout(scrollToSelectedItem,0);
+    //$('html,body').animate({scrollTop:$(location.hash).offset().top}, 500);
+  }
+
   // making today bold
   $("[id*="+thisDay+"]").css('font-weight', 'bold');
 
