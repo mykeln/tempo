@@ -121,6 +121,16 @@
 
   <? } else if ($page == "library") { ?>
 
+    <script>
+      if(window.location.hash) {
+          var hash = window.location.hash.substring(1);
+          alert (hash);
+          // hash found
+      } else {
+          // No hash found
+      }
+    </script>
+
     <div class="col-sm-12">
       <!-- workout library -->
       <div class="row" id="library">
