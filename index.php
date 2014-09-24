@@ -125,6 +125,28 @@
       <div class="row" id="library">
         <h3>Workout Library <small></small></h3>
         <p id="library_explanation">The full library of workouts your training plans are based on.</p>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Workout Type <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="library_select" id="all" href="#">All</a></li>
+              <li><a class="library_select" id="easy" href="#">Z1 - Active Recovery</a></li>
+              <li><a class="library_select" id="endurance" href="#">Z2 - Endurance</a></li>
+              <li><a class="library_select" id="tempo" href="#">Z3 - Tempo</a></li>
+              <li><a class="library_select" id="ftp sweetspot" href="#">Z4 - Lactate Threshold (FTP)</a></li>
+              <li><a class="library_select" id="vo2" href="#">Z5 - VO2 Max</a></li>
+              <li><a class="library_select" id="ac bursts" href="#">Z6 - Anaerobic Capacity (AC)</a></li>
+              <li><a class="library_select" id="sprints " href="#">Z7 - Neuromuscular Power (Sprints)</a></li>
+              <li><a class="library_select" id="race" href="#">Race</a></li>
+              <li><a class="library_select" id="test" href="#">Power Tests</a></li>
+              <li><a class="library_select" id="strength" href="#">Weights</a></li>
+              <li><a class="library_select" id="run" href="#">Running</a></li>
+              <li><a class="library_select" id="misc stretch" href="#">Misc</a></li>
+            </ul>
+          </li>
+        </ul>
         <div id="workout_library"></div>
       </div>
     </div> <!-- end 12 column -->
@@ -135,7 +157,7 @@
     <div class="col-sm-4">
       <div class="datepicker"></div>
 
-      <!-- recent activities -->
+      <!-- recent activities
       <h4>Recent Activities</h4>
       <div class="list-group">
         <a href="#" class="list-group-item">
@@ -156,14 +178,14 @@
         <span class="badge">Wednesday</span>
         </a>
       </div>
+      -->
 
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Feedback</h3>
-          </div>
-          <div class="panel-body">
-            This is alpha software. Please send feedback <a href="https://docs.google.com/a/localist.com/forms/d/1xoRyeMs1LusEplGp7-Dtnr_3sxblo1vsLwW43gmjdHw/viewform">here</a>.</p>
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Feedback</h3>
+        </div>
+        <div class="panel-body">
+          This is alpha software. Please send feedback <a href="https://docs.google.com/a/localist.com/forms/d/1xoRyeMs1LusEplGp7-Dtnr_3sxblo1vsLwW43gmjdHw/viewform">here</a>.</p>
         </div>
       </div>
     </div>

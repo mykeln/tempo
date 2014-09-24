@@ -42,7 +42,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
+            <a href="#" id="athlete-dropdown" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Invite Friends</a></li>
               <li><a href="#">My Profile</a></li>

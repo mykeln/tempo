@@ -134,7 +134,7 @@
         },
         {
             "name": "Big Block - Attacks",
-            "shortname": "bigblock-attacks",
+            "shortname": "ac-bigblock",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes include 5 - 7 attacks where you wind the speed up with a 15 second hard sprint followed by 60 - 90 seconds of all-out riding as if you were attacking for the finish line. Finish the attack with a big 10 second sprint. Recover completely between efforts.",
@@ -145,7 +145,7 @@
         },
         {
             "name": "Big Block - Sprints",
-            "shortname": "bigblock-sprints",
+            "shortname": "sprints-bigblock",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes include 5 - 10 sprints that are 10 - 30 seconds long each. Sprints should be from race speed and full gas.",
@@ -156,7 +156,7 @@
         },
         {
             "name": "Big Block - VO2",
-            "shortname": "bigblock-vo2",
+            "shortname": "vo2-bigblock",
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "This is a long day on rolling roads with constant power at least in your endurance zone. In the last 90 minutes find a hill or hills that takes 2 - 4 minutes to climb at a steady but hard pace. Recover for the same amount of time as the preceding interval. Complete 7 - 10 intervals. Once you are unable to maintain a hard pace for at least 2 minutes, then it is time to head home.",
@@ -299,10 +299,10 @@
         },
         {
             "name": "Peak - VO2 + AC Step-Ups",
-            "shortname": "peak-vo2acstepups",
+            "shortname": "vo2-vo2acstepups",
             "type": "bike",
             "wu": "5 x 1 minute of high cadence pedaling and 1 x 5 minutes of high threshold effort, then easy spinning for 5 minutes.",
-            "desc": "Complete the following sequence aiming to average in your VO2 max zone for each.<br/>Set 1: 3 x 3 minutes in upper threshold with 1 minute between intervals in your endurance zone. 5 minutes endurance.<br/>Set 2: 4 x 2 minutes in your upper threshold/VO2max zone with 1 minute between intervals in your endurance zone. 5 minutes endurance.<br/>Set 3: 5 x 1 minute in your AC zone with 1 minute between intervals in your endurance zone. 5 minutes endurance. Set 4: 10 x 40/30s. Do what you can. 40 seconds at VO2, 30 seconds at 70%.",
+            "desc": "Complete the following sequence aiming to average in your VO2 max zone for each.</li><li>Set 1: 3 x 3 minutes in upper threshold with 1 minute between intervals in your endurance zone. 5 minutes endurance.</li><li>Set 2: 4 x 2 minutes in your upper threshold/VO2max zone with 1 minute between intervals in your endurance zone. 5 minutes endurance.</li><li>Set 3: 5 x 1 minute in your AC zone with 1 minute between intervals in your endurance zone. 5 minutes endurance. Set 4: 10 x 40/30s. Do what you can. 40 seconds at VO2, 30 seconds at 70%.",
             "info": "",
             "target": "Set 1: ([60m]*.92) watts. Set 2: ([5m]*1) watts. Set 3: ([1m]*1) watts. Set 4: 40 seconds at ([5m]*1) watts, 30 seconds at ([5m]*0.70) watts.",
                         "cd": "Easy spinning for 15 minutes. 100+ cadence",
@@ -331,8 +331,8 @@
                         "duration": "90"
         },
         {
-            "name": "Race",
-            "shortname": "race",
+            "name": "Race Warmup",
+            "shortname": "race-warmup",
             "type": "bike",
             "wu": "Spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring/18-17-16 cogs. Then easy for 5. Then a 3-min step up to VO2 and over. Big ring/16-15-14 cogs. 1 easy-ish out of the saddle jump.",
             "desc": "Race.",
@@ -390,7 +390,7 @@
             "shortname": "sprints-stompsprintsstanding",
             "type": "bike",
             "wu": "5 x 1 minute of hard pedaling and 1 x 5 minutes in the lower half of your threshold zone.",
-            "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence. 53x17 - seated<br/>53x16 - seated<br/>53x15 - seated<br/>53x14 - seated<br/>53x13 - seated<br/>53x12 - stand<br/>53x13 - stand<br/>53x14 - stand<br/>53x15 - stand53x16 - stand<br/>53x17 - stand<br/><br/>Each sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
+            "desc": "Do 11 sprints. Each sprint starts from about 15 mph. Do the sprints in the following sequence:<ul><li>53x17 - seated</li><li>53x16 - seated</li><li>53x15 - seated</li><li>53x14 - seated</li><li>53x13 - seated</li><li>53x12 - stand</li><li>53x13 - stand</li><li>53x14 - stand</li><li>53x15 - stand</li><li>53x16 - stand</li><li>53x17 - stand</li></ul>Each sprint should last 10 - 20 seconds or until you stop accelerating. Recover 5 minutes between sprints.",
             "info": "",
             "target": "Endurance wattage: ([60m]*0.7) watts.",
                         "cd": "Easy spinning for 15 minutes. 100+ cadence",
@@ -434,7 +434,7 @@
             "shortname": "strength3",
             "type": "strength",
             "wu": "15 minutes cardio.",
-            "desc": "Weight routine: mid rep, mid weight. Goal: muscle power.",
+            "desc": "Weight routine: The goal of this workout is to increase muscle power. mid rep, mid weight.<ul><li>weighted back extension</li><li>calf raises</li><li>weighted pullups</li><li>squats</li><li>seated rows</li><li>leg press</li><li>flat db flys</li><li>incline db press</li><li>seated military db press</li><li>lateral shoulder raise</li><li>db curls</li><li>rope tricep pulldown</li><li>decline weighted situps</li></ul>",
             "info": "This phase begins a couple months before racing season begins, to give you that final pop.",
             "target": "",
                         "cd": "",
@@ -577,7 +577,7 @@
             "shortname": "test-day2shortpower",
             "type": "test",
             "wu": "Warm-up for one hour. You want to have about 400kj in your legs at the start of this test. Include 3 x 1 minute all-out efforts and 3 x 1 minute high cadence riding and 1 x 5 minutes of hard pedaling.",
-            "desc": "Before starting, ride easy for 5 minutes. We are going for highest average power during each interval.<br/>Go as hard as you can for 5 minutes. Really hammer and give it a last gun in the last 45 seconds.<br/> 10 minutes easy spinning<br/> 2 minutes all-out. Really nail it for the entire 2 minutes like you are going for the gold.<br/> 5 minutes easy spinning<br/> 2 minutes all-out.<br/> 5 minutes easy spinning<br/> 1 minute all-out. Really hit these hard for the whole minute.<br/> 5 minutes easy spinning<br/> 1 minute all-out.<br/> 5 minutes easy spinning<br/> 30 seconds all-out.<br/> 5 minutes easy spinning.<br/> 30 seconds all-out.<br/> 2 minutes easy spinning.<br/> 12-second out of the saddle sprint.<br/> 2 minutes easy spinning.<br/> One last 12-second sprint. Give it all you got.",
+            "desc": "Before starting, ride easy for 5 minutes. We are going for highest average power during each interval.</li><li>Go as hard as you can for 5 minutes. Really hammer and give it a last gun in the last 45 seconds.</li><li> 10 minutes easy spinning</li><li> 2 minutes all-out. Really nail it for the entire 2 minutes like you are going for the gold.</li><li> 5 minutes easy spinning</li><li> 2 minutes all-out.</li><li> 5 minutes easy spinning</li><li> 1 minute all-out. Really hit these hard for the whole minute.</li><li> 5 minutes easy spinning</li><li> 1 minute all-out.</li><li> 5 minutes easy spinning</li><li> 30 seconds all-out.</li><li> 5 minutes easy spinning.</li><li> 30 seconds all-out.</li><li> 2 minutes easy spinning.</li><li> 12-second out of the saddle sprint.</li><li> 2 minutes easy spinning.</li><li> One last 12-second sprint. Give it all you got.",
             "info": "",
             "target": "",
                         "cd": "Easy spinning for 15 minutes. 100+ cadence",
@@ -781,7 +781,7 @@
                 "workoutname": "easy-off"
             },
             "wed": {
-                "workoutname": "peak-vo2acstepups"
+                "workoutname": "vo2-vo2acstepups"
             },
             "thu": {
                 "workoutname": "strength1"
@@ -2716,7 +2716,7 @@
         {
             "name": "24-11-vo22",
             "sun": {
-                "workoutname": "bigblock-vo2"
+                "workoutname": "vo2-bigblock"
             },
             "mon": {
                 "workoutname": "easy-off"
@@ -2854,13 +2854,13 @@
                 "workoutname": "raceprep"
             },
             "sat": {
-                "workoutname": "bigblock-vo2"
+                "workoutname": "vo2-bigblock"
             }
         },
         {
             "name": "30-11-maint2",
             "sun": {
-                "workoutname": "bigblock-sprints"
+                "workoutname": "sprints-bigblock"
             },
             "mon": {
                 "workoutname": "easy-off"
@@ -2908,19 +2908,19 @@
         {
             "name": "32-11-maint4",
             "sun": {
-                "workoutname": "bigblock-vo2"
+                "workoutname": "vo2-bigblock"
             },
             "mon": {
                 "workoutname": "easy-off"
             },
             "tue": {
-                "workoutname": "bigblock-sprints"
+                "workoutname": "sprints-bigblock"
             },
             "wed": {
                 "workoutname": "easy-off"
             },
             "thu": {
-                "workoutname": "bigblock-attacks"
+                "workoutname": "ac-bigblock"
             },
             "fri": {
                 "workoutname": "easy-off"
@@ -3466,7 +3466,7 @@
                 "workoutname": "strength2"
             },
             "tue": {
-                "workoutname": "peak-vo2acstepups"
+                "workoutname": "vo2-vo2acstepups"
             },
             "wed": {
                 "workoutname": "strength2"
@@ -4165,7 +4165,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -4189,7 +4189,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -4213,7 +4213,7 @@
                 "workoutname": "sprints-6"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "sprints-sprintstarts"
@@ -4237,7 +4237,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -4670,7 +4670,7 @@
                 "workoutname": "easy-off"
             },
             "wed": {
-                "workoutname": "peak-vo2acstepups"
+                "workoutname": "vo2-vo2acstepups"
             },
             "thu": {
                 "workoutname": "strength1"
@@ -5438,7 +5438,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -5462,7 +5462,7 @@
                 "workoutname": "sprints-6"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "sprints-sprintstarts"
@@ -5486,7 +5486,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -5919,7 +5919,7 @@
                 "workoutname": "easy-off"
             },
             "wed": {
-                "workoutname": "peak-vo2acstepups"
+                "workoutname": "vo2-vo2acstepups"
             },
             "thu": {
                 "workoutname": "strength2"
@@ -6519,7 +6519,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -6543,7 +6543,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -6567,7 +6567,7 @@
                 "workoutname": "sprints-6"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "sprints-sprintstarts"
@@ -6591,7 +6591,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -6663,7 +6663,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -6687,7 +6687,7 @@
                 "workoutname": "sprints-6"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "sprints-sprintstarts"
@@ -6711,7 +6711,7 @@
                 "workoutname": "sprints-9"
             },
             "wed": {
-                "workoutname": "race"
+                "workoutname": "race-warmup"
             },
             "thu": {
                 "workoutname": "bursts-microbursts"
@@ -7144,7 +7144,7 @@
                 "workoutname": "easy-off"
             },
             "wed": {
-                "workoutname": "peak-vo2acstepups"
+                "workoutname": "vo2-vo2acstepups"
             },
             "thu": {
                 "workoutname": "strength1"

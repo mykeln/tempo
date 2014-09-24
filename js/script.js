@@ -125,7 +125,7 @@ $('.datepicker').datepicker({
       athleteName = item.name.split(' ').slice(0, -1).join(' ');
 
 
-      $('.dropdown-toggle').html(athleteName + '<b class="caret"></b>');
+      $('#athlete-dropdown').html(athleteName + '<b class="caret"></b>');
       $("#fitness h3").prepend(athleteName + "'s ");
     }); // end config each
 
@@ -385,7 +385,7 @@ $.getJSON('data/workouts.json', function(data) {
           // if the activity hasn't already been added to the library, add it to the LIBRARY template
           if($('#' + activityShortName).length == 0 ){
             var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
-            var libraryEnd = "</div><hr class='soften'>";
+            var libraryEnd = "<hr class='soften'></div>";
 
             $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
           }
@@ -543,5 +543,21 @@ O5-10 - VO2 OR AC OR FTP
     $('#powerbests').toggle();
   });
 
+  // when a library type is selected, hide all others except the category you picked. support for multiple
+  $(".library_select").click(function() {
+    var workout_id_raw = $(this).attr("id");
+    var workout_id = workout_id_raw.replace(/\s{2,}/g, ' ').split(' ');
+      console.log(workout_id);
+
+    if (workout_id == "all") {
+      $("#workout_library div").show();
+    } else {
+      $("#workout_library div").hide();
+      $.each(workout_id, function( index, value ) {
+        $("#workout_library div[id^='" + value + "']").show();
+      });
+    }
+
+  });
 
 }); // end jquery function
