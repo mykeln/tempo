@@ -331,7 +331,7 @@
                         "duration": "90"
         },
         {
-            "name": "Race Warmup",
+            "name": "Race Warm Up",
             "shortname": "race-warmup",
             "type": "bike",
             "wu": "Spin into endurance for 10-15 mins. Big ring 18. 5-min step up to FTP. Big ring/18-17-16 cogs. Then easy for 5. Then a 3-min step up to VO2 and over. Big ring/16-15-14 cogs. 1 easy-ish out of the saddle jump.",
@@ -490,7 +490,7 @@
             "type": "bike",
             "wu": "Slowly work your way into your endurance zone over the first 15 minutes of the ride. Endurance = cadence above 90, smooth and steady effort.",
             "desc": "Complete 2 x 10 minutes of riding in your Tempo power zone. Do the first interval with your cadence between 70 - 75 rpm. Ride for 5 minutes in your endurance zone. Do the second interval with your cadence between 95 and 105 rpm. Use your gearing to vary your cadence while aiming to maintain the power level in your tempo zone.",
-            "info": "If you are stuck inside, warmup on the trainer for 30 minutes and then do the intervals and then cool down for 15 minutes.",
+            "info": "If you are stuck inside, warm up on the trainer for 30 minutes and then do the intervals and then cool down for 15 minutes.",
             "target": "Tempo wattage: ([20m]*.80) watts. In between: ([60m]*.7) watts",
                         "cd": "Easy spinning for 15 minutes. 100+ cadence",
                         "duration": "90"
