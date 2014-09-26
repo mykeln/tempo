@@ -87,6 +87,7 @@
       <!-- calendar -->
       <div class="row" id="calendar">
         <h3>Calendar of Activities</h3>
+        <h5>Week </h5>
         <span class="label label-off">Time Off</span>
         <span class="label label-default">Base Training</span>
         <span class="label label-warning">Sharpening</span>
@@ -96,8 +97,6 @@
         <div class="table-responsive">
         <table id="full_schedule" class="table">
           <thead>
-            <!--<th>Type</th>-->
-            <th>Week</th>
             <th>Year</th>
             <th>Mon</th>
             <th>Tue</th>
@@ -125,28 +124,36 @@
       <div class="row" id="library">
         <h3>Workout Library <small></small></h3>
         <p id="library_explanation">The full library of workouts your training plans are based on.</p>
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              Workout Type <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a class="library_select" id="all" href="#">All</a></li>
-              <li><a class="library_select" id="easy" href="#">Z1 - Active Recovery</a></li>
-              <li><a class="library_select" id="endurance" href="#">Z2 - Endurance</a></li>
-              <li><a class="library_select" id="tempo" href="#">Z3 - Tempo</a></li>
-              <li><a class="library_select" id="ftp sweetspot" href="#">Z4 - Lactate Threshold (FTP)</a></li>
-              <li><a class="library_select" id="vo2" href="#">Z5 - VO2 Max</a></li>
-              <li><a class="library_select" id="ac bursts" href="#">Z6 - Anaerobic Capacity (AC)</a></li>
-              <li><a class="library_select" id="sprints " href="#">Z7 - Neuromuscular Power (Sprints)</a></li>
-              <li><a class="library_select" id="race" href="#">Race</a></li>
-              <li><a class="library_select" id="test" href="#">Power Tests</a></li>
-              <li><a class="library_select" id="strength" href="#">Weights</a></li>
-              <li><a class="library_select" id="run" href="#">Running</a></li>
-              <li><a class="library_select" id="misc stretch" href="#">Misc</a></li>
-            </ul>
-          </li>
-        </ul>
+
+        <!-- library filter -->
+        <div id="library_filter" class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Filter <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="library_select" id="all" href="#">Show All</a></li>
+            <li class="divider"></li>
+            <li><a class="library_select" id="easy" href="#">Z1 - Active Recovery</a></li>
+            <li><a class="library_select" id="endurance" href="#">Z2 - Endurance</a></li>
+            <li><a class="library_select" id="tempo" href="#">Z3 - Tempo</a></li>
+            <li><a class="library_select" id="ftp sweetspot" href="#">Z4 - Lactate Threshold (FTP)</a></li>
+            <li><a class="library_select" id="vo2" href="#">Z5 - VO2 Max</a></li>
+            <li><a class="library_select" id="ac bursts" href="#">Z6 - Anaerobic Capacity (AC)</a></li>
+            <li><a class="library_select" id="sprints " href="#">Z7 - Neuromuscular Power (Sprints)</a></li>
+            <li><a class="library_select" id="race" href="#">Race</a></li>
+            <li><a class="library_select" id="test" href="#">Power Tests</a></li>
+            <li><a class="library_select" id="strength" href="#">Weights</a></li>
+            <li><a class="library_select" id="run" href="#">Running</a></li>
+            <li><a class="library_select" id="misc stretch" href="#">Misc</a></li>
+            <li class="divider"></li>
+            <li><a class="duration_select" data-duration="30" href="#"><= 30 Minutes</a></li>
+            <li><a class="duration_select" data-duration="60" href="#"><= 60 Minutes</a></li>
+            <li><a class="duration_select" data-duration="90" href="#"><= 90 Minutes</a></li>
+            <li><a class="duration_select" data-duration="120" href="#"><= 120 Minutes</a></li>
+            <li><a class="duration_select" data-duration="121" href="#">> 120 Minutes</a></li>
+          </ul>
+        </div>
+
         <div id="workout_library"></div>
       </div>
     </div> <!-- end 12 column -->

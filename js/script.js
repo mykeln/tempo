@@ -384,7 +384,7 @@ $.getJSON('data/workouts.json', function(data) {
 
           // if the activity hasn't already been added to the library, add it to the LIBRARY template
           if($('#' + activityShortName).length == 0 ){
-            var libraryBegin = "<div id='" + activityShortName + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
+            var libraryBegin = "<div id='" + activityShortName + "' data-duration='" + activityDuration + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
             var libraryEnd = "<hr class='soften'></div>";
 
             $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
@@ -430,7 +430,7 @@ $.getJSON('data/workouts.json', function(data) {
       }
 
       // defining the template to list the schedule
-      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><!--<td>" + scheduleType + "</td>--><td id='" + thisWeek + "'>" + scheduleName + "</td><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='?p=library#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='?p=library#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='?p=library#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='?p=library#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='?p=library#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='?p=library#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='?p=library#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
+      var scheduleTemplate = "<tr class='"+ rowClass + "' id='" + scheduleNameRaw + "'><td>" + scheduleYear + "</td><td id='" + scheduleName + "_mon'><a href='?p=library#" + scheduleMon + "'>" + scheduleMon + "</a></td><td id='" + scheduleName + "_tue'><a href='?p=library#" + scheduleTue + "'>" + scheduleTue + "</td><td id='" + scheduleName + "_wed'><a href='?p=library#" + scheduleWed + "'>" + scheduleWed + "</td><td id='" + scheduleName + "_thu'><a href='?p=library#" + scheduleThu + "'>" + scheduleThu + "</td><td id='" + scheduleName + "_fri'><a href='?p=library#" + scheduleFri + "'>" + scheduleFri + "</td><td id='" + scheduleName + "_sat'><a href='?p=library#" + scheduleSat + "'>" + scheduleSat + "</td><td id='" + scheduleName + "_sun'><a href='?p=library#" + scheduleSun + "'>" + scheduleSun + "</td></tr>";
 
       // pushing the template to the schedules schedule
       $('#schedules').append(scheduleTemplate);
@@ -552,12 +552,34 @@ O5-10 - VO2 OR AC OR FTP
     if (workout_id == "all") {
       $("#workout_library div").show();
     } else {
+      // hide everything
       $("#workout_library div").hide();
+
+      // only show the things that match the workout type(s) selected
       $.each(workout_id, function( index, value ) {
         $("#workout_library div[id^='" + value + "']").show();
       });
     }
+  });
 
+  // when a library duration is selected, hide all others except the category you picked. support for multiple
+  $(".duration_select").click(function() {
+    var duration_id = $(this).attr("data-duration");
+
+    console.log(duration_id);
+
+    if (duration_id == "all") {
+      $("#workout_library div").show();
+    } else {
+      // hide everything
+      $("#workout_library div").hide();
+
+      // only show things that match the time selected
+      $('[data-duration]').filter(function() {
+        return $(this).data('duration') <= duration_id;
+      }).show();
+
+    }
   });
 
 }); // end jquery function

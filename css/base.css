@@ -246,3 +246,9 @@ h5 {
   width: 150px;
   background-color: #444;
 }
+
+#library_filter {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-bottom: 5px;
+}
