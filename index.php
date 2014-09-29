@@ -1,5 +1,7 @@
 <?
-  include 'db.php';
+
+
+  include '_db.php';
 
   // getting requested page
   $page = $_GET['p'];
