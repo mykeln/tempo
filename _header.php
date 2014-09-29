@@ -41,17 +41,21 @@
           <li <? if ($page == "library") { ?>class="active"<? } ?>><a href="?p=library">Library</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" id="athlete-dropdown" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Invite Friends</a></li>
-              <li><a href="#">My Profile</a></li>
-              <li class="divider"></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </li>
-          <li class="upload_button"><button type="button" class="btn btn-sm btn-success">Sync Rides</button></li>
+          <? if (isset($_COOKIE['tempoAthlete'])) { ?>
+            <li class="dropdown">
+              <a href="#" id="athlete-dropdown" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Invite Friends</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Settings</a></li>
+              </ul>
+            </li>
+          <? } else { ?>
+            <li class="upload_button"><button type="button" class="btn btn-sm btn-success"><a href="/signin">Sign In</a></button></li>
+          <? } ?>
+
         </ul>
       </div><!--/.nav-collapse -->
     </div>

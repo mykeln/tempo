@@ -539,10 +539,6 @@ O5-10 - VO2 OR AC OR FTP
     $('#workout_library').show();
   });
 
-  $("#havepowermeter").click(function() {
-    $('#powerbests').toggle();
-  });
-
   // when a library type is selected, hide all others except the category you picked. support for multiple
   $(".library_select").click(function() {
     var workout_id_raw = $(this).attr("id");

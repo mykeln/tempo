@@ -15,6 +15,7 @@
   $user = $_GET['u'];
 
   // if no user is defined in the parameter, set it to myke
+
   if (!(isset($_COOKIE['tempoAthlete']))) {
     if (!($user)) {
       $user = "myke";
@@ -31,6 +32,7 @@
     # show sales/signup page
     # include 'splash_index.php';
     include '_header.php';
+    include '_user_setup.php';
   } else {
     include '_header.php';
     # don't put curly brace here. it's at the bottom of the index. basically saying if a user exists, show the full stuff
@@ -38,8 +40,6 @@
 
 
 ?>
-
-<input type="hidden" name="user" value="myke">
 
 <div class="container">
   <? if ($page == "dash") { ?>
@@ -202,86 +202,6 @@
     </div>
   <? } ?>
 </div>
-
-<!-- user setup
-<div id="setup" class="row">
-  <h1>Set Up Your Profile <small>help Chainiac create an ideal training plan for you</small></h1>
-
-  <form class="form-horizontal">
-    <div class="control-group">
-      <label class="control-label" for="inputName">Full Name</label>
-      <div class="controls">
-        <input type="text" id="inputName" placeholder="Mykel Nahorniak">
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="inputEmail">Email</label>
-      <div class="controls">
-        <input type="text" id="inputEmail" placeholder="myname@chainiac.com">
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="inputWeight">Weight (lbs)</label>
-      <div class="controls">
-        <input type="text" id="inputWeight" placeholder="145">
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="inputPeak">Peak Week <a href="#" rel="tooltip" title="During the year, what week is your 'A' race, or when would you like to peak? Weeks run from 1-53">?</a></label>
-      <div class="controls">
-        <input type="text" id="inputPeak" placeholder="26">
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="inputTime">Hours per week available <a href="#" rel="tooltip" title="How many hours per week do you think you can dedicate to training?">?</a></label>
-      <div class="controls">
-        <input type="text" id="inputTime" placeholder="8">
-      </div>
-    </div>
-    <div class="control-group">
-      <div class="controls">
-        <label class="checkbox">
-          <input type="checkbox" id="havepowermeter"> I have a power meter <a href="#" rel="tooltip" title="PowerTap, Quarq, etc.">?</a>
-        </label>
-      </div>
-    </div>
--->
-  <!-- power test results -->
-  <!-- make it so these can dynamically pop up when needed
-  <div id="powerbests">
-    <div class="control-group" id="s5">
-      <label class="control-label" for="input5s">5-Second Power</label>
-      <div class="controls">
-        <input type="text" id="input5s" placeholder="1390">
-      </div>
-    </div>
-    <div class="control-group" id="m1">
-      <label class="control-label" for="input1m">1-Minute Power</label>
-      <div class="controls">
-        <input type="text" id="input1m" placeholder="550">
-      </div>
-    </div>
-    <div class="control-group" id="m5">
-      <label class="control-label" for="input5m">5-Minute Power</label>
-      <div class="controls">
-        <input type="text" id="input5m" placeholder="380">
-      </div>
-    </div>
-    <div class="control-group" id="m20">
-      <label class="control-label" for="input20m">20-Minute Power</label>
-      <div class="controls">
-        <input type="text" id="input20m" placeholder="290">
-      </div>
-    </div>
-  </div>
-
-    <button type="submit" class="btn">Create my training plan</button>
-
-  </form>
-
-</div>
--->
-
 
 <? include '_footer.php'; ?>
 <? } ?>

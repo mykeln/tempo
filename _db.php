@@ -81,10 +81,4 @@ class Db {
   }
 }
 
-
-$db = new Db();
-$rows = $db -> select("SELECT `name`,`email` FROM `athletes`");
-
-
-
 ?>

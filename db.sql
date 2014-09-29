@@ -16,18 +16,4 @@ weight int(3) NOT NULL,
 PRIMARY KEY(athlete_id)
 );
 
-INSERT INTO athletes VALUES(
-'',
-NOW(),
-'myke@karmcity.com',
-'Mykel Nahorniak',
-145,
-1705,
-1393,
-971,
-610,
-406,
-350,
-330,
-300
-);
+INSERT INTO athletes VALUES(``,NOW(),`myke@karmcity.com`,`Mykel Nahorniak`,145,1705,1393,971,610,406,350,330,300)
