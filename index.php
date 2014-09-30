@@ -1,33 +1,23 @@
 <?
-
-
-  include '_db.php';
+  //include '_db.php';
 
   // getting requested page
   $page = $_GET['p'];
 
-  // if none is set, go to the user dashboard
-  if (!($page)) {
+  // if requesting to switch the user, delete the cookie, then set the page to dash
+  if ($page == "switch_user") {
+    setcookie('tempoAthlete', '', time() - 4600000);
     $page = "dash";
   }
 
-  // getting requested user
-  $user = $_GET['u'];
+  if ($page == "sign_in") {
+    $user = trim(strip_tags($_POST['inviteCode']));
 
-  // if no user is defined in the parameter, set it to myke
-
-  if (!(isset($_COOKIE['tempoAthlete']))) {
-    if (!($user)) {
-      $user = "myke";
-    }
-
-    // setting the user cookie (for access later in JS, etc.)
-    setcookie("tempoAthlete", $user, time()+3600000);
+    setcookie("tempoAthlete", $user, time()+3600000, "/");
     $_COOKIE["tempoAthlete"] = $user;
   }
 
-
-  // if no user is set, show the splash screen
+  // if no user cookie is set, show the splash screen
   if (!(isset($_COOKIE['tempoAthlete']))) {
     # show sales/signup page
     # include 'splash_index.php';
@@ -38,6 +28,10 @@
     # don't put curly brace here. it's at the bottom of the index. basically saying if a user exists, show the full stuff
 
 
+  // if none is set, go to the user dashboard
+  if (!($page)) {
+    $page = "dash";
+  }
 
 ?>
 

@@ -45,6 +45,7 @@
             <li class="dropdown">
               <a href="#" id="athlete-dropdown" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a href="?p=switch_user">Switch Athlete</a></li>
                 <li><a href="#">Invite Friends</a></li>
                 <li><a href="#">My Profile</a></li>
                 <li class="divider"></li>

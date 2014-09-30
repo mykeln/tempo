@@ -66,11 +66,11 @@
   </div>
   <div class="col-sm-6">
     <h2>Sign In</h2>
-    <form class="form-horizontal">
+    <form class="form-horizontal" name="signin" action="?p=sign_in" method="post">
       <div class="control-group">
-        <label class="control-label" for="inputEmail">Email</label>
+        <label class="control-label" for="inviteCode">Invite Code</label>
         <div class="controls">
-          <input type="text" id="inputEmail" placeholder="myname@chainiac.com">
+          <input type="text" id="inviteCode" name="inviteCode" placeholder="myke">
         </div>
       </div>
       <button type="submit" class="btn">Sign In</button>

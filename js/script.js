@@ -112,7 +112,11 @@ $('.datepicker').datepicker({
 
 //// CALENDAR
   // getting json data
-  var athlete = readCookie('tempoAthlete');
+  if (document.cookie.indexOf('tempoAthlete') >= 0) {
+    var athlete = readCookie('tempoAthlete');
+  } else {
+    return false;
+  }
 
   $.getJSON('data/user_' + athlete + '.json', function(data) {
 
