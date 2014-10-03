@@ -6,7 +6,9 @@
 
   // if requesting to switch the user, delete the cookie, then set the page to dash
   if ($page == "switch_user") {
-    setcookie('tempoAthlete', '', time() - 4600000);
+    setcookie('tempoAthlete', '', time() - 4600000, "/");
+    unset($_COOKIE["tempoAthlete"]);
+
     $page = "dash";
   }
 
@@ -15,6 +17,8 @@
 
     setcookie("tempoAthlete", $user, time()+3600000, "/");
     $_COOKIE["tempoAthlete"] = $user;
+
+    header("Location:" . $_SERVER["PHP_SELF"]);
   }
 
   // if no user cookie is set, show the splash screen

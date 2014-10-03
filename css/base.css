@@ -75,16 +75,18 @@ h5 {
   background-color: #35A497;
 }
 
-.upload_button {
+.navbar-nav>li.upload_button a {
   padding-top: 10px;
 }
 
-  .upload_button button {
+  .navbar-nav>li.upload_button a {
     background-color: pink;
     border-color: pink;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-    .upload_button button:hover {
+    .navbar-nav>li.upload_button a:hover {
       background-color: #D998A6;
       border-color: #D998A6;
     }

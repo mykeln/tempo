@@ -53,8 +53,6 @@
                 <li><a href="#">Settings</a></li>
               </ul>
             </li>
-          <? } else { ?>
-            <li class="upload_button"><button type="button" class="btn btn-sm btn-success"><a href="/signin">Sign In</a></button></li>
           <? } ?>
 
         </ul>
