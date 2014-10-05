@@ -18,6 +18,13 @@
     sign_in($inputUser);
   }
 
+  if ($page == "db_sign_in") {
+    $inputEmail = trim(strip_tags($_POST['inputEmail']));
+    $inputPass  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
+
+    sign_in($inputUser,$inputPass);
+  }
+
   if ($page == "sign_up") {
     $inputName      = trim(strip_tags($_POST['inputName']));
 
@@ -25,8 +32,7 @@
     $inputEmail     = trim(strip_tags($_POST['inputEmail']));
 
     // password handling
-    $salt = md5(unique_id().mt_rand().microtime());
-    $inputPassword = sha1($salt.$_REQUEST['inputPassword']);
+    $inputPassword = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
     // double check that all these are just numbers
     // strip out any non-ints
@@ -37,7 +43,7 @@
     $input20m = trim(strip_tags($_POST['input20m']));
 
     // An insertion query. $result will be `true` if successful
-    $result = db_query("INSERT INTO athletes VALUES('',NOW(),'$inputEmail','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
+    $result = db_query("INSERT INTO athletes VALUES('',NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
     if($result === false) {
         echo 'There was an error creating the your profile.';
     } else {

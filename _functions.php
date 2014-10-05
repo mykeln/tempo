@@ -1,4 +1,8 @@
 <?php
+// Load configuration as an array. Use the actual location of your configuration file
+$config = parse_ini_file('../config.ini');
+
+
 // app functions
 function sign_in($user) {
 
@@ -9,12 +13,12 @@ function sign_in($user) {
   header("Location:" . $_SERVER["PHP_SELF"]);
 }
 
-function db_sign_in($user) {
-  $result = db_query("SELECT * FROM `athletes` WHERE email = ?'," . $user . ");");
+function db_sign_in($email,$pass) {
+  $result = db_query("SELECT * FROM `athletes` WHERE email = ?'," . $email . ");");
 
   if($result) {
     // If the password they give maches
-    if($user->pass === sha1($user->salt. $inputPassword)){
+    if($user->password === $pass){
       // login
     } else {
       // bad password
@@ -32,8 +36,6 @@ function db_connect() {
 
     // Try and connect to the database, if a connection has not been established yet
     if(!isset($connection)) {
-         // Load configuration as an array. Use the actual location of your configuration file
-        $config = parse_ini_file('../config.ini');
         $connection = mysqli_connect('localhost',$config['username'],$config['password'],$config['dbname']);
     }
 
