@@ -1,5 +1,5 @@
 <?
-  //include '_db.php';
+  include '_functions.php';
 
   // getting requested page
   $page = $_GET['p'];
@@ -13,12 +13,38 @@
   }
 
   if ($page == "sign_in") {
-    $user = trim(strip_tags($_POST['inviteCode']));
+    //tie this back to email address
+    $inputUser = trim(strip_tags($_POST['inviteCode']));
+    sign_in($inputUser);
+  }
 
-    setcookie("tempoAthlete", $user, time()+3600000, "/");
-    $_COOKIE["tempoAthlete"] = $user;
+  if ($page == "sign_up") {
+    $inputName      = trim(strip_tags($_POST['inputName']));
 
-    header("Location:" . $_SERVER["PHP_SELF"]);
+    //TODO: check for proper email
+    $inputEmail     = trim(strip_tags($_POST['inputEmail']));
+
+    // password handling
+    $salt = md5(unique_id().mt_rand().microtime());
+    $inputPassword = sha1($salt.$_REQUEST['inputPassword']);
+
+    // double check that all these are just numbers
+    // strip out any non-ints
+    $inputWeight   = trim(strip_tags($_POST['inputWeight']));
+    $input5s  = trim(strip_tags($_POST['input5s']));
+    $input1m  = trim(strip_tags($_POST['input1m']));
+    $input5m  = trim(strip_tags($_POST['input5m']));
+    $input20m = trim(strip_tags($_POST['input20m']));
+
+    // An insertion query. $result will be `true` if successful
+    $result = db_query("INSERT INTO athletes VALUES('',NOW(),'$inputEmail','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
+    if($result === false) {
+        echo 'There was an error creating the your profile.';
+    } else {
+      header("Location:" . $_SERVER["PHP_SELF"]);
+      // do an auto-sign-in
+    }
+
   }
 
   // if no user cookie is set, show the splash screen
