@@ -42,13 +42,25 @@
     $input5m  = trim(strip_tags($_POST['input5m']));
     $input20m = trim(strip_tags($_POST['input20m']));
 
-    // An insertion query. $result will be `true` if successful
-    $result = db_query("INSERT INTO athletes VALUES('',NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
-    if($result === false) {
-        echo 'There was an error creating the your profile.';
+    if (!empty($inputName)&&
+      !empty($inputEmail) &&
+      !empty($inputPassword) &&
+      !empty($inputWeight) &&
+      !empty($input5s) &&
+      !empty($input1m) &&
+      !empty($input5m) &&
+      !empty($input20m)) {
+
+      // An insertion query. $result will be `true` if successful
+      $result = db_query("INSERT INTO athletes VALUES('',NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
+      if($result === false) {
+          echo 'There was an error creating the your profile.';
+      } else {
+        header("Location:" . $_SERVER["PHP_SELF"]);
+        // do an auto-sign-in
+      }
     } else {
-      header("Location:" . $_SERVER["PHP_SELF"]);
-      // do an auto-sign-in
+      echo "You didn't fill somethign out";
     }
 
   }
