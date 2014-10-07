@@ -14,17 +14,17 @@ function sign_in($user) {
 }
 
 function db_sign_in($email,$pass) {
-  $result = db_query("SELECT * FROM `athletes` WHERE email = ?'," . $email . ");");
+  $result = db_query("SELECT * FROM `athletes` WHERE email='" . $email . "';");
 
   if($result) {
     // If the password they give maches
-    if($user->password === $pass){
-      // login
+    if($email->password === $pass){
+      echo "logging you in captain";
     } else {
-      // bad password
+      echo "password didn't match";
     }
   } else {
-    // user not found
+    echo "didn't find you";
   }
 }
 

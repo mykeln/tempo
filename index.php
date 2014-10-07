@@ -22,7 +22,7 @@
     $inputEmail = trim(strip_tags($_POST['inputEmail']));
     $inputPass  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
-    sign_in($inputUser,$inputPass);
+    db_sign_in($inputEmail,$inputPass);
   }
 
   if ($page == "sign_up") {
@@ -86,21 +86,6 @@
 <div class="container">
   <? if ($page == "dash") { ?>
     <div class="col-sm-8">
-
-      <!-- bottle
-      <div class="row" id="bottle">
-        <div class="bottle_top mouth"></div>
-        <div class="bottle_top cap"></div>
-        <div class="bottle_mid initial">How it works</div>
-        <div class="bottle_mid transition"></div>
-        <div class="bottle_mid content_one">Proven workouts</div>
-        <div class="bottle_mid content_two">Adaptive training plans</div>
-        <div class="bottle_mid content_three">Coach intelligence</div>
-        <div class="bottle_mid transition"></div>
-        <div class="bottle_bot"></div>
-      </div>
-    -->
-
       <!-- this week's progress -->
       <div class="row" id="progress">
         <h3>This Week's Progress</h3>
