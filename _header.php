@@ -16,7 +16,8 @@
   <script src="js/classie.js"></script>
 
   <!-- chainiac logic -->
-  <script src="js/script.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/app.js"></script>
 
 
 </head>

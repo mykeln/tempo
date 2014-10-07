@@ -52,7 +52,7 @@
       !empty($input20m)) {
 
       // An insertion query. $result will be `true` if successful
-      $result = db_query("INSERT INTO athletes VALUES('',NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
+      $result = db_query("INSERT INTO athletes VALUES('',NOW(),NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
       if($result === false) {
           echo 'There was an error creating the your profile.';
       } else {

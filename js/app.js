@@ -22,69 +22,6 @@
     thisNumDay = 10;
   }
 
-//// UTILITY FUNCTIONS
-function compareNum(a, b){
-  return (a < b ? this >= a && this <= b : this >= b && this <= a);
-}
-
-function roundNum(num, nearest) {
-  return (Math.round(num / nearest) * nearest);
-}
-
-function eval_fragment(formula_text, lookup_table) {
-  var formula = formula_text.match(/\(\[(.*?)\]\*([0-9|.]+)\)/i);
-  var coefficient_key = formula[1];
-  var number = parseFloat(formula[2]);
-
-
-  var coefficient = lookup_table[coefficient_key];
-  //console.log(coefficient * number);
-
-  var exactTarget = (coefficient * number);
-  var roundedTarget = roundNum(exactTarget,5);
-
-  return(roundedTarget);
-}
-
-function eval_target(input_string) {
-    // first match formulas ([?]*?)
-    var formulas = input_string.match(/\(\[(.*?)\]\*([0-9|.]+)\)/ig);
-
-    // evaluate individual fragments
-    var replace = [];
-    for( i = 0; i < formulas.length; i++ ) {
-        replace.push({
-            "from": formulas[i],
-            "to": eval_fragment(formulas[i], powerProfile)
-        });
-    }
-
-    // do search-replace on the text
-    for( i = 0; i < replace.length; i++ ) {
-        input_string = input_string.replace(
-            replace[i].from,
-            Math.round(replace[i].to)
-        );
-    }
-
-    return(input_string );
-}
-
-function readCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-  }
-  return null;
-}
-
-function scrollToSelectedItem() {
-  $('html,body').animate({scrollTop:$(location.hash).offset().top}, 500);
-}
-
 //// APP LOGIC
 jQuery(function($) {
 
@@ -442,7 +379,7 @@ $.getJSON('data/workouts.json', function(data) {
     }); // end schedules each
 
 
-////RENDERING
+    ////RENDERING
     // showing just this week/year
     // FIXME: kinda sloppy, testing to see if the element exists, then showing
     if ($('#schedules tr[id^=' + thisWeek + ']').length > 0){
@@ -466,47 +403,7 @@ $.getJSON('data/workouts.json', function(data) {
 
   }); // end get json call
 
-
-/////GENERATING FUTURE
-/*
-
-logic
-=====
-
-in each month, figure out what the weakest zone is on the power profile by counting distance from the top (and/or the amount of green cells)
-
-then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
-
-//FIXME: use stored values to populate placeholders in setup form
-
-
-if ((thisWeek == 47) || (thisWeek == 43) || (thisWeek == 39)) {
-  if (thisDay == 'sun') {
-    // display the 20 min power form element, asking them to enter their most recent 20 min test result
-    $('#setup').show();
-    $('#setup .control-group').not('id[m20]').hide();
-  }
-
-}
-
-
-weeks
-01-04 - VO2 OR AC OR FTP
-O5-10 - VO2 OR AC OR FTP
-11-20 - VO2 OR AC
-21-35 - MAINTENANCE (no logic)
-36-39 - OFF (no logic)
-40-41 - day 1 and day 2 testing
-42-47 - TEMPO
-48-52 - FTP
-
-
-
-
-*/
-
-
-////RENDERING
+  ////RENDERING
   // scrolling to window location if there's a hash on the page (doing this at the end when everything is rendered)
   if(window.location.hash) {
     setTimeout(scrollToSelectedItem,0);

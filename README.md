@@ -17,3 +17,49 @@ challenges
 known issues
 =====
 - today's workout stuck with green background when "previous years" is toggled again
+
+don't forget
+=====
+- Emails from coach lemond with different subjects for Each day
+- Weeks out from peak week determines weak spot focus (supports australia, west coast, etc.)
+- Weeks within peak week determines maintenance
+- adjust 'fitness' graph according to the following power measurement tools:
+  - Hub 0%
+  - Crank arm -15%
+  - Bottom bracket -13%
+  - Pedal -17%
+
+logic
+=====
+
+in each month, figure out what the weakest zone is on the power profile by counting distance from the top (and/or the amount of green cells)
+
+then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
+
+//FIXME: use stored values to populate placeholders in setup form
+
+
+if ((thisWeek == 47) || (thisWeek == 43) || (thisWeek == 39)) {
+  if (thisDay == 'sun') {
+    // display the 20 min power form element, asking them to enter their most recent 20 min test result
+    $('#setup').show();
+    $('#setup .form-group').not('id[m20]').hide();
+  }
+
+}
+
+
+weeks
+01-04 - VO2 OR AC OR FTP
+O5-10 - VO2 OR AC OR FTP
+11-20 - VO2 OR AC
+21-35 - MAINTENANCE (no logic)
+36-39 - OFF (no logic)
+40-41 - day 1 and day 2 testing
+42-47 - TEMPO
+48-52 - FTP
+
+
+
+
+*/
