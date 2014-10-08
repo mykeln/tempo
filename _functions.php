@@ -22,18 +22,26 @@ function sign_in($user) {
   header("Location:/dash");
 }
 
-function db_sign_in($email,$pass) {
-  $result = db_query("SELECT * FROM `athletes` WHERE email='" . $email . "';");
+function db_sign_in($enteredEmail,$enteredPassword) {
+  $result = db_query("SELECT `email`,`password` FROM `athletes` WHERE email='" . $enteredEmail . "';");
 
   if($result) {
+    $dbData = mysqli_fetch_array($result);
+    $dbEmail = $dbData[0];
+    $dbPassword = $dbData[1];
+
     // If the password they give maches
-    if($email->password === $pass){
-      echo "logging you in captain";
+    if($enteredPassword === $dbPassword){
+      // tie this back to email address
+      setcookie("tempoAthlete", $dbEmail, time()+3600000, "/");
+      $_COOKIE["tempoAthlete"] = $dbEmail;
+
+      header("Location:/dash");
     } else {
-      echo "password didn't match";
+      echo "Your email or password was entered incorrectly";
     }
   } else {
-    echo "didn't find you";
+    echo "I had trouble accessing the database";
   }
 }
 

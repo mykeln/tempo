@@ -26,9 +26,9 @@
 
   if($routes[1] == "db_sign_in") {
     $inputEmail = trim(strip_tags($_POST['inputEmail']));
-    $inputPass  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
+    $inputPassword  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
-    db_sign_in($inputEmail,$inputPass);
+    db_sign_in($inputEmail,$inputPassword);
   }
 
   if($routes[1] == "sign_up") {

@@ -100,13 +100,13 @@
         <div class="form-group">
           <label class="control-label" for="inputEmail">Email</label>
           <div class="controls">
-            <input class="form-control" type="text" id="inputEmail" name="inputEmail">
+            <input class="form-control" type="email" id="inputEmail" name="inputEmail">
           </div>
         </div>
         <div class="form-group">
           <label class="control-label" for="inputPassword">Password</label>
           <div class="controls">
-            <input class="form-control" type="text" id="inputPassword" name="inputPassword">
+            <input class="form-control" type="password" id="inputPassword" name="inputPassword">
           </div>
         </div>
         <button type="submit" class="btn btn-primary pull-right">Sign In</button>
