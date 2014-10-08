@@ -73,6 +73,7 @@
     include '_user_setup.php';
   } else {
     include '_header.php';
+    include '_breadcrumb.php';
     # don't put curly brace here. it's at the bottom of the index. basically saying if a user exists, show the full stuff
 
 

@@ -54,24 +54,14 @@
                 <li><a href="#">Settings</a></li>
               </ul>
             </li>
+          <? } else { ?>
+            <li><a href="/sign_up">Sign Up</a></li>
+            <li><a href="?p=sign_in">Sign In</a></li>
+
+
           <? } ?>
 
         </ul>
       </div><!--/.nav-collapse -->
-    </div>
-  </div>
-  <div class="container">
-    <div class="col-sm-12">
-      <div class="row">
-        <ol class="breadcrumb">
-          <li><a href="?p=dash">Home</a></li>
-          <li class="active">
-            <? if ($page == "dash") { ?>Dashboard<? } ?>
-            <? if ($page == "calendar") { ?>Calendar<? } ?>
-            <? if ($page == "library") { ?>Library<? } ?>
-          </li>
-
-        </ol>
-      </div>
     </div>
   </div>

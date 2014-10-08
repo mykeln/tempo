@@ -1,0 +1,14 @@
+RewriteEngine on
+
+### Order Deny,Allow
+### Deny from ALL
+
+<Files ~ "\.(css|js|woff|ttf|png|jpg|jpeg)$">
+    allow from all
+</Files>
+
+ErrorDocument 401 index.php?mode=403
+ErrorDocument 403 index.php?mode=403
+ErrorDocument 404 index.php?mode=404
+
+RewriteRule sign_up/ index.php?p=sign_up [QSA,NC]
