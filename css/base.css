@@ -181,3 +181,10 @@ h5 {
   width: 100%;
   padding-bottom: 5px;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .navbar-default .navbar-brand {
+    margin-left: 45%;
+  }
+}
