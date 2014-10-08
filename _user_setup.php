@@ -3,7 +3,7 @@
     <!-- user setup -->
     <div class="row">
       <h2>Sign Up</h2>
-      <form class="form-horizontal" id="signup_form" name="signup" action="?p=sign_up" method="post">
+      <form class="form-horizontal" id="signup_form" name="signup" action="/sign_up" method="post">
         <div class="form-group">
           <label class="control-label" for="inputName">Full Name</label>
           <div class="controls">
@@ -80,7 +80,7 @@
   <div class="col-sm-4 col-sm-offset-2">
     <div class="row">
       <h2>Sign In</h2>
-      <form class="form-horizontal" name="signin" action="?p=sign_in" method="post">
+      <form class="form-horizontal" name="signin" action="/sign_in" method="post">
         <div class="form-group">
           <label class="control-label" for="inviteCode">Invite Code</label>
           <div class="controls">
@@ -96,7 +96,7 @@
 
     <div class="row">
       <h2>DB Sign In</h2>
-      <form class="form-horizontal" name="db_signin" action="?p=db_sign_in" method="post">
+      <form class="form-horizontal" name="db_signin" action="/db_sign_in" method="post">
         <div class="form-group">
           <label class="control-label" for="inputEmail">Email</label>
           <div class="controls">

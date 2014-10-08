@@ -3,6 +3,15 @@
 // Load configuration as an array. Use the actual location of your configuration file
 $config = parse_ini_file('../config.ini');
 
+
+function getCurrentUri() {
+  $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
+  $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
+  if (strstr($uri, '?')) $uri = substr($uri, 0, strpos($uri, '?'));
+  $uri = '/' . trim($uri, '/');
+  return $uri;
+}
+
 // app functions
 function sign_in($user) {
 
@@ -10,7 +19,7 @@ function sign_in($user) {
   setcookie("tempoAthlete", $user, time()+3600000, "/");
   $_COOKIE["tempoAthlete"] = $user;
 
-  header("Location:" . $_SERVER["PHP_SELF"]);
+  header("Location:/dash");
 }
 
 function db_sign_in($email,$pass) {

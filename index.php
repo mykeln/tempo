@@ -1,31 +1,37 @@
 <?
   include '_functions.php';
 
-  // getting requested page
-  $page = $_GET['p'];
+  $base_url = getCurrentUri();
+  $routes = array();
+  $routes = explode('/', $base_url);
+  foreach($routes as $route) {
+    if(trim($route) != '') {
+      array_push($routes, $route);
+    }
+  }
 
   // if requesting to switch the user, delete the cookie, then set the page to dash
-  if ($page == "switch_user") {
+  if ($routes[1] == "switch_user") {
     setcookie('tempoAthlete', '', time() - 4600000, "/");
     unset($_COOKIE["tempoAthlete"]);
 
     $page = "dash";
   }
 
-  if ($page == "sign_in") {
+  if($routes[1] == "sign_in") {
     //tie this back to email address
     $inputUser = trim(strip_tags($_POST['inviteCode']));
     sign_in($inputUser);
   }
 
-  if ($page == "db_sign_in") {
+  if($routes[1] == "db_sign_in") {
     $inputEmail = trim(strip_tags($_POST['inputEmail']));
     $inputPass  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
     db_sign_in($inputEmail,$inputPass);
   }
 
-  if ($page == "sign_up") {
+  if($routes[1] == "sign_up") {
     $inputName      = trim(strip_tags($_POST['inputName']));
 
     //TODO: check for proper email
@@ -56,7 +62,7 @@
       if($result === false) {
           echo 'There was an error creating the your profile.';
       } else {
-        header("Location:" . $_SERVER["PHP_SELF"]);
+        header("Location:/dash");
         // do an auto-sign-in
       }
     } else {
@@ -78,14 +84,14 @@
 
 
   // if none is set, go to the user dashboard
-  if (!($page)) {
-    $page = "dash";
+  if($routes[1] == "") {
+    $routes[1] = "dash";
   }
 
 ?>
 
 <div class="container">
-  <? if ($page == "dash") { ?>
+  <? if ($routes[1] == "dash") { ?>
     <div class="col-sm-8">
       <!-- this week's progress -->
       <div class="row" id="progress">
@@ -113,7 +119,7 @@
       </div>
     </div> <!-- end 8 column -->
 
-  <? } else if ($page == "calendar") { ?>
+  <? } else if ($routes[1] == "calendar") { ?>
 
     <div class="col-sm-12">
       <!-- calendar -->
@@ -149,7 +155,7 @@
       </div>
     </div> <!-- end 12 column -->
 
-  <? } else if ($page == "library") { ?>
+  <? } else if ($routes[1] == "library") { ?>
 
     <div class="col-sm-12">
       <!-- workout library -->
@@ -192,7 +198,7 @@
 
   <? } ?>
 
-  <? if (($page == "dash") || ($page == "today")){ ?>
+  <? if (($routes[1] == "dash") || ($routes[1] == "today")){ ?>
     <div class="col-sm-4">
       <div class="datepicker"></div>
 

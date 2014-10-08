@@ -2,11 +2,11 @@
     <div class="col-sm-12">
       <div class="row">
         <ol class="breadcrumb">
-          <li><a href="?p=dash">Home</a></li>
+          <li><a href="/dash">Home</a></li>
           <li class="active">
-            <? if ($page == "dash") { ?>Dashboard<? } ?>
-            <? if ($page == "calendar") { ?>Calendar<? } ?>
-            <? if ($page == "library") { ?>Library<? } ?>
+            <? if ($routes[1] == "dash") { ?>Dashboard<? } ?>
+            <? if ($routes[1] == "calendar") { ?>Calendar<? } ?>
+            <? if ($routes[1] == "library") { ?>Library<? } ?>
           </li>
 
         </ol>

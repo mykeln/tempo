@@ -37,16 +37,16 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li <? if ($page == "dash") { ?>class="active"<? } ?>><a href="?p=dash">Dashboard</a></li>
-          <li <? if ($page == "calendar") { ?>class="active"<? } ?>><a href="?p=calendar">Calendar</a></li>
-          <li <? if ($page == "library") { ?>class="active"<? } ?>><a href="?p=library">Library</a></li>
+          <li <? if ($routes[1] == "dash") { ?>class="active"<? } ?>><a href="/dash">Dashboard</a></li>
+          <li <? if ($routes[1] == "calendar") { ?>class="active"<? } ?>><a href="/calendar">Calendar</a></li>
+          <li <? if ($routes[1] == "library") { ?>class="active"<? } ?>><a href="/library">Library</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <? if (isset($_COOKIE['tempoAthlete'])) { ?>
             <li class="dropdown">
               <a href="#" id="athlete-dropdown" class="dropdown-toggle" data-toggle="dropdown">Me <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="?p=switch_user">Switch Athlete</a></li>
+                <li><a href="/switch_user">Switch Athlete</a></li>
                 <li><a href="#">Invite Friends</a></li>
                 <li><a href="#">My Profile</a></li>
                 <li class="divider"></li>
@@ -56,7 +56,7 @@
             </li>
           <? } else { ?>
             <li><a href="/sign_up">Sign Up</a></li>
-            <li><a href="?p=sign_in">Sign In</a></li>
+            <li><a href="/sign_in">Sign In</a></li>
 
 
           <? } ?>
