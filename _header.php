@@ -36,11 +36,13 @@
         <a class="navbar-brand" href="#">Chainiac</a>
       </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li <? if ($routes[1] == "dash") { ?>class="active"<? } ?>><a href="/dash">Dashboard</a></li>
-          <li <? if ($routes[1] == "calendar") { ?>class="active"<? } ?>><a href="/calendar">Calendar</a></li>
-          <li <? if ($routes[1] == "library") { ?>class="active"<? } ?>><a href="/library">Library</a></li>
-        </ul>
+        <? if (isset($_COOKIE['tempoAthlete'])) { ?>
+          <ul class="nav navbar-nav">
+            <li <? if ($routes[1] == "dash") { ?>class="active"<? } ?>><a href="/dash">Dashboard</a></li>
+            <li <? if ($routes[1] == "calendar") { ?>class="active"<? } ?>><a href="/calendar">Calendar</a></li>
+            <li <? if ($routes[1] == "library") { ?>class="active"<? } ?>><a href="/library">Library</a></li>
+          </ul>
+        <? } ?>
         <ul class="nav navbar-nav navbar-right">
           <? if (isset($_COOKIE['tempoAthlete'])) { ?>
             <li class="dropdown">
@@ -57,10 +59,7 @@
           <? } else { ?>
             <li><a href="/sign_up">Sign Up</a></li>
             <li><a href="/sign_in">Sign In</a></li>
-
-
           <? } ?>
-
         </ul>
       </div><!--/.nav-collapse -->
     </div>
