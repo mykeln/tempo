@@ -1,14 +1,15 @@
 </div>
-<div class="container">
-  <div class="col-sm-12">
-    <div class="row">
-      <ol class="breadcrumb footer">
-        <li>&copy; 2014 Waker Labs, LLC</li>
-      </ol>
+<div id="footer">
+  <div class="container">
+    <div class="col-sm-12">
+      <div class="row">
+        <ol class="breadcrumb footer">
+          <li>&copy; 2014 Waker Labs, LLC</li>
+        </ol>
+      </div>
     </div>
   </div>
 </div>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

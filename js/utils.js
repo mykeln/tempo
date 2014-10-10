@@ -63,8 +63,7 @@ function scrollToSelectedItem() {
 }
 
 jQuery(function($) {
-  // form validation
-
+  // signup validation
   $('#signup_form').bootstrapValidator({
     excluded: [':disabled', ':hidden', ':not(:visible)'],
     message: 'This value is wrong',
@@ -140,8 +139,46 @@ jQuery(function($) {
             message: 'We need this to calculate your power profile'
           }
         }
-      },
+      }
     }
+  });
 
+  // sign in validation
+  $('#signin_form').bootstrapValidator({
+    excluded: [':disabled', ':hidden', ':not(:visible)'],
+    message: 'This value is wrong',
+    trigger: null,
+    fields: {
+      inputEmail: {
+        validators: {
+          notEmpty: {
+            message: 'We need your email address to create a unique account'
+          }
+        }
+      },
+      inputPassword: {
+        validators: {
+          notEmpty: {
+            message: 'You need a password to log back in'
+          }
+        }
+      }
+    }
+  });
+
+  // legacy sign in validation
+  $('#lsignin_form').bootstrapValidator({
+    excluded: [':disabled', ':hidden', ':not(:visible)'],
+    message: 'This value is wrong',
+    trigger: null,
+    fields: {
+      inviteCode: {
+        validators: {
+          notEmpty: {
+            message: 'We need your username to login'
+          }
+        }
+      }
+    }
   });
 });

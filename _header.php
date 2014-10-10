@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Chainiac</a>
+        <a class="navbar-brand" href="/">Chainiac</a>
       </div>
       <div class="navbar-collapse collapse">
         <? if (isset($_COOKIE['tempoAthlete'])) { ?>

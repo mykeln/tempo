@@ -10,6 +10,10 @@
     }
   }
 
+  if ($routes[1] == "api") {
+    include '_api.php';
+  }
+
   // if requesting to switch the user, delete the cookie, then set the page to dash
   if ($routes[1] == "switch_user") {
     setcookie('tempoAthlete', '', time() - 4600000, "/");
