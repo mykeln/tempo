@@ -230,12 +230,13 @@ $.getJSON('/api/schedules?week=' + thisWeek, function(data) {
 //// SCHEDULES
     // get a list of all the historical schedules and append to list
     $.each(data.schedules, function(i,item){
-      // getting raw workout name from schedules data
+      // getting the week's meta data
       var scheduleName        = item.week;
       var scheduleYear        = item.year;
       var scheduleType        = item.type;
       var scheduleNameRaw     = item.week + "-" + item.year + "-" + item.type;
 
+      // getting the activity shortnames for the week
       var scheduleSun         = item.sun;
       var scheduleMon         = item.mon;
       var scheduleTue         = item.tue;
@@ -244,13 +245,9 @@ $.getJSON('/api/schedules?week=' + thisWeek, function(data) {
       var scheduleFri         = item.fri;
       var scheduleSat         = item.sat;
 
+      // putting them into an array to pull from the API
+      // TODO make it so it's 1 API call instead of 7 (select * where shortname=blah OR blah2 OR blah3)
       var scheduleWeek = [item.sun, item.mon, item.tue, item.wed, item.thu, item.fri, item.sat];
-
-      console.log(scheduleWeek);
-
-      // if the data pulled is for this week, move forward
-      // dynamically pulling data depending on what today's date is
-      //var calendarShortName = item[thisDay].type;
 
       // pull all of this week's activities in the json file
       $.each(scheduleWeek, function(i,item){
@@ -268,10 +265,11 @@ $.getJSON('/api/schedules?week=' + thisWeek, function(data) {
 
             // calculations for generating target efforts
             // round up/down to the nearest 5 watts
-            //var activityTarget        = activityTargetRaw.split('[]');
+            var activityTarget        = activityTargetRaw.split('[]');
             if (activityTargetRaw != "") {
               if (activityTargetRaw.indexOf('(') === -1) {
                 var activityTarget = activityTargetRaw;
+                console.log(activityTarget);
               } else {
                 var activityTarget = eval_target(activityTargetRaw);
               }
