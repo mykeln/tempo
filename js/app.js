@@ -226,120 +226,119 @@ $('.datepicker').datepicker({
 });
 
 
-$.getJSON('data/workouts.json', function(data) {
+$.getJSON('/api/schedules?week=' + thisWeek, function(data) {
 //// SCHEDULES
     // get a list of all the historical schedules and append to list
     $.each(data.schedules, function(i,item){
       // getting raw workout name from schedules data
-      var scheduleNameRaw        = item.name;
+      var scheduleName        = item.week;
+      var scheduleYear        = item.year;
+      var scheduleType        = item.type;
+      var scheduleNameRaw     = item.week + "-" + item.year + "-" + item.type;
 
-      // splitting out week number
-      var scheduleName           = scheduleNameRaw.split('-')[0];
+      var scheduleSun         = item.sun;
+      var scheduleMon         = item.mon;
+      var scheduleTue         = item.tue;
+      var scheduleWed         = item.wed;
+      var scheduleThu         = item.thu;
+      var scheduleFri         = item.fri;
+      var scheduleSat         = item.sat;
 
-      // splitting out year number
-      var scheduleYear           = scheduleNameRaw.split('-')[1];
+      var scheduleWeek = [item.sun, item.mon, item.tue, item.wed, item.thu, item.fri, item.sat];
 
-      // splitting out workout shortname
-      var scheduleType           = scheduleNameRaw.split('-')[2];
-
-      var scheduleSun = item.sun.workoutname
-      var scheduleMon = item.mon.workoutname
-      var scheduleTue = item.tue.workoutname
-      var scheduleWed = item.wed.workoutname
-      var scheduleThu = item.thu.workoutname
-      var scheduleFri = item.fri.workoutname
-      var scheduleSat = item.sat.workoutname
+      console.log(scheduleWeek);
 
       // if the data pulled is for this week, move forward
-      if((scheduleName == thisWeek)) {
+      // dynamically pulling data depending on what today's date is
+      //var calendarShortName = item[thisDay].type;
 
-        // dynamically pulling data depending on what today's date is
-        var calendarShortName = item[thisDay].workoutname;
+      // pull all of this week's activities in the json file
+      $.each(scheduleWeek, function(i,item){
+        $.getJSON('/api/activities?activity=' + item, function(data) {
+          $.each(data.activities, function(i,item){
+            var activityName          = item.name;
+            var activityShortName     = item.shortname
+            var activityType          = item.type;
+            var activityWarmup        = item.wu;
+            var activityDesc          = item.desc;
+            var activityTargetRaw     = item.target;
+            var activityInfo          = item.info;
+            var activityDuration      = item.duration;
+            var activityCooldown      = item.cd;
 
-        // pull all of this week's activities in the json file
-        $.each(data.activities, function(i,item){
-          var activityName          = item.name;
-          var activityShortName     = item.shortname
-          var activityType          = item.type;
-          var activityWarmup        = item.wu;
-          var activityDesc          = item.desc;
-          var activityTargetRaw     = item.target;
-          var activityInfo          = item.info;
-          var activityDuration      = item.duration;
-          var activityCooldown      = item.cd;
-
-          // calculations for generating target efforts
-          // round up/down to the nearest 5 watts
-          //var activityTarget        = activityTargetRaw.split('[]');
-          if (activityTargetRaw != "") {
-            if (activityTargetRaw.indexOf('(') === -1) {
-              var activityTarget = activityTargetRaw;
-            } else {
-              var activityTarget = eval_target(activityTargetRaw);
+            // calculations for generating target efforts
+            // round up/down to the nearest 5 watts
+            //var activityTarget        = activityTargetRaw.split('[]');
+            if (activityTargetRaw != "") {
+              if (activityTargetRaw.indexOf('(') === -1) {
+                var activityTarget = activityTargetRaw;
+              } else {
+                var activityTarget = eval_target(activityTargetRaw);
+              }
             }
-          }
 
-          // rendering LIBRARY and WORKOUT information
-          var activityTemplate = "";
+            // rendering LIBRARY and WORKOUT information
+            var activityTemplate = "";
 
-          if(activityWarmup != "") {
-            activityTemplate += "<h6>Warm Up</h6><p>" + activityWarmup + "</p>";
-          }
+            if(activityWarmup != "") {
+              activityTemplate += "<h6>Warm Up</h6><p>" + activityWarmup + "</p>";
+            }
 
-          if(activityDesc != "") {
-            activityTemplate += "<h6>Workout</h6><p>" + activityDesc + "</p>";
-          }
+            if(activityDesc != "") {
+              activityTemplate += "<h6>Workout</h6><p>" + activityDesc + "</p>";
+            }
 
-          if(activityTargetRaw != "") {
-            activityTemplate += "<h6 class='activity_target'>Target Effort</h6><p>" + activityTarget + "</p>";
-          }
+            if(activityTargetRaw != "") {
+              activityTemplate += "<h6 class='activity_target'>Target Effort</h6><p>" + activityTarget + "</p>";
+            }
 
-          // appending things to coach comments
-          // show this on thursday only -you're usually off on fridays-
-          if(activityInfo != "") {
-            activityTemplate += "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p>";
-          }
+            // appending things to coach comments
+            // show this on thursday only -you're usually off on fridays-
+            if(activityInfo != "") {
+              activityTemplate += "<h6 class='activity_info'>Coach Comments</h6><p>" + activityInfo + "</p>";
+            }
 
-          if (thisNumDayRaw == 4) {
-            activityInfo += "<p><span class='activity_info_warning'>No hard workouts today if you're racing on Sunday.</span></p>";
-          }
-          // show this on friday and saturday only
-          if ((thisNumDayRaw == 5) || (thisNumDayRaw == 6)) {
-            activityInfo += "<p><span class='activity_info_raceprep'>If racing tomorrow, do a <a href='#raceprep'>race prep</a>.</span></p>";
-          }
-          // show this on saturday and sunday only
-          if ((thisNumDayRaw == 6) || (thisNumDayRaw == 0)) {
-            activityInfo += "<p><span class='activity_info_racewarmup'>If racing today, do a <a href='#racewarmup'>race warm up</a>.</span></p>";
-          }
+            if (thisNumDayRaw == 4) {
+              activityInfo += "<p><span class='activity_info_warning'>No hard workouts today if you're racing on Sunday.</span></p>";
+            }
+            // show this on friday and saturday only
+            if ((thisNumDayRaw == 5) || (thisNumDayRaw == 6)) {
+              activityInfo += "<p><span class='activity_info_raceprep'>If racing tomorrow, do a <a href='#raceprep'>race prep</a>.</span></p>";
+            }
+            // show this on saturday and sunday only
+            if ((thisNumDayRaw == 6) || (thisNumDayRaw == 0)) {
+              activityInfo += "<p><span class='activity_info_racewarmup'>If racing today, do a <a href='#racewarmup'>race warm up</a>.</span></p>";
+            }
 
-          if (((thisWeek >= 11) && (thisWeek <= 24)) ||
-             ((thisWeek >= 25) && (thisWeek <= 27)) ||
-             ((thisWeek >= 28) && (thisWeek <= 35))) {
-            activityTemplate += "<h6 class='activity_info_maintenance'>Racing Season Maintenance</h6><p class='activity_info_maintenance'>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end do VO2 and tempo. This choice will be automated in the future.</p>"
-          }
+            if (((thisWeek >= 11) && (thisWeek <= 24)) ||
+               ((thisWeek >= 25) && (thisWeek <= 27)) ||
+               ((thisWeek >= 28) && (thisWeek <= 35))) {
+              activityTemplate += "<h6 class='activity_info_maintenance'>Racing Season Maintenance</h6><p class='activity_info_maintenance'>If you felt weak responding to attacks, do AC work. If you felt like you had nothing left at the end do VO2 and tempo. This choice will be automated in the future.</p>"
+            }
 
-          if(activityCooldown != "") {
-            activityTemplate += "<h6>Cool Down</h6><p>" + activityCooldown + "</p>";
-          }
+            if(activityCooldown != "") {
+              activityTemplate += "<h6>Cool Down</h6><p>" + activityCooldown + "</p>";
+            }
 
 
-          // if the activity hasn't already been added to the library, add it to the LIBRARY template
-          if($('#' + activityShortName).length == 0 ){
-            var libraryBegin = "<div id='" + activityShortName + "' data-duration='" + activityDuration + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
-            var libraryEnd = "<hr class='soften'></div>";
+            // if the activity hasn't already been added to the library, add it to the LIBRARY template
+            if($('#' + activityShortName).length == 0 ){
+              var libraryBegin = "<div id='" + activityShortName + "' data-duration='" + activityDuration + "' class='book'><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
+              var libraryEnd = "<hr class='soften'></div>";
 
-            $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
-          }
+              $('#workout_library').append(libraryBegin + activityTemplate + libraryEnd);
+            }
 
-          // if this activity is either today, or occurred on this day in the past, add it to the WORKOUT template
-          if(activityShortName == calendarShortName) {
-            var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><h5>20" + scheduleYear + " season, week " + thisWeek + "</h5><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
-            var workoutEnd = "</div>";
+            // if this activity is either today, or occurred on this day in the past, add it to the WORKOUT template
+            if(activityShortName == calendarShortName) {
+              var workoutBegin = "<div id='" + scheduleYear + "' class='activity'><h5>20" + scheduleYear + " season, week " + thisWeek + "</h5><h4>" + activityName + " / " + activityDuration + " minutes</h4>";
+              var workoutEnd = "</div>";
 
-            $('#workout').append(workoutBegin + activityTemplate + workoutEnd);
-          }
-        }); // end activities each
-      }
+              $('#workout').append(workoutBegin + activityTemplate + workoutEnd);
+            }
+          }); // end activities each
+        }); // end get json
+      }); // end schedules each
 
       // defining the color-coded of workouts being done on a particular week
       // l/e week 10

@@ -12,6 +12,7 @@
 
   if ($routes[1] == "api") {
     include '_api.php';
+    exit;
   }
 
   // if requesting to switch the user, delete the cookie, then set the page to dash
