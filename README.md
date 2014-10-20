@@ -28,6 +28,9 @@ don't forget
   - Crank arm -15%
   - Bottom bracket -13%
   - Pedal -17%
+- library is currently only pulling this week's workouts
+- schedule is currently only pulling history for this week
+- today's workout is broken
 
 logic
 =====
