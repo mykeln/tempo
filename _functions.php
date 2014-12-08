@@ -14,6 +14,8 @@ function getCurrentUri() {
 
 // app functions
 function sign_in($user) {
+  // normalize user entry to lower case
+  $user = strtolower($user);
 
   // tie this back to email address
   setcookie("tempoAthlete", $user, time()+3600000, "/");
@@ -23,6 +25,9 @@ function sign_in($user) {
 }
 
 function db_sign_in($enteredEmail,$enteredPassword) {
+  // normalize email entry to lower case
+  $enteredEmail = strtolower($entererdEmail);
+
   $result = db_query("SELECT `email`,`password` FROM `athletes` WHERE email='" . $enteredEmail . "';");
 
   if($result) {
