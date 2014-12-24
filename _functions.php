@@ -26,8 +26,7 @@ function sign_in($user) {
 
 function db_sign_in($enteredEmail,$enteredPassword) {
   // normalize email entry to lower case
-  $enteredEmail = strtolower($entererdEmail);
-
+  $enteredEmail = strtolower($enteredEmail);
   $result = db_query("SELECT `email`,`password` FROM `athletes` WHERE email='" . $enteredEmail . "';");
 
   if($result) {

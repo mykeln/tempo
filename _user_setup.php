@@ -19,7 +19,7 @@
         <div class="form-group">
           <label class="control-label" for="inputPassword">Password</label>
           <div class="controls">
-            <input class="form-control" type="text" name="inputPassword" id="inputPassword">
+            <input class="form-control" type="password" name="inputPassword" id="inputPassword">
           </div>
         </div>
         <div class="form-group">

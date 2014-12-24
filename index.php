@@ -1,6 +1,10 @@
 <?
   include '_functions.php';
 
+  // array for current status, error messages, etc.
+  $status = array();
+
+  // making pretty urls
   $base_url = getCurrentUri();
   $routes = array();
   $routes = explode('/', $base_url);
@@ -29,8 +33,11 @@
   }
 
   if($routes[1] == "db_sign_in") {
+    //TODO: check for proper email
     $inputEmail = trim(strip_tags($_POST['inputEmail']));
-    $inputPassword  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
+
+    // password handling
+    $inputPassword = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
     db_sign_in($inputEmail,$inputPassword);
   }
@@ -44,35 +51,53 @@
     // password handling
     $inputPassword = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
-    // double check that all these are just numbers
-    // strip out any non-ints
-    $inputWeight   = trim(strip_tags($_POST['inputWeight']));
-    $input5s  = trim(strip_tags($_POST['input5s']));
-    $input1m  = trim(strip_tags($_POST['input1m']));
-    $input5m  = trim(strip_tags($_POST['input5m']));
-    $input20m = trim(strip_tags($_POST['input20m']));
+    // check to see if email already exists
+    $result = db_query("SELECT `email` FROM `athletes` WHERE email='" . $inputEmail . "';");
 
-    if (!empty($inputName)&&
-      !empty($inputEmail) &&
-      !empty($inputPassword) &&
-      !empty($inputWeight) &&
-      !empty($input5s) &&
-      !empty($input1m) &&
-      !empty($input5m) &&
-      !empty($input20m)) {
+    if($result) {
+      $dbData = mysqli_fetch_array($result);
+      $dbEmail = $dbData[0];
 
-      // An insertion query. $result will be `true` if successful
-      $result = db_query("INSERT INTO athletes VALUES('',NOW(),NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
-      if($result === false) {
-          echo 'There was an error creating the your profile.';
+      // If the password they give maches
+      if($dbEmail === $inputEmail){
+        echo "This user already exists.";
+        //array_push "This user already exists.";
+        //echo json_encode($status);
       } else {
-        header("Location:/dash");
-        // do an auto-sign-in
+        // double check that all these are just numbers
+        // strip out any non-ints
+        $inputWeight   = trim(strip_tags($_POST['inputWeight']));
+        $input5s  = trim(strip_tags($_POST['input5s']));
+        $input1m  = trim(strip_tags($_POST['input1m']));
+        $input5m  = trim(strip_tags($_POST['input5m']));
+        $input20m = trim(strip_tags($_POST['input20m']));
+
+        if (!empty($inputName)&&
+          !empty($inputEmail) &&
+          !empty($inputPassword) &&
+          !empty($inputWeight) &&
+          !empty($input5s) &&
+          !empty($input1m) &&
+          !empty($input5m) &&
+          !empty($input20m)) {
+
+          // An insertion query. $result will be `true` if successful
+          $result = db_query("INSERT INTO athletes VALUES('',NOW(),NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
+          if($result === false) {
+              echo 'There was an error creating the your profile.';
+          } else {
+            // do an auto-sign-in
+            db_sign_in($inputEmail,$inputPassword);
+            header("Location:/dash");
+          }
+        } else {
+          $alert_text = "You didn't fill something out.";
+          echo $alert_message;
+        }
       }
     } else {
-      echo "You didn't fill somethign out";
+      echo "I had trouble accessing the database";
     }
-
   }
 
   // if no user cookie is set, show the splash screen
