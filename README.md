@@ -37,6 +37,7 @@ in each month, figure out what the weakest zone is on the power profile by count
 then, depending on the month, decide which zones are "open" for training. out of those zones, pick the weakest one and set that for the next block
 
 //FIXME: use stored values to populate placeholders in setup form
+FIXME: source code is on the .phps files: http://helper.pp19dd.com/
 
 
 if ((thisWeek == 47) || (thisWeek == 43) || (thisWeek == 39)) {
