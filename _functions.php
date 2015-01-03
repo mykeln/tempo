@@ -12,29 +12,33 @@ function getCurrentUri() {
   return $uri;
 }
 
-// app functions
-function sign_in($user) {
-
-  // tie this back to email address
-  setcookie("tempoAthlete", $user, time()+3600000, "/");
-  $_COOKIE["tempoAthlete"] = $user;
-
-  header("Location:/dash");
+function generateApiKey() {
+  $key = uniqid('tempo_');
+  return $key;
 }
 
-function db_sign_in($enteredEmail,$enteredPassword) {
-  $result = db_query("SELECT `email`,`password` FROM `athletes` WHERE email='" . $enteredEmail . "';");
+// app functions
+function sign_in($enteredEmail,$enteredPassword) {
+  // normalize email entry to lower case
+  $enteredEmail = strtolower($enteredEmail);
+  $result = db_query("SELECT `email`,`password`,`api_key` FROM `athletes` WHERE email='" . $enteredEmail . "';");
 
   if($result) {
     $dbData = mysqli_fetch_array($result);
     $dbEmail = $dbData[0];
     $dbPassword = $dbData[1];
+    $dbKey = $dbData[2];
 
     // If the password they give maches
     if($enteredPassword === $dbPassword){
-      // tie this back to email address
-      setcookie("tempoAthlete", $dbEmail, time()+3600000, "/");
-      $_COOKIE["tempoAthlete"] = $dbEmail;
+      // tie this back to api key
+      setcookie("tempoAthlete", $dbKey, time()+3600000, "/");
+      $_COOKIE["tempoAthlete"] = $dbKey;
+
+      $updateLastLogin = db_query("UPDATE `athletes` SET `lastlogin_date`=NOW() WHERE email='" . $enteredEmail . "';");
+      if (!($updateLastLogin)) {
+        echo "Couldn't update your last login date.";
+      }
 
       header("Location:/dash");
     } else {

@@ -4,6 +4,7 @@ CREATE TABLE `athletes` (
   `lastlogin_date` datetime NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `api_key` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `weight` int(3) NOT NULL,
   `1s` int(4) NOT NULL,

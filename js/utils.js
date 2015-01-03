@@ -62,6 +62,10 @@ function scrollToSelectedItem() {
   $('html,body').animate({scrollTop:$(location.hash).offset().top}, 500);
 }
 
+function getCalendar() {
+
+}
+
 jQuery(function($) {
   // signup validation
   $('#signup_form').bootstrapValidator({
@@ -160,22 +164,6 @@ jQuery(function($) {
         validators: {
           notEmpty: {
             message: 'You need a password to log back in'
-          }
-        }
-      }
-    }
-  });
-
-  // legacy sign in validation
-  $('#lsignin_form').bootstrapValidator({
-    excluded: [':disabled', ':hidden', ':not(:visible)'],
-    message: 'This value is wrong',
-    trigger: null,
-    fields: {
-      inviteCode: {
-        validators: {
-          notEmpty: {
-            message: 'We need your username to login'
           }
         }
       }

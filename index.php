@@ -16,7 +16,7 @@
   }
 
   // if requesting to switch the user, delete the cookie, then set the page to dash
-  if ($routes[1] == "switch_user") {
+  if ($routes[1] == "logout") {
     setcookie('tempoAthlete', '', time() - 4600000, "/");
     unset($_COOKIE["tempoAthlete"]);
 
@@ -24,16 +24,10 @@
   }
 
   if($routes[1] == "sign_in") {
-    //tie this back to email address
-    $inputUser = trim(strip_tags($_POST['inviteCode']));
-    sign_in($inputUser);
-  }
-
-  if($routes[1] == "db_sign_in") {
     $inputEmail = trim(strip_tags($_POST['inputEmail']));
     $inputPassword  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
-    db_sign_in($inputEmail,$inputPassword);
+    sign_in($inputEmail,$inputPassword);
   }
 
   if($routes[1] == "sign_up") {
@@ -42,44 +36,51 @@
     //TODO: check for proper email
     $inputEmail     = trim(strip_tags($_POST['inputEmail']));
 
-    // password handling
-    $inputPassword = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
+    // if user doesn't already exist
+    $result = db_query("SELECT `email` FROM `athletes` WHERE email='" . $inputEmail . "'");
+    if(!(mysqli_num_rows($result))) {
 
-    // double check that all these are just numbers
-    // strip out any non-ints
-    $inputWeight   = trim(strip_tags($_POST['inputWeight']));
-    $input5s  = trim(strip_tags($_POST['input5s']));
-    $input1m  = trim(strip_tags($_POST['input1m']));
-    $input5m  = trim(strip_tags($_POST['input5m']));
-    $input20m = trim(strip_tags($_POST['input20m']));
+      // password handling
+      $inputPassword = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
 
-    if (!empty($inputName)&&
-      !empty($inputEmail) &&
-      !empty($inputPassword) &&
-      !empty($inputWeight) &&
-      !empty($input5s) &&
-      !empty($input1m) &&
-      !empty($input5m) &&
-      !empty($input20m)) {
+      // double check that all these are just numbers
+      // strip out any non-ints
+      $inputWeight   = trim(strip_tags($_POST['inputWeight']));
+      $input5s  = trim(strip_tags($_POST['input5s']));
+      $input1m  = trim(strip_tags($_POST['input1m']));
+      $input5m  = trim(strip_tags($_POST['input5m']));
+      $input20m = trim(strip_tags($_POST['input20m']));
 
-      // An insertion query. $result will be `true` if successful
-      $result = db_query("INSERT INTO athletes VALUES('',NOW(),NOW(),'$inputEmail','$inputPassword','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
-      if($result === false) {
-          echo 'There was an error creating the your profile.';
-      } else {
-        header("Location:/dash");
-        // do an auto-sign-in
+      if (!empty($inputName)&&
+        !empty($inputEmail) &&
+        !empty($inputPassword) &&
+        !empty($inputWeight) &&
+        !empty($input5s) &&
+        !empty($input1m) &&
+        !empty($input5m) &&
+        !empty($input20m)) {
+
+        // generate user's API key
+        $key = generateApiKey();
+
+        // An insertion query. $result will be `true` if successful
+        $result = db_query("INSERT INTO athletes VALUES('',NOW(),NOW(),'$inputEmail','$inputPassword','$key','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
+        if($result === false) {
+            echo 'There was an error creating the your profile.';
+        } else {
+          sign_in($inputEmail,$inputPassword);
+        }
+      } else { // if some values were empty
+        echo "You didn't fill something out";
       }
-    } else {
-      echo "You didn't fill something out";
+    } else { // if user already exists
+      echo "This athlete already has an account";
     }
-
   }
 
   // if no user cookie is set, show the splash screen
   if (!(isset($_COOKIE['tempoAthlete']))) {
     # show sales/signup page
-    # include 'splash_index.php';
     include '_header.php';
     include '_user_setup.php';
   } else {
@@ -88,10 +89,10 @@
     # don't put curly brace here. it's at the bottom of the index. basically saying if a user exists, show the full stuff
 
 
-  // if none is set, go to the user dashboard
-  if($routes[1] == "") {
-    $routes[1] = "dash";
-  }
+    // if no route is set, go to the user dashboard
+    if($routes[1] == "") {
+      $routes[1] = "dash";
+    }
 
 ?>
 
@@ -125,6 +126,10 @@
     </div> <!-- end 8 column -->
 
   <? } else if ($routes[1] == "calendar") { ?>
+    <script type="text/javascript">
+
+
+    </script>
 
     <div class="col-sm-12">
       <!-- calendar -->
@@ -243,4 +248,4 @@
 </div>
 
 <? include '_footer.php'; ?>
-<? } ?>
+<? } // this is the end of the !(isset($_COOKIE['tempoAthlete']) if ?>

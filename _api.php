@@ -1,5 +1,51 @@
 <?php
 
+  if($routes[2] == "athlete") {
+    if ($_GET['key']) {
+      $filter = "WHERE api_key='" . $_GET['key'] . "'";
+    }
+
+    // generating array for user's name and weight
+    $result = db_query("SELECT `name`,`weight` FROM `athletes` " . $filter . ";");
+    if($result === false) {
+        echo 'There was an error retrieving your schedule.';
+    } else {
+
+      // prepare the json workout output
+      $athlete = array();
+
+      while($athlete = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        $athletes[] = $athlete;
+      }
+
+      $output = json_encode(array('athletes' => $athletes));
+
+      echo $output;
+    }
+
+    // generating array for user's fitness profile
+    $result = db_query("SELECT `1s`,`5s`,`30s`,`1m`,`5m`,`10m`,`20m`,`60m` FROM `athletes` " . $filter . ";");
+    if($result === false) {
+        echo 'There was an error retrieving your schedule.';
+    } else {
+
+      // prepare the json workout output
+      $fit = array();
+
+      while($fit = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+        $fitness[] = $fit;
+      }
+
+      $output = json_encode(array('fitness' => $fitness));
+
+      echo $output;
+    }
+
+
+
+  }
+
+
   if($routes[2] == "activities") {
     if ($_GET['activity']) {
       $filter = "WHERE shortname='" . $_GET['activity'] . "'";

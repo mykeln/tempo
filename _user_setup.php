@@ -79,24 +79,8 @@
   </div>
   <div class="col-sm-4 col-sm-offset-2">
     <div class="row">
-      <h2>Legacy Sign In</h2>
-      <form class="form-horizontal" id="lsignin_form" name="signin" action="/sign_in" method="post">
-        <div class="form-group">
-          <label class="control-label" for="inviteCode">Username</label>
-          <div class="controls">
-            <input class="form-control" type="text" id="inviteCode" name="inviteCode">
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary pull-right">Sign In</button>
-      </form>
-    </div>
-
-
-
-
-    <div class="row">
-      <h2>DB Sign In</h2>
-      <form class="form-horizontal" id="signin_form" name="db_signin" action="/db_sign_in" method="post">
+      <h2>Sign In</h2>
+      <form class="form-horizontal" id="signin_form" name="signin" action="/sign_in" method="post">
         <div class="form-group">
           <label class="control-label" for="inputEmail">Email</label>
           <div class="controls">
