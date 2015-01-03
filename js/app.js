@@ -31,13 +31,11 @@ jQuery(function($) {
   }
 
   // getting profile data for signed in user
-  $.getJSON('/api/athlete?key=' + athleteKey, function(data) {
-
+  $.getJSON( '/api/athlete?key=' + athleteKey, { }, function(data) {
     $.each(data.athletes, function(i,item){
       // getting athlete name
       athleteName = item.name;
 
-      alert(athleteName);
       $('#athlete-dropdown').html(athleteName + '<b class="caret"></b>');
       $("#fitness h3").prepend(athleteName + "'s ");
 
@@ -51,162 +49,161 @@ jQuery(function($) {
 
     });
 
-/*
-  // setting here so it retains the value as it goes through the loop
-  var totalFitness = 0;
+    // setting here so it retains the value as it goes through the loop
+    var totalFitness = 0;
 
-  $.each(data.fitness[0], function(i,item){
-    // time interval (1s, 1m, 5m, etc.)
-    fitnessTime  = i;
-    fitnessPower = item;
-
-
-    powerProfile[fitnessTime] = fitnessPower;
-
-    // only recording power profile times
-    if (fitnessTime == "5s" || fitnessTime == "1m" || fitnessTime == "5m" || fitnessTime == "20m") {
-      // wattage at a time interval (150, 200, 250, etc.)
-
-      // watts per kilo (power-to-weight ratio)
-      var wKg = (item/weightKg).toFixed(2);
-
-      // adding the current power value to the global power number (to determine progress bar percentages later)
-      totalFitness += Number(fitnessPower);
-
-      //set style on progress-bar-success
-      var progressClass;
-      var bestCategory;
-      var fitnessPercentage;
-
-      // calculating best category and the overall percentage of world class you are
-      switch(fitnessTime) {
-        case '5s':
-          progressClass = "danger";
-          var fitnessTop = 23.50;
-          fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
-
-            if (wKg > 20.79) {
-              bestCategory = "World Class";
-            } else if (wKg > 19.43 && wKg <= 20.78) {
-              bestCategory = "division I/II pro";
-            } else if (wKg > 18.07 && wKg <= 19.42) {
-              bestCategory = "division III pro";
-            } else if (wKg > 16.71 && wKg <= 18.06) {
-              bestCategory = "cat 1";
-            } else if (wKg > 15.35 && wKg <= 16.70) {
-              bestCategory = "cat 2";
-            } else if (wKg > 13.99 && wKg <= 15.34) {
-              bestCategory = "cat 3";
-            } else if (wKg > 12.63 && wKg <= 13.98) {
-              bestCategory = "cat 4";
-            } else if (wKg > 11.26 && wKg <= 12.62) {
-              bestCategory = "cat 5";
-            } else if (wKg <= 11.26) {
-              bestCategory = "untrained";
-            }
+    $.each(data.fitness[0], function(i,item){
+      // time interval (1s, 1m, 5m, etc.)
+      fitnessTime  = i;
+      fitnessPower = item;
 
 
-          break;
-        case '1m':
-          progressClass = "warning";
-          var fitnessTop = 11.50;
-          fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
 
-            // 1m power profile
-            if (wKg > 10.31) {
+      powerProfile[fitnessTime] = fitnessPower;
+
+      // only recording power profile times
+      if (fitnessTime == "5s" || fitnessTime == "1m" || fitnessTime == "5m" || fitnessTime == "20m") {
+        // wattage at a time interval (150, 200, 250, etc.)
+
+        // watts per kilo (power-to-weight ratio)
+        var wKg = (item/weightKg).toFixed(2);
+
+        // adding the current power value to the global power number (to determine progress bar percentages later)
+        totalFitness += Number(fitnessPower);
+
+        //set style on progress-bar-success
+        var progressClass;
+        var bestCategory;
+        var fitnessPercentage;
+
+        // calculating best category and the overall percentage of world class you are
+        switch(fitnessTime) {
+          case '5s':
+            progressClass = "danger";
+            var fitnessTop = 23.50;
+            fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
+
+              if (wKg > 20.79) {
+                bestCategory = "World Class";
+              } else if (wKg > 19.43 && wKg <= 20.78) {
+                bestCategory = "division I/II pro";
+              } else if (wKg > 18.07 && wKg <= 19.42) {
+                bestCategory = "division III pro";
+              } else if (wKg > 16.71 && wKg <= 18.06) {
+                bestCategory = "cat 1";
+              } else if (wKg > 15.35 && wKg <= 16.70) {
+                bestCategory = "cat 2";
+              } else if (wKg > 13.99 && wKg <= 15.34) {
+                bestCategory = "cat 3";
+              } else if (wKg > 12.63 && wKg <= 13.98) {
+                bestCategory = "cat 4";
+              } else if (wKg > 11.26 && wKg <= 12.62) {
+                bestCategory = "cat 5";
+              } else if (wKg <= 11.26) {
+                bestCategory = "untrained";
+              }
+
+
+            break;
+          case '1m':
+            progressClass = "warning";
+            var fitnessTop = 11.50;
+            fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
+
+              // 1m power profile
+              if (wKg > 10.31) {
+                bestCategory = "world class";
+              } else if (wKg > 9.71 && wKg <= 10.30) {
+                bestCategory = "division I/II pro";
+              } else if (wKg > 9.11 && wKg <= 9.70) {
+                bestCategory = "division III pro";
+              } else if (wKg > 8.51 && wKg <= 9.10) {
+                bestCategory = "cat 1";
+              } else if (wKg > 7.91 && wKg <= 8.50) {
+                bestCategory = "cat 2";
+              } else if (wKg > 7.31 && wKg <= 7.90) {
+                bestCategory = "cat 3";
+              } else if (wKg > 6.71 && wKg <= 7.30) {
+                bestCategory = "cat 4";
+              } else if (wKg > 6.11 && wKg <= 6.70) {
+                bestCategory = "cat 5";
+              } else if (wKg <= 6.10) {
+                bestCategory = "untrained";
+              }
+
+            break;
+          case '5m':
+            progressClass = "info";
+            var fitnessTop = 7.80;
+            fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
+
+            // 5m power profile
+            if (wKg > 6.69) {
               bestCategory = "world class";
-            } else if (wKg > 9.71 && wKg <= 10.30) {
+            } else if (wKg > 6.13 && wKg <= 6.68) {
               bestCategory = "division I/II pro";
-            } else if (wKg > 9.11 && wKg <= 9.70) {
+            } else if (wKg > 5.57 && wKg <= 6.12) {
               bestCategory = "division III pro";
-            } else if (wKg > 8.51 && wKg <= 9.10) {
+            } else if (wKg > 5.01 && wKg <= 5.56) {
               bestCategory = "cat 1";
-            } else if (wKg > 7.91 && wKg <= 8.50) {
+            } else if (wKg > 4.45 && wKg <= 5.00) {
               bestCategory = "cat 2";
-            } else if (wKg > 7.31 && wKg <= 7.90) {
+            } else if (wKg > 3.89 && wKg <= 4.44) {
               bestCategory = "cat 3";
-            } else if (wKg > 6.71 && wKg <= 7.30) {
+            } else if (wKg > 3.31 && wKg <= 3.88) {
               bestCategory = "cat 4";
-            } else if (wKg > 6.11 && wKg <= 6.70) {
+            } else if (wKg > 2.75 && wKg <= 3.30) {
               bestCategory = "cat 5";
-            } else if (wKg <= 6.10) {
+            } else if (wKg <= 2.74) {
               bestCategory = "untrained";
             }
 
-          break;
-        case '5m':
-          progressClass = "info";
-          var fitnessTop = 7.80;
-          fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
+            break;
+          case '20m':
+            progressClass = "success";
+            var fitnessTop = 6.66;
+            fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
 
-          // 5m power profile
-          if (wKg > 6.69) {
-            bestCategory = "world class";
-          } else if (wKg > 6.13 && wKg <= 6.68) {
-            bestCategory = "division I/II pro";
-          } else if (wKg > 5.57 && wKg <= 6.12) {
-            bestCategory = "division III pro";
-          } else if (wKg > 5.01 && wKg <= 5.56) {
-            bestCategory = "cat 1";
-          } else if (wKg > 4.45 && wKg <= 5.00) {
-            bestCategory = "cat 2";
-          } else if (wKg > 3.89 && wKg <= 4.44) {
-            bestCategory = "cat 3";
-          } else if (wKg > 3.31 && wKg <= 3.88) {
-            bestCategory = "cat 4";
-          } else if (wKg > 2.75 && wKg <= 3.30) {
-            bestCategory = "cat 5";
-          } else if (wKg <= 2.74) {
-            bestCategory = "untrained";
-          }
+            // 20m power profile
+            if (wKg > 5.71) {
+              bestCategory = "world class";
+            } else if (wKg > 5.23 && wKg <= 5.70) {
+              bestCategory = "division I/II pro";
+            } else if (wKg > 4.75 && wKg <= 5.22) {
+              bestCategory = "division III pro";
+            } else if (wKg > 4.27 && wKg <= 4.74) {
+              bestCategory = "cat 1";
+            } else if (wKg > 3.79 && wKg <= 4.26) {
+              bestCategory = "cat 2";
+            } else if (wKg > 3.31 && wKg <= 3.78) {
+              bestCategory = "cat 3";
+            } else if (wKg > 2.83 && wKg <= 3.30) {
+              bestCategory = "cat 4";
+            } else if (wKg > 2.35 && wKg <= 2.82) {
+              bestCategory = "cat 5";
+            } else if (wKg <= 2.34) {
+              bestCategory = "untrained";
+            }
 
-          break;
-        case '20m':
-          progressClass = "success";
-          var fitnessTop = 6.66;
-          fitnessPercentage = ((parseInt(wKg) / parseInt(fitnessTop)) * 100).toFixed(0);
+            break;
+          default:
+            progressClass = "info";
+        }
 
-          // 20m power profile
-          if (wKg > 5.71) {
-            bestCategory = "world class";
-          } else if (wKg > 5.23 && wKg <= 5.70) {
-            bestCategory = "division I/II pro";
-          } else if (wKg > 4.75 && wKg <= 5.22) {
-            bestCategory = "division III pro";
-          } else if (wKg > 4.27 && wKg <= 4.74) {
-            bestCategory = "cat 1";
-          } else if (wKg > 3.79 && wKg <= 4.26) {
-            bestCategory = "cat 2";
-          } else if (wKg > 3.31 && wKg <= 3.78) {
-            bestCategory = "cat 3";
-          } else if (wKg > 2.83 && wKg <= 3.30) {
-            bestCategory = "cat 4";
-          } else if (wKg > 2.35 && wKg <= 2.82) {
-            bestCategory = "cat 5";
-          } else if (wKg <= 2.34) {
-            bestCategory = "untrained";
-          }
+        // adding progress bar for the zone to the display
+        console.log(fitnessTime + " is at " + fitnessPercentage + " of 100%");
 
-          break;
-        default:
-          progressClass = "info";
+        var fitnessTemplate = "\
+          <div class='progress'> \
+            <div style='width:" + fitnessPercentage + "%' id='p" + fitnessTime + "' class='progress-bar progress-bar-" + progressClass + "'> \
+              <span>" + fitnessTime + " - " + fitnessPower + " watts - " +  wKg + " w/Kg - " + bestCategory + "</span> \
+            </div> \
+          </div>";
+
+        $('#score').append(fitnessTemplate);
       }
-
-      // adding progress bar for the zone to the display
-      console.log(fitnessTime + " is at " + fitnessPercentage + " of 100%");
-
-      var fitnessTemplate = "\
-        <div class='progress'> \
-          <div style='width:" + fitnessPercentage + "%' id='p" + fitnessTime + "' class='progress-bar progress-bar-" + progressClass + "'> \
-            <span>" + fitnessTime + " - " + fitnessPower + " watts - " +  wKg + " w/Kg - " + bestCategory + "</span> \
-          </div> \
-        </div>";
-
-      $('#score').append(fitnessTemplate);
-    }
+    });
   });
-*/
-});
 
 
 $.getJSON('/api/schedules?week=' + thisWeek, function(data) {

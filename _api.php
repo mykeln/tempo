@@ -17,10 +17,6 @@
       while($athlete = mysqli_fetch_array($result, MYSQL_ASSOC)) {
         $athletes[] = $athlete;
       }
-
-      $output = json_encode(array('athletes' => $athletes));
-
-      echo $output;
     }
 
     // generating array for user's fitness profile
@@ -35,14 +31,12 @@
       while($fit = mysqli_fetch_array($result, MYSQL_ASSOC)) {
         $fitness[] = $fit;
       }
-
-      $output = json_encode(array('fitness' => $fitness));
-
-      echo $output;
     }
 
+    // combining arrays for json output
+    $output = json_encode(array("athletes" => $athletes, "fitness" => $fitness));
 
-
+    echo $output;
   }
 
 
