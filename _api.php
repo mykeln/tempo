@@ -8,7 +8,7 @@
     // generating array for user's name and weight
     $result = db_query("SELECT `name`,`weight` FROM `athletes` " . $filter . ";");
     if($result === false) {
-        echo 'There was an error retrieving your schedule.';
+        echo 'There was a problem retrieving your profile information.';
     } else {
 
       // prepare the json workout output
@@ -22,7 +22,7 @@
     // generating array for user's fitness profile
     $result = db_query("SELECT `1s`,`5s`,`30s`,`1m`,`5m`,`10m`,`20m`,`60m` FROM `athletes` " . $filter . ";");
     if($result === false) {
-        echo 'There was an error retrieving your schedule.';
+        echo 'There was a problem retrieving your power profile.';
     } else {
 
       // prepare the json workout output
@@ -45,7 +45,7 @@
       $filter = "WHERE shortname='" . $_GET['activity'] . "'";
     }
 
-    $result = db_query("SELECT * FROM `activities` " . $filter . " ORDER BY `name` DESC;");
+    $result = db_query("SELECT * FROM `activities` " . $filter . " ORDER BY `shortname` DESC;");
     if($result === false) {
         echo 'There was an error retrieving workouts.';
     } else {

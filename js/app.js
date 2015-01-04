@@ -57,8 +57,6 @@ jQuery(function($) {
       fitnessTime  = i;
       fitnessPower = item;
 
-
-
       powerProfile[fitnessTime] = fitnessPower;
 
       // only recording power profile times
@@ -227,7 +225,7 @@ $.getJSON('/api/schedules?week=' + thisWeek, function(data) {
       var scheduleSat         = item.sat;
 
       // putting them into an array to pull from the API
-      // TODO make it so it's 1 API call instead of 7 (select * where shortname=blah OR blah2 OR blah3)
+      // FIXME make it so it's 1 API call instead of 7 (select * where shortname=blah OR blah2 OR blah3)
       var scheduleWeek = [item.sun, item.mon, item.tue, item.wed, item.thu, item.fri, item.sat];
 
       // pull all of this week's activities in the json file

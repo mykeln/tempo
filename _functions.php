@@ -1,4 +1,5 @@
 <?php
+
 // setting specific db based on server's environment variables
 function getCurrentUri() {
   $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
@@ -43,7 +44,6 @@ function sign_in($enteredEmail,$enteredPassword) {
     }
   } else {
     echo "I had trouble accessing the database";
-echo $mysqli->connect_error;
   }
 }
 

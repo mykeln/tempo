@@ -62,10 +62,6 @@ function scrollToSelectedItem() {
   $('html,body').animate({scrollTop:$(location.hash).offset().top}, 500);
 }
 
-function getCalendar() {
-
-}
-
 jQuery(function($) {
   // signup validation
   $('#signup_form').bootstrapValidator({

@@ -1,4 +1,6 @@
-<?
+<?php
+
+echo "fixme: api calls to db on prod aren't returning any data, but no errors";
 
   include '_functions.php';
 
