@@ -1,4 +1,8 @@
+FIXME: tryig to switch between local and prod databases using environment vars
+
+
 <?
+
   include '_functions.php';
 
   $base_url = getCurrentUri();
@@ -31,9 +35,9 @@
   }
 
   if($routes[1] == "sign_up") {
-    $inputName      = trim(strip_tags($_POST['inputName']));
+    $inputName      = trim(strip_tags(ucwords($_POST['inputName'])));
 
-    //TODO: check for proper email
+    //FIXME: check for proper email
     $inputEmail     = trim(strip_tags($_POST['inputEmail']));
 
     // if user doesn't already exist

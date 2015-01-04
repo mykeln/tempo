@@ -77,6 +77,7 @@ jQuery(function($) {
         var fitnessPercentage;
 
         // calculating best category and the overall percentage of world class you are
+        // this is using the coggan power profile data, so don't change!
         switch(fitnessTime) {
           case '5s':
             progressClass = "danger";

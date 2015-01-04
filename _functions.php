@@ -3,6 +3,18 @@
 // Load configuration as an array. Use the actual location of your configuration file
 $config = parse_ini_file('../config.ini');
 
+// setting specific db based on server's environment variables
+$db_host = getenv('SSH_AUTH_SOCK');
+$db_user = getenv('DB_USER');
+$db_pass = getenv('DB_PASS');
+$db_name = getenv('DB_NAME');
+
+var_dump($_ENV);
+
+echo $db_host;
+echo $db_user;
+echo $db_pass;
+echo $db_name;
 
 function getCurrentUri() {
   $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
@@ -58,8 +70,7 @@ function db_connect() {
 
     // Try and connect to the database, if a connection has not been established yet
     if(!isset($connection)) {
-
-        $connection = mysqli_connect('localhost',$config['username'],$config['password'],$config['dbname']);
+      $connection = mysqli_connect($db_host,$db_user,$db_pass,$db_name);
     }
 
     // If connection was not successful, handle the error

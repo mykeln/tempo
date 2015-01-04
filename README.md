@@ -64,6 +64,12 @@ O5-10 - VO2 OR AC OR FTP
 48-52 - FTP
 
 
+FOR DEVELOPMENT:
+export DB_HOST="localhost"
+export DB_USER="root"
+export DB_PASS=""
+export DB_NAME=""
 
+^^^ set these in your .bashrc or equivalent
 
 */
