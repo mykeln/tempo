@@ -1,14 +1,5 @@
 <?php
-
-// Load configuration as an array. Use the actual location of your configuration file
-$config = parse_ini_file('../config.ini');
-
 // setting specific db based on server's environment variables
-$db_host = getenv('DB_HOST');
-$db_user = getenv('DB_USER');
-$db_pass = getenv('DB_PASS');
-$db_name = getenv('DB_NAME');
-
 function getCurrentUri() {
   $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
   $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
@@ -26,8 +17,8 @@ function generateApiKey() {
 function sign_in($enteredEmail,$enteredPassword) {
   // normalize email entry to lower case
   $enteredEmail = strtolower($enteredEmail);
-  $result = db_query("SELECT `email`,`password`,`api_key` FROM `athletes` WHERE email='" . $enteredEmail . "';");
 
+  $result = db_query("SELECT `email`,`password`,`api_key` FROM `athletes` WHERE email='" . $enteredEmail . "';");
   if($result) {
     $dbData = mysqli_fetch_array($result);
     $dbEmail = $dbData[0];
@@ -43,6 +34,7 @@ function sign_in($enteredEmail,$enteredPassword) {
       $updateLastLogin = db_query("UPDATE `athletes` SET `lastlogin_date`=NOW() WHERE email='" . $enteredEmail . "';");
       if (!($updateLastLogin)) {
         echo "Couldn't update your last login date.";
+        exit;
       }
 
       header("Location:/dash");
@@ -51,38 +43,41 @@ function sign_in($enteredEmail,$enteredPassword) {
     }
   } else {
     echo "I had trouble accessing the database";
+echo $mysqli->connect_error;
   }
 }
 
 // database functions
 function db_connect() {
-    global $config;
+  $db_host = getenv('DB_HOST');
+  $db_user = getenv('DB_USER');
+  $db_pass = getenv('DB_PASS');
+  $db_name = getenv('DB_NAME');
 
-    // Define connection as a static variable, to avoid connecting more than once
-    static $connection;
+  // Define connection as a static variable, to avoid connecting more than once
+  static $connection;
 
-    // Try and connect to the database, if a connection has not been established yet
-    if(!isset($connection)) {
-      $connection = mysqli_connect($db_host,$db_user,$db_pass,$db_name);
-    }
+  // Try and connect to the database, if a connection has not been established yet
+  if(!isset($connection)) {
+    $connection = mysqli_connect($db_host,$db_user,$db_pass,$db_name);
+  }
 
-    // If connection was not successful, handle the error
-    if($connection === false) {
-        // Handle error - notify administrator, log to a file, show an error screen, etc.
-        return mysqli_connect_error();
-    }
-    return $connection;
+  // If connection was not successful, handle the error
+  if($connection === false) {
+    // Handle error - notify administrator, log to a file, show an error screen, etc.
+    return mysqli_connect_error();
+  }
+  return $connection;
 }
 
 function db_query($query) {
+  // Connect to the database
+  $connection = db_connect();
 
-    // Connect to the database
-    $connection = db_connect();
+  // Query the database
+  $result = mysqli_query($connection,$query);
 
-    // Query the database
-    $result = mysqli_query($connection,$query);
-
-    return $result;
+  return $result;
 }
 
 ?>

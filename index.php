@@ -1,6 +1,3 @@
-FIXME: tryig to switch between local and prod databases using environment vars
-
-
 <?
 
   include '_functions.php';
@@ -29,9 +26,12 @@ FIXME: tryig to switch between local and prod databases using environment vars
 
   if($routes[1] == "sign_in") {
     $inputEmail = trim(strip_tags($_POST['inputEmail']));
-    $inputPassword  = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
+    $inputPassword  = sha1(sha1($_POST['inputPassword']).sha1(getenv('SALT')));
+
+    echo($inputPassword);
 
     sign_in($inputEmail,$inputPassword);
+
   }
 
   if($routes[1] == "sign_up") {
@@ -45,7 +45,7 @@ FIXME: tryig to switch between local and prod databases using environment vars
     if(!(mysqli_num_rows($result))) {
 
       // password handling
-      $inputPassword = sha1(sha1($_POST['inputPassword']).sha1($config['salt']));
+      $inputPassword = sha1(sha1($_POST['inputPassword']).sha1(getenv('SALT')));
 
       // double check that all these are just numbers
       // strip out any non-ints
