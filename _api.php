@@ -52,10 +52,12 @@
       // prepare the json workout output
       $activities = array();
 
+$activities["debug"] = error_get_last();
+
+
       while($activity = mysqli_fetch_array($result, MYSQL_ASSOC)) {
         $activities[] = $activity;
       }
-$activities["debug"] = error_get_last();
 
       $output = json_encode(array('activities' => $activities));
 
