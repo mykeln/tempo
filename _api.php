@@ -1,6 +1,10 @@
 <?php
 
+  // instantiate the query filter
+  $filter = "";
+
   if($routes[2] == "athlete") {
+
     if ($_GET['key']) {
       $filter = "WHERE api_key='" . $_GET['key'] . "'";
     }
@@ -14,7 +18,7 @@
       // prepare the json workout output
       $athlete = array();
 
-      while($athlete = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+      while($athlete = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $athletes[] = $athlete;
       }
     }
@@ -28,7 +32,8 @@
       // prepare the json workout output
       $fit = array();
 
-      while($fit = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+
+      while($fit = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $fitness[] = $fit;
       }
     }
@@ -41,6 +46,8 @@
 
 
   if($routes[2] == "activities") {
+    $filter = "";
+
     if ($_GET['activity']) {
       $filter = "WHERE shortname='" . $_GET['activity'] . "'";
     }
@@ -50,12 +57,9 @@
         echo 'There was an error retrieving workouts.';
     } else {
       // prepare the json workout output
-      $activities = array();
+      $activity = array();
 
-$activities["debug"] = error_get_last();
-
-
-      while($activity = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+      while($activity = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $activities[] = $activity;
       }
 
@@ -75,9 +79,9 @@ $activities["debug"] = error_get_last();
         echo 'There was an error retrieving your schedule.';
     } else {
       // prepare the json workout output
-      $schedules = array();
+      $schedule = array();
 
-      while($schedule = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+      while($schedule = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         $schedules[] = $schedule;
       }
 
