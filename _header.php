@@ -1,3 +1,6 @@
+<?php
+if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,19 +8,19 @@
   <? include '_common_head.php'; ?>
 
   <!-- form stuff -->
-  <link rel="stylesheet" type="text/css" href="css/datepicker3.css" />
+  <link rel="stylesheet" type="text/css" href="<? echo TEMPO_URL ?>/css/datepicker3.css" />
 
   <!-- scripts -->
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/libs/date.js"></script>
-  <script src="js/libs/jquery.columnmanager.min.js"></script>
-  <script src="js/libs/fastclick.js"></script>
-  <script src="js/libs/bootstrap-datepicker.js"></script>
-  <script src="js/classie.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/modernizr.custom.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/libs/date.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/libs/jquery.columnmanager.min.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/libs/fastclick.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/libs/bootstrap-datepicker.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/classie.js"></script>
 
   <!-- chainiac logic -->
-  <script src="js/utils.js"></script>
-  <script src="js/app.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/utils.js"></script>
+  <script src="<? echo TEMPO_URL ?>/js/app.js"></script>
 
 
 </head>
@@ -33,14 +36,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Chainiac</a>
+        <a class="navbar-brand" href="<? echo TEMPO_URL ?>/">Chainiac</a>
       </div>
       <div class="navbar-collapse collapse">
         <? if (isset($_COOKIE['tempoAthlete'])) { ?>
           <ul class="nav navbar-nav">
-            <li <? if ($routes[1] == "dash") { ?>class="active"<? } ?>><a href="/dash">Dashboard</a></li>
-            <li <? if ($routes[1] == "calendar") { ?>class="active"<? } ?>><a href="/calendar">Calendar</a></li>
-            <li <? if ($routes[1] == "library") { ?>class="active"<? } ?>><a href="/library">Library</a></li>
+            <li <? if ($routes[1] == "dash") { ?>class="active"<? } ?>><a href="<? echo TEMPO_URL ?>/dash">Dashboard</a></li>
+            <li <? if ($routes[1] == "calendar") { ?>class="active"<? } ?>><a href="<? echo TEMPO_URL ?>/calendar">Calendar</a></li>
+            <li <? if ($routes[1] == "library") { ?>class="active"<? } ?>><a href="<? echo TEMPO_URL ?>/library">Library</a></li>
           </ul>
         <? } ?>
         <ul class="nav navbar-nav navbar-right">
@@ -53,12 +56,12 @@
                 <li class="divider"></li>
                 <li><a href="#">My Account</a></li>
                 <li><a href="#">Settings</a></li>
-                <li><a href="/logout">Logout</a></li>
+                <li><a href="<? echo TEMPO_URL ?>/logout">Logout</a></li>
               </ul>
             </li>
           <? } else { ?>
-            <li><a href="/sign_up">Sign Up</a></li>
-            <li><a href="/sign_in">Sign In</a></li>
+            <li><a href="<? echo TEMPO_URL ?>/sign_up">Sign Up</a></li>
+            <li><a href="<? echo TEMPO_URL ?>/sign_in">Sign In</a></li>
           <? } ?>
         </ul>
       </div><!--/.nav-collapse -->

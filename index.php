@@ -1,88 +1,84 @@
 <?php
-
+define( "TEMPO_MAIN_PROGRAM", true );
 #echo "fixme: api calls to db on prod aren't returning any data, but no errors";
 
-  include '_functions.php';
+include( '_functions.php' );
 
-  $base_url = getCurrentUri();
-  $routes = array();
-  $routes = explode('/', $base_url);
-  foreach($routes as $route) {
+$base_url = getCurrentUri();
+$routes = array();
+$routes = explode('/', $base_url);
+foreach($routes as $route) {
     if(trim($route) != '') {
-      array_push($routes, $route);
+        array_push($routes, $route);
     }
-  }
+}
 
-  if ($routes[1] == "api") {
-    include '_api.php';
-    exit;
-  }
+# what are we doing?
+switch( $routes[1] ) {
+    case "api":
+        include( "_api.php" );
+        exit;
+        break;
 
-  // if requesting to switch the user, delete the cookie, then set the page to dash
-  if ($routes[1] == "logout") {
-    setcookie('tempoAthlete', '', time() - 4600000, "/");
-    unset($_COOKIE["tempoAthlete"]);
+    case "logout":
+        $user = new Chainiac_User($db);
+        $user->stopSession();
+        $page = "dash";
+        break;
 
-    $page = "dash";
-  }
+    case "sign_in":
+        sign_in(
+            trim(strip_tags($_POST['inputEmail'])),
+            $_POST['inputPassword']
+        );
+        break;
 
-  if($routes[1] == "sign_in") {
-    $inputEmail = trim(strip_tags($_POST['inputEmail']));
-    $inputPassword  = sha1(sha1($_POST['inputPassword']).sha1(getenv('SALT')));
+    case "sign_up":
+        //FIXME: check for proper email
+        $data = array(
+            "inputName" => trim(strip_tags(ucwords($_POST['inputName']))),
+            "inputEmail" => trim(strip_tags($_POST['inputEmail'])),
+            "inputPassword" => $_POST['inputPassword'],
+            "inputWeight" => trim(strip_tags($_POST['inputWeight'])),
+            "input5s" => trim(strip_tags($_POST['input5s'])),
+            "input1m" => trim(strip_tags($_POST['input1m'])),
+            "input5m" => trim(strip_tags($_POST['input5m'])),
+            "input20m" => trim(strip_tags($_POST['input20m']))
+        );
 
-    echo($inputPassword);
-
-    sign_in($inputEmail,$inputPassword);
-
-  }
-
-  if($routes[1] == "sign_up") {
-    $inputName      = trim(strip_tags(ucwords($_POST['inputName'])));
-
-    //FIXME: check for proper email
-    $inputEmail     = trim(strip_tags($_POST['inputEmail']));
-
-    // if user doesn't already exist
-    $result = db_query("SELECT `email` FROM `athletes` WHERE email='" . $inputEmail . "'");
-    if(!(mysqli_num_rows($result))) {
-
-      // password handling
-      $inputPassword = sha1(sha1($_POST['inputPassword']).sha1(getenv('SALT')));
-
-      // double check that all these are just numbers
-      // strip out any non-ints
-      $inputWeight   = trim(strip_tags($_POST['inputWeight']));
-      $input5s  = trim(strip_tags($_POST['input5s']));
-      $input1m  = trim(strip_tags($_POST['input1m']));
-      $input5m  = trim(strip_tags($_POST['input5m']));
-      $input20m = trim(strip_tags($_POST['input20m']));
-
-      if (!empty($inputName)&&
-        !empty($inputEmail) &&
-        !empty($inputPassword) &&
-        !empty($inputWeight) &&
-        !empty($input5s) &&
-        !empty($input1m) &&
-        !empty($input5m) &&
-        !empty($input20m)) {
-
-        // generate user's API key
-        $key = generateApiKey();
-
-        // An insertion query. $result will be `true` if successful
-        $result = db_query("INSERT INTO athletes VALUES('',NOW(),NOW(),'$inputEmail','$inputPassword','$key','$inputName',$inputWeight,000,$input5s,000,$input1m,$input5m,000,$input20m,000);");
-        if($result === false) {
-            echo 'There was an error creating the your profile.';
-        } else {
-          sign_in($inputEmail,$inputPassword);
+        // validation check #1: are all fields filled out?
+        $count_empty = 0;
+        foreach( $data as $k => $v ) {
+            if( strlen($v) == 0 ) $count_empty++;
         }
-      } else { // if some values were empty
-        echo "You didn't fill something out";
-      }
-    } else { // if user already exists
-      echo "This athlete already has an account";
-    }
-  }
+        if( $count_empty > 0 ) {
+            echo "You didn't fill something out";
+            die;
+        }
+
+        // validation check #2: does this user exist already?
+        $user = new Chainiac_User($db);
+        $user->getInfo($data["inputEmail"]);
+
+        if( !empty($user->info) ) {
+            die( "This athlete already has an account" );
+        }
+
+        // so far so good, proceed
+        //$key = Chainiac_User::generateApiKey();
+        $try_creating = $user->registerAccount($data);
+        if( $try_creating === false ) {
+            echo "Error, could not create account :/";
+            die;
+        }
+
+        // log user in
+        $user->startSession();
+
+    break;
+
+}
+
 
   // if no user cookie is set, show the splash screen
   if (!(isset($_COOKIE['tempoAthlete']))) {
