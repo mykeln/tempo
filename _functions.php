@@ -2,8 +2,14 @@
 if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
 
 require( "config.php" );
+
+// user objects
 require( "class.user.php" );
 require( "class.db.php" );
+
+// activity objects
+require( "class.activity.php");
+
 
 // assuming database will be used by all pages - for now
 $db = new Chainiac_DB(
