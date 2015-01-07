@@ -2,6 +2,18 @@ chainiac
 =====
 Chainiac looks at historical workout data and extrapolates to determine future workouts. The goal is to achieve 90% of what a coach does. The inherent flaw: dynamically changing plans based on results.
 
+
+setting up dev
+=====
+- install mamp clean
+- rename envvars_ to envvars
+- remove its existing contents
+- set environment variables for SALT, DB_HOST, DB_USER, DB_PASS, DB_NAME in MAMP/Library/bin/envvars
+- import db.sql into the database you're using
+- run MAMP servers
+-
+
+
 philosophy
 =====
 each week is part of a "block," a 4-week period in chainiac terminology. each week is manually named after the "essence" of the week of workouts. In other words, if I did mostly endurance rides during the week, but two tempo workouts, that'd be a "tempo week." These weeks change depending on which part of the block it is in, so they ladder up: tempoblock1, tempoblock2, tempoblock3, etc. At the end of each block in the off season, there is a test.
