@@ -1,3 +1,7 @@
+<?php
+if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
+?>
+
   <!-- start common header -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,15 +24,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script src="js/bootstrap.min.js"></script>
+  <link href="<? echo TEMPO_URL ?>/css/bootstrap.min.css" rel="stylesheet">
+  <script src="<? echo TEMPO_URL ?>/js/bootstrap.min.js"></script>
 
   <!-- Form validator scripts -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
 
   <!-- Override -->
-  <link href="css/base.css" rel="stylesheet">
+  <link href="<? echo TEMPO_URL ?>/css/base.css" rel="stylesheet">
 
   <!-- hacks for faster responsiveness on mobile -->
   <script type="text/javascript">

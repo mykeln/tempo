@@ -1,3 +1,7 @@
+<?php
+if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
+?>
+
 </div>
 <div id="footer">
   <div class="container">

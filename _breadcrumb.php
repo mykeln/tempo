@@ -1,3 +1,7 @@
+<?php
+if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
+?>
+
   <div id="breadcrumb" class="container">
     <div class="col-sm-12">
       <div class="row">
