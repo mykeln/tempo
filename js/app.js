@@ -58,7 +58,7 @@ jQuery(function($) {
       fitness.push(data.athlete.20m);
 
 
-      $.each(fitness[0], function(i,item){
+      $.each(fitness, function(i,item){
         // time interval (1s, 1m, 5m, etc.)
         fitnessTime  = i;
         fitnessPower = item;
