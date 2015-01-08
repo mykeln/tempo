@@ -35,28 +35,22 @@ jQuery(function($) {
       // getting athlete name
       athleteName = data.athlete.name;
 
-      athleteBlah = data.athlete.5s;
-
-      console.log(athleteBlah);
-
       // appending athlete name to UI
       $('#athlete-dropdown').html(athleteName + '<b class="caret"></b>');
       $("#fitness h3").prepend(athleteName + "'s ");
 
       // getting athlete weight in lbs and converting to kg
-      weightKg = item.weight/2.2;
+      weightKg = data.athlete.weight/2.2;
 
       // setting here so it retains the value as it goes through the loop
       var totalFitness = 0;
 
-//FIXME
       // building json power profile array from athlete profile to crunch on
-      var fitness = [];
-      fitness.push(data.athlete.5s);
-      fitness.push(data.athlete.1m);
-      fitness.push(data.athlete.5m);
-      fitness.push(data.athlete.20m);
-
+      var fitness = {};
+      fitness["5s"] = data.athlete["5s"];
+      fitness["1m"] = data.athlete["1m"];
+      fitness["5m"] = data.athlete["5m"];
+      fitness["20m"] = data.athlete["20m"];
 
       $.each(fitness, function(i,item){
         // time interval (1s, 1m, 5m, etc.)
