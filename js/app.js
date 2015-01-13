@@ -39,8 +39,14 @@ jQuery(function($) {
       $('#athlete-dropdown').html(athleteName + '<b class="caret"></b>');
       $("#fitness h3").prepend(athleteName + "'s ");
 
+      // filling out name on account update screen
+      $('#inputName').val(athleteName);
+
       // getting athlete weight in lbs and converting to kg
       weightKg = data.athlete.weight/2.2;
+
+      // filling out weight on account update screen
+      $('#inputWeight').val(data.athlete.weight);
 
       // setting here so it retains the value as it goes through the loop
       var totalFitness = 0;
@@ -102,7 +108,8 @@ jQuery(function($) {
                   bestCategory = "untrained";
                 }
 
-
+                // setting value on account update page
+                $('#input5s').val(item);
               break;
             case '1m':
               progressClass = "warning";
@@ -129,6 +136,9 @@ jQuery(function($) {
                 } else if (wKg <= 6.10) {
                   bestCategory = "untrained";
                 }
+
+                // setting value on account update page
+                $('#input1m').val(item);
 
               break;
             case '5m':
@@ -157,6 +167,9 @@ jQuery(function($) {
                 bestCategory = "untrained";
               }
 
+              // setting value on account update page
+              $('#input5m').val(item);
+
               break;
             case '20m':
               progressClass = "success";
@@ -183,6 +196,9 @@ jQuery(function($) {
               } else if (wKg <= 2.34) {
                 bestCategory = "untrained";
               }
+
+              // setting value on account update page
+              $('#input20m').val(item);
 
               break;
             default:

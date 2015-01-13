@@ -54,7 +54,7 @@ if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file direct
                 <li><a href="#">Invite Friends</a></li>
                 <li><a href="#">My Profile</a></li>
                 <li class="divider"></li>
-                <li><a href="#">My Account</a></li>
+                <li><a href="<? echo TEMPO_URL ?>/account">My Account</a></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="<? echo TEMPO_URL ?>/logout">Logout</a></li>
               </ul>

@@ -26,6 +26,11 @@ switch( $routes[1] ) {
         $page = "dash";
         break;
 
+    case "update_user":
+      // grab code from signup and adapt for updating a user rather than adding
+
+        break;
+
     case "sign_in":
         sign_in(
             trim(strip_tags($_POST['inputEmail'])),
@@ -205,6 +210,21 @@ switch( $routes[1] ) {
         </div>
 
         <div id="workout_library"></div>
+      </div>
+    </div> <!-- end 12 column -->
+
+  <? } else if ($routes[1] == "account") { ?>
+
+    <div class="col-sm-4">
+      <!-- workout library -->
+      <div class="row" id="account">
+        <h3>Your Account</h3>
+        <p id="library_explanation">Edit your account information and profile data.</p>
+
+        <form class="form-horizontal" id="update_user_form" name="update_user" action="<? echo TEMPO_URL ?>/update_user" method="post">
+          <? require ('_user_form.php'); ?>
+          <button type="submit" id="signup_form_submit" class="btn btn-primary pull-right">Update My Profile</button>
+        </form>
       </div>
     </div> <!-- end 12 column -->
 
