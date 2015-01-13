@@ -42,6 +42,11 @@ class Chainiac_DB {
     private $username;
     private $password;
 
+    echo $hostname;
+    echo $database;
+    echo $username;
+    echo $password;
+
     // default value: false
     // if true, keeps any changed options after query
     // if false, resets to default settings after each query
