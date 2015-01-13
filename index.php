@@ -80,6 +80,8 @@ switch( $routes[1] ) {
         // log user in
         $user->startSession();
 
+        header("Location:" . TEMPO_URL . "/dash");
+
     break;
 
 }
@@ -100,8 +102,9 @@ switch( $routes[1] ) {
     if($routes[1] == "") {
       $routes[1] = "dash";
     }
-
 ?>
+
+
 
 <div class="container">
   <? if ($routes[1] == "dash") { ?>
