@@ -128,7 +128,5 @@ class Chainiac_DB {
         } else {
             return( $this->statement->fetch($this->fetch_style) );
         }
-
-        if( $this->sticky == false ) $this->setDefaults();
     }
 }
