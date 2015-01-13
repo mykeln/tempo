@@ -1,8 +1,6 @@
 <?php
 if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
 
-require( "config.php" );
-
 // user objects
 require( "class.user.php" );
 require( "class.db.php" );
