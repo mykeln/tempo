@@ -82,6 +82,6 @@ export DB_USER="root"
 export DB_PASS=""
 export DB_NAME=""
 
-^^^ set these in your .bashrc or equivalent
+^^^ set these in your envvars (in mamp) or equivalent
 
 */
