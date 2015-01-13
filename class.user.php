@@ -115,5 +115,4 @@ class Chainiac_User {
         // everything a-ok
         return( $this->info["athlete_id"]);
     }
-
 }

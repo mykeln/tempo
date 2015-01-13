@@ -54,5 +54,4 @@ class Chainiac_Activity {
     // everything a-ok
     return( $this->info["activity_id"]);
   }
-
 }
