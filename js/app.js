@@ -34,10 +34,11 @@ jQuery(function($) {
   $.getJSON( '/api/athlete?key=' + athleteKey, { }, function(data) {
       // getting athlete name
       athleteName = data.athlete.name;
+      athleteFirstName = athleteName.split(' ').slice(0, -1).join(' ');
 
       // appending athlete name to UI
-      $('#athlete-dropdown').html(athleteName + '<b class="caret"></b>');
-      $("#fitness h3").prepend(athleteName + "'s ");
+      $('#athlete-dropdown').html(athleteFirstName + '<b class="caret"></b>');
+      $("#fitness h3").prepend(athleteFirstName + "'s ");
 
       // filling out name on account update screen
       $('#inputName').val(athleteName);

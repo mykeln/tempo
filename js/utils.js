@@ -165,4 +165,78 @@ jQuery(function($) {
       }
     }
   });
+
+
+  // signup validation
+  $('#update_user_form').bootstrapValidator({
+    excluded: [':disabled', ':hidden', ':not(:visible)'],
+    message: 'This value is wrong',
+    trigger: null,
+    fields: {
+      inputName: {
+        validators: {
+          notEmpty: {
+            message: 'We should at least know what to call you'
+          }
+        }
+      },
+      inputEmail: {
+        validators: {
+          notEmpty: {
+            message: 'We need your email address to create a unique account'
+          }
+        }
+      },
+      inputWeight: {
+        validators: {
+          digits: {
+            message: 'This should be a number only'
+          },
+          notEmpty: {
+            message: 'We need your weight to calculate your power profile'
+          }
+        }
+      },
+      input5s: {
+        validators: {
+          digits: {
+            message: 'This should be a number only'
+          },
+          notEmpty: {
+            message: 'We need this to calculate your power profile'
+          }
+        }
+      },
+      input1m: {
+        validators: {
+          digits: {
+            message: 'This should be a number only'
+          },
+          notEmpty: {
+            message: 'We need this to calculate your power profile'
+          }
+        }
+      },
+      input5m: {
+        validators: {
+          digits: {
+            message: 'This should be a number only'
+          },
+          notEmpty: {
+            message: 'We need this to calculate your power profile'
+          }
+        }
+      },
+      input20m: {
+        validators: {
+          digits: {
+            message: 'This should be a number only'
+          },
+          notEmpty: {
+            message: 'We need this to calculate your power profile'
+          }
+        }
+      }
+    }
+  });
 });

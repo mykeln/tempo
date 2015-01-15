@@ -200,3 +200,7 @@ h5 {
     display: none;
   }
 }
+
+#account .password-group {
+  display: none;
+}

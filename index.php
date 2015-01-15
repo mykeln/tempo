@@ -26,11 +26,6 @@ switch( $routes[1] ) {
         $page = "dash";
         break;
 
-    case "update_user":
-      // grab code from signup and adapt for updating a user rather than adding
-
-        break;
-
     case "sign_in":
         sign_in(
             trim(strip_tags($_POST['inputEmail'])),
@@ -82,8 +77,51 @@ switch( $routes[1] ) {
 
         header("Location:" . TEMPO_URL . "/dash");
 
-    break;
+        break;
 
+    case "update_user":
+        //FIXME: check for proper email
+        $data = array(
+            "inputName" => trim(strip_tags(ucwords($_POST['inputName']))),
+            "inputEmail" => trim(strip_tags($_POST['inputEmail'])),
+            "inputWeight" => trim(strip_tags($_POST['inputWeight'])),
+            "input5s" => trim(strip_tags($_POST['input5s'])),
+            "input1m" => trim(strip_tags($_POST['input1m'])),
+            "input5m" => trim(strip_tags($_POST['input5m'])),
+            "input20m" => trim(strip_tags($_POST['input20m']))
+        );
+
+        // validation check #1: are all fields filled out?
+        $count_empty = 0;
+        foreach( $data as $k => $v ) {
+            if( strlen($v) == 0 ) $count_empty++;
+        }
+        if( $count_empty > 0 ) {
+            echo "You didn't fill something out";
+            die;
+        }
+
+        // validation check #2: does this user exist already?
+        $user = new Chainiac_User($db);
+        $user->getInfo($data["inputEmail"]);
+
+        if( !empty($user->info) ) {
+            die( "This athlete already has an account" );
+        }
+
+        // so far so good, proceed
+        //$key = Chainiac_User::generateApiKey();
+        $try_creating = $user->registerAccount($data);
+        if( $try_creating === false ) {
+            echo "Error, could not create account :/";
+            die;
+        }
+
+        // log user in
+        $user->startSession();
+
+        header("Location:" . TEMPO_URL . "/dash");
+        break;
 }
 
 
@@ -219,7 +257,7 @@ switch( $routes[1] ) {
   <? } else if ($routes[1] == "account") { ?>
 
     <div class="col-sm-4">
-      <!-- workout library -->
+      <!-- account settings -->
       <div class="row" id="account">
         <h3>Your Account</h3>
         <p id="library_explanation">Edit your account information and profile data.</p>
@@ -229,7 +267,7 @@ switch( $routes[1] ) {
           <button type="submit" id="signup_form_submit" class="btn btn-primary pull-right">Update My Profile</button>
         </form>
       </div>
-    </div> <!-- end 12 column -->
+    </div>
 
   <? } ?>
 
