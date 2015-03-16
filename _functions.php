@@ -1,4 +1,5 @@
 <?php
+// test
 if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file directly" );
 
 require( "config.php" );
