@@ -8,7 +8,7 @@ if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file direct
   <? include '_common_head.php'; ?>
 
   <!-- form stuff -->
-  <link rel="stylesheet" type="text/css" href="<? echo TEMPO_URL ?>/css/datepicker3.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo TEMPO_URL ?>/css/datepicker3.css" />
 
   <!-- scripts -->
   <script src="<?php echo TEMPO_URL ?>/js/modernizr.custom.js"></script>
