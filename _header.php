@@ -11,16 +11,16 @@ if( !defined("TEMPO_MAIN_PROGRAM") ) die( "Error: can't include this file direct
   <link rel="stylesheet" type="text/css" href="<? echo TEMPO_URL ?>/css/datepicker3.css" />
 
   <!-- scripts -->
-  <script src="<? echo TEMPO_URL ?>/js/modernizr.custom.js"></script>
-  <script src="<? echo TEMPO_URL ?>/js/libs/date.js"></script>
-  <script src="<? echo TEMPO_URL ?>/js/libs/jquery.columnmanager.min.js"></script>
-  <script src="<? echo TEMPO_URL ?>/js/libs/fastclick.js"></script>
-  <script src="<? echo TEMPO_URL ?>/js/libs/bootstrap-datepicker.js"></script>
-  <script src="<? echo TEMPO_URL ?>/js/classie.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/modernizr.custom.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/libs/date.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/libs/jquery.columnmanager.min.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/libs/fastclick.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/libs/bootstrap-datepicker.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/classie.js"></script>
 
   <!-- chainiac logic -->
-  <script src="<? echo TEMPO_URL ?>/js/utils.js"></script>
-  <script src="<? echo TEMPO_URL ?>/js/app.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/utils.js"></script>
+  <script src="<?php echo TEMPO_URL ?>/js/app.js"></script>
 
 
 </head>
