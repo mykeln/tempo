@@ -21,7 +21,7 @@ CREATE TABLE `athletes` (
 CREATE TABLE `activities` (
   `activity_id` int(5) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
-  `shortname` varchar(25) NOT NULL,
+  `shortname` varchar(255) NOT NULL,
   `type` varchar(25) NOT NULL,
   `wu` text,
   `desc` text,
